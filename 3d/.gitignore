@@ -2,6 +2,7 @@
 renders/
 renders_turntable/
 renders_anim/
+renders_shoot/
 renders_jutsu/*.png
 *.log
 __pycache__/
