@@ -7,3 +7,6 @@ renders_jutsu/*.png
 *.log
 __pycache__/
 *.blend1
+renders_shoot30/
+renders_tests30/*.png
+textures/people_placeholder/
