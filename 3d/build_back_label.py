@@ -55,20 +55,20 @@ def build(varietal, colour, vol, ean, kcal, out):
     d.text((W / 2, H * 0.025), 'Sharp Zombie', font=font('UnifrakturMaguntia-Book.ttf', H * 0.075), fill=RED, anchor='ma')
     d.text((W / 2 + W * 0.21, H * 0.03), '®', font=font('Inter[opsz,wght].ttf', H * 0.02), fill=RED)
     d.text((m, H * 0.125), 'RIOJA', font=font('Anton-Regular.ttf', H * 0.06), fill=BLK)
-    d.text((m, H * 0.195), 'Denominación de Origen Calificada', font=font('Inter[opsz,wght].ttf', H * 0.026), fill=BLK)
+    d.text((m, H * 0.195), 'Denominación de Origen Calificada', font=font('Inter[opsz,wght].ttf', H * 0.023), fill=BLK)
     d.text((m, H * 0.228), varietal, font=bold(H * 0.03), fill=BLK)
     # sello DOCa (gris) arriba derecha
-    d.rectangle([W * 0.80, H * 0.13, W * 0.94, H * 0.225], outline=GRY, width=4, fill=(235, 220, 90))
-    d.text((W * 0.87, H * 0.15), 'RIOJA', font=font('Anton-Regular.ttf', H * 0.028), fill=GRY, anchor='ma')
-    d.text((W * 0.87, H * 0.185), 'D.O.Ca.', font=font('Inter[opsz,wght].ttf', H * 0.016), fill=GRY, anchor='ma')
+    d.rectangle([W * 0.83, H * 0.125, W * 0.95, H * 0.195], outline=GRY, width=4, fill=(235, 220, 90))
+    d.text((W * 0.89, H * 0.135), 'RIOJA', font=font('Anton-Regular.ttf', H * 0.026), fill=GRY, anchor='ma')
+    d.text((W * 0.89, H * 0.168), 'D.O.Ca.', font=font('Inter[opsz,wght].ttf', H * 0.015), fill=GRY, anchor='ma')
     # cinta caution
     d.line([0, H * 0.272, W, H * 0.272], fill=BLK, width=5); d.line([0, H * 0.318, W, H * 0.318], fill=BLK, width=5)
     d.text((W / 2, H * 0.278), 'WINE        CAUTION : DEADLY GOOD WINE        CAUT', font=font('Anton-Regular.ttf', H * 0.03), fill=BLK, anchor='ma')
     # párrafo
     para = ("Sharp Zombie is a casual, flavorful wine made for easy enjoyment. Originally created for zombies—and preferred by the most sharply dressed in the zombie community—Sharp Zombie is now available for human consumption. It displays all the style and panache of the most elegant and relaxed members of the undead. Why stress? Simply enjoy. Caution: It's deadly good.")
-    fp = font('Inter[opsz,wght].ttf', H * 0.027); y = H * 0.345
+    fp = font('Inter[opsz,wght].ttf', H * 0.0215); y = H * 0.345
     for ln in wrap(d, para, fp, W - 2 * m):
-        d.text((m, y), ln, font=fp, fill=BLK); y += H * 0.033
+        d.text((m, y), ln, font=fp, fill=BLK); y += H * 0.0265
     # separador discontinuo
     yy = H * 0.625
     for x in range(m, W - m, 28): d.line([x, yy, x + 14, yy], fill=BLK, width=4)
