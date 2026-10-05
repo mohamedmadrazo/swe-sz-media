@@ -82,3 +82,6 @@ Texto legible generado en vídeo · ojos o caras en los zombies · que brille el
 | 9 Borrachera | 27.0–30.0 (648–720) | Flotan, uno hace el muerto; el gato asoma; hold final 2 s | Pull-back lento |
 
 Regla de conversión para la escena 3D: `v1_beats.json` está a 15 s (0–360); la versión 30 s es ×2 en frames salvo los holds añadidos (gato 1 s, estatuas 1 s, final 2 s). Draft Seedance 30 s: job `52247062-10f6-4f36-996e-e07eaea31814`.
+
+## Decisión de look (feedback 2026-10-05)
+El usuario prefiere el **draft Seedance 30 s** (`52247062`) y, dentro de él, el diseño de la **segunda parte** (fase oscura: 3D neon con rims magenta/cian, negros limpios, zombies negros con contorno lima). El cambio de estilo a mitad de vídeo viene de la clave de estilo S (fase iluminada, más cómic plano) usada como referencia. Para las siguientes iteraciones: usar KF6 (`94052ac7`) / KF7 (`fdead37f`) como clave de estilo única para TODOS los planos (también los iluminados), regenerar KF1–KF3 y el two-shot con esa clave y, en post, una sola LUT para igualar ambas fases.
