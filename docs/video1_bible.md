@@ -66,3 +66,19 @@ Texto legible generado en vídeo · ojos o caras en los zombies · que brille el
 - Tiempos, cámara, luces y coreografía: `3d/v1_beats.json` (fuente única para 3D Jutsu y Blender local).
 - Prompts finales por asset: `prompts/video1_prompts.json`.
 - Cómo aplicar el preset de estilo: `docs/video1_restyle_howto.md`.
+
+## Versión 30 s (propuesta tras el primer draft; misma historia con aire)
+
+| Beat | Tiempo 30 s (fr @24) | Acción | Cámara |
+|---|---|---|---|
+| 1 Sobremesa | 0.0–5.0 (0–120) | Aya y Ren ríen, brindan una vez a 1 s | Travelling 35 mm desde la entrada |
+| 2 El gato | 5.0–8.0 (120–192) | El gato cruza, se para un instante y mira a cámara (EE1) | Continúa el travelling |
+| 3 Retirada | 8.0–11.0 (192–264) | Se levantan con los platos y salen; quedan botella, tapón, copas, palillos | Se detiene a 1 m, 50 mm · **Corte duro a 11 s** |
+| 4 Apagón | 11.0–13.0 (264–312) | Clic, pendant off, luna azul | Push-in 50→85 mm |
+| 5 Despertar | 13.0–17.0 (312–408) | Macro: contornos se encienden de izquierda a derecha y laten dos veces; el agachado duerme hasta que la mano lo empuja a 16 s (EE2) · **Música desde 15 s** | Macro 100 mm fija · **Corte duro a 17 s** |
+| 6 Salida | 17.0–20.0 (408–480) | Se despegan y bajan en conga; la mano anda con los dedos (EE3); el agachado sale el último | Nivel de mesa, tracking |
+| 7 Fiesta | 20.0–24.0 (480–576) | Limbo (EE4), DJ con el tapón (EE5), estatuas a 22 s al pasar la sombra de Ren (EE6), maneki-neko (EE7) | Tracking + arc |
+| 8 Escalada | 24.0–27.0 (576–648) | Trepan y caen al vino; la mano cuelga del borde | Tilt-up 85 mm |
+| 9 Borrachera | 27.0–30.0 (648–720) | Flotan, uno hace el muerto; el gato asoma; hold final 2 s | Pull-back lento |
+
+Regla de conversión para la escena 3D: `v1_beats.json` está a 15 s (0–360); la versión 30 s es ×2 en frames salvo los holds añadidos (gato 1 s, estatuas 1 s, final 2 s). Draft Seedance 30 s: job `52247062-10f6-4f36-996e-e07eaea31814`.
