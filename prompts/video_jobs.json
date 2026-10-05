@@ -11,11 +11,12 @@
    "h": 854,
    "dur": 9,
    "escena": "GENJ",
-   "primaria": true,
+   "primaria": false,
    "desc": "Genjutsu motion transfer sobre el clip guía 3D (f144-360): zombies con contorno lima, mesa a oscuras. Draft 480p.",
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
    "note": "driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving.",
-   "expires": ""
+   "expires": "",
+   "verdict": "PARCIAL — el motion transfer funciona pero el look sale desaturado (gris) y los zombies heredan la forma de cápsula del blockout 3D Jutsu."
   },
   "v1_vid_01": {
    "model": "seedance_2_5",
@@ -31,13 +32,14 @@
    "desc": "Seedance 2.5 draft 15 s (480p, draft finalizable a 1080p): historia completa en 6 planos con cortes en 5.5 y 8.5 s, música desde 7.5 s.",
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png",
    "note": "comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad",
-   "expires": "2026-10-12"
+   "expires": "2026-10-12",
+   "verdict": "PASS — historia completa en 15 s: pareja, gato, salida, apagón, macro glow, baile en mesa, escalada, borrachera, gato final; etiqueta fiel; audio generado. Ritmo apretado (de ahí la versión 30 s)."
   },
   "v1_vid_01_30s": {
    "model": "seedance_2_5",
    "job_id": "52247062-10f6-4f36-996e-e07eaea31814",
-   "status": "submitted",
-   "url": null,
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_142131_52247062-10f6-4f36-996e-e07eaea31814.mp4",
    "credits": 90,
    "w": 480,
    "h": 854,
@@ -47,7 +49,30 @@
    "desc": "Seedance 2.5 draft 30 s (480p, draft finalizable a 1080p): versión extendida con más aire en cada beat; cortes en 11 y 17 s, música desde 15 s.",
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png",
    "note": "propuesta del cliente tras ver el draft de 15 s; finalizar con draft_job_id antes de la caducidad",
-   "expires": "2026-10-12"
+   "expires": "2026-10-12",
+   "verdict": "PASS — misma historia con aire: brindis, gato, retirada, apagón, macro, conga en la mesa, escalada, copas, gato; etiqueta fiel; audio con música desde ~15 s. Candidata a máster (finalizar a 1080p con draft_job_id antes del 2026-10-12)."
+  },
+  "v1_vid_05b": {
+   "model": "hf_mult_motion_control",
+   "job_id": "602dfef6-8d56-47d9-a3f8-af2ce7add1df",
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_142322_602dfef6-8d56-47d9-a3f8-af2ce7add1df.mp4",
+   "credits": 20,
+   "w": 480,
+   "h": 854,
+   "dur": 6.5,
+   "escena": "GENJ",
+   "primaria": true,
+   "desc": "Genjutsu motion transfer #2 sobre el rodaje Blender S5-S6 (recortes reales de la etiqueta): LEAD KF6, LOCATION KF4, estilo S. Draft 480p.",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
+   "note": "driving = video/v1_shoot_blender_s5s6.mp4 importado vía jsDelivr (media 1effeb1f)",
+   "expires": "",
+   "verdict": "PASS — pipeline Blender→Genjutsu validado: color y look neon completos (rims magenta/cian, noche azul, skyline), zombies = recortes negros con contorno lima fieles a la etiqueta, cámara del rodaje Blender respetada; leve flotación de pies en algún frame."
   }
+ },
+ "balance": {
+  "start": 2988,
+  "end": 2642.67,
+  "spent": 345.33
  }
 }

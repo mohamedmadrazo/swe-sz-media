@@ -367,7 +367,9 @@
   "start_session": 2988,
   "after_wave1_AB": 2936.42,
   "after_wave2_and_drafts": 2753.67,
-  "spent_session_estimate": 234.33
+  "spent_session_estimate": 234.33,
+  "end_session": 2642.67,
+  "spent_session": 345.33
  },
  "chosen": {
   "env_02": "4cd1483a-ce45-4e44-9e52-b7982a98c490",

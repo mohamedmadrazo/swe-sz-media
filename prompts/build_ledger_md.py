@@ -12,7 +12,7 @@ out = []
 out.append('# Ledger de activos — Sharp Zombie · Vídeo 1 "After Dinner, Tokyo" (línea `D_TOKYO_V1`)\n')
 out.append(f'Generado: {datetime.date.today().isoformat()} · Proyecto Higgsfield folder `{(w1 or {}).get("folder_id","")}` · Clave de estilo S = job `30a2a515-405f-41f1-b785-2456b943d14d`\n')
 if w1 and w1.get('balance'):
-    b = w1['balance']; out.append(f"Saldo: inicio de sesión {b.get('start_session')} cr · tras ola 1 (A+B) {b.get('after_wave1_AB')} cr" + (f" · tras ola 2 {b.get('after_wave2')} cr" if b.get('after_wave2') else '') + (f" · tras drafts de vídeo {b.get('after_video')} cr" if b.get('after_video') else '') + '\n')
+    b = w1['balance']; out.append(f"Saldo: inicio de sesión {b.get('start_session')} cr · tras ola 1 (A+B) {b.get('after_wave1_AB')} cr" + (f" · **final de sesión {b.get('end_session')} cr (gastados {b.get('spent_session')} de un tope de 600)**" if b.get('end_session') else '') + (f" · tras ola 2 {b.get('after_wave2')} cr" if b.get('after_wave2') else '') + (f" · tras drafts de vídeo {b.get('after_video')} cr" if b.get('after_video') else '') + '\n')
 def table(title, jobs, purposes=None, qa=None):
     out.append(f'\n## {title}\n')
     out.append('| Activo | Modelo | Job id | Est. cr | Estado | QA director | Reintentos |')
@@ -56,7 +56,7 @@ if vj:
     for k, e in vj['jobs'].items():
         url = e.get('url') or ''; jid = e.get('job_id') or ''
         link = f'[`{jid[:8]}`]({url})' if url else f'`{jid[:8]}`'
-        out.append(f"| `{k}` | {e.get('model','')} | {link} | {e.get('credits','')} | {e.get('status','')} | {e.get('expires','')} | {e.get('note','')} |")
+        out.append(f"| `{k}` | {e.get('model','')} | {link} | {e.get('credits','')} | {e.get('status','')} | {e.get('expires','')} | {e.get('verdict','')} {e.get('note','')} |")
 out.append('\n## 3D\n')
 out.append('- 3D Jutsu "Sharp Zombie — Tokyo apt previz V1": proyecto `0d680169-83bc-4288-b579-1101122d639e` (revision 2) — https://higgsfield.ai/3d-jutsu/0d680169-83bc-4288-b579-1101122d639e')
 out.append('- Blender local (bpy 5.0.1, Cycles CPU): `3d/build_v1_scene.py` → `3d/v1_bottle_table.blend/.glb`; turntable `video/v1_turntable_3d.mp4`; previz `img/v1_previz_bpy_f*.webp`.')

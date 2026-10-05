@@ -2,7 +2,7 @@
 
 Generado: 2026-10-05 · Proyecto Higgsfield folder `af60db5b-3cf0-444c-8218-287a76fde27d` · Clave de estilo S = job `30a2a515-405f-41f1-b785-2456b943d14d`
 
-Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
+Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr · **final de sesión 2642.67 cr (gastados 345.33 de un tope de 600)**
 
 
 ## Ola 1 — producto, entorno, personajes
@@ -127,9 +127,10 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 
 | Activo | Modelo | Job id | Cr | Estado | Caduca | Nota |
 |---|---|---|---|---|---|---|
-| `v1_vid_05` | hf_mult_motion_control | [`27122a66`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4) | 27 | completed |  | driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving. |
-| `v1_vid_01` | seedance_2_5 | [`443cecb3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4) | 45 | completed | 2026-10-12 | comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad |
-| `v1_vid_01_30s` | seedance_2_5 | `52247062` | 90 | submitted | 2026-10-12 | propuesta del cliente tras ver el draft de 15 s; finalizar con draft_job_id antes de la caducidad |
+| `v1_vid_05` | hf_mult_motion_control | [`27122a66`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4) | 27 | completed |  | PARCIAL — el motion transfer funciona pero el look sale desaturado (gris) y los zombies heredan la forma de cápsula del blockout 3D Jutsu. driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving. |
+| `v1_vid_01` | seedance_2_5 | [`443cecb3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4) | 45 | completed | 2026-10-12 | PASS — historia completa en 15 s: pareja, gato, salida, apagón, macro glow, baile en mesa, escalada, borrachera, gato final; etiqueta fiel; audio generado. Ritmo apretado (de ahí la versión 30 s). comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad |
+| `v1_vid_01_30s` | seedance_2_5 | [`52247062`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_142131_52247062-10f6-4f36-996e-e07eaea31814.mp4) | 90 | completed | 2026-10-12 | PASS — misma historia con aire: brindis, gato, retirada, apagón, macro, conga en la mesa, escalada, copas, gato; etiqueta fiel; audio con música desde ~15 s. Candidata a máster (finalizar a 1080p con draft_job_id antes del 2026-10-12). propuesta del cliente tras ver el draft de 15 s; finalizar con draft_job_id antes de la caducidad |
+| `v1_vid_05b` | hf_mult_motion_control | [`602dfef6`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_142322_602dfef6-8d56-47d9-a3f8-af2ce7add1df.mp4) | 20 | completed |  | PASS — pipeline Blender→Genjutsu validado: color y look neon completos (rims magenta/cian, noche azul, skyline), zombies = recortes negros con contorno lima fieles a la etiqueta, cámara del rodaje Blender respetada; leve flotación de pies en algún frame. driving = video/v1_shoot_blender_s5s6.mp4 importado vía jsDelivr (media 1effeb1f) |
 
 ## 3D
 
