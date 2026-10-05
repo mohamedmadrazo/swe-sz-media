@@ -46,6 +46,8 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 | `SZ-zombies-glow` | `5915e7ac-09c7-4efc-bf78-a1904ace295b` |
 | `SZ-apartment` | `0199fa74-cff0-459d-801c-fae3153bf8bd` |
 | `SZ-bottle-back-PROV` | `6ea674e7-12b6-442a-98e0-b6ae20dd9a9e` |
+| `SZ-bottle-back` | `29cbd6df-d8cd-405f-aa0a-3974b6cfb28c` |
+| `SZ-cat` | `2ab36fde-48a2-4f46-ba0c-0e3c66e86f84` |
 
 ### Referencias elegidas
 
@@ -55,6 +57,47 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 - `prod_03_alt_nb` → `f4c8aa8f-d70e-45c5-8ebb-d04291380bd9`
 
 > Corrección de lock (2026-10-05): «three walking with arms stretched forward and one crouched» → «three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched» (fuente: 3d/textures/label_front.png (recorte del packshot real)).
+
+## Ola 2 — two-shot, zombies 3D, escala, boards, keyframes, end card
+
+| Activo | Modelo | Job id | Est. cr | Estado | QA director | Reintentos |
+|---|---|---|---|---|---|---|
+| `v1_char_03` | nano_banana_pro | [`c6b8ad68`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130511_c6b8ad68-8390-4a5e-826b-42aa0dc029c2.png) | 2 | completed | PASS — Aya/Ren fieles, etiqueta fiel, tapón al lado | — |
+| `v1_char_08` | nano_banana_pro | [`f2017503`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_f2017503-defa-402d-a687-055219f89037.png) | 2 | completed | PASS — pareja con platos hacia la puerta, botella+tapón en mesa | — |
+| `v1_char_05a` | gpt_image_2_5 | [`ecb6626f`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130509_ecb6626f-2dc7-407e-8f6e-8edd28a1d772.png) | 2.75 | completed | PASS — caminante fiel, negro con contorno, transparente | — |
+| `v1_char_05b` | gpt_image_2_5 | [`9fcd40a5`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130509_9fcd40a5-3127-4eff-9915-8aa59e81cddb.png) | 2.75 | completed | PASS — A-pose limpia, transparente (→ Meshy rig) | — |
+| `v1_char_05c` | gpt_image_2_5 | [`51d88fa4`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_51d88fa4-6721-406f-832b-2dc5439089ff.png) | 2.75 | completed | PASS — agachado transparente | — |
+| `v1_char_05d` | gpt_image_2_5 | [`bd011a50`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130511_bd011a50-a110-4416-ba2d-8f826f34dc54.png) | 2.75 | completed | PASS — mano 5 dedos transparente | — |
+| `v1_char_07` | nano_banana_pro | [`de13f667`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_de13f667-5310-48ca-b6b2-ee11a1f36264.png) | 2 | completed | PASS — escala 5 cm junto a botella y copa | — |
+| `v1_prod_10a` | nano_banana_pro | [`c1059bca`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_c1059bca-3a6b-434f-bbb0-f8e4eddb6da6.png) | 2 | completed | PASS (contraetiqueta PROVISIONAL) | — |
+| `v1_prod_10b` | nano_banana_pro | [`e7403a2e`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_e7403a2e-82b9-4006-94f9-f369f1f4ecdc.png) | 2 | completed | PASS (contraetiqueta PROVISIONAL) | — |
+| `v1_endcard` | seedream_v5_pro | [`94f44b27`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130511_94f44b27-f28c-4f54-b704-33ca33522c90.png) | 2.5 | completed | PASS — texto JP exacto, legal placeholder | — |
+| `v1_kf_01` | nano_banana_pro | [`d851d81f`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png) | 2 | completed | PASS — pareja, gato mirando a cámara, botella fiel | — |
+| `v1_kf_02` | nano_banana_pro | [`944ce86c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_944ce86c-bd02-4ccb-ab3b-5ced2c8227c8.png) | 2 | completed | FIX#1 PASS | #1 `b1688f56` PASS — etiqueta blackletter fiel, vestuario correcto |
+| `v1_kf_03` | nano_banana_pro | [`34c4e7b3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_34c4e7b3-f801-42b8-9ad3-c97b62612b84.png) | 2 | completed | PASS — mesa sola encendida | — |
+| `v1_kf_04` | nano_banana_pro | [`67661b9c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_67661b9c-9a27-4ab1-9b6d-d6a20d36520e.png) | 2 | completed | PASS — apagón, etiqueta oscura | — |
+| `v1_kf_05` | nano_banana_pro | [`ceaec1f3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_ceaec1f3-5f94-4316-988d-53a480b127a3.png) | 2 | completed | PASS — macro despertar, texto oscuro, contornos | — |
+| `v1_kf_06` | nano_banana_pro | [`c8010ba5`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_c8010ba5-e05c-42f4-bfd4-fdca86c037cc.png) | 2 | completed | FIX#2 PASS | #1 `7af81b6e` FAIL — zombies ya negros con contorno, pero etiqueta re-tipografiada (SHARP ZOMBIE sans, etiqueta blanca); #2 `94052ac7` PASS — etiqueta fiel, zombies negros con contorno, DJ con tapón, limbo, manita |
+| `v1_kf_07` | nano_banana_pro | [`fdead37f`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130658_fdead37f-5f7c-4afe-88d8-3ce13f5aa905.png) | 2 | completed | PASS — escalada y caída al vino | — |
+| `v1_kf_08` | nano_banana_pro | [`a8f24e5b`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_a8f24e5b-1614-42b8-9e42-35b9e2be7928.png) | 2 | completed | PASS — final copas + gato + luna | — |
+| `v1_kf_01w` | nano_banana_pro | [`42a8c102`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_42a8c102-f1b2-4402-899e-b18c276adb5c.png) | 2 | completed | PASS — 16:9 | — |
+| `v1_kf_08w` | nano_banana_pro | [`eb4c21a6`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130659_eb4c21a6-b652-41fc-a71b-ab50a9349e91.png) | 2 | completed | PASS — 16:9 | — |
+| `v1_board_01` | gpt_image_2_5 | [`1a99528f`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131431_1a99528f-9f83-41ef-b5cc-3f8815dcfccc.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_02` | gpt_image_2_5 | [`dfdbfe98`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131428_dfdbfe98-c9de-4dfa-9736-382c088a2b4d.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_03` | gpt_image_2_5 | [`aa9cfa76`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131431_aa9cfa76-a0b8-49e2-b610-de37f242accd.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_04` | gpt_image_2_5 | [`42fc8523`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131428_42fc8523-acad-41f3-82bf-40d26bcb003c.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_05` | gpt_image_2_5 | [`cee9c7b0`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131429_cee9c7b0-7e13-4605-8398-a2cc6ac15482.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_06` | gpt_image_2_5 | [`902c4587`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131430_902c4587-087a-4e4d-94b0-fbd3a8639450.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_07` | gpt_image_2_5 | [`e9a7fbca`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131429_e9a7fbca-65d8-423f-9358-7f536159238f.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_08` | gpt_image_2_5 | [`c43eeb2c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131432_c43eeb2c-27f2-4a43-b483-31a2c64f3f8f.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_09` | gpt_image_2_5 | [`1a668a0b`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131432_1a668a0b-5e29-41f9-9e52-e6060fa19071.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+| `v1_board_10` | gpt_image_2_5 | [`5b48f3a5`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131429_5b48f3a5-e938-4ec7-b006-cafab0df1106.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+
+## Drafts de vídeo (480p; `draft:true` caduca a los 7 días)
+
+| Activo | Modelo | Job id | Cr | Estado | Caduca | Nota |
+|---|---|---|---|---|---|---|
+| `v1_vid_05` | hf_mult_motion_control | [`27122a66`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4) | 27 | completed |  | driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving. |
 
 ## 3D
 
