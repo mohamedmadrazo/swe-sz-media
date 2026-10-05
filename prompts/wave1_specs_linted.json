@@ -1,0 +1,1003 @@
+{
+ "style_ref": "30a2a515-405f-41f1-b785-2456b943d14d",
+ "style_ref_alt": "254a13e6-be8a-4c37-89cb-4a36430ebced",
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "specs": [
+  {
+   "id": "v1_prod_01",
+   "dept": "product",
+   "purpose": "Product hero on the table, lights on, 4:5",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "4:5",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    }
+   ],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Stylized 3D commercial still for a wine ad. The first reference image is the style reference. STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition. The bottle label stays accurate and readable. SCENE: the walnut dining table of the modern 12th-floor Tokyo apartment of the style reference: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the Tokyo skyline and a full moon, warm washi paper pendant over the table, a floor lamp by a small sofa, a bookshelf with an ikebana and a small maneki-neko, a doorway to the kitchen at the right at night; warm washi pendant light from above, full moon soft in the window behind, neon magenta and cyan rims on the glass. SUBJECT: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The bottle stands open on the table, its black screw cap resting beside it, two stemmed glasses of red wine slightly behind it, chopsticks on a rest and a bowl of edamame out of focus. Camera at table height, 85 mm, f/2.8, label facing the lens and fully readable, shallow depth of field. CONSTRAINTS: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neon graphic cinematic 3D look consistent with the style reference"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_02",
+   "dept": "product",
+   "purpose": "Product in the dark, glow on, 4:5",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "4:5",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo"
+    }
+   ],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Stylized 3D still, same look as the style reference (first reference image). STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition. The bottle label stays accurate; in the dark it is unlit and not readable, only the outlines glow. SCENE: the same walnut table in the modern 12th-floor Tokyo apartment of the style reference: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the Tokyo skyline and a full moon, warm washi paper pendant over the table, a floor lamp by a small sofa, a bookshelf with an ikebana and a small maneki-neko, a doorway to the kitchen at the right. A second after every lamp has been switched off: only cold blue moonlight from the window at camera-left touches the bottle's shoulder and the rims of the two wine glasses, plus a faint magenta and cyan city glow on the glass edges; deep clean blacks. SUBJECT: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare, exactly like the real photo of the label in the dark provided as a reference. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. The second reference image is the real photo of the label in the dark; match its glow colour and thin-outline intensity. Camera at table height, 85 mm, f/2.8, label to lens. CONSTRAINTS: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neon graphic cinematic 3D look consistent with the style reference",
+    "only the silhouette outlines and the hand glow lime-green; label text and stripes do NOT glow",
+    "thin phosphorescent outline, no neon tube, no bloom halo"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_03",
+   "dept": "product",
+   "purpose": "Macro of the label in the dark, outlines waking up",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow"
+    },
+    {
+     "role": "image_references",
+     "value": "f8d7ecb6-f4d7-45ab-ac35-1ccc644903d6",
+     "label": "Image 3 macro glow"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 4 style"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: macro key reference of the Sharp Zombie label in the dark for a stylized 3D commercial, vertical 9:16.\nSTYLE: match the look of Image 4 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or content. The bottle label stays accurate; in the dark it is unlit and not readable, only the outlines glow.\nSUBJECT: the front label fills the frame; Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three walking with arms forward, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label.\nGLOW: In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare, exactly like the real photo of the label in the dark in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Image 3 shows a macro of that glow for intensity. Use Image 2 and Image 3 only for the glow colour and thin-outline intensity, not their framing, background or camera. The printed silhouettes keep their exact shapes; 'waking up' is shown only through the glow: the first walking silhouette has the brightest outline, the crouched one the dimmest, still asleep.\nSCENE: pitch-dark room, faint blue moonlight grazing the dark glass from the left, a hint of magenta rim on the bottle edge.\nCAMERA: 100 mm macro, f/4, label plane parallel to the sensor.\nCONSTRAINTS: no eyes or faces on the silhouettes, no added text, the label text does not glow, no extra bottles, no cork, no purple lens flares, no watermark.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neon graphic cinematic 3D look consistent with the style reference",
+    "only the silhouette outlines and the hand glow lime-green; label text and stripes do NOT glow",
+    "thin phosphorescent outline, no neon tube, no bloom halo"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_04",
+   "dept": "product",
+   "purpose": "Two red-wine glasses prop reference",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "4:5",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 style"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: prop reference for a stylized 3D wine commercial, 4:5.\nSTYLE: match the look of Image 1 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition.\nSUBJECT: two identical stemmed red-wine glasses (Burgundy bowl, thin stem, about 21 cm tall) on a walnut table, one filled a third and one filled half with deep ruby Rioja, visible meniscus, clean reflections of magenta and cyan rims.\nSCENE: the modern 12th-floor Tokyo apartment of the style reference: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the Tokyo skyline and a full moon, warm washi paper pendant over the table, a floor lamp by a small sofa, a bookshelf with an ikebana and a small maneki-neko, a doorway to the kitchen at the right at night, warm pendant light from above, full moon out of focus in the window behind.\nCAMERA: table height, 85 mm, f/2.8.\nCONSTRAINTS: exactly two glasses, no bottle, no hands, no candles, no text, no watermark, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "exactly two glasses",
+    "style consistent"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_05",
+   "dept": "product",
+   "purpose": "Dinner table set, lights on (set dressing)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    }
+   ],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "The first reference image is the style reference. Stylized 3D still at a 45-degree high angle of a finished Japanese dinner for two on the walnut table of the modern 12th-floor Tokyo apartment of the style reference: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the Tokyo skyline and a full moon, warm washi paper pendant over the table, a floor lamp by a small sofa, a bookshelf with an ikebana and a small maneki-neko, a doorway to the kitchen at the right. STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition. The bottle label stays accurate and readable. On the table: two ceramic plates with the remains of grilled fish, chopsticks resting on ceramic chopstick rests, a small bowl of edamame, a soy dish, two stemmed glasses of red wine (one a third full, one half full) and the open bottle with its black screw cap lying beside it. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. Warm washi pendant light from above, moonlit window glow at the top of the frame, magenta and cyan rims. 50 mm, f/4. CONSTRAINTS: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neon graphic cinematic 3D look consistent with the style reference"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_06",
+   "dept": "product",
+   "purpose": "Same dinner table, lights off, glow",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo"
+    }
+   ],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "The first reference image is the style reference; the second reference image is the real glow photo. Stylized 3D still at a 45-degree high angle of the same finished dinner table in the modern 12th-floor Tokyo apartment of the style reference: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the Tokyo skyline and a full moon, warm washi paper pendant over the table, a floor lamp by a small sofa, a bookshelf with an ikebana and a small maneki-neko, a doorway to the kitchen at the right. After the room lights are switched off: moonlight only, cold and blue from the window at the top of the frame, plus a faint magenta and cyan city glow on the glass edges; plates, chopsticks and the two wine glasses read as dim silhouettes with glass rims catching the moon; deep clean blacks. STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition. The bottle label stays accurate; in the dark it is unlit and not readable, only the outlines glow. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare, exactly like the real photo of the label in the dark provided as a reference. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. The second reference image is the real glow photo to match. 50 mm, f/4. CONSTRAINTS: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neon graphic cinematic 3D look consistent with the style reference",
+    "only the silhouette outlines and the hand glow lime-green; label text and stripes do NOT glow",
+    "thin phosphorescent outline, no neon tube, no bloom halo"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_07a",
+   "dept": "product",
+   "purpose": "Bottle turnaround front view, label centred and fully readable (neutral, for 3D)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Photoreal studio packshot of a single wine bottle on a seamless mid-grey background, soft overhead softbox and two rim lights, 85 mm, f/8, everything sharp, isolated object, no props, no text other than the bottle's own label, no floor reflections. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. View: front view, label centred and fully readable. The bottle stands upright, fully in frame with margin above the cap. CONSTRAINTS: no extra bottles, no cork, no watermark, no added text, no faces or eyes on the zombie silhouettes.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neutral grey studio, isolated bottle"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_07b",
+   "dept": "product",
+   "purpose": "Bottle turnaround three-quarter view from the left, label partly visible (neutral, for 3D)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Photoreal studio packshot of a single wine bottle on a seamless mid-grey background, soft overhead softbox and two rim lights, 85 mm, f/8, everything sharp, isolated object, no props, no text other than the bottle's own label, no floor reflections. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. View: three-quarter view from the left, label partly visible. The bottle stands upright, fully in frame with margin above the cap. CONSTRAINTS: no extra bottles, no cork, no watermark, no added text, no faces or eyes on the zombie silhouettes.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neutral grey studio, isolated bottle"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_07c",
+   "dept": "product",
+   "purpose": "Bottle turnaround exact side profile, label edge visible (neutral, for 3D)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Photoreal studio packshot of a single wine bottle on a seamless mid-grey background, soft overhead softbox and two rim lights, 85 mm, f/8, everything sharp, isolated object, no props, no text other than the bottle's own label, no floor reflections. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. View: exact side profile, label edge visible. The bottle stands upright, fully in frame with margin above the cap. CONSTRAINTS: no extra bottles, no cork, no watermark, no added text, no faces or eyes on the zombie silhouettes.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "label: yellow, caution stripes top+bottom, 'Sharp Zombie' dark red blackletter, RIOJA, four black silhouettes (3 walking arms forward + 1 crouched) and a small hand",
+    "black screw cap, no cork",
+    "no added text, no watermark",
+    "neutral grey studio, isolated bottle"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_prod_09",
+   "dept": "product",
+   "purpose": "Back label (PROVISIONAL until real artwork arrives)",
+   "model": "seedream_v5_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 packshot"
+    }
+   ],
+   "element_ids": [],
+   "est_credits": 2.5,
+   "max_refinements": 1,
+   "prompt": "Flat front-facing design of the BACK label for the wine bottle in Image 1, same yellow paper and the same black-and-yellow caution stripe bands top and bottom as the front label, portrait orientation. Layout, top to bottom: the word \"Sharp Zombie\" in the same dark red gothic blackletter as Image 1 (smaller), under it \"RIOJA\" and \"Denominación de Origen Calificada\" in black, a short three-line tasting note as three solid grey placeholder bars (no letters, no words), a row of three small black pictograms (recycling, pregnancy warning, glass), \"75 cl\" and \"14% vol.\" in black at the bottom left, an EAN barcode rectangle at the bottom right, and the word \"PROVISIONAL\" in small grey letters at the very bottom. Clean vector-style print design, every quoted line appears exactly once with exact Spanish accents, no other text, no digits under the barcode, no bottle, no background. Use Image 1 only for the label's yellow, the stripe bands and the blackletter lettering style; ignore its bottle and white background.",
+   "exclusions": "no invented legal claims, no other brand names",
+   "qa_criteria": [
+    "yellow label with caution stripes",
+    "'Sharp Zombie' blackletter, RIOJA, 75 cl, 14% vol., PROVISIONAL readable",
+    "placeholder grey text blocks instead of invented copy"
+   ]
+  },
+  {
+   "id": "v1_env_00a",
+   "dept": "environment",
+   "purpose": "Apartment exploration A: minimalist, very few objects",
+   "model": "soul_location",
+   "params": {
+    "aspect_ratio": "9:16",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "est_credits": 0.5,
+   "max_refinements": 0,
+   "prompt": "Empty modern Tokyo apartment living-dining room at night, 12th floor: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the city skyline and a full moon, washi paper pendant lamp over the table, small sofa, bookshelf with a single ikebana and a small maneki-neko, half-open linen curtains, doorway to a kitchen on the right. Warm practical light, cold moonlight from the left. 35 mm, f/2.8, eye level. Minimalist styling, very few objects. No people, no text.",
+   "exclusions": "no people, no text",
+   "qa_criteria": [
+    "empty room with table, window, moon, pendant"
+   ]
+  },
+  {
+   "id": "v1_env_00b",
+   "dept": "environment",
+   "purpose": "Apartment exploration B: lived-in with books, plants and framed prints",
+   "model": "soul_location",
+   "params": {
+    "aspect_ratio": "9:16",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "est_credits": 0.5,
+   "max_refinements": 0,
+   "prompt": "Empty modern Tokyo apartment living-dining room at night, 12th floor: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the city skyline and a full moon, washi paper pendant lamp over the table, small sofa, bookshelf with a single ikebana and a small maneki-neko, half-open linen curtains, doorway to a kitchen on the right. Warm practical light, cold moonlight from the left. 35 mm, f/2.8, eye level. Lived-in styling with books, plants and framed prints. No people, no text.",
+   "exclusions": "no people, no text",
+   "qa_criteria": [
+    "empty room with table, window, moon, pendant"
+   ]
+  },
+  {
+   "id": "v1_env_00c",
+   "dept": "environment",
+   "purpose": "Apartment exploration C: higher floor, denser skyline, bigger moon",
+   "model": "soul_location",
+   "params": {
+    "aspect_ratio": "9:16",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "est_credits": 0.5,
+   "max_refinements": 0,
+   "prompt": "Empty modern Tokyo apartment living-dining room at night, high floor (around the 30th): pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the city skyline and a full moon, washi paper pendant lamp over the table, small sofa, bookshelf with a single ikebana and a small maneki-neko, half-open linen curtains, doorway to a kitchen on the right. Warm practical light, cold moonlight from the left. 35 mm, f/2.8, eye level. Denser skyline and a bigger moon in the window. No people, no text.",
+   "exclusions": "no people, no text",
+   "qa_criteria": [
+    "empty room with table, window, moon, pendant"
+   ]
+  },
+  {
+   "id": "v1_env_00d",
+   "dept": "environment",
+   "purpose": "Apartment exploration D: lower warm lamps, cosier, more wood",
+   "model": "soul_location",
+   "params": {
+    "aspect_ratio": "9:16",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "est_credits": 0.5,
+   "max_refinements": 0,
+   "prompt": "Empty modern Tokyo apartment living-dining room at night, 12th floor: pale oak floor, walnut dining table for two with wooden chairs, floor-to-ceiling window with the city skyline and a full moon, washi paper pendant lamp over the table, small sofa, bookshelf with a single ikebana and a small maneki-neko, half-open linen curtains, doorway to a kitchen on the right. Warm practical light, cold moonlight from the left. 35 mm, f/2.8, eye level. Lower warm lamps, cosier, more wood. No people, no text.",
+   "exclusions": "no people, no text",
+   "qa_criteria": [
+    "empty room with table, window, moon, pendant"
+   ]
+  },
+  {
+   "id": "v1_env_02",
+   "dept": "environment",
+   "purpose": "Wide apartment, lights off (moonlight only)",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "sunburst",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 hero lit"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "Using Image 1, change only the lighting: every lamp in the room is switched off (pendant, floor lamp, kitchen light); the only light is the full moon through the window, cold blue, raking across the floor and the table edge, plus faint cyan and magenta city glow on the glass. Keep the camera, furniture, window, moon position, bottle, glasses and composition exactly the same, including the stylized 3D look, halftone shading and ink lines. Preserve the bottle exactly as in Image 1: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three walking with arms stretched forward and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. The cap is a screw cap, never a cork. Deep clean blacks. The bottle label stays dark (no glow yet). CONSTRAINTS: no added text, no watermark, no cork, no extra bottles, no candles, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "same composition as the hero",
+    "lights off, moonlight only",
+    "label not glowing"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_env_03",
+   "dept": "environment",
+   "purpose": "Table-level plate toward the window, lights on",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 hero"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: empty table-level background plate (tiny characters will be composited later; none appear in this image), vertical 9:16.\nSTYLE: match the look of Image 1 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition.\nSCENE: the same apartment as Image 1, camera 8 cm above the walnut table surface looking across it toward the window and the full moon; the table surface fills the lower third with visible wood grain, a ceramic chopstick rest with chopsticks and the base of a wine glass at the edge of frame, the edamame bowl soft in the background; warm pendant light above, magenta and cyan rims.\nCAMERA: 85 mm, f/2.8, very shallow focus on the table surface.\nCONSTRAINTS: no bottle, no people, no figures or characters of any size, no text, no watermark, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "camera at table level",
+    "no bottle",
+    "style consistent"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_env_04",
+   "dept": "environment",
+   "purpose": "Table-level plate, lights off",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "sunburst",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "__v1_env_03__",
+     "label": "Image 1 table-level lit"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "Using Image 1, change only the lighting to moonlight-only: all lamps off, cold blue light from the window, the glass base and chopsticks catching the moon, deep clean blacks, faint magenta rim on the table edge. Keep the camera height, table surface, objects, composition and the stylized 3D look exactly the same, including halftone shading and ink lines. CONSTRAINTS: no people or figures, no added text, no watermark.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "same framing as v1_env_03",
+    "lights off"
+   ],
+   "max_refinements": 2,
+   "depends_on": [
+    "v1_env_03"
+   ]
+  },
+  {
+   "id": "v1_env_05a",
+   "dept": "environment",
+   "purpose": "Window / moon / skyline plate 9:16",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 hero"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: background plate, vertical 9:16.\nSTYLE: match the look of Image 1 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition.\nSCENE: the Tokyo night skyline seen through the floor-to-ceiling window of the apartment in Image 1, full moon upper centre, Tokyo Tower small at the right, window frame edges visible, faint reflection of a dark interior on the glass, neon magenta and cyan city lights.\nCAMERA: 50 mm, f/4.\nCONSTRAINTS: no readable signs or logos, no people, no text, no watermark, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "window, moon, skyline",
+    "no readable signs"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_env_05b",
+   "dept": "environment",
+   "purpose": "Window / moon / skyline plate 16:9",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "16:9",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 hero"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: background plate, horizontal 16:9.\nSTYLE: match the look of Image 1 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition.\nSCENE: the Tokyo night skyline seen through the floor-to-ceiling window of the apartment in Image 1, full moon upper centre, Tokyo Tower small at the right, window frame edges visible, faint reflection of a dark interior on the glass, neon magenta and cyan city lights.\nCAMERA: 50 mm, f/4.\nCONSTRAINTS: no readable signs or logos, no people, no text, no watermark, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "window, moon, skyline",
+    "no readable signs"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_env_07",
+   "dept": "environment",
+   "purpose": "Kitchen doorway + bookshelf with maneki-neko (continuity plate)",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 1 hero"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "USE: continuity plate, vertical 9:16.\nSTYLE: match the look of Image 1 exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or composition.\nSCENE: the right side of the apartment in Image 1 seen from the dining table: the open doorway to the kitchen with cold bluish light inside and a counter edge visible, and next to it the walnut bookshelf with an ikebana arrangement and a small white maneki-neko figurine with its raised paw on a middle shelf; warm room light in the foreground, magenta rim on the door frame.\nCAMERA: 50 mm, f/2.8.\nCONSTRAINTS: no people, no text, no watermark, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2.75,
+   "qa_criteria": [
+    "doorway with kitchen light",
+    "maneki-neko visible"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_01",
+   "dept": "characters",
+   "purpose": "Character sheet aya in the neon graphic 3D look",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "Split-screen character sheet composition, left side a full-body shot of the character standing upright in a neutral straight standing pose facing the camera with both feet flat on the ground and arms relaxed at the sides, full head-to-toe framing with the whole body and both feet visible, right side a tight close-up chest-up portrait of the same character, identical original character on both sides, single subject only, exactly one person, only the character in frame, plain dark charcoal seamless studio background, professional character sheet presentation, Aya, a Japanese woman in her mid-thirties, mature facial structure (defined jawline and cheekbones, adult proportions, not a babyface), original character resembling no real person; dark hair in a low loose bun, minimal makeup, oversized cream knit cardigan over a black slip dress, bare feet, rendered in the look of the first reference image: STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or content. Even soft studio lighting with a magenta rim light from the left and a cyan rim from the right, 85 mm, f/5.6, eye level, both panels in sharp focus from head to toe, natural anatomy, five fingers per hand. single subject only, exactly one person, no other people, no duplicate figures, no mannequin, no reflections, no props, no furniture, no background objects, left panel standing full-body head-to-toe not cropped not sitting, right panel tight close-up not full body, no text, no watermark, no logos, no frame borders, no babyface, no overly youthful rounded proportions.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "one person, split-screen full body + close-up",
+    "mature adult, original",
+    "wardrobe as described",
+    "style consistent"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_01n",
+   "dept": "characters",
+   "purpose": "Character sheet aya neutral photoreal (Restyle reference)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "prompt": "Split-screen character sheet composition, left side a full-body shot of the character standing upright in a neutral straight standing pose facing the camera with both feet flat on the ground and arms relaxed at the sides, full head-to-toe framing with the whole body and both feet visible, right side a tight close-up chest-up portrait of the same character, identical original character on both sides, single subject only, exactly one person, only the character in frame, pure white seamless studio background, professional character sheet presentation, Aya, a Japanese woman in her mid-thirties, mature facial structure (defined jawline and cheekbones, adult proportions, not a babyface), original character resembling no real person; dark hair in a low loose bun, minimal makeup, oversized cream knit cardigan over a black slip dress, bare feet, visible fine skin texture with natural pores, fine lines and subtle asymmetries, natural visible makeup with slightly uneven blending rather than flawless coverage, slight natural sheen rather than glossy retouched finish, no digital smoothing, no beauty filter, no AI-airbrushed look, matte-to-natural complexion, natural anatomy, high-end but unretouched commercial photography style, soft diffused studio lighting without harsh reflections, cinematic realism, clean white background, 85 mm, f/5.6, eye level, both panels in sharp focus from head to toe, sharp focus on skin texture detail. single subject only, exactly one person, no other people, no duplicate figures, no mannequin, no reflections, no props, no furniture, no background objects, left panel standing full-body head-to-toe not cropped not sitting, right panel tight close-up not full body, no text, no watermark, no logos, no frame borders, no babyface, no overly youthful rounded proportions, no beauty filter, no plastic skin.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "one person, split-screen",
+    "photoreal unretouched",
+    "wardrobe as described"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_02",
+   "dept": "characters",
+   "purpose": "Character sheet ren in the neon graphic 3D look",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "Split-screen character sheet composition, left side a full-body shot of the character standing upright in a neutral straight standing pose facing the camera with both feet flat on the ground and arms relaxed at the sides, full head-to-toe framing with the whole body and both feet visible, right side a tight close-up chest-up portrait of the same character, identical original character on both sides, single subject only, exactly one person, only the character in frame, plain dark charcoal seamless studio background, professional character sheet presentation, Ren, a Japanese man in his mid-thirties, mature facial structure (defined jaw, adult proportions), original character resembling no real person; short textured black hair, light stubble, charcoal linen shirt with the sleeves rolled up, black trousers, bare feet, rendered in the look of the first reference image: STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or content. Even soft studio lighting with a magenta rim light from the left and a cyan rim from the right, 85 mm, f/5.6, eye level, both panels in sharp focus from head to toe, natural anatomy, five fingers per hand. single subject only, exactly one person, no other people, no duplicate figures, no mannequin, no reflections, no props, no furniture, no background objects, left panel standing full-body head-to-toe not cropped not sitting, right panel tight close-up not full body, no text, no watermark, no logos, no frame borders, no babyface, no overly youthful rounded proportions.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "one person, split-screen full body + close-up",
+    "mature adult, original",
+    "wardrobe as described",
+    "style consistent"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_02n",
+   "dept": "characters",
+   "purpose": "Character sheet ren neutral photoreal (Restyle reference)",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [],
+   "element_ids": [],
+   "prompt": "Split-screen character sheet composition, left side a full-body shot of the character standing upright in a neutral straight standing pose facing the camera with both feet flat on the ground and arms relaxed at the sides, full head-to-toe framing with the whole body and both feet visible, right side a tight close-up chest-up portrait of the same character, identical original character on both sides, single subject only, exactly one person, only the character in frame, pure white seamless studio background, professional character sheet presentation, Ren, a Japanese man in his mid-thirties, mature facial structure (defined jaw, adult proportions), original character resembling no real person; short textured black hair, light stubble, charcoal linen shirt with the sleeves rolled up, black trousers, bare feet, visible fine skin texture with natural pores, fine lines and subtle asymmetries, no makeup, slight natural sheen rather than glossy retouched finish, no digital smoothing, no beauty filter, no AI-airbrushed look, matte-to-natural complexion, natural anatomy, high-end but unretouched commercial photography style, soft diffused studio lighting without harsh reflections, cinematic realism, clean white background, 85 mm, f/5.6, eye level, both panels in sharp focus from head to toe, sharp focus on skin texture detail. single subject only, exactly one person, no other people, no duplicate figures, no mannequin, no reflections, no props, no furniture, no background objects, left panel standing full-body head-to-toe not cropped not sitting, right panel tight close-up not full body, no text, no watermark, no logos, no frame borders, no babyface, no overly youthful rounded proportions, no beauty filter, no plastic skin.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "one person, split-screen",
+    "photoreal unretouched",
+    "wardrobe as described"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_04",
+   "dept": "characters",
+   "purpose": "Zombie troupe model sheet (4 silhouettes + hand) as glow-outline miniatures",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo"
+    }
+   ],
+   "element_ids": [
+    "de0c221b-6bd9-4ab5-912b-c6840b2423cc"
+   ],
+   "prompt": "Model sheet of five miniature characters that live on the Sharp Zombie wine label, rendered in the look of the first reference image: STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or content. The characters are exactly the black silhouettes printed on the label of <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: three walking zombies with both arms stretched straight forward, one crouched zombie, and one small hand rising from the ground. Use the bottle only as the source of the silhouette shapes; do not show the bottle itself or its label anywhere in this sheet. Each is about 5 cm tall, a flat matte-black figure with a little 3D volume and a thin phosphorescent lime-green outline with gentle falloff, no neon tube look, no bloom halo, exactly like the second reference image (the real label glowing in the dark; use it only for the glow colour and outline intensity). TOP ROW, left to right on a dark walnut table under cold moonlight: each of the five characters in a front view, a side view and a back view, evenly spaced. BOTTOM ROW: action poses: the three walkers dancing in a row with arms up, one mid-spin, one limbo-bending backwards, one climbing the stem of a wine glass, one floating on its back as if drunk, the crouched one being pushed by the small hand. No eyes, no mouths, no clothing, no text, no labels. Dark background so the outlines read; magenta and cyan rims on the table edge. 50 mm, f/8, slightly high angle, every figure in sharp focus. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "five characters: 3 walkers arms forward, 1 crouched, 1 hand",
+    "black figures with thin lime outline, no eyes/mouths",
+    "front/side/back row + action row",
+    "no text"
+   ],
+   "max_refinements": 2
+  },
+  {
+   "id": "v1_char_06",
+   "dept": "characters",
+   "purpose": "Cat and maneki-neko sheet",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference"
+    }
+   ],
+   "element_ids": [],
+   "prompt": "Model sheet of a calico Japanese bobtail cat (white with orange and black patches, short pom tail, green eyes), rendered in the look of the first reference image: STYLE: match the look of the style reference image exactly: stylized 3D animation with graphic comic-book shading, halftone dots inside the shadows, bold ink edge lines, subtle misregistered colour fringes on edges, neon magenta and cyan rim lights over deep night blues, cinematic shallow depth of field, soft film grain. Use the style reference for look only, never copy its layout or content. Four views on a dark walnut floor: walking side view, sitting front view, looking back over the shoulder, and a close-up of the face with an unimpressed expression. In the corner, a small white ceramic maneki-neko figurine with a raised paw, front and three-quarter view. Magenta and cyan rim lights, 50 mm, f/5.6, every view in sharp focus. No text, no collar, no watermark.",
+   "exclusions": "no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the bottle label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "qa_criteria": [
+    "calico bobtail cat, four views",
+    "maneki-neko figurine",
+    "no text"
+   ],
+   "max_refinements": 2
+  }
+ ],
+ "lint_report": [
+  {
+   "id": "v1_prod_01",
+   "changes": [
+    "prompt: bound 'style reference' to 'the first reference image' (nano_banana_pro reference grammar)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_02",
+   "changes": [
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: 'label stays accurate and readable' -> 'accurate; in the dark it is unlit and not readable, only the outlines glow' (readable contradicted the dark phase / text-does-not-glow lock)",
+    "prompt: fixed run-on ('...doorway at the right a second after every lamp is switched off') and reconciled 'only cold blue moonlight' with the STYLE block's magenta/cyan rims by allowing a faint city glow on glass edges (same device as v1_env_02)",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_prod_03",
+   "changes": [
+    "prompt: 'label stays accurate and readable' -> 'accurate; in the dark it is unlit and not readable, only the outlines glow' (readable contradicted the dark phase / text-does-not-glow lock)",
+    "prompt: removed 'head turned toward the viewer' (redraws the label, contradicts 'exactly as shown' and 'no faces'); waking is now expressed via glow intensity only; gave Image 2/3 an explicit job + exclusion",
+    "prompt: CONSTRAINTS extended with 'no extra bottles, no cork, no purple lens flares' from the exclusions field",
+    "length: 2133 chars after edits (above the ~1800 GPT Image smell line; four references + glow lock justify it, not trimmed)"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_prod_04",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: CONSTRAINTS extended with 'no candles, no purple lens flares' from the exclusions field"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_05",
+   "changes": [
+    "prompt: bound 'style reference' to 'the first reference image' (nano_banana_pro reference grammar)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_06",
+   "changes": [
+    "prompt: bound first/second reference images up front (previously only the second was bound, at the end)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: 'label stays accurate and readable' -> 'accurate; in the dark it is unlit and not readable, only the outlines glow' (readable contradicted the dark phase / text-does-not-glow lock)",
+    "prompt: fixed run-on ('...doorway at the right after the room lights are switched off') and reconciled 'moonlight only' with the STYLE block's magenta/cyan rims via a faint city glow on glass edges",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_prod_07a",
+   "changes": [
+    "prompt: 'no text' -> 'no text other than the bottle's own label' (bare 'no text' fights the readable label)",
+    "prompt: appended CONSTRAINTS (no extra bottles, no cork, no watermark, no added text, no faces/eyes on silhouettes) from the exclusions field",
+    "qa_criteria (outside prompt/params/medias): removed 'neon graphic cinematic 3D look consistent with the style reference' -- this is a neutral photoreal turnaround with no style reference; the criterion would always fail",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_07b",
+   "changes": [
+    "prompt: 'no text' -> 'no text other than the bottle's own label' (bare 'no text' fights the readable label)",
+    "prompt: appended CONSTRAINTS (no extra bottles, no cork, no watermark, no added text, no faces/eyes on silhouettes) from the exclusions field",
+    "qa_criteria (outside prompt/params/medias): removed 'neon graphic cinematic 3D look consistent with the style reference' -- this is a neutral photoreal turnaround with no style reference; the criterion would always fail",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_07c",
+   "changes": [
+    "prompt: 'no text' -> 'no text other than the bottle's own label' (bare 'no text' fights the readable label)",
+    "prompt: appended CONSTRAINTS (no extra bottles, no cork, no watermark, no added text, no faces/eyes on silhouettes) from the exclusions field",
+    "qa_criteria (outside prompt/params/medias): removed 'neon graphic cinematic 3D look consistent with the style reference' -- this is a neutral photoreal turnaround with no style reference; the criterion would always fail",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_prod_09",
+   "changes": [
+    "prompt: 'placeholder text blocks (no real words)' -> 'solid grey placeholder bars (no letters, no words)' (Seedream renders gibberish for unquoted copy)",
+    "prompt: gave Image 1 one job + one exclusion (Seedream reference rule), 'each line once', 'no digits under the barcode'"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_env_00a",
+   "changes": [
+    "prompt: dropped meta-label 'Variant A:' (caption-like token, meaningless to the model)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_00b",
+   "changes": [
+    "prompt: dropped meta-label 'Variant B:'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_00c",
+   "changes": [
+    "prompt: '12th floor' contradicted 'higher floor' variant -> 'high floor (around the 30th)'",
+    "prompt: dropped meta-label 'Variant C:' (higher floor moved to the opening)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_00d",
+   "changes": [
+    "prompt: dropped meta-label 'Variant D:'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_02",
+   "changes": [
+    "prompt: added the product lock (bottle is in shot but no lock was present); phrased 'as in Image 1' because gpt_image_2_5 cannot take the Element placeholder",
+    "prompt: appended CONSTRAINTS from the exclusions field",
+    "NOT changed (by design): label deliberately not glowing ('no glow yet', qa 'label not glowing') -- this is the pre-glow beat, so the glow lock is intentionally absent",
+    "RISK (not fixable here): Image 1 is the style_ref 30a2a515; prompt assumes it already contains the bottle and two glasses and that its native ratio is 9:16 ('keep composition exactly the same'). If the hero is 4:5 or lacks the bottle, point medias at __v1_prod_01__ with depends_on instead"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_env_03",
+   "changes": [
+    "prompt: USE line mentioned '5 cm miniature characters' which could seed figures into a plate that must be empty",
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: CONSTRAINTS extended with 'no figures or characters of any size, no purple lens flares'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_04",
+   "changes": [
+    "prompt: preserve-list now names halftone shading and ink lines (as v1_env_02 does); appended CONSTRAINTS. '__v1_env_03__' media placeholder left untouched"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_05a",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: CONSTRAINTS extended with 'no purple lens flares'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_05b",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: CONSTRAINTS extended with 'no purple lens flares'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_env_07",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: 'never copy its layout or content' -> 'never copy its layout or composition' (the scene IS the apartment of that reference; 'content' contradicted the continuity brief)",
+    "prompt: CONSTRAINTS extended with 'no purple lens flares'"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_char_01",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: added camera (85 mm, f/5.6, eye level, both panels sharp head to toe) -- no focal length/aperture was given and the STYLE block's 'shallow depth of field' could blur the full-body panel"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_char_01n",
+   "changes": [
+    "prompt: added camera (85 mm, f/5.6, eye level, both panels sharp); dropped inert '4K quality' (params.resolution is 2k)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_char_02",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: added camera (85 mm, f/5.6, eye level, both panels sharp head to toe) -- no focal length/aperture was given and the STYLE block's 'shallow depth of field' could blur the full-body panel"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_char_02n",
+   "changes": [
+    "prompt: added camera (85 mm, f/5.6, eye level, both panels sharp); dropped inert '4K quality' (params.resolution is 2k)",
+    "prompt: 'natural visible makeup with slightly uneven blending' -> 'no makeup' (template line copied from the female sheet; Ren has stubble)"
+   ],
+   "risk": "low"
+  },
+  {
+   "id": "v1_char_04",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: the injected Element is the bottle; added 'do not show the bottle itself or its label' so the sheet does not leak the packshot",
+    "prompt: glow lock completed (thin, gentle falloff, no neon tube, no bloom) and the second reference given one job + one exclusion",
+    "prompt: added camera (50 mm, f/8, slightly high angle, all figures sharp) -- none was given",
+    "element_ids: [] -> ['de0c221b-6bd9-4ab5-912b-c6840b2423cc'] (prompt embeds this Element placeholder; bookkeeping field was empty)"
+   ],
+   "risk": "medium"
+  },
+  {
+   "id": "v1_char_06",
+   "changes": [
+    "prompt: removed 'The bottle label stays accurate and readable.' (no bottle in this shot; the sentence invited one)",
+    "prompt: added camera (50 mm, f/5.6, all views sharp) -- none was given"
+   ],
+   "risk": "low"
+  }
+ ]
+}

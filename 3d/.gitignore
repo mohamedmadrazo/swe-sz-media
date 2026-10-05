@@ -1,0 +1,8 @@
+# renders intermedios (PNG) — los entregables van a ../img, ../poster y ../video
+renders/
+renders_turntable/
+renders_anim/
+renders_jutsu/*.png
+*.log
+__pycache__/
+*.blend1

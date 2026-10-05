@@ -1,0 +1,380 @@
+{
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "style_key_S": "30a2a515-405f-41f1-b785-2456b943d14d",
+ "jobs": {
+  "v1_prod_01": {
+   "index": 0,
+   "id": "v1_prod_01",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "e10a0128-a904-4c55-85ec-da82d405f1e4",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_e10a0128-a904-4c55-85ec-da82d405f1e4.png",
+   "size": "1856x2304"
+  },
+  "v1_prod_02": {
+   "index": 1,
+   "id": "v1_prod_02",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "da7ab59c-250d-49c7-a638-44f0d8a22531",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_da7ab59c-250d-49c7-a638-44f0d8a22531.png",
+   "size": "1856x2304",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "8cb396b0-23d4-4699-bbd6-11d2bd331108",
+     "index": 26,
+     "reason": "texto rojo de la etiqueta brillaba en verde (GLOW_LOCK)",
+     "change": "GLOW RULE explícita: solo contornos de siluetas luminosos",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_8cb396b0-23d4-4699-bbd6-11d2bd331108.png",
+     "verdict": "PASS — texto oscuro, solo contornos brillan"
+    }
+   ]
+  },
+  "v1_prod_03": {
+   "index": 2,
+   "id": "v1_prod_03",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "07959c2e-c463-4548-972a-55dfb610adb1",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_07959c2e-c463-4548-972a-55dfb610adb1.png",
+   "size": "1520x2688",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "ea445def-13c9-4e96-b66c-7a3e98fef059",
+     "index": 27,
+     "reason": "siluetas en pose de baile en vez de brazos al frente (PRODUCT_LOCK)",
+     "change": "POSE LOCK + quitar Image 3 (macro previo con poses de baile)",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_ea445def-13c9-4e96-b66c-7a3e98fef059.png",
+     "verdict": "PASS (corregido tras ver la etiqueta real: las siluetas SÍ van con brazos doblados/levantados en marcha zombi; el lock antiguo \"arms stretched forward\" era incorrecto)"
+    },
+    {
+     "attempt": 2,
+     "job_id": "f4c8aa8f-d70e-45c5-8ebb-d04291380bd9",
+     "index": 29,
+     "model": "nano_banana_pro",
+     "reason": "GPT reposa las siluetas; cambio de modelo a NB con Element (una variable)",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_124007_f4c8aa8f-d70e-45c5-8ebb-d04291380bd9.png",
+     "verdict": "PASS — alternativa NB, texto oscuro, solo contornos; mismas poses fieles"
+    }
+   ]
+  },
+  "v1_prod_04": {
+   "index": 3,
+   "id": "v1_prod_04",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e10b70f4-f1f2-4831-a175-b87f9ad647fd",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_e10b70f4-f1f2-4831-a175-b87f9ad647fd.png",
+   "size": "1792x2240"
+  },
+  "v1_prod_05": {
+   "index": 4,
+   "id": "v1_prod_05",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "aff1181c-2e27-4be3-93bf-bf1cff1f4c2a",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_aff1181c-2e27-4be3-93bf-bf1cff1f4c2a.png",
+   "size": "1536x2752"
+  },
+  "v1_prod_06": {
+   "index": 5,
+   "id": "v1_prod_06",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "f40a6e91-a4d0-4384-8903-39ca3fa95fdb",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_f40a6e91-a4d0-4384-8903-39ca3fa95fdb.png",
+   "size": "1536x2752"
+  },
+  "v1_prod_07a": {
+   "index": 6,
+   "id": "v1_prod_07a",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_07b": {
+   "index": 7,
+   "id": "v1_prod_07b",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "1d5c1d96-7b6f-423f-a3e2-0e51933b311a",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_1d5c1d96-7b6f-423f-a3e2-0e51933b311a.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_07c": {
+   "index": 8,
+   "id": "v1_prod_07c",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "f5e12f22-0ff1-4542-96da-e6b6cd1fdb24",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_f5e12f22-0ff1-4542-96da-e6b6cd1fdb24.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_09": {
+   "index": 9,
+   "id": "v1_prod_09",
+   "model": "seedream_v5_pro",
+   "est_credits": 2.5,
+   "status": "completed",
+   "job_id": "f86cf943-076d-4563-a077-4af976776ef0",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104233_f86cf943-076d-4563-a077-4af976776ef0.png",
+   "size": "1760x2352"
+  },
+  "v1_env_00a": {
+   "index": 10,
+   "id": "v1_env_00a",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "77485461-fba6-4eb6-afdb-9b5c51fb86c0",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104229_77485461-fba6-4eb6-afdb-9b5c51fb86c0.png",
+   "size": "1152x2048"
+  },
+  "v1_env_00b": {
+   "index": 11,
+   "id": "v1_env_00b",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "81d5f12e-d983-44aa-9c62-ff9a01e268d2",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104230_81d5f12e-d983-44aa-9c62-ff9a01e268d2.png",
+   "size": "1152x2048"
+  },
+  "v1_env_00c": {
+   "index": 12,
+   "id": "v1_env_00c",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "7c49014d-653c-42cf-b586-c87325d8ad6b",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104724_7c49014d-653c-42cf-b586-c87325d8ad6b.png"
+  },
+  "v1_env_00d": {
+   "index": 13,
+   "id": "v1_env_00d",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "f9e90b9d-5b3a-4628-a30b-bd772413710f",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_f9e90b9d-5b3a-4628-a30b-bd772413710f.png"
+  },
+  "v1_env_02": {
+   "index": 14,
+   "id": "v1_env_02",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "5705e758-27c2-41d8-bf61-375a2720fd39",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_5705e758-27c2-41d8-bf61-375a2720fd39.png",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "4cd1483a-ce45-4e44-9e52-b7982a98c490",
+     "index": 28,
+     "reason": "pendant washi seguía encendido",
+     "change": "pendant OFF explícito, sin luz cálida",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_4cd1483a-ce45-4e44-9e52-b7982a98c490.png",
+     "verdict": "PASS — pendant apagado, luna + ciudad"
+    }
+   ]
+  },
+  "v1_env_03": {
+   "index": 15,
+   "id": "v1_env_03",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e593e9da-886e-44e2-a0f2-6e9cea9324f4",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_e593e9da-886e-44e2-a0f2-6e9cea9324f4.png"
+  },
+  "v1_env_04": {
+   "index": 16,
+   "id": "v1_env_04",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b",
+   "batch": "C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123153_bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b.png"
+  },
+  "v1_env_05a": {
+   "index": 17,
+   "id": "v1_env_05a",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "a378a291-860f-43da-92af-46aa7d274378",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_a378a291-860f-43da-92af-46aa7d274378.png"
+  },
+  "v1_env_05b": {
+   "index": 18,
+   "id": "v1_env_05b",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e5419007-7ee5-49cb-a432-8a5e10f36583",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_e5419007-7ee5-49cb-a432-8a5e10f36583.png"
+  },
+  "v1_env_07": {
+   "index": 19,
+   "id": "v1_env_07",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f.png"
+  },
+  "v1_char_01": {
+   "index": 20,
+   "id": "v1_char_01",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "2e7a638a-4c3f-4d02-b394-9a9a11d42dde",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_2e7a638a-4c3f-4d02-b394-9a9a11d42dde.png"
+  },
+  "v1_char_01n": {
+   "index": 21,
+   "id": "v1_char_01n",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "d3ceab27-6b2b-4668-995b-9db3f7c142c9",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_d3ceab27-6b2b-4668-995b-9db3f7c142c9.png"
+  },
+  "v1_char_02": {
+   "index": 22,
+   "id": "v1_char_02",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "dc8913ab-a76c-4779-a838-e353879496a2",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_dc8913ab-a76c-4779-a838-e353879496a2.png"
+  },
+  "v1_char_02n": {
+   "index": 23,
+   "id": "v1_char_02n",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "fe50d6a4-1c42-440b-82af-504dd5b3be13",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_fe50d6a4-1c42-440b-82af-504dd5b3be13.png"
+  },
+  "v1_char_04": {
+   "index": 24,
+   "id": "v1_char_04",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "4d33a580-e717-4d89-a77f-be863d6c96de",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_4d33a580-e717-4d89-a77f-be863d6c96de.png"
+  },
+  "v1_char_06": {
+   "index": 25,
+   "id": "v1_char_06",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+   "batch": "C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123155_dd14a937-b3b6-4eba-89da-0c0212b5640b.png"
+  }
+ },
+ "director_qa": {
+  "v1_prod_01": "PASS — etiqueta fiel, tapón negro, look neon ok",
+  "v1_prod_02": "FIX#1 — texto rojo brillaba verde; reintento 8cb396b0",
+  "v1_prod_03": "FIX#1 — siluetas bailando; reintento ea445def con POSE LOCK",
+  "v1_prod_04": "PASS — dos copas, look ok",
+  "v1_prod_05": "PASS — mesa post-cena encendida, etiqueta fiel",
+  "v1_prod_06": "PASS (nota: glow tenue, válido como 'antes del despertar')",
+  "v1_prod_07a": "PASS — frontal neutro",
+  "v1_prod_07b": "PASS — 3/4 (giro leve)",
+  "v1_prod_07c": "PASS con nota — no es perfil 90°, ~45°",
+  "v1_prod_09": "PASS como PROVISIONAL — marcado; '14% vol.' es placeholder, sustituir por dato real",
+  "v1_env_00a": "FAIL exploración — aparece una persona; no usar",
+  "v1_env_00b": "PASS exploración — referencia realista útil (maneki-neko, pendant)",
+  "v1_env_00c": "PASS exploración — oscuro, sin gente",
+  "v1_env_00d": "FAIL exploración — persona de espaldas; no usar",
+  "v1_env_02": "FIX#1 — pendant encendido; reintento 4cd1483a",
+  "v1_env_03": "PASS — placa nivel mesa encendida",
+  "v1_env_05a": "PASS — placa ventana 9:16",
+  "v1_env_05b": "PASS — placa ventana 16:9",
+  "v1_env_07": "PASS — puerta office + estantería con maneki-neko",
+  "v1_char_01": "PASS — sheet Aya look (Element SZ-aya)",
+  "v1_char_01n": "PASS — sheet Aya neutra (ref Restyle)",
+  "v1_char_02": "PASS — sheet Ren look (Element SZ-ren)",
+  "v1_char_02n": "PASS — sheet Ren neutra (ref Restyle)",
+  "v1_char_04": "PASS — troupe zombie (no es turnaround estricto, válido como Element SZ-zombies-glow)",
+  "v1_env_04": "PASS — placa nivel mesa apagada (luna)",
+  "v1_char_06": "PASS — sheet gato calicó + maneki-neko (Element SZ-cat)",
+  "v1_prod_02#1": "PASS",
+  "v1_env_02#1": "PASS",
+  "v1_prod_03#1": "PASS (veredicto anterior erróneo: la etiqueta real lleva brazos doblados/levantados)",
+  "v1_prod_03#2": "PASS — alternativa NB"
+ },
+ "elements": {
+  "SZ-bottle-master": "de0c221b-6bd9-4ab5-912b-c6840b2423cc",
+  "SZ-aya": "65a0c653-c433-4c10-a435-a4ce5504f0a2",
+  "SZ-ren": "c800522c-a722-4f47-bb45-2f32899d7e45",
+  "SZ-zombies-glow": "5915e7ac-09c7-4efc-bf78-a1904ace295b",
+  "SZ-apartment": "0199fa74-cff0-459d-801c-fae3153bf8bd",
+  "SZ-bottle-back-PROV": "6ea674e7-12b6-442a-98e0-b6ae20dd9a9e"
+ },
+ "balance": {
+  "start_session": 2988,
+  "after_wave1_AB": 2936.42
+ },
+ "chosen": {
+  "env_02": "4cd1483a-ce45-4e44-9e52-b7982a98c490",
+  "prod_02": "8cb396b0-23d4-4699-bbd6-11d2bd331108",
+  "prod_03": "ea445def-13c9-4e96-b66c-7a3e98fef059",
+  "prod_03_alt_nb": "f4c8aa8f-d70e-45c5-8ebb-d04291380bd9"
+ },
+ "lock_fix": {
+  "date": "2026-10-05",
+  "old": "three walking with arms stretched forward and one crouched",
+  "new": "three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched",
+  "source": "3d/textures/label_front.png (recorte del packshot real)"
+ }
+}
