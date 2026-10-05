@@ -75,7 +75,7 @@ def build(varietal, colour, vol, ean, kcal, out):
     # SWE + productor
     d.rectangle([m, H * 0.645, m + W * 0.11, H * 0.695], fill=BLK)
     d.text((m + W * 0.055, H * 0.649), 'SWE', font=font('Anton-Regular.ttf', H * 0.036), fill=YEL, anchor='ma')
-    fs = font('Inter[opsz,wght].ttf', H * 0.019)
+    fs = font('Inter[opsz,wght].ttf', H * 0.0165)
     d.text((m + W * 0.13, H * 0.648), 'PRODUCED & BOTTLED FOR FINE WINES CO. SL', font=fs, fill=BLK)
     d.text((m + W * 0.13, H * 0.672), '26009 - ESPAÑA BY B.A. - AGONCILLO - R.E.N. 7216-LO', font=fs, fill=BLK)
     d.text((W * 0.62, H * 0.725), colour, font=font('Inter[opsz,wght].ttf', H * 0.024), fill=BLK, anchor='ma')

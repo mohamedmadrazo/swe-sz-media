@@ -1,0 +1,21 @@
+{
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "jobs": {
+  "v1_vid_05": {
+   "model": "hf_mult_motion_control",
+   "job_id": "27122a66-e577-4cee-be62-4cb9c77006d3",
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4",
+   "credits": 27,
+   "w": 480,
+   "h": 854,
+   "dur": 9,
+   "escena": "GENJ",
+   "primaria": true,
+   "desc": "Genjutsu motion transfer sobre el clip guía 3D (f144-360): zombies con contorno lima, mesa a oscuras. Draft 480p.",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
+   "note": "driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving.",
+   "expires": ""
+  }
+ }
+}

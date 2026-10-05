@@ -359,7 +359,9 @@
   "SZ-ren": "c800522c-a722-4f47-bb45-2f32899d7e45",
   "SZ-zombies-glow": "5915e7ac-09c7-4efc-bf78-a1904ace295b",
   "SZ-apartment": "0199fa74-cff0-459d-801c-fae3153bf8bd",
-  "SZ-bottle-back-PROV": "6ea674e7-12b6-442a-98e0-b6ae20dd9a9e"
+  "SZ-bottle-back-PROV": "6ea674e7-12b6-442a-98e0-b6ae20dd9a9e",
+  "SZ-bottle-back": "29cbd6df-d8cd-405f-aa0a-3974b6cfb28c",
+  "SZ-cat": "2ab36fde-48a2-4f46-ba0c-0e3c66e86f84"
  },
  "balance": {
   "start_session": 2988,
@@ -376,5 +378,36 @@
   "old": "three walking with arms stretched forward and one crouched",
   "new": "three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched",
   "source": "3d/textures/label_front.png (recorte del packshot real)"
+ },
+ "3d": {
+  "jutsu_project": "0d680169-83bc-4288-b579-1101122d639e",
+  "jutsu_revision": 2,
+  "jutsu_previz_mp4": "video/v1_previz_3djutsu.mp4 (Workbench 450x800, 361 fr)",
+  "jutsu_guide_clip": "video/v1_genjutsu_guide_3djutsu.mp4 (720x1280, f144-360, 9 s)",
+  "jutsu_guide_media_id": "5c697f15-f4a7-4c98-846e-a7406650e8c0",
+  "jutsu_glb": "3d/v1_tokyo_previz_3djutsu.glb",
+  "jutsu_blend": "3d/v1_tokyo_previz_3djutsu.blend",
+  "local_blend": "3d/v1_bottle_table.blend",
+  "local_glb": "3d/v1_bottle_table.glb",
+  "local_previz": "video/v1_previz_bpy.mp4 (Cycles 360x640, 12 fps)",
+  "local_turntable": "video/v1_turntable_3d.mp4",
+  "ops": [
+   "sz-v1-op2-blockout-anim-2",
+   "sz-v1-op3-fix-seating-glow-1",
+   "sz-v1-op4-stills-a-1",
+   "sz-v1-op4-stills-b-1",
+   "sz-v1-op5-stills-rev2-a-1",
+   "sz-v1-op5-stills-rev2-b-1",
+   "sz-v1-op6-previz-wb-full-1",
+   "sz-v1-op7-genjutsu-guide-wb-1"
+  ],
+  "notes": "Eevee en el worker ~20 s/frame (timeouts de 300 s con 361 y 91 frames); Workbench 0.2-0.5 s/frame."
+ },
+ "back_label": {
+  "source": "referencia del cliente (foto de las dos botellas, contraetiquetas Viura y Tempranillo) recibida el 2026-10-05 en el chat; el archivo no llegó al disco, así que se reconstruyó 1:1 con PIL (3d/build_back_label.py) a partir de los textos legibles",
+  "texture": "3d/textures/label_back.png (+ label_back_viura.png)",
+  "media_id": "9d3e80d0-3b86-4008-9d52-c461fffa8ad1",
+  "element": "29cbd6df-d8cd-405f-aa0a-3974b6cfb28c",
+  "pending": "sustituir por el escaneo real cuando llegue como archivo (img/ref_contraetiqueta_real.png)"
  }
 }
