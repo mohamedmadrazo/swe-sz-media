@@ -600,34 +600,6 @@
    "fix_hint": "Prompt: sustituir la frase 'View: exact side profile, label edge visible' por una instrucción geométrica inequívoca al inicio del prompt: 'Camera at exactly 90 degrees to the label axis, true side profile: the label FACE is NOT visible to camera, only its thin yellow edge shows as a narrow sliver along the left contour of the bottle; cap and base seen in profile' (el resto del prompt y la referencia sin cambios; primer intento, no es reintento)."
   },
   {
-   "asset_id": "v1_prod_09",
-   "product_fidelity": {
-    "pass": true,
-    "severity": "low",
-    "issues": [
-     "Pictograma central no es el aviso de embarazo estándar (silueta embarazada en círculo tachado): es una figura femenina genérica con símbolo de Venus; aceptable como placeholder PROVISIONAL pero no es el icono legal real",
-     "Amarillo algo más saturado/dorado que el amarillo mostaza del packshot (gen_0e5ffd25), diferencia leve",
-     "Todo lo demás correcto: franjas negro/amarillo arriba y abajo limpias, 'Sharp Zombie' en blackletter rojo oscuro bien escrito, RIOJA + 'Denominación de Origen Calificada' con acento correcto, 3 barras grises sin letras, 75 cl, 14% vol., código de barras sin dígitos, PROVISIONAL en gris pequeño, sin botella ni fondo, sin texto extra ni claims inventados, formato 3:4 (1760x2352)"
-    ]
-   },
-   "anatomy_physics": {
-    "pass": true,
-    "severity": "low",
-    "issues": [
-     "No hay personas, manos ni siluetas zombie en este activo (contraetiqueta plana); pictogramas limpios sin duplicados ni formas imposibles; ligera suavidad de raster en los bordes de las barras del código de barras, irrelevante a escala de vídeo"
-    ]
-   },
-   "style_continuity": {
-    "pass": true,
-    "severity": "low",
-    "issues": [
-     "El look S (Neon Graphic Cinematic 3D) no aplica a un diseño plano de impresión; evaluado como continuidad de marca con la etiqueta frontal del packshot: mismas franjas de precaución, mismo blackletter rojo oscuro, misma familia de amarillo y misma jerarquía RIOJA/DOCa — coherente. Tono de amarillo ligeramente más vivo que el frontal (leve)"
-    ]
-   },
-   "overall": "approved",
-   "fix_hint": ""
-  },
-  {
    "asset_id": "v1_prod_04",
    "product_fidelity": {
     "pass": true,
@@ -651,6 +623,34 @@
     "severity": "low",
     "issues": [
      "Matches key S (Neon Graphic Cinematic 3D): halftone in wine and shadows, bold ink edge lines, magenta/cyan misregistered fringes on glass edges, neon rim lights over deep night blues, same Tokyo apartment props (washi pendant, bookshelf with ikebana + maneki-neko, floor lamp, sofa, kitchen doorway, skyline with moon) and shallow DoF. Composition differs from the key (table-height, glasses foreground) as required."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_prod_09",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Pictograma central no es el aviso de embarazo estándar (silueta embarazada en círculo tachado): es una figura femenina genérica con símbolo de Venus; aceptable como placeholder PROVISIONAL pero no es el icono legal real",
+     "Amarillo algo más saturado/dorado que el amarillo mostaza del packshot (gen_0e5ffd25), diferencia leve",
+     "Todo lo demás correcto: franjas negro/amarillo arriba y abajo limpias, 'Sharp Zombie' en blackletter rojo oscuro bien escrito, RIOJA + 'Denominación de Origen Calificada' con acento correcto, 3 barras grises sin letras, 75 cl, 14% vol., código de barras sin dígitos, PROVISIONAL en gris pequeño, sin botella ni fondo, sin texto extra ni claims inventados, formato 3:4 (1760x2352)"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No hay personas, manos ni siluetas zombie en este activo (contraetiqueta plana); pictogramas limpios sin duplicados ni formas imposibles; ligera suavidad de raster en los bordes de las barras del código de barras, irrelevante a escala de vídeo"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "El look S (Neon Graphic Cinematic 3D) no aplica a un diseño plano de impresión; evaluado como continuidad de marca con la etiqueta frontal del packshot: mismas franjas de precaución, mismo blackletter rojo oscuro, misma familia de amarillo y misma jerarquía RIOJA/DOCa — coherente. Tono de amarillo ligeramente más vivo que el frontal (leve)"
     ]
    },
    "overall": "approved",
@@ -984,7 +984,134 @@
    },
    "overall": "approved",
    "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_00b",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No hay botella en este activo (exploración de localización soul_location); fidelidad evaluada contra el spec. qa_criteria cumplidos: habitación vacía, mesa de nogal con sillas, ventanal suelo-techo con skyline y luna llena, lámpara colgante de papel washi, sofá pequeño, estantería, cortinas de lino medio abiertas, puerta a cocina a la derecha, luz práctica cálida, sin personas.",
+     "Mesa puesta para 4 (4 sillas, 4 servicios con platos y cubiertos) en vez de 'mesa para dos' pedida.",
+     "Chimenea con repisa en la pared izquierda no solicitada y poco plausible en un piso 12 de Tokio.",
+     "Ikebana colocado sobre la mesa y maneki-neko en el suelo junto a la estantería, no sobre la estantería como pide el prompt.",
+     "Dos de los cinco cuadros enmarcados de la pared izquierda muestran figuras humanas (fotos); no hay personas en la habitación, pero conviene saberlo para la exclusión 'no people'.",
+     "Lomos de libros y revistas sobre la mesa con marcas tipo texto ilegibles a resolución nativa (1152x2048); sin texto legible."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Segunda esfera blanca dentro del ventanal: es el reflejo de la lámpara en el cristal (más pequeña y más cerca del centro del encuadre que la lámpara, geométricamente coherente), pero junto con la luna llena suma tres orbes blancos en el tercio superior y puede leerse como lámpara duplicada; el reflejo no muestra el cable.",
+     "Dibujo a línea 'fantasma' en la pared de la cocina vista a través de la puerta corredera (lectura ambigua entre póster y artefacto de reflejo).",
+     "Hueco de la chimenea es un vacío negro con un objeto pequeño indefinido en la base.",
+     "Sin errores de manos, caras, duplicados de muebles ni geometría imposible: sillas con 4 patas, mesa estable, parteluces del ventanal rectos, cable de la lámpara anclado al techo."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: activo de exploración soul_location (v1_env_00a-d), fotorrealista por diseño; no se evalúa contra el look S 'Neon Graphic Cinematic 3D'."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_00c",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: exploracion de localizacion (soul_location) sin botella ni etiqueta en el encuadre; no hay producto que evaluar"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Artefacto en el elemento heroe: una mancha/trazo oscuro horizontal atraviesa el cuarto inferior-izquierdo de la luna (visible a tamano completo y nitido en el crop 3x; esta en el origen, no es compresion)",
+     "La mitad inferior de la ventana la ocupa una balaustrada de balcon con panel azul liso; el skyline queda reducido a una franja estrecha, asi que 'denser skyline' solo se cumple a medias y resta sensacion de planta 30",
+     "Mesa con 4 sillas (spec: mesa para dos); tiene 2 servicios puestos, pero sobran dos sillas",
+     "No hay puerta a cocina a la derecha: el tercio derecho es un tabique liso con interruptor y un felpudo",
+     "Exposicion muy baja (luminancia media 28/255, 81% de pixeles por debajo de 40); el tercio derecho es casi negro, aunque al aclarar la escena esta limpia y es recuperable en etalonaje",
+     "Sin personas, sin texto, sin duplicados; sillas, mesa, lampara, jarron, maneki-neko y lampara de mesa con geometria correcta"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a por regla del encargo: exploracion soul_location v1_env_00a-d, la coherencia con el look S no se evalua (es una referencia fotorrealista de layout, no del estilo final)"
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Cambiar solo el prompt: sustituir \"floor-to-ceiling window with the city skyline and a full moon\" por \"floor-to-ceiling window with no balcony railing, looking down over a dense Tokyo skyline, large clean unobstructed full moon\" (elimina la balaustrada que tapa la mitad de la ventana y el trazo oscuro sobre la luna; mantener el resto del prompt y los parametros)."
+  },
+  {
+   "asset_id": "v1_prod_02",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "high",
+    "issues": [
+     "La escena NO está a oscuras: aunque las lámparas no emiten, la etiqueta se ve amarillo brillante y totalmente legible (Sharp Zombie, RIOJA, franjas) cuando el prompt exige 'label unlit and not readable, yellow reads as dark grey-green' y 'deep clean blacks'; el propósito 'Product in the dark, glow on' no se cumple frente a la foto real (fondo negro, solo contornos).",
+     "El brillo de las siluetas es un trazo grueso y saturado con halo/bloom alrededor (look tubo de neón), no la línea fina fosforescente de la foto real; incumple el criterio 'thin phosphorescent outline, no neon tube, no bloom halo'.",
+     "Texto de etiqueta corrupto: la franja superior lleva un galimatías ('PREFTIOGS CBAEKNEK TBSBRUS / PGN16Q BOGEL') en vez de CAUTION/DEADLY GOOD WINE, y la línea bajo RIOJA dice 'Bcommirasitle de Cinpza Culilàzula' en lugar de 'Denominación de Origen Calificada'.",
+     "Correcto: franjas negro/amarillo arriba y abajo, nombre blackletter rojo oscuro, RIOJA, 4 siluetas (3 andando brazos al frente + 1 agachada) + manita, tapón de rosca negro sin corcho; el texto y las franjas NO brillan (el fallo GLOW_LOCK del original sí quedó corregido)."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas ni manos en escena; las siluetas no tienen ojos ni caras; una sola botella y dos copas como pide el prompt.",
+     "Objetos coherentes: copas apoyadas, palillos en soporte, reflejo de la botella en la mesa plausible; el pequeño cilindro negro junto a la botella se lee como un vasito de sake (no como segundo tapón), tolerable.",
+     "Las cabezas de las 3 siluetas andantes llevan un mechón/visera que no está igual en la etiqueta real; desviación menor."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Look S respetado: sombreado cómic, tramas halftone en botella y lámpara, líneas de tinta, luces de borde magenta/cian sobre azul noche, skyline de Tokio con Torre y luna.",
+     "La composición es casi calco de la referencia S (misma botella, copas, platos con restos, cuenco de edamame, vasito), pese a 'never copy its layout or composition'; para la continuidad del vídeo es aceptable como variante 'luces apagadas', pero no es una composición propia."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Evaluado el REINTENTO (refine attempt 1, url ..._123154_8cb396b0...), no el original; queda 1 refinamiento. Cambiar UNA variable, el bloque de oscuridad del prompt: sustituirlo por 'PITCH-BLACK room exposed for darkness: the whole label is a nearly invisible dark olive, no readable yellow, stripes and text unreadable; the ONLY light on the label is a hairline 1-px lime-green outline around the four silhouettes and the hand, exactly as thin and faint as the second reference photo, no thick stroke, no glow haze; only a faint moonlight rim on the bottle shoulder and glass rims', manteniendo el resto del prompt y las referencias iguales."
+  },
+  {
+   "asset_id": "v1_env_02",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Silueta zombie izquierda en rojo oscuro/granate en vez de negro; heredada tal cual del hero Image 1 (el packshot real gen_0e5ffd25 tiene las 4 negras). No corregir solo aquí: rompería 'misma composición que el hero'; si se corrige, hacerlo en el hero y regenerar derivados.",
+     "Micro-texto de las franjas degradado a galimatías ('CRIANGY / DEADLY OOOID NWNE', 'COOCN MBY') frente al hero donde se leía 'CAUTION / DEADLY GOOD WINE'; regresión del relight, pero ilegible a escala de fotograma (~8 px en 1080p), no cuenta como texto añadido legible.",
+     "Verificado OK: franjas negro/amarillo arriba y abajo, nombre en blackletter rojo oscuro, RIOJA + Denominación de Origen Calificada, 3 siluetas andando con brazos al frente + 1 agachada + manita, sin ojos; tapón de rosca negro (quitado, sobre la mesa; cuello con rosca y faldón retenido, idéntico al hero), sin corcho; etiqueta sin glow verde; una sola botella, sin velas, sin watermark, sin flares morados."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Etiqueta sigue iluminada frontalmente (L medio ~100 vs ~142 en el hero, mientras la habitación cae a L 14-48) sin fuente frontal visible con todas las lámparas apagadas; es estilizado y no brilla, pero reduce el contraste oscuro->glow para el beat siguiente.",
+     "Resplandor magenta en borde izquierdo de mesa/silla y en la pared derecha algo más que 'tenue', aunque coherente con los rim lights del look S y presente también en el hero.",
+     "Sin personas, manos ni caras; sin zombies 3D en plano; sin duplicados (tapón suelto + botella abierta coherentes con las copas servidas; dos servicios: 2 platos, 2 copas, 2 pares de palillos con reposapalillos)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con el look S: 3D estilizado con sombreado de cómic, tramas halftone visibles en botella, bol y platos, líneas de tinta en bordes, rim lights magenta/cian sobre azul noche; misma paleta y misma ciudad que el hero, solo cambia la iluminación como pedía el prompt."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": "Evaluado el reintento (refine attempt 1, job 4cd1483a; pendant apagado confirmado). Sin cambio necesario para este activo; la silueta roja y el micro-texto son herencia/ruido del hero y solo se corregirían a nivel de hero."
   }
  ],
- "agent_qa_note": "QA adversarial por agentes (wf_76ecdfca) ejecutada ANTES de corregir el lock de las siluetas: los fallos de 'product_fidelity' por 'brazos al frente' son inválidos (la etiqueta real lleva brazos doblados y levantados). Valen las observaciones de anatomía (v1_prod_05 tapón/texto cinta, v1_char_04 contorno) y de estilo (v1_char_01). Veredicto vigente = QA del director."
+ "agent_qa_note": "QA adversarial por agentes (wf_76ecdfca, 23 activos, 3 lentes con veto de producto) ejecutada con el lock antiguo de las siluetas ('brazos al frente'): los fallos SOLO por la pose de los brazos no valen (la etiqueta real lleva brazos doblados y levantados). Sí valen y quedan como lista de mejora para la siguiente pasada de finales: silueta izquierda teñida de rojo en vez de negro (prod_01, prod_05), texto de la cinta CAUTION corrupto/duplicado (prod_01, prod_05), tapón duplicado (prod_05), nombre/RIOJA ausentes y siluetas huecas en la etiqueta apagada (prod_06), composición que calca el layout de la clave S (varios). Para los drafts 480p y la previz estos detalles no bloquean; para keyframes finales 1080p: reintentar con las correcciones de prompt sugeridas (fix_hint)."
 }

@@ -60,7 +60,7 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 
 ### QA adversarial por agentes (3 lentes; veto de producto)
 
-> QA adversarial por agentes (wf_76ecdfca) ejecutada ANTES de corregir el lock de las siluetas: los fallos de 'product_fidelity' por 'brazos al frente' son inválidos (la etiqueta real lleva brazos doblados y levantados). Valen las observaciones de anatomía (v1_prod_05 tapón/texto cinta, v1_char_04 contorno) y de estilo (v1_char_01). Veredicto vigente = QA del director.
+> QA adversarial por agentes (wf_76ecdfca, 23 activos, 3 lentes con veto de producto) ejecutada con el lock antiguo de las siluetas ('brazos al frente'): los fallos SOLO por la pose de los brazos no valen (la etiqueta real lleva brazos doblados y levantados). Sí valen y quedan como lista de mejora para la siguiente pasada de finales: silueta izquierda teñida de rojo en vez de negro (prod_01, prod_05), texto de la cinta CAUTION corrupto/duplicado (prod_01, prod_05), tapón duplicado (prod_05), nombre/RIOJA ausentes y siluetas huecas en la etiqueta apagada (prod_06), composición que calca el layout de la clave S (varios). Para los drafts 480p y la previz estos detalles no bloquean; para keyframes finales 1080p: reintentar con las correcciones de prompt sugeridas (fix_hint).
 
 | Activo | Producto | Anatomía/física | Estilo | Veredicto | Sugerencia |
 |---|---|---|---|---|---|
@@ -70,8 +70,8 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 | `v1_prod_07a` | ✅ | ✅ | ✅ | approved |  |
 | `v1_prod_07b` | ❌ med | ✅ | ✅ | fix | Not a retry (no refine entries; evaluated the original url). Change ONE variable, the prompt's View clause: replace 'View: three-quarter view from the left, lab |
 | `v1_prod_07c` | ❌ high | ✅ | ✅ | fix | Prompt: sustituir la frase 'View: exact side profile, label edge visible' por una instrucción geométrica inequívoca al inicio del prompt: 'Camera at exactly 90  |
-| `v1_prod_09` | ✅ | ✅ | ✅ | approved |  |
 | `v1_prod_04` | ✅ | ✅ | ✅ | approved |  |
+| `v1_prod_09` | ✅ | ✅ | ✅ | approved |  |
 | `v1_char_04` | ❌ high | ❌ med | ✅ | fix | Primer reintento (no hay refine previo): cambiar SOLO la cláusula del contorno/cuerpo en el prompt por "each figure is a flat matte-black silhouette with a sing |
 | `v1_char_01` | ✅ | ❌ low | ❌ med | fix | Prompt (una sola variable): sustituir en la cláusula STYLE "stylized 3D animation with graphic comic-book shading" por "volumetric stylized 3D render with soft  |
 | `v1_char_02` | ✅ | ✅ | ✅ | approved |  |
@@ -83,6 +83,10 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 | `v1_env_07` | ❌ med | ✅ | ✅ | fix | Cambiar solo el prompt (misma referencia Image 1 y mismos parámetros): añadir en CONSTRAINTS "the kitchen counter holds only a fruit bowl and a small potted her |
 | `v1_char_01n` | ✅ | ✅ | ✅ | approved |  |
 | `v1_char_02n` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_00b` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_00c` | ✅ | ❌ med | ✅ | fix | Cambiar solo el prompt: sustituir "floor-to-ceiling window with the city skyline and a full moon" por "floor-to-ceiling window with no balcony railing, looking  |
+| `v1_prod_02` | ❌ high | ✅ | ✅ | fix | Evaluado el REINTENTO (refine attempt 1, url ..._123154_8cb396b0...), no el original; queda 1 refinamiento. Cambiar UNA variable, el bloque de oscuridad del pro |
+| `v1_env_02` | ✅ | ✅ | ✅ | approved | Evaluado el reintento (refine attempt 1, job 4cd1483a; pendant apagado confirmado). Sin cambio necesario para este activo; la silueta roja y el micro-texto son  |
 
 ## Ola 2 — two-shot, zombies 3D, escala, boards, keyframes, end card
 
@@ -125,6 +129,7 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 |---|---|---|---|---|---|---|
 | `v1_vid_05` | hf_mult_motion_control | [`27122a66`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4) | 27 | completed |  | driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving. |
 | `v1_vid_01` | seedance_2_5 | [`443cecb3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4) | 45 | completed | 2026-10-12 | comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad |
+| `v1_vid_01_30s` | seedance_2_5 | `52247062` | 90 | submitted | 2026-10-12 | propuesta del cliente tras ver el draft de 15 s; finalizar con draft_job_id antes de la caducidad |
 
 ## 3D
 
