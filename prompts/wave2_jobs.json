@@ -95,7 +95,19 @@
    "status": "completed",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_c1059bca-3a6b-434f-bbb0-f8e4eddb6da6.png",
    "size": "1792x2400",
-   "purpose": "Vista 3/4 TRASERA de la botella en estudio neutro gris (como v1_prod_07a), tapón de rosca negro, se ven el borde de la etiqueta frontal y la contraetiqueta PROVISIONAL (Element SZ-bottle-back-PROV) pegada en la parte trasera, misma altura que la frontal. Para continuidad y 3D."
+   "purpose": "Vista 3/4 TRASERA de la botella en estudio neutro gris (como v1_prod_07a), tapón de rosca negro, se ven el borde de la etiqueta frontal y la contraetiqueta PROVISIONAL (Element SZ-bottle-back-PROV) pegada en la parte trasera, misma altura que la frontal. Para continuidad y 3D.",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "834234c4-2541-4878-b46c-5b19b3120c6b",
+     "index": 77,
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140321_834234c4-2541-4878-b46c-5b19b3120c6b.png",
+     "reason": "sustituir contraetiqueta provisional por la real",
+     "change": "Element SZ-bottle-back (real)",
+     "verdict": "PASS — contraetiqueta real (textos, código de barras, precinto Rioja) en 3/4 trasera"
+    }
+   ]
   },
   "v1_prod_10b": {
    "index": 38,
@@ -107,7 +119,19 @@
    "status": "completed",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_e7403a2e-82b9-4006-94f9-f369f1f4ecdc.png",
    "size": "1792x2400",
-   "purpose": "Vista TRASERA pura (180°) de la botella, estudio neutro, contraetiqueta PROVISIONAL centrada y legible como bloque, tapón de rosca negro."
+   "purpose": "Vista TRASERA pura (180°) de la botella, estudio neutro, contraetiqueta PROVISIONAL centrada y legible como bloque, tapón de rosca negro.",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "0aa7713f-bbb2-4fcf-ba6d-fd693e6f9daa",
+     "index": 78,
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140321_0aa7713f-bbb2-4fcf-ba6d-fd693e6f9daa.png",
+     "reason": "sustituir contraetiqueta provisional por la real",
+     "change": "Element SZ-bottle-back (real)",
+     "verdict": "PASS — vista trasera con la contraetiqueta real legible como bloque"
+    }
+   ]
   },
   "v1_endcard": {
    "index": 39,
@@ -403,8 +427,8 @@
   "v1_char_05c": "PASS — agachado transparente",
   "v1_char_05d": "PASS — mano 5 dedos transparente",
   "v1_char_07": "PASS — escala 5 cm junto a botella y copa",
-  "v1_prod_10a": "PASS (contraetiqueta PROVISIONAL)",
-  "v1_prod_10b": "PASS (contraetiqueta PROVISIONAL)",
+  "v1_prod_10a": "FIX#1 PASS (contraetiqueta REAL)",
+  "v1_prod_10b": "FIX#1 PASS (contraetiqueta REAL)",
   "v1_endcard": "PASS — texto JP exacto, legal placeholder",
   "v1_char_05a": "PASS — caminante fiel, negro con contorno, transparente",
   "v1_kf_01": "PASS — pareja, gato mirando a cámara, botella fiel",

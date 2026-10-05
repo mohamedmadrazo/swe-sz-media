@@ -58,6 +58,32 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 
 > Corrección de lock (2026-10-05): «three walking with arms stretched forward and one crouched» → «three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched» (fuente: 3d/textures/label_front.png (recorte del packshot real)).
 
+### QA adversarial por agentes (3 lentes; veto de producto)
+
+> QA adversarial por agentes (wf_76ecdfca) ejecutada ANTES de corregir el lock de las siluetas: los fallos de 'product_fidelity' por 'brazos al frente' son inválidos (la etiqueta real lleva brazos doblados y levantados). Valen las observaciones de anatomía (v1_prod_05 tapón/texto cinta, v1_char_04 contorno) y de estilo (v1_char_01). Veredicto vigente = QA del director.
+
+| Activo | Producto | Anatomía/física | Estilo | Veredicto | Sugerencia |
+|---|---|---|---|---|---|
+| `v1_prod_01` | ❌ med | ✅ | ✅ | fix | Activo original (sin refine previo). Variable única: prompt — en SUBJECT añadir "las cuatro siluetas de zombi son negro puro sólido, ninguna roja ni marrón, y e |
+| `v1_prod_05` | ❌ med | ❌ med | ✅ | fix | No es reintento (sin entrada refine). Cambiar SOLO el prompt: sustituir la frase del tapón por "the bottle is OPEN: bare dark-glass threaded neck with NO cap on |
+| `v1_prod_06` | ❌ med | ✅ | ✅ | fix | Reintento (primer refine, no hay entradas previas de refine) cambiando SOLO el prompt: sustituir "The bottle label stays accurate; in the dark it is unlit and n |
+| `v1_prod_07a` | ✅ | ✅ | ✅ | approved |  |
+| `v1_prod_07b` | ❌ med | ✅ | ✅ | fix | Not a retry (no refine entries; evaluated the original url). Change ONE variable, the prompt's View clause: replace 'View: three-quarter view from the left, lab |
+| `v1_prod_07c` | ❌ high | ✅ | ✅ | fix | Prompt: sustituir la frase 'View: exact side profile, label edge visible' por una instrucción geométrica inequívoca al inicio del prompt: 'Camera at exactly 90  |
+| `v1_prod_09` | ✅ | ✅ | ✅ | approved |  |
+| `v1_prod_04` | ✅ | ✅ | ✅ | approved |  |
+| `v1_char_04` | ❌ high | ❌ med | ✅ | fix | Primer reintento (no hay refine previo): cambiar SOLO la cláusula del contorno/cuerpo en el prompt por "each figure is a flat matte-black silhouette with a sing |
+| `v1_char_01` | ✅ | ❌ low | ❌ med | fix | Prompt (una sola variable): sustituir en la cláusula STYLE "stylized 3D animation with graphic comic-book shading" por "volumetric stylized 3D render with soft  |
+| `v1_char_02` | ✅ | ✅ | ✅ | approved |  |
+| `v1_char_06` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_03` | ❌ med | ✅ | ✅ | fix | Reintento cambiando solo el prompt (misma referencia y parámetros): sustituir la frase de cámara/escena por "lens resting 3 cm above the walnut wood, looking st |
+| `v1_env_04` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_05a` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_05b` | ✅ | ✅ | ✅ | approved |  |
+| `v1_env_07` | ❌ med | ✅ | ✅ | fix | Cambiar solo el prompt (misma referencia Image 1 y mismos parámetros): añadir en CONSTRAINTS "the kitchen counter holds only a fruit bowl and a small potted her |
+| `v1_char_01n` | ✅ | ✅ | ✅ | approved |  |
+| `v1_char_02n` | ✅ | ✅ | ✅ | approved |  |
+
 ## Ola 2 — two-shot, zombies 3D, escala, boards, keyframes, end card
 
 | Activo | Modelo | Job id | Est. cr | Estado | QA director | Reintentos |
@@ -69,8 +95,8 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 | `v1_char_05c` | gpt_image_2_5 | [`51d88fa4`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_51d88fa4-6721-406f-832b-2dc5439089ff.png) | 2.75 | completed | PASS — agachado transparente | — |
 | `v1_char_05d` | gpt_image_2_5 | [`bd011a50`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130511_bd011a50-a110-4416-ba2d-8f826f34dc54.png) | 2.75 | completed | PASS — mano 5 dedos transparente | — |
 | `v1_char_07` | nano_banana_pro | [`de13f667`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_de13f667-5310-48ca-b6b2-ee11a1f36264.png) | 2 | completed | PASS — escala 5 cm junto a botella y copa | — |
-| `v1_prod_10a` | nano_banana_pro | [`c1059bca`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_c1059bca-3a6b-434f-bbb0-f8e4eddb6da6.png) | 2 | completed | PASS (contraetiqueta PROVISIONAL) | — |
-| `v1_prod_10b` | nano_banana_pro | [`e7403a2e`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_e7403a2e-82b9-4006-94f9-f369f1f4ecdc.png) | 2 | completed | PASS (contraetiqueta PROVISIONAL) | — |
+| `v1_prod_10a` | nano_banana_pro | [`c1059bca`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_c1059bca-3a6b-434f-bbb0-f8e4eddb6da6.png) | 2 | completed | FIX#1 PASS (contraetiqueta REAL) | #1 `834234c4` PASS — contraetiqueta real (textos, código de barras, precinto Rioja) en 3/4 trasera |
+| `v1_prod_10b` | nano_banana_pro | [`e7403a2e`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_e7403a2e-82b9-4006-94f9-f369f1f4ecdc.png) | 2 | completed | FIX#1 PASS (contraetiqueta REAL) | #1 `0aa7713f` PASS — vista trasera con la contraetiqueta real legible como bloque |
 | `v1_endcard` | seedream_v5_pro | [`94f44b27`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130511_94f44b27-f28c-4f54-b704-33ca33522c90.png) | 2.5 | completed | PASS — texto JP exacto, legal placeholder | — |
 | `v1_kf_01` | nano_banana_pro | [`d851d81f`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png) | 2 | completed | PASS — pareja, gato mirando a cámara, botella fiel | — |
 | `v1_kf_02` | nano_banana_pro | [`944ce86c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130657_944ce86c-bd02-4ccb-ab3b-5ced2c8227c8.png) | 2 | completed | FIX#1 PASS | #1 `b1688f56` PASS — etiqueta blackletter fiel, vestuario correcto |
@@ -98,6 +124,7 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr
 | Activo | Modelo | Job id | Cr | Estado | Caduca | Nota |
 |---|---|---|---|---|---|---|
 | `v1_vid_05` | hf_mult_motion_control | [`27122a66`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134012_27122a66-e577-4cee-be62-4cb9c77006d3.mp4) | 27 | completed |  | driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving. |
+| `v1_vid_01` | seedance_2_5 | [`443cecb3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4) | 45 | completed | 2026-10-12 | comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad |
 
 ## 3D
 

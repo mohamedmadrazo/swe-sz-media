@@ -37,6 +37,7 @@ if w1:
         lf = w1['lock_fix']; out.append(f"\n> Corrección de lock ({lf['date']}): «{lf['old']}» → «{lf['new']}» (fuente: {lf['source']}).")
     if w1.get('agent_qa'):
         out.append('\n### QA adversarial por agentes (3 lentes; veto de producto)\n')
+        if w1.get('agent_qa_note'): out.append('> ' + w1['agent_qa_note'] + '\n')
         out.append('| Activo | Producto | Anatomía/física | Estilo | Veredicto | Sugerencia |'); out.append('|---|---|---|---|---|---|')
         for v in w1['agent_qa']:
             f = lambda d: ('✅' if d.get('pass') else '❌') + (f" {d.get('severity','')}" if not d.get('pass') else '')

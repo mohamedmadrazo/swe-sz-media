@@ -1377,10 +1377,10 @@ window.__SWE_MANIFEST__=[
   "w": 1792,
   "h": 2400,
   "dur": 0,
-  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_c1059bca-3a6b-434f-bbb0-f8e4eddb6da6.png",
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140321_834234c4-2541-4878-b46c-5b19b3120c6b.png",
   "poster": null,
   "origen": "higgsfield",
-  "job_id": "c1059bca-3a6b-434f-bbb0-f8e4eddb6da6",
+  "job_id": "834234c4-2541-4878-b46c-5b19b3120c6b",
   "model": "nano_banana_pro"
  },
  {
@@ -1394,10 +1394,10 @@ window.__SWE_MANIFEST__=[
   "w": 1792,
   "h": 2400,
   "dur": 0,
-  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130510_e7403a2e-82b9-4006-94f9-f369f1f4ecdc.png",
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140321_0aa7713f-bbb2-4fcf-ba6d-fd693e6f9daa.png",
   "poster": null,
   "origen": "higgsfield",
-  "job_id": "e7403a2e-82b9-4006-94f9-f369f1f4ecdc",
+  "job_id": "0aa7713f-bbb2-4fcf-ba6d-fd693e6f9daa",
   "model": "nano_banana_pro"
  },
  {
@@ -1773,6 +1773,23 @@ window.__SWE_MANIFEST__=[
   "origen": "higgsfield",
   "job_id": "27122a66-e577-4cee-be62-4cb9c77006d3",
   "model": "hf_mult_motion_control"
+ },
+ {
+  "id": "v1_vid_01",
+  "tipo": "video",
+  "linea": "D_TOKYO_V1",
+  "escena": "DRAFT",
+  "desc": "Seedance 2.5 draft 15 s (480p, draft finalizable a 1080p): historia completa en 6 planos con cortes en 5.5 y 8.5 s, música desde 7.5 s.",
+  "status": "COMPLETED",
+  "primaria": false,
+  "w": 480,
+  "h": 854,
+  "dur": 15,
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4",
+  "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png",
+  "origen": "higgsfield",
+  "job_id": "443cecb3-9eba-444b-b543-fff53185eb38",
+  "model": "seedance_2_5"
  },
  {
   "id": "v1_previz_3djutsu_f000",

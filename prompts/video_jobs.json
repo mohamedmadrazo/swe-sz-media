@@ -16,6 +16,22 @@
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
    "note": "driving = previz 3D Jutsu Workbench; LEAD troupe sheet, LOCATION KF4, STYLE S. Resultado: motion transfer OK, look desaturado (gris) y zombies heredan forma de cápsula del blockout → repetir con el rodaje Blender (recortes) como driving.",
    "expires": ""
+  },
+  "v1_vid_01": {
+   "model": "seedance_2_5",
+   "job_id": "443cecb3-9eba-444b-b543-fff53185eb38",
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_140404_443cecb3-9eba-444b-b543-fff53185eb38.mp4",
+   "credits": 45,
+   "w": 480,
+   "h": 854,
+   "dur": 15,
+   "escena": "DRAFT",
+   "primaria": false,
+   "desc": "Seedance 2.5 draft 15 s (480p, draft finalizable a 1080p): historia completa en 6 planos con cortes en 5.5 y 8.5 s, música desde 7.5 s.",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png",
+   "note": "comparativa texto-a-vídeo; finalizar con draft_job_id antes de la caducidad",
+   "expires": "2026-10-12"
   }
  }
 }
