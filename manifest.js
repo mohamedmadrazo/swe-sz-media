@@ -1951,7 +1951,7 @@ window.__SWE_MANIFEST__=[
   "escena": "DRAFT",
   "desc": "Seedance 2.5 draft 30 s (480p, draft finalizable a 1080p): versión extendida con más aire en cada beat; cortes en 11 y 17 s, música desde 1…",
   "status": "COMPLETED",
-  "primaria": true,
+  "primaria": false,
   "w": 480,
   "h": 854,
   "dur": 30,
@@ -1977,6 +1977,23 @@ window.__SWE_MANIFEST__=[
   "origen": "higgsfield",
   "job_id": "602dfef6-8d56-47d9-a3f8-af2ce7add1df",
   "model": "hf_mult_motion_control"
+ },
+ {
+  "id": "v1_vid_01_30s_v2",
+  "tipo": "video",
+  "linea": "D_TOKYO_V1",
+  "escena": "DRAFT",
+  "desc": "v2 · Seedance 2.5 draft 30 s (480p): mismo guion que el 30 s v1 pero con un solo look para todo el spot (clave de estilo = fase oscura KF6)…",
+  "status": "COMPLETED",
+  "primaria": true,
+  "w": 480,
+  "h": 854,
+  "dur": 30,
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_181312_d45bbfb0-b6b7-4bce-b33a-6981a516b7f4.mp4",
+  "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233820_a5e05446-cd09-4f30-ac7f-b26779cd2b07.png",
+  "origen": "higgsfield",
+  "job_id": "d45bbfb0-b6b7-4bce-b33a-6981a516b7f4",
+  "model": "seedance_2_5"
  },
  {
   "id": "v1_previz_3djutsu_f000",

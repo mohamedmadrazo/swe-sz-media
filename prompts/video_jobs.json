@@ -45,7 +45,7 @@
    "h": 854,
    "dur": 30,
    "escena": "DRAFT",
-   "primaria": true,
+   "primaria": false,
    "desc": "Seedance 2.5 draft 30 s (480p, draft finalizable a 1080p): versión extendida con más aire en cada beat; cortes en 11 y 17 s, música desde 15 s.",
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_130656_d851d81f-f861-4b9e-b0f2-0fb9bad4a099.png",
    "note": "propuesta del cliente tras ver el draft de 15 s; finalizar con draft_job_id antes de la caducidad",
@@ -68,11 +68,29 @@
    "note": "driving = video/v1_shoot_blender_s5s6.mp4 importado vía jsDelivr (media 1effeb1f)",
    "expires": "",
    "verdict": "PASS — pipeline Blender→Genjutsu validado: color y look neon completos (rims magenta/cian, noche azul, skyline), zombies = recortes negros con contorno lima fieles a la etiqueta, cámara del rodaje Blender respetada; leve flotación de pies en algún frame."
+  },
+  "v1_vid_01_30s_v2": {
+   "model": "seedance_2_5",
+   "job_id": "d45bbfb0-b6b7-4bce-b33a-6981a516b7f4",
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_181312_d45bbfb0-b6b7-4bce-b33a-6981a516b7f4.mp4",
+   "credits": 90,
+   "w": 480,
+   "h": 854,
+   "dur": 30,
+   "escena": "DRAFT",
+   "primaria": true,
+   "desc": "v2 · Seedance 2.5 draft 30 s (480p): mismo guion que el 30 s v1 pero con un solo look para todo el spot (clave de estilo = fase oscura KF6), two-shot y mesa v2 como referencias; cortes en 11 y 17 s, música desde 15 s.",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233820_a5e05446-cd09-4f30-ac7f-b26779cd2b07.png",
+   "note": "paquete prompts/video_package_v1_vid_01_30s_v2.json; declined_preset_id IN THE DARK y prompt sin \"3D render\" para esquivar el bucle de presets; finalizar con draft_job_id antes de la caducidad",
+   "expires": "2026-10-13",
+   "verdict": "PASS — look continuo de principio a fin (resuelto el cambio de estilo a mitad del v1): brindis, gato, retirada, mesa vacía, apagón, macro con contornos lima, conga, sombra de Ren en la puerta, escalada, copas, gato final. Menores: texto pequeño inventado en la franja de la etiqueta en el macro (15 s), etiqueta amarilla brillante en el plano final (debería leer gris-verde a oscuras), zombies mayores de 5 cm al trepar."
   }
  },
  "balance": {
   "start": 2988,
-  "end": 2642.67,
-  "spent": 345.33
+  "end": 2488.92,
+  "spent": 469.08,
+  "note": "v2 (6 oct): 33.75 cr imágenes + 90 cr Seedance 30 s v2; aparte, 28.71 cr gastados por el usuario en GPT 6 Astra (fuera del pipeline). Pendiente: Genjutsu lit+dark (~80 cr)."
  }
 }
