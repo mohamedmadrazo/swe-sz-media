@@ -123,8 +123,8 @@
  },
  "balance": {
   "start": 2988,
-  "end": 2400.21,
-  "spent": 559.0799999999999,
-  "note": "v2 (6 oct): 33.75 cr imágenes + 90 cr Seedance 30 s v2 + 57 cr Genjutsu oscuro + 33 cr Genjutsu iluminado = 213.75; total pipeline 559.08 de un tope de 600. Aparte, 28.71 cr gastados por el usuario en GPT 6 Astra (fuera del pipeline)."
+  "end": 2402.21,
+  "spent": 557.08,
+  "note": "v2 (6 oct): 31.75 cr imágenes (9 activos + 4 reintentos) + 90 cr Seedance 30 s v2 + 57 cr Genjutsu oscuro + 33 cr Genjutsu iluminado = 211.75; total pipeline 557.08 de un tope de 600. Aparte, 28.71 cr gastados por el usuario en GPT 6 Astra (fuera del pipeline). Saldo real Higgsfield al cierre: 2402.21 (2988 − 557.08 − 28.71 = 2402.21, cuadra)."
  }
 }

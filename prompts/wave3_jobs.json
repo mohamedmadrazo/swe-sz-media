@@ -224,7 +224,7 @@
   "Bucle de recomendación de presets en Seedance (3D RENDER <-> IN THE DARK): evitar \"3D render\"/\"rendering style\" en el prompt y declinar IN THE DARK."
  ],
  "balance": {
-  "spent_wave3_images": 33.75,
+  "spent_wave3_images": 31.75,
   "spent_user_astra_not_pipeline": 28.71
  }
 }
