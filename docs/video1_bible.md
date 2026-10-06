@@ -85,3 +85,14 @@ Regla de conversión para la escena 3D: `v1_beats.json` está a 15 s (0–360); 
 
 ## Decisión de look (feedback 2026-10-05)
 El usuario prefiere el **draft Seedance 30 s** (`52247062`) y, dentro de él, el diseño de la **segunda parte** (fase oscura: 3D neon con rims magenta/cian, negros limpios, zombies negros con contorno lima). El cambio de estilo a mitad de vídeo viene de la clave de estilo S (fase iluminada, más cómic plano) usada como referencia. Para las siguientes iteraciones: usar KF6 (`94052ac7`) / KF7 (`fdead37f`) como clave de estilo única para TODOS los planos (también los iluminados), regenerar KF1–KF3 y el two-shot con esa clave y, en post, una sola LUT para igualar ambas fases.
+
+## Iteración v2 (2026-10-06): un solo look y rodaje virtual de 30 s
+
+Objetivo: eliminar el cambio de estilo a mitad del draft de 30 s y regenerar el vídeo con el pipeline completo (referencias → set Blender → rodaje → Genjutsu).
+
+1. **Referencias v2** (`prompts/wave3_jobs.json`): KF1–KF3 y el two-shot regenerados con KF6 (fase oscura) como única clave de estilo; cinco recortes transparentes (Aya sentada/de pie, Ren sentado/de pie, gata) para rodarlos como billboards. Elegidos: KF1 `a5e05446`, KF2 `31a190a9`, KF3 `f2cb5bf7`, two-shot `8e503c46` (de pie: el único con render 3D correcto; los sentados salen cómic porque los Elements de personajes arrastran el estilo S).
+2. **Set y rodaje 30 s** (`3d/v1_tokyo_30s.blend`, `3d/retime_30s.py`, `3d/add_people_30s.py`): escena de 15 s retimada ×2 (720 fr), personas y gata como recortes con alpha, sombra de Ren cruzando la puerta (fr 516–540), asomo final de la gata con un sprite de cabeza (fr 676–716), cortes duros en 263→264, 407→408 y 515/541. Rodaje `render_shoot.py` 540×960, Cycles 12 samples, en `renders_shoot30/`.
+3. **Animatic Seedance v2** (`v1_vid_01_30s_v2`, job `d45bbfb0`, 90 cr, caduca 2026-10-13): look continuo en los 30 s; menores anotados en el ledger (texto pequeño inventado en el macro, etiqueta demasiado luminosa en el plano final, escala de los zombies al trepar).
+4. **Genjutsu sobre el rodaje Blender** (`prompts/video_packages_v2_genjutsu.json`): segmento iluminado (0–11 s, LEAD two-shot v2, LOCATION KF3 v2) y segmento oscuro (11–30 s, LEAD KF6, LOCATION KF4, estilo KF7). Resultado en el ledger de vídeo.
+
+Lecciones: los Elements de personajes deben crearse desde renders en el look definitivo (no desde la sheet en estilo S); una segunda referencia iluminada en 3D corrige la deriva a cómic en escenas con personas (funcionó en KF2, no en el two-shot sentado); el puente sandbox→local para texturas es `image_paths` (PNG con alpha), no base64; Seedance encadena recomendaciones de preset (3D RENDER ↔ IN THE DARK): evitar "3D render" en el prompt y declinar IN THE DARK.
