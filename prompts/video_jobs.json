@@ -85,6 +85,40 @@
    "note": "paquete prompts/video_package_v1_vid_01_30s_v2.json; declined_preset_id IN THE DARK y prompt sin \"3D render\" para esquivar el bucle de presets; finalizar con draft_job_id antes de la caducidad",
    "expires": "2026-10-13",
    "verdict": "PASS — look continuo de principio a fin (resuelto el cambio de estilo a mitad del v1): brindis, gato, retirada, mesa vacía, apagón, macro con contornos lima, conga, sombra de Ren en la puerta, escalada, copas, gato final. Menores: texto pequeño inventado en la franja de la etiqueta en el macro (15 s), etiqueta amarilla brillante en el plano final (debería leer gris-verde a oscuras), zombies mayores de 5 cm al trepar."
+  },
+  "v1_vid_06_dark": {
+   "model": "hf_mult_motion_control",
+   "job_id": "c5a8113a-d865-4b64-bfeb-2300bd6e4dd3",
+   "status": "pending",
+   "url": null,
+   "credits": 57,
+   "w": 480,
+   "h": 854,
+   "dur": 19,
+   "escena": "GENJ",
+   "primaria": true,
+   "desc": "v2 · Genjutsu motion transfer sobre el rodaje Blender 30 s, segmento oscuro (11–30 s): LEAD KF6, LOCATION KF4, estilo KF7; driving = video/v1_shoot_blender_30s_dark.mp4 (media 83642aef).",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
+   "note": "paquete prompts/video_packages_v2_genjutsu.json",
+   "expires": "",
+   "verdict": ""
+  },
+  "v1_vid_06_lit": {
+   "model": "hf_mult_motion_control",
+   "job_id": "78fd3fd4-c61c-41ee-aa8a-cee930a0366c",
+   "status": "pending",
+   "url": null,
+   "credits": 33,
+   "w": 480,
+   "h": 854,
+   "dur": 11,
+   "escena": "GENJ",
+   "primaria": false,
+   "desc": "v2 · Genjutsu motion transfer sobre el rodaje Blender 30 s, segmento iluminado (0–11 s): LEAD two-shot v2, LOCATION KF3 v2, estilo KF1 v2; driving = video/v1_shoot_blender_30s_lit.mp4 (media 6b49cf6f).",
+   "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233820_a5e05446-cd09-4f30-ac7f-b26779cd2b07.png",
+   "note": "paquete prompts/video_packages_v2_genjutsu.json",
+   "expires": "",
+   "verdict": ""
   }
  },
  "balance": {
