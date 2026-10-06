@@ -1,0 +1,685 @@
+{
+  "video": "V1_TOKYO — After Dinner, Tokyo",
+  "linea": "D_TOKYO_V1",
+  "fps": 24,
+  "frame_start": 0,
+  "frame_end": 360,
+  "duration_s": 15,
+  "aspect_primary": "9:16",
+  "units": "metres, Blender Z-up; camera-facing side of the table is -Y; window wall at +Y; kitchen doorway at +X",
+  "layout": {
+    "floor": {
+      "size": [
+        4.0,
+        6.0
+      ]
+    },
+    "window_wall": {
+      "y": 2.4,
+      "x_range": [
+        -2.0,
+        2.0
+      ],
+      "z_range": [
+        0.0,
+        2.7
+      ]
+    },
+    "moon": {
+      "center": [
+        0.3,
+        2.35,
+        1.9
+      ],
+      "radius": 0.25
+    },
+    "table": {
+      "center": [
+        0.0,
+        0.4,
+        0.36
+      ],
+      "size": [
+        1.4,
+        0.8,
+        0.72
+      ],
+      "top_z": 0.72
+    },
+    "chairs": [
+      [
+        -0.98,
+        0.4
+      ],
+      [
+        0.98,
+        0.4
+      ]
+    ],
+    "bottle": {
+      "pos": [
+        0.15,
+        0.1,
+        0.72
+      ],
+      "radius": 0.0375,
+      "height": 0.3,
+      "label_zone_height": 0.11,
+      "label_center_z": 0.86
+    },
+    "screw_cap": {
+      "pos": [
+        0.28,
+        0.05,
+        0.72
+      ],
+      "radius": 0.015,
+      "height": 0.02
+    },
+    "glass_near": {
+      "pos": [
+        -0.2,
+        0.15,
+        0.72
+      ],
+      "bowl_r": 0.045,
+      "height": 0.21,
+      "fill": 0.33
+    },
+    "glass_far": {
+      "pos": [
+        0.45,
+        0.2,
+        0.72
+      ],
+      "bowl_r": 0.045,
+      "height": 0.21,
+      "fill": 0.5
+    },
+    "chopsticks_rest": {
+      "pos": [
+        -0.05,
+        -0.05,
+        0.72
+      ]
+    },
+    "doorway": {
+      "x": 2.0,
+      "y": 0.6,
+      "width": 0.9,
+      "height": 2.1
+    },
+    "pendant": {
+      "pos": [
+        0.0,
+        0.4,
+        1.75
+      ]
+    },
+    "floor_lamp": {
+      "pos": [
+        -1.6,
+        1.6,
+        1.4
+      ]
+    },
+    "sofa": {
+      "pos": [
+        -1.4,
+        1.4,
+        0.0
+      ]
+    },
+    "bookshelf": {
+      "pos": [
+        1.7,
+        2.1,
+        0.0
+      ]
+    },
+    "zombie_height": 0.05,
+    "cat": {
+      "length": 0.4,
+      "height": 0.25
+    }
+  },
+  "beats": [
+    {
+      "id": 1,
+      "name": "Sobremesa",
+      "t": [
+        0.0,
+        2.5
+      ],
+      "frames": [
+        0,
+        60
+      ],
+      "action": "Aya y Ren rien con la ultima copa; luna en el ventanal; botella y copas en primer termino",
+      "camera": "travelling 35 mm desde la entrada hacia la mesa",
+      "audio": "room tone, ciudad"
+    },
+    {
+      "id": 2,
+      "name": "El gato",
+      "t": [
+        2.5,
+        4.0
+      ],
+      "frames": [
+        60,
+        96
+      ],
+      "action": "la gata calico cruza en primer termino de izquierda a derecha y mira a camara (EE1)",
+      "camera": "continua el travelling",
+      "audio": "pasos, risa"
+    },
+    {
+      "id": 3,
+      "name": "Retirada",
+      "t": [
+        4.0,
+        5.5
+      ],
+      "frames": [
+        96,
+        132
+      ],
+      "action": "se levantan con los platos y salen por la puerta derecha; quedan botella, tapon, copas, palillos",
+      "camera": "se detiene a 1 m de la mesa, 50 mm",
+      "audio": "platos, pasos"
+    },
+    {
+      "id": 4,
+      "name": "Apagon",
+      "t": [
+        5.5,
+        6.5
+      ],
+      "frames": [
+        132,
+        156
+      ],
+      "action": "clic fuera de campo; pendant y lampara off; luz de luna azul; CORTE DURO en 5.5 s",
+      "camera": "push-in 50 a 85 mm hacia la botella",
+      "audio": "clic interruptor, silencio"
+    },
+    {
+      "id": 5,
+      "name": "Despertar",
+      "t": [
+        6.5,
+        8.5
+      ],
+      "frames": [
+        156,
+        204
+      ],
+      "action": "macro etiqueta: contornos + mano se encienden lima y laten dos veces; el primero gira la cabeza; el agachado sigue dormido (EE2)",
+      "camera": "macro 100 mm fija",
+      "audio": "musica arranca a 7.5 s"
+    },
+    {
+      "id": 6,
+      "name": "Salida",
+      "t": [
+        8.5,
+        10.5
+      ],
+      "frames": [
+        204,
+        252
+      ],
+      "action": "los tres se despegan de la etiqueta y bajan a la mesa bailando en fila; la mano anda con los dedos (EE3); el agachado sale el ultimo empujado por la mano",
+      "camera": "nivel de mesa 85 mm, tracking lateral",
+      "audio": "musica, pasitos"
+    },
+    {
+      "id": 7,
+      "name": "Fiesta",
+      "t": [
+        10.5,
+        12.0
+      ],
+      "frames": [
+        252,
+        288
+      ],
+      "action": "limbo bajo los palillos (EE4); uno hace de DJ con el tapon de rosca (EE5); se congelan en pose de etiqueta cuando la sombra de Ren cruza la puerta (EE6); el maneki-neko mueve la pata (EE7)",
+      "camera": "tracking + arc",
+      "audio": "musica, scratch"
+    },
+    {
+      "id": 8,
+      "name": "Escalada",
+      "t": [
+        12.0,
+        13.5
+      ],
+      "frames": [
+        288,
+        324
+      ],
+      "action": "trepan por los tallos y caen dentro del vino; la mano queda colgada del borde",
+      "camera": "tilt-up 85 mm",
+      "audio": "musica, plop"
+    },
+    {
+      "id": 9,
+      "name": "Borrachera",
+      "t": [
+        13.5,
+        15.0
+      ],
+      "frames": [
+        324,
+        360
+      ],
+      "action": "flotan, se tambalean, uno hace el muerto; la gata asoma y se va (EE1); plano final botella + copas encendidas, luna detras",
+      "camera": "pull-back lento, hold 1 s",
+      "audio": "musica baja; fin"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S1",
+      "t": [
+        0.0,
+        4.0
+      ],
+      "frames": [
+        0,
+        96
+      ],
+      "lens_mm": 35,
+      "move": "dolly in desde la entrada",
+      "beats": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "S2",
+      "t": [
+        4.0,
+        5.5
+      ],
+      "frames": [
+        96,
+        132
+      ],
+      "lens_mm": 50,
+      "move": "camara se detiene a 1 m",
+      "beats": [
+        3
+      ],
+      "cut_after": "hard"
+    },
+    {
+      "id": "S3",
+      "t": [
+        5.5,
+        6.5
+      ],
+      "frames": [
+        132,
+        156
+      ],
+      "lens_mm": [
+        50,
+        85
+      ],
+      "move": "push-in",
+      "beats": [
+        4
+      ]
+    },
+    {
+      "id": "S4",
+      "t": [
+        6.5,
+        8.5
+      ],
+      "frames": [
+        156,
+        204
+      ],
+      "lens_mm": 100,
+      "move": "macro fija",
+      "beats": [
+        5
+      ],
+      "cut_after": "hard"
+    },
+    {
+      "id": "S5",
+      "t": [
+        8.5,
+        12.0
+      ],
+      "frames": [
+        204,
+        288
+      ],
+      "lens_mm": 85,
+      "move": "tracking lateral + arc a nivel de mesa",
+      "beats": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "S6",
+      "t": [
+        12.0,
+        15.0
+      ],
+      "frames": [
+        288,
+        360
+      ],
+      "lens_mm": 85,
+      "move": "tilt-up, luego pull-back lento y hold",
+      "beats": [
+        8,
+        9
+      ]
+    }
+  ],
+  "camera_keys": [
+    {
+      "frame": 0,
+      "loc": [
+        -1.6,
+        -2.6,
+        1.45
+      ],
+      "look_at": [
+        0.0,
+        0.6,
+        0.95
+      ],
+      "lens": 35
+    },
+    {
+      "frame": 96,
+      "loc": [
+        -0.6,
+        -1.6,
+        1.25
+      ],
+      "look_at": [
+        0.05,
+        0.4,
+        0.9
+      ],
+      "lens": 35
+    },
+    {
+      "frame": 132,
+      "loc": [
+        -0.2,
+        -0.95,
+        1.05
+      ],
+      "look_at": [
+        0.1,
+        0.3,
+        0.85
+      ],
+      "lens": 50
+    },
+    {
+      "frame": 156,
+      "loc": [
+        0.05,
+        -0.5,
+        0.92
+      ],
+      "look_at": [
+        0.15,
+        0.1,
+        0.86
+      ],
+      "lens": 85
+    },
+    {
+      "frame": 168,
+      "loc": [
+        0.12,
+        -0.28,
+        0.87
+      ],
+      "look_at": [
+        0.15,
+        0.1,
+        0.86
+      ],
+      "lens": 100
+    },
+    {
+      "frame": 204,
+      "loc": [
+        0.0,
+        -0.35,
+        0.78
+      ],
+      "look_at": [
+        0.1,
+        0.15,
+        0.76
+      ],
+      "lens": 85
+    },
+    {
+      "frame": 288,
+      "loc": [
+        -0.55,
+        -0.25,
+        0.8
+      ],
+      "look_at": [
+        -0.15,
+        0.15,
+        0.78
+      ],
+      "lens": 85
+    },
+    {
+      "frame": 324,
+      "loc": [
+        -0.5,
+        -0.2,
+        0.86
+      ],
+      "look_at": [
+        -0.2,
+        0.15,
+        0.9
+      ],
+      "lens": 85
+    },
+    {
+      "frame": 360,
+      "loc": [
+        -0.3,
+        -0.8,
+        0.98
+      ],
+      "look_at": [
+        0.1,
+        0.15,
+        0.82
+      ],
+      "lens": 70
+    }
+  ],
+  "lights": {
+    "pendant": {
+      "type": "POINT",
+      "pos": [
+        0.0,
+        0.4,
+        1.75
+      ],
+      "kelvin": 2700,
+      "watts": 150,
+      "off_frames": [
+        132,
+        138
+      ]
+    },
+    "floor_lamp": {
+      "type": "POINT",
+      "pos": [
+        -1.6,
+        1.6,
+        1.4
+      ],
+      "kelvin": 2700,
+      "watts": 60,
+      "off_frames": [
+        132,
+        138
+      ]
+    },
+    "kitchen_spill": {
+      "type": "SPOT",
+      "pos": [
+        2.0,
+        0.6,
+        2.0
+      ],
+      "kelvin": 4500,
+      "watts": 80,
+      "off_frames": [
+        132,
+        138
+      ]
+    },
+    "moon_sun": {
+      "type": "SUN",
+      "direction_from": [
+        0.3,
+        2.4,
+        2.2
+      ],
+      "color": [
+        0.6,
+        0.72,
+        1.0
+      ],
+      "strength": 0.35,
+      "always_on": true
+    }
+  },
+  "glow": {
+    "strength_keys": [
+      [
+        156,
+        0.0
+      ],
+      [
+        168,
+        1.0
+      ],
+      [
+        176,
+        0.4
+      ],
+      [
+        184,
+        1.0
+      ],
+      [
+        190,
+        1.0
+      ]
+    ],
+    "color": "#39FF14"
+  },
+  "characters": {
+    "zombies": {
+      "count": 3,
+      "on_label_until": 204,
+      "walk_to_glass_frames": [
+        204,
+        252
+      ],
+      "limbo_frames": [
+        252,
+        270
+      ],
+      "freeze_frames": [
+        276,
+        284
+      ],
+      "climb_frames": [
+        288,
+        324
+      ],
+      "drop_frames": [
+        324,
+        336
+      ],
+      "wobble_frames": [
+        336,
+        360
+      ]
+    },
+    "zombie_crouch": {
+      "leaves_label_frames": [
+        228,
+        252
+      ]
+    },
+    "hand": {
+      "finger_walk_frames": [
+        210,
+        252
+      ],
+      "grip_rim_frames": [
+        324,
+        360
+      ]
+    },
+    "cat": {
+      "cross_frames": [
+        60,
+        96
+      ],
+      "from": [
+        -2.0,
+        -1.0
+      ],
+      "to": [
+        1.2,
+        -1.2
+      ],
+      "peek_frames": [
+        340,
+        356
+      ]
+    },
+    "couple": {
+      "seated_until": 96,
+      "stand_and_exit_frames": [
+        96,
+        132
+      ],
+      "exit_to": [
+        2.0,
+        0.6
+      ]
+    }
+  },
+  "easter_eggs": [
+    "EE1 gata calico testigo",
+    "EE2 agachado dormido, la mano lo despierta",
+    "EE3 la mano anda con los dedos y acaba colgada del borde",
+    "EE4 limbo bajo los palillos",
+    "EE5 DJ con el tapon de rosca",
+    "EE6 se congelan en pose de etiqueta al pasar la sombra de Ren",
+    "EE7 maneki-neko mueve la pata al compas"
+  ]
+}

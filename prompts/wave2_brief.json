@@ -1,0 +1,77 @@
+{
+ "linea": "D_TOKYO_V1",
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "refs": {
+  "S_style_key_hero_wide_lit": "30a2a515-405f-41f1-b785-2456b943d14d",
+  "packshot_image1": "aade31ed-0151-469c-bc50-513aff07bb68",
+  "real_glow_photo": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+  "zombie_troupe_sheet": "4d33a580-e717-4d89-a77f-be863d6c96de",
+  "aya_sheet_look": "2e7a638a-4c3f-4d02-b394-9a9a11d42dde",
+  "ren_sheet_look": "dc8913ab-a76c-4779-a838-e353879496a2",
+  "cat_sheet_look": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+  "env_02_dark_wide": "<<<REF_ENV02_DARK>>>",
+  "env_03_table_level_lit": "e593e9da-886e-44e2-a0f2-6e9cea9324f4",
+  "env_04_table_level_dark": "bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b",
+  "env_05a_window_9x16": "a378a291-860f-43da-92af-46aa7d274378",
+  "env_05b_window_16x9": "e5419007-7ee5-49cb-a432-8a5e10f36583",
+  "env_07_door_shelf": "7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f",
+  "prod_01_hero_lit": "e10a0128-a904-4c55-85ec-da82d405f1e4",
+  "prod_02_dark_glow": "<<<REF_PROD02_DARK>>>",
+  "prod_03_macro_glow": "<<<REF_PROD03_MACRO>>>",
+  "prod_04_glasses": "e10b70f4-f1f2-4831-a175-b87f9ad647fd",
+  "prod_05_table_lit": "aff1181c-2e27-4be3-93bf-bf1cff1f4c2a",
+  "prod_06_table_dark": "f40a6e91-a4d0-4384-8903-39ca3fa95fdb",
+  "prod_07a_front_neutral": "46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3"
+ },
+ "elements": {
+  "SZ-bottle-master": "de0c221b-6bd9-4ab5-912b-c6840b2423cc",
+  "SZ-bottle-back-PROV": "6ea674e7-12b6-442a-98e0-b6ae20dd9a9e",
+  "SZ-aya": "65a0c653-c433-4c10-a435-a4ce5504f0a2",
+  "SZ-ren": "c800522c-a722-4f47-bb45-2f32899d7e45",
+  "SZ-zombies-glow": "5915e7ac-09c7-4efc-bf78-a1904ace295b",
+  "SZ-apartment": "0199fa74-cff0-459d-801c-fae3153bf8bd",
+  "SZ-cat": "<<<SZ-cat>>>"
+ },
+ "element_rule": "Elements solo en nano_banana_pro: escribir <<<uuid>>> dentro del prompt (el backend lo reescribe a @nombre). Nunca poner ids de Element en medias. En gpt_image_2_5 y seedream_v5_pro no hay Elements: usar medias image_references y referirse a ellas como Image 1, Image 2... en el orden de medias.",
+ "groups": {
+  "A_char_prod": [
+   {"id":"v1_char_03","dept":"char","purpose":"Two-shot pareja en la mesa (lock conjunto para Seedance @Image). Aya y Ren sentados frente a frente en la mesa de nogal, riendo con la última copa, botella Sharp Zombie y dos copas en primer término, platos con restos, palillos, edamame; luz encendida (pendant washi cálido + luna azul por el ventanal); apartamento de la clave S. Plano 35 mm desde la entrada, nivel de ojos.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-aya","SZ-ren","SZ-bottle-master"],"medias_refs":["S_style_key_hero_wide_lit"],"est_credits":2,"qa":["Aya y Ren reconocibles vs sheets","etiqueta fiel","look STYLE_LOCK","sin texto"]},
+   {"id":"v1_char_08","dept":"char","purpose":"Pareja levantándose con los platos (beat 3): Aya y Ren de pie recogiendo los platos, girándose hacia la puerta del office a la derecha; en la mesa quedan la botella, el tapón de rosca al lado, dos copas (1/3 y 1/2), palillos en reposapalillos; luz encendida. 50 mm.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-aya","SZ-ren","SZ-bottle-master"],"medias_refs":["S_style_key_hero_wide_lit","env_07_door_shelf"],"est_credits":2,"qa":["tapón de rosca visible junto a la botella","botella queda en la mesa","look"]},
+   {"id":"v1_char_05a","dept":"char","purpose":"Zombie caminante FIEL, figura única sobre fondo transparente para generate_3d: silueta negra mate con ligero volumen 3D y contorno lima fino, brazos doblados y levantados en marcha zombi exactamente como en la etiqueta (Image 2 packshot) y en la hoja de la troupe (Image 1); vista 3/4 frontal, de pie, pies en el suelo, sin ojos ni boca, sin sombra proyectada.","model":"gpt_image_2_5","params":{"aspect_ratio":"1:1","quality":"high","resolution":"2k","variant":"flare","background":"transparent"},"elements":[],"medias_refs":["zombie_troupe_sheet","packshot_image1"],"est_credits":2.75,"qa":["una sola figura","fondo transparente","brazos doblados y levantados como en la etiqueta","sin ojos"]},
+   {"id":"v1_char_05b","dept":"char","purpose":"Zombie caminante RIG-FRIENDLY para rig+animación Meshy: misma figura que 05a pero en pose neutra de rig: brazos semiabiertos a 45° del cuerpo (A-pose) ligeramente adelantados, piernas separadas al ancho de hombros, cabeza al frente, vista frontal; silueta negra con contorno lima; fondo transparente.","model":"gpt_image_2_5","params":{"aspect_ratio":"1:1","quality":"high","resolution":"2k","variant":"flare","background":"transparent"},"elements":[],"medias_refs":["zombie_troupe_sheet","packshot_image1"],"est_credits":2.75,"qa":["A-pose clara","una figura","transparente"]},
+   {"id":"v1_char_05c","dept":"char","purpose":"Zombie AGACHADO (el cuarto de la etiqueta) figura única fondo transparente, vista 3/4, a cuatro patas/encogido como en la etiqueta; silueta negra, contorno lima; sin ojos.","model":"gpt_image_2_5","params":{"aspect_ratio":"1:1","quality":"high","resolution":"2k","variant":"flare","background":"transparent"},"elements":[],"medias_refs":["zombie_troupe_sheet","packshot_image1"],"est_credits":2.75,"qa":["pose agachada fiel","una figura","transparente"]},
+   {"id":"v1_char_05d","dept":"char","purpose":"La MANITA que sale del suelo (quinto personaje): mano negra con antebrazo corto, dedos abiertos, contorno lima, vista 3/4, fondo transparente; cinco dedos.","model":"gpt_image_2_5","params":{"aspect_ratio":"1:1","quality":"high","resolution":"2k","variant":"flare","background":"transparent"},"elements":[],"medias_refs":["zombie_troupe_sheet","packshot_image1"],"est_credits":2.75,"qa":["cinco dedos","una sola mano","transparente"]},
+   {"id":"v1_char_07","dept":"char","purpose":"TEST DE ESCALA: los zombies de 5 cm de pie en la mesa junto a la botella (75 cl, 30 cm) y una copa: el más alto llega justo por debajo de la base de la etiqueta; luz apagada (luna + glow); nivel de mesa 50 mm. Sirve para fijar la escala en todos los keyframes.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master","SZ-zombies-glow"],"medias_refs":["S_style_key_hero_wide_lit","real_glow_photo"],"est_credits":2,"qa":["zombies ~1/6 de la altura de la botella","etiqueta fiel y oscura con contornos","sin ojos"]},
+   {"id":"v1_prod_10a","dept":"prod","purpose":"Vista 3/4 TRASERA de la botella en estudio neutro gris (como v1_prod_07a), tapón de rosca negro, se ven el borde de la etiqueta frontal y la contraetiqueta PROVISIONAL (Element SZ-bottle-back-PROV) pegada en la parte trasera, misma altura que la frontal. Para continuidad y 3D.","model":"nano_banana_pro","params":{"aspect_ratio":"3:4","resolution":"2k"},"elements":["SZ-bottle-master","SZ-bottle-back-PROV"],"medias_refs":["prod_07a_front_neutral"],"est_credits":2,"qa":["contraetiqueta en la trasera, no en la frontal","tapón de rosca","fondo neutro"]},
+   {"id":"v1_prod_10b","dept":"prod","purpose":"Vista TRASERA pura (180°) de la botella, estudio neutro, contraetiqueta PROVISIONAL centrada y legible como bloque, tapón de rosca negro.","model":"nano_banana_pro","params":{"aspect_ratio":"3:4","resolution":"2k"},"elements":["SZ-bottle-master","SZ-bottle-back-PROV"],"medias_refs":["prod_07a_front_neutral"],"est_credits":2,"qa":["solo contraetiqueta visible","tapón de rosca"]},
+   {"id":"v1_endcard","dept":"board","purpose":"END CARD JP (se usa en post, no se genera texto en vídeo): botella hero con etiqueta brillando en la oscuridad sobre la mesa, luna detrás, look STYLE_LOCK; texto EXACTO y bien compuesto: titular grande en japonés 「ゾンビ級に、うまい。」, debajo 'SHARP ZOMBIE · RIOJA' en versalitas, y una línea legal pequeña abajo 'お酒は20歳になってから。' (placeholder legal a validar por el cliente). Seedream renderiza texto: pedir tipografía limpia, sin otros textos.","model":"seedream_v5_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":[],"medias_refs":["packshot_image1","S_style_key_hero_wide_lit","real_glow_photo"],"est_credits":2.5,"qa":["texto japonés exacto","etiqueta fiel","sin texto extra"]}
+  ],
+  "B_boards": {
+   "common": {"model":"gpt_image_2_5","params":{"aspect_ratio":"9:16","quality":"medium","resolution":"1k","variant":"flare"},"medias_refs":["S_style_key_hero_wide_lit","zombie_troupe_sheet","packshot_image1"],"est_credits":0.6,"style":"Boceto de storyboard: carboncillo y lápiz gris sobre papel claro, acento lima solo en los contornos de los zombies/etiqueta cuando brillan, flecha de cámara dibujada, rótulo manuscrito legible en la esquina superior izquierda con el formato exacto indicado. Personajes y botella como bocetos (no fotorrealistas). Sin otros textos."},
+   "items": [
+    {"id":"v1_board_01","label":"[B1] 0.0–2.5 s · DOLLY IN","beat":"Sobremesa: Aya y Ren ríen con la última copa; luna en el ventanal; botella y copas en primer término; travelling desde la entrada hacia la mesa."},
+    {"id":"v1_board_02","label":"[B2] 2.5–4.0 s · DOLLY IN (cont.)","beat":"El gato calicó cruza en primer término y mira a cámara; la pareja al fondo."},
+    {"id":"v1_board_03","label":"[B3] 4.0–5.5 s · HOLD 50 mm","beat":"Se levantan con los platos y salen por la puerta de la derecha; en la mesa quedan botella, tapón, copas, palillos."},
+    {"id":"v1_board_04","label":"[B4] 5.5 s · CORTE · MESA SOLA","beat":"Mesa sola encendida: botella, tapón al lado, dos copas, palillos; nadie en plano."},
+    {"id":"v1_board_05","label":"[B5] 5.5–6.5 s · PUSH-IN 50→85 mm","beat":"Apagón: clic fuera de campo, pendant se apaga, solo luz de luna azul; la etiqueta queda oscura."},
+    {"id":"v1_board_06","label":"[B6] 6.5–8.5 s · MACRO 100 mm","beat":"Macro etiqueta: contornos de los zombies y la mano se encienden y laten dos veces; el agachado sigue dormido (más tenue)."},
+    {"id":"v1_board_07","label":"[B7] 8.5–10.5 s · TRACKING LATERAL","beat":"Los tres se despegan de la etiqueta y bajan a la mesa bailando en fila; la mano anda con los dedos; el agachado sale el último empujado por la mano. Nivel de mesa."},
+    {"id":"v1_board_08","label":"[B8] 10.5–12.0 s · TRACKING + ARC","beat":"Fiesta: limbo bajo los palillos, uno hace de DJ con el tapón de rosca, se congelan en pose de etiqueta cuando la sombra de Ren cruza la puerta; el maneki-neko mueve la pata."},
+    {"id":"v1_board_09","label":"[B9] 12.0–13.5 s · TILT-UP 85 mm","beat":"Escalada: trepan por los tallos de las copas y caen dentro del vino; la mano queda colgada del borde."},
+    {"id":"v1_board_10","label":"[B10] 13.5–15.0 s · PULL-BACK","beat":"Borrachera: flotan, se tambalean, uno hace el muerto; el gato asoma y se va; plano final botella + copas encendidas con la luna detrás."}
+   ]
+  },
+  "C_keyframes": [
+   {"id":"v1_kf_01","purpose":"KF1 sobremesa + gato (beats 1–2, luz encendida): Aya y Ren riendo con la última copa en la mesa; el gato calicó cruza en primer término mirando a cámara; botella y dos copas en primer término; luna en el ventanal; 35 mm desde la entrada.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-aya","SZ-ren","SZ-bottle-master","SZ-cat"],"medias_refs":["S_style_key_hero_wide_lit"],"est_credits":2},
+   {"id":"v1_kf_02","purpose":"KF2 salida (beat 3, encendida): Aya y Ren de pie con los platos yendo hacia la puerta del office a la derecha; en la mesa quedan botella, tapón de rosca al lado, dos copas, palillos; 50 mm a 1 m de la mesa.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-aya","SZ-ren","SZ-bottle-master"],"medias_refs":["S_style_key_hero_wide_lit","env_07_door_shelf"],"est_credits":2},
+   {"id":"v1_kf_03","purpose":"KF3 mesa sola encendida (justo antes del apagón): sillas vacías, botella abierta con el tapón de rosca al lado, dos copas (1/3 y 1/2), palillos en reposapalillos, edamame; pendant cálido + luna; 50 mm nivel de ojos.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master"],"medias_refs":["S_style_key_hero_wide_lit","prod_05_table_lit"],"est_credits":2},
+   {"id":"v1_kf_04","purpose":"KF4 apagón (beat 4): misma mesa que KF3 pero con todas las lámparas apagadas, solo luna azul y brillo ciudad magenta/cian en los bordes; etiqueta oscura todavía sin glow; 85 mm push-in.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master"],"medias_refs":["S_style_key_hero_wide_lit","env_02_dark_wide","prod_06_table_dark"],"est_credits":2},
+   {"id":"v1_kf_05","purpose":"KF5 macro despertar (beat 5): macro 100 mm de la etiqueta en la oscuridad, contornos de las 4 siluetas y la mano brillando lima (el primero más brillante, el agachado el más tenue); POSE LOCK: siluetas exactamente como en Image 1 (brazos doblados y levantados en marcha zombi), sin ojos; el texto no brilla.","model":"gpt_image_2_5","params":{"aspect_ratio":"9:16","quality":"high","resolution":"2k","variant":"flare"},"elements":[],"medias_refs":["packshot_image1","real_glow_photo","S_style_key_hero_wide_lit"],"est_credits":2.75},
+   {"id":"v1_kf_06","purpose":"KF6 fiesta en la mesa (beats 6–7, a oscuras): los tres zombies de 5 cm bailan en fila sobre la mesa de nogal; uno hace limbo bajo un palillo apoyado en el reposapalillos; otro 'pincha' con el tapón de rosca negro como si fuera un vinilo; la mano camina con los dedos; la botella detrás con la etiqueta brillando; luz de luna + contornos lima; nivel de mesa 50 mm tracking.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master","SZ-zombies-glow"],"medias_refs":["S_style_key_hero_wide_lit","env_04_table_level_dark","real_glow_photo"],"est_credits":2},
+   {"id":"v1_kf_07","purpose":"KF7 escalada (beat 8): dos zombies trepan por el tallo de una copa de tinto, uno ya cae dentro del vino salpicando; la mano cuelga del borde de la copa; la botella al fondo con la etiqueta brillando; tilt-up 85 mm; oscuro, luna.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master","SZ-zombies-glow"],"medias_refs":["S_style_key_hero_wide_lit","prod_04_glasses","real_glow_photo"],"est_credits":2},
+   {"id":"v1_kf_08","purpose":"KF8 final (beat 9): plano final pull-back: botella con la etiqueta brillando y dos copas en las que flotan los zombies borrachos (uno hace el muerto, otro se tambalea en el borde), la luna llena detrás en el ventanal, el gato asomando en el borde del plano; oscuro, luna + contornos lima.","model":"nano_banana_pro","params":{"aspect_ratio":"9:16","resolution":"2k"},"elements":["SZ-bottle-master","SZ-zombies-glow","SZ-cat"],"medias_refs":["S_style_key_hero_wide_lit","env_05a_window_9x16","real_glow_photo"],"est_credits":2},
+   {"id":"v1_kf_01w","purpose":"Variante 16:9 de KF1 (misma escena, encuadre horizontal más amplio con sofá y estantería).","model":"nano_banana_pro","params":{"aspect_ratio":"16:9","resolution":"2k"},"elements":["SZ-aya","SZ-ren","SZ-bottle-master","SZ-cat"],"medias_refs":["S_style_key_hero_wide_lit"],"est_credits":2},
+   {"id":"v1_kf_08w","purpose":"Variante 16:9 de KF8 (misma escena final, horizontal, ventanal ancho con skyline).","model":"nano_banana_pro","params":{"aspect_ratio":"16:9","resolution":"2k"},"elements":["SZ-bottle-master","SZ-zombies-glow","SZ-cat"],"medias_refs":["S_style_key_hero_wide_lit","env_05b_window_16x9","real_glow_photo"],"est_credits":2}
+  ]
+ }
+}

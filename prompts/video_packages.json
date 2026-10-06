@@ -1,0 +1,292 @@
+{
+ "model_facts": {
+  "verified_with": "mcp__HIGGSFIELD__models_explore action get (read-only, 2026-10-05); no generate_* called, 0 credits spent",
+  "seedance_2_5": {
+   "params": {
+    "mode": [
+     "t2v",
+     "omni_reference",
+     "video_edit",
+     "video_extension"
+    ],
+    "duration": "number 4-30 (default 5)",
+    "resolution": [
+     "480p",
+     "720p",
+     "1080p"
+    ],
+    "generate_audio": "bool (default true)",
+    "bitrate_mode": [
+     "standard",
+     "high"
+    ],
+    "draft": "bool (480p draft finalizable within 7 days, default false)",
+    "draft_job_id": "string nullable (finalize draft at 1080p)",
+    "extension_mode": "only for video_extension"
+   },
+   "aspect_ratios": [
+    "auto",
+    "21:9",
+    "16:9",
+    "4:3",
+    "1:1",
+    "3:4",
+    "9:16"
+   ],
+   "media_roles": [
+    "start_image",
+    "end_image",
+    "image_references",
+    "video_references",
+    "audio_references"
+   ],
+   "notes": "omni_reference is the mode for start_image + image_references; prompt references are numbered @Image N in medias order (image_references only; start_image is not an @Image)."
+  },
+  "kling3_0": {
+   "params": {
+    "duration": "number 3-15 (default 5)",
+    "mode": [
+     "std",
+     "pro",
+     "4k"
+    ],
+    "sound": [
+     "on",
+     "off"
+    ]
+   },
+   "aspect_ratios": [
+    "16:9",
+    "9:16",
+    "1:1"
+   ],
+   "media_roles": [
+    "start_image",
+    "end_image"
+   ],
+   "notes": "sound:'off' exists and is cheaper. No image_references role: Elements are bound by <<<element_id>>> inside params.prompt and only honoured when a start_image is attached. No resolution param (resolution via mode)."
+  },
+  "hf_mult_motion_control": {
+   "params": {
+    "resolution": [
+     "480p",
+     "720p",
+     "1080p"
+    ]
+   },
+   "aspect_ratios": "[] (none exposed; output inherits the guide video's ratio)",
+   "media_roles": [
+    "image_references",
+    "video_references"
+   ],
+   "notes": "models_explore lists ONLY resolution; it does not expose prepared_params / preset_id, so preset support is not confirmed by the contract (plan says a preflight accepted preset_id in prepared_params; treat as unverified). Guide clip goes in role video_references (not 'video'); images go in role image_references in @Image order (not 'image'). No cap on image count is published; the skill's template uses 2 images, so a 3rd STYLE image is optional and should be dropped if get_cost preflight rejects it."
+  },
+  "cost_basis": "skill 7: seedance_2_5 480p ≈ 3 cr/s (8 s = 24); kling3_0 std ≈ 1.75 cr/s (sound off); Genjutsu 7 s 480p = 18 cr (≈ 2.57 cr/s). Confirm with get_cost:true before submitting."
+ },
+ "packages": [
+  {
+   "asset_id": "v1_vid_01",
+   "model": "seedance_2_5",
+   "params": {
+    "mode": "omni_reference",
+    "duration": 15,
+    "resolution": "480p",
+    "aspect_ratio": "9:16",
+    "draft": true,
+    "generate_audio": true,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "start_image",
+     "value": "d851d81f-f861-4b9e-b0f2-0fb9bad4a099",
+     "label": "KF1 sobremesa + gato (primer frame)"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "@Image 1 packshot botella"
+    },
+    {
+     "role": "image_references",
+     "value": "c6b8ad68-8390-4a5e-826b-42aa0dc029c2",
+     "label": "@Image 2 two-shot Aya + Ren"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "@Image 3 sheet troupe zombie"
+    },
+    {
+     "role": "image_references",
+     "value": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+     "label": "@Image 4 sheet gato calicó"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "@Image 5 apartamento hero (también referencia de estilo)"
+    },
+    {
+     "role": "image_references",
+     "value": "67661b9c-9a27-4ab1-9b6d-d6a20d36520e",
+     "label": "@Image 6 mesa a oscuras (KF4 apagón)"
+    }
+   ],
+   "prompt": "GLOBAL STYLE: stylized 3D animation with comic-book shading: halftone dots in the shadows, bold ink edge lines, neon magenta and cyan rim lights over deep night blue, cinematic depth of field. Silent physical comedy, playful, never scary. One story with two hard cuts. The bottle label stays accurate and readable. No subtitles, no on-screen text, no logos other than the bottle label.\n\nACTIVE REFERENCES:\n@Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus the small hand rising from the ground, the dark red blackletter name and the RIOJA line exactly as shown. Ignore @Image 1's white background. Do not redraw, restyle or re-letter the label.\n@Image 2 defines Aya and Ren: fully preserve their faces, hair, skin and outfits. Do not use its lighting.\n@Image 3 defines the zombie troupe off the label: flat black cut-outs about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths, no clothes. Do not use its layout.\n@Image 4 defines the cat: a short-tailed calico with green eyes. Do not use its background.\n@Image 5 defines the apartment and the visual style: window with the Tokyo skyline and a full moon camera-left, kitchen door camera-right, shelf with a maneki-neko. Do not use its camera position.\n@Image 6 defines the lights-off table: pendant off, cold blue moonlight only; use it for light, colour and mood from SHOT 3 onward, not for framing.\n\nSCENE: night, a Tokyo apartment after dinner. On the table: two plates with fish remains, chopsticks on a chopstick rest, the open bottle from @Image 1 with its black screw cap lying beside it, two glasses of red wine. No candles. 0 to 5.5 s: warm washi pendant, a floor lamp, cold kitchen light through the door, full moon in the window. 5.5 to 15 s: only blue moonlight and the self-lit lime outlines.\n\nFIRST FRAME AND BLOCKING: the first frame is the start image: 35 mm view from the entrance toward the table; Aya and Ren seated with their last glass, laughing; the bottle and glasses in the foreground. The bottle keeps this exact spot on the table for the whole film.\n\nSHOT 1 | 0.0s to 4.0s | slow dolly in from the entrance toward the table, gimbal-smooth, 35 mm. Aya and Ren laugh over the last sip. At 2.5 s the calico cat crosses the foreground right to left, looks into the lens and exits frame. End state: camera 1.5 m from the table, the couple beginning to stand.\nSHOT 2 | 4.0s to 5.5s | the dolly settles 1 m from the table, 50 mm, then holds static. Aya and Ren stand up with the plates and exit through the kitchen door camera-right. End state: empty chairs, the bottle centred with the cap, the glasses and the chopsticks. Hard cut.\nSHOT 3 | 5.5s to 6.5s | a light switch clicks off-screen, the pendant goes dark and the room falls into cold blue moonlight as in @Image 6; slow push in from 50 mm toward 85 mm on the bottle. End state: the bottle in moonlight, the label still dark.\nSHOT 4 | 6.5s to 8.5s | locked-off 100 mm macro on the front label. The thin outlines of the four zombie silhouettes and the small hand light up in soft phosphorescent lime green and pulse twice; the first walker turns its head; the crouched zombie stays asleep until the small hand nudges it. End state: all outlines lit, the label otherwise unchanged. Hard cut.\nSHOT 5 | 8.5s to 12.0s | table-level 85 mm, slow lateral tracking shot left to right with a gentle arc. The three walkers peel off the label as flat glowing cut-outs, drop onto the table and dance in a conga line toward the glasses; the small hand walks on its fingers behind them; the crouched zombie comes out last, pushed by the hand. They limbo under the chopsticks on their rest; one spins the black screw cap like a DJ turntable; when Ren's shadow crosses the kitchen door they freeze in their label poses, then resume as it passes; the maneki-neko waves its paw in time with the music. End state: the troupe at the foot of the two glasses.\nSHOT 6 | 12.0s to 15.0s | 85 mm, slow tilt up along the glass stems, then a slow pull back. The zombies climb the stems and tumble into the red wine; the small hand stays hooked on the rim of one glass. They float and sway tipsily, one floats face up playing dead. The cat peeks in from the bottom of frame and leaves unimpressed. End state: the bottle with its glowing label and the two glasses with glowing tipsy zombies inside, the full moon behind, held still.\n\nPHYSICS: the zombies are about 5 cm tall, flat paper-thin cut-outs; their feet stay in contact with the tabletop; the chopsticks stay on their rest; the cap spins in place; the wine ripples and settles; the glasses never tip.\n\nSTILLNESS LOCK: the bottle never moves, tilts, rotates or changes shape, size or colour; the label stays identical in layout, lettering and colours; no text is added anywhere; the two glasses stay in place. Screen direction never flips: kitchen door always camera-right, window and moon always camera-left.\n\nGLOW LOCK: in the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare, as in @Image 3. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark.\n\nAUDIO: no dialogue. <room tone, distant city hum, soft dishes and laughter> from 0 to 7.5 s; <light switch click> at 5.5 s; (upbeat party funk, 122 BPM) from 7.5 s to the end; <tiny footsteps on wood>; <a soft plop> at 13 s; the music ducks on the final hold.\n\nExclusions: no extra bottles, no cork, no candles, no watermark, no neon signs, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares, no people in the room after 5.5 s except Ren's passing shadow.",
+   "est_credits": 45,
+   "notes": "REVISADO. Params confirmados por models_explore (mode omni_reference, duration 4-30, resolution 480p, draft bool, generate_audio bool, aspect_ratio 9:16 en la lista). 7 referencias (1 start_image + 6 image_references); @Image 5 (30a2a515) es a la vez apartment_hero y style_S, no se añade @Image 7. Tokens <<<KF1>>>, <<<CHAR03>>>, <<<KF4>>> se sustituyen al enviar. Cambios del revisor: (1) el borrador tenía 1.275 palabras, por encima del tope de Seedance 2.5 (~1.000); recortado a 1.069 palabras / 5.983 caracteres sin perder ningún beat ni lock (se eliminaron re-descripciones de identidad que ya aportan las referencias, regla 'identity never re-described'). (2) PRODUCT_LOCK con la descripción verificada de las siluetas ('three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched, plus the small hand rising from the ground'). (3) GLOW LOCK ya no cita @Image 6 (KF4 es el apagón con la etiqueta aún apagada; solo @Image 3 muestra el glow). Timecodes verificados contra la biblia: S1 0-4, S2 4-5.5, corte, S3 5.5-6.5, S4 6.5-8.5, corte, S5 8.5-12, S6 12-15; gato a 2.5 s; música 7.5 s; plop 13 s. folder_id no es param del modelo en models_explore: si generate_video lo rechaza dentro de params, pasarlo como campo de nivel superior del tool. Preflight obligatorio get_cost:true (≈3 cr/s a 480p → 15 s ≈ 45). draft:true deja el job finalizable a 1080p vía draft_job_id en 7 días."
+  },
+  {
+   "asset_id": "v1_vid_02",
+   "model": "seedance_2_5",
+   "params": {
+    "mode": "omni_reference",
+    "duration": 8,
+    "resolution": "480p",
+    "aspect_ratio": "9:16",
+    "draft": true,
+    "generate_audio": true
+   },
+   "medias": [
+    {
+     "role": "start_image",
+     "value": "ceaec1f3-5f94-4316-988d-53a480b127a3",
+     "label": "KF5 macro despertar (primer frame)"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "@Image 1 packshot botella"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "@Image 2 sheet troupe zombie"
+    },
+    {
+     "role": "image_references",
+     "value": "c8010ba5-e05c-42f4-bfd4-fdca86c037cc",
+     "label": "@Image 3 mesa a oscuras con baile (KF6)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "@Image 4 estilo S (solo estilo)"
+    }
+   ],
+   "prompt": "GLOBAL STYLE: stylized 3D animation with comic-book shading: halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blue, cinematic depth of field. Silent physical comedy, playful, never scary. Vertical 9:16, one hard cut. The bottle label stays accurate and readable. No subtitles, no on-screen text, no logos other than the bottle label.\n\nACTIVE REFERENCES:\n@Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus the small hand rising from the ground, the dark red blackletter name and the RIOJA line exactly as shown. Ignore @Image 1's white background. Do not redraw, restyle or re-letter the label.\n@Image 2 defines the zombie troupe off the label: flat black cut-out silhouettes about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths, no clothes; three lurching walkers with bent, raised arms, one crouched sleeper and one small black hand. Do not use its layout.\n@Image 3 defines the dark table: cold blue moonlight only, the bottle standing with its black screw cap beside it, two glasses of red wine, chopsticks on their rest, the window and full moon camera-left. Use it for light, colour and table layout; do not use its framing.\n@Image 4 defines the visual style only; do not copy its content, characters or layout.\n\nSCENE: night, a Tokyo apartment dining table after dinner, pendant already off, only blue moonlight and the self-lit lime outlines. On the table: the open bottle from @Image 1, its black screw cap lying beside it, two glasses of red wine (one a third full, one half full), chopsticks on a chopstick rest, a bowl of edamame. No candles, no people.\n\nFIRST FRAME AND BLOCKING: the first frame is the start image: a locked-off 100 mm macro on the front label of the bottle in moonlight, the four silhouettes and the small hand still dark. The bottle keeps this exact spot for the whole clip.\n\nSHOT 1 | 0.0s to 2.0s | locked-off macro on the label. The thin outlines of the four zombie silhouettes and the small hand light up in soft phosphorescent lime green and pulse twice; the first walker turns its head; the crouched zombie stays asleep until the small hand nudges it. End state: all outlines lit, the label otherwise unchanged. Hard cut.\nSHOT 2 | 2.0s to 5.0s | table-level 85 mm, slow lateral tracking shot left to right. The three walkers peel off the label as flat glowing cut-outs, drop onto the table and dance in a conga line toward the glasses; the small hand walks on its fingers behind them; the crouched zombie comes out last, pushed by the hand. They limbo under the chopsticks on their rest and one spins the black screw cap like a DJ turntable. End state: the troupe at the foot of the two glasses.\nSHOT 3 | 5.0s to 7.0s | 85 mm, slow tilt up along the glass stems. The zombies climb the stems and tumble into the red wine with small splashes; the small hand stays hooked on the rim of one glass. End state: all zombies in the wine, the hand on the rim.\nSHOT 4 | 7.0s to 8.0s | slow pull back and hold. They float and sway tipsily, one floats face up playing dead. End state: the bottle with its glowing label and the two glasses with glowing tipsy zombies inside, the full moon behind, held still.\n\nPHYSICS: the zombies are about 5 cm tall, flat paper-thin cut-outs; their feet stay in contact with the tabletop; the chopsticks stay on their rest; the screw cap spins in place; the wine ripples with small splashes and settles again; the glasses never tip.\n\nSTILLNESS LOCK: the bottle never moves, tilts, rotates or changes shape, size or colour; the label stays identical in layout, lettering and colours; no text is added anywhere; the two glasses stay in place; screen direction never flips, the window and moon stay camera-left.\n\nGLOW LOCK: in the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare, as in @Image 2 and @Image 3. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark.\n\nAUDIO: no dialogue. <room tone, distant city hum> from 0 to 1 s; (upbeat party funk, 122 BPM) from 1.0 s to the end; <tiny footsteps on wood>; <a soft plop> at 6 s; the music ducks on the final hold.\n\nExclusions: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares, no people.",
+   "est_credits": 24,
+   "notes": "REVISADO. 857 palabras / 4.865 caracteres, dentro del tope de Seedance 2.5. Params confirmados por models_explore. Beats 5-9 condensados: despertar 0-2 (corte duro), salida y baile 2-5, escalada y caída 5-7, hold 7-8; música a 1.0 s (equivale a los 7.5 s del máster, 1 s tras el inicio del beat 5); plop a 6 s. Cambio del revisor: PRODUCT_LOCK con la descripción verificada de las siluetas. GLOW LOCK cita @Image 2 (troupe) y @Image 3 (KF6, baile en la mesa con glow), ambos muestran el glow. 5 referencias (1 start_image + 4 image_references). Tokens <<<KF5>>> y <<<KF6>>> a sustituir. Preflight get_cost:true (8 s 480p = 24 cr verificado en el skill). draft:true finalizable a 1080p en 7 días."
+  },
+  {
+   "asset_id": "v1_vid_04a",
+   "model": "kling3_0",
+   "params": {
+    "duration": 10,
+    "mode": "std",
+    "sound": "off",
+    "aspect_ratio": "9:16"
+   },
+   "medias": [
+    {
+     "role": "start_image",
+     "value": "67661b9c-9a27-4ab1-9b6d-d6a20d36520e",
+     "label": "KF4 apagón (start frame, obligatorio para que Kling honre el Element)"
+    }
+   ],
+   "prompt": "Stylized 3D comic-shaded animation, halftone shadows, ink edge lines, magenta and cyan rim lights over deep night blue; a Tokyo apartment dining table after dinner at night, lit only by cold blue moonlight from the window on the left, with two glasses of red wine, chopsticks on a chopstick rest and a black screw cap lying on the table. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. Off the label the zombies are flat black cut-outs about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths; only those outlines and the small hand glow, soft like real glow-in-the-dark ink, no neon tube, no bloom halo; the label text and stripes never glow.\nShot 1 (3s): Static close-up of <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; the last warm light fades out and the thin lime outlines of the four zombie silhouettes and the small hand on its label light up and pulse twice. The bottle never moves or changes; the label stays identical; no text appears.\nShot 2 (3s): Table-level slow tracking shot right past <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; the glowing outlines peel off the label like luminous decals, drop onto the table and dance in a line toward the glasses, the small hand walking on its fingers behind them. The bottle never moves or changes; the label stays identical; no text appears.\nShot 3 (4s): Slow table-level arc shot around <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; the little glowing zombies limbo under the chopsticks on their rest while one spins the black screw cap like a DJ turntable. The bottle never moves or changes; the label stays identical; no text appears.\nNo subtitles, no on-screen text, no extra bottles, no cork, no candles, no faces or eyes on the zombies, no neon signs, no lens flare, no watermark, no people.",
+   "est_credits": 17.5,
+   "notes": "REVISADO. Variante A: contornos que se despegan de la etiqueta como calcomanías luminosas. Cambios del revisor: (1) el borrador tenía 2.766 caracteres, por encima del tope de Kling (≤ 2.500); recortado a 2.486 caracteres con los placeholders literales (2.386 tras la reescritura del backend a @SZ-bottle-master), manteniendo PRODUCT_LOCK_NB literal, el Element en los 3 shots y en la cabecera, 3+3+4 = 10 s, un movimiento de cámara y una acción por shot y la frase de encuadre + bloque de lock repetidos (~80 % idéntico). (2) Shot 1 ya no dice 'the pendant light clicks off' porque el start_image KF4 ya es el apagón (contradecía el frame 0): ahora 'the last warm light fades out' y se encienden los contornos. Params confirmados por models_explore: duration 3-15, mode std, sound 'off' existe (más barato), aspect_ratio 9:16 en la lista, sin resolution (va por mode). Kling solo honra Elements con start_image adjunto: <<<KF4>>> obligatorio. Coste estimado 10 s std ≈ 17.5 cr (1.75 cr/s); confirmar con get_cost:true."
+  },
+  {
+   "asset_id": "v1_vid_04b",
+   "model": "kling3_0",
+   "params": {
+    "duration": 10,
+    "mode": "std",
+    "sound": "off",
+    "aspect_ratio": "9:16"
+   },
+   "medias": [
+    {
+     "role": "start_image",
+     "value": "67661b9c-9a27-4ab1-9b6d-d6a20d36520e",
+     "label": "KF4 apagón (start frame, obligatorio para que Kling honre el Element)"
+    }
+   ],
+   "prompt": "Stylized 3D comic-shaded animation, halftone shadows, ink edge lines, magenta and cyan rim lights over deep night blue; a Tokyo apartment dining table after dinner at night, lit only by cold blue moonlight from the window on the left, with two glasses of red wine, chopsticks on a chopstick rest and a black screw cap lying on the table. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. Off the label the zombies are flat black cut-out figures about 5 cm tall with a thin phosphorescent lime-green edge, no eyes, no mouths; only that lime edge and the small hand glow, soft like real glow-in-the-dark ink, no neon tube, no bloom halo; the label text and stripes never glow.\nShot 1 (3s): Static close-up of <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; the last warm light fades out and the thin lime outlines of the four zombie silhouettes and the small hand on its label light up and pulse twice. The bottle never moves or changes; the label stays identical; no text appears.\nShot 2 (3s): Table-level slow tracking shot right past <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; black cut-out figures with a lime edge jump off the label, land on the table and dance in a line toward the glasses, the small hand walking on its fingers behind them. The bottle never moves or changes; the label stays identical; no text appears.\nShot 3 (4s): Slow tilt up along the nearest glass stem beside <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>> on the moonlit table beside the two glasses; the little black figures climb the stem in a line and tumble into the red wine, the small hand hooking onto the rim. The bottle never moves or changes; the label stays identical; no text appears.\nNo subtitles, no on-screen text, no extra bottles, no cork, no candles, no faces or eyes on the zombies, no neon signs, no lens flare, no watermark, no people.",
+   "est_credits": 17.5,
+   "notes": "REVISADO. Variante B: figuras recortadas negras con borde lima que saltan de la etiqueta; tercer shot = escalada por el tallo de la copa y caída al vino. Cambios del revisor: (1) el borrador tenía ~2.830 caracteres, por encima del tope de Kling (≤ 2.500); recortado a ≈ 2.493 caracteres con placeholders literales (≈ 2.393 tras la reescritura a @SZ-bottle-master). (2) Shot 1 corregido igual que en 04a (el start_image KF4 ya es el apagón). Mismo esqueleto que 04a (misma cabecera PRODUCT_LOCK_NB, mismo Shot 1, misma frase de encuadre y mismo bloque de lock, 3+3+4 s, Element en cada shot, start_image KF4 obligatorio, sound:'off' confirmado). Coste ≈ 17.5 cr; confirmar con get_cost:true. Comparar A/B desde el mismo frame 0 para decidir el lenguaje de 'salida' del máster."
+  },
+  {
+   "asset_id": "v1_vid_05",
+   "model": "hf_mult_motion_control",
+   "params": {
+    "resolution": "480p"
+   },
+   "medias": [
+    {
+     "role": "video_references",
+     "value": "5c697f15-f4a7-4c98-846e-a7406650e8c0",
+     "label": "@Video1 clip guía 3D Jutsu 9 s (cámara a nivel de mesa, baile, limbo, escalada)"
+    },
+    {
+     "role": "image_references",
+     "value": "c8010ba5-e05c-42f4-bfd4-fdca86c037cc",
+     "label": "@Image1 LEAD troupe zombie bailando en la mesa (KF6)"
+    },
+    {
+     "role": "image_references",
+     "value": "67661b9c-9a27-4ab1-9b6d-d6a20d36520e",
+     "label": "@Image2 LOCATION mesa a oscuras con botella (KF4)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "@Image3 STYLE foto estilo S (opcional; quitar si el preflight rechaza 3 imágenes)"
+    }
+   ],
+   "prompt": "MOTION TRANSFER from @Video1.\nKeep the original motion, timing, cuts, camera angle, camera movement, framing and performance of @Video1 exactly; every beat stays one to one: the table-level camera, the line of figures dancing across the table, the limbo under the chopsticks and the climb up the glass stem.\n@Image1 — LEAD: the grey proxy figures of @Video1 become the zombie troupe from @Image1: flat black cut-out silhouettes about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths, no clothes; three lurching zombies with bent, raised arms in a staggering zombie walk, one crouched, and one small black hand that walks on its fingers. Transfer this entire look to every proxy, one zombie per proxy, the smallest proxy becoming the hand; retain only the choreography, blocking and timing from @Video1. Their feet stay in contact with the tabletop.\n@Image2 — LOCATION: rebuild the whole environment as shown in @Image2, with its light direction: a Tokyo apartment dining table after dinner at night, lit only by cold blue moonlight from the window on the left, with two glasses of red wine, chopsticks resting on a chopstick rest, a black screw cap lying on the table and the bottle. The bottle is exactly the bottle in @Image2: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as @Image2; the cap is a screw cap, never a cork; the bottle never moves, tilts or changes shape, size or colour; no text is added. The bottle, the glasses and the chopsticks take the places of the matching proxies in @Video1 at the same scale, the figures about 5 cm tall against the bottle.\nGLOW LOCK: in the dark only the thin outlines of the zombie silhouettes and the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark.\n@Image3 — STYLE: @Image3 defines the visual style only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blue, cinematic depth of field; do not copy its content, characters or layout.\nCamera and framing: @Video1 alone defines angle, height, trajectory and lens perspective.\nScreen direction never flips; each figure keeps the source's screen position and apparent scale; the window and moon stay on the left.\nMatch the video's sharpness and motion timing; render everything in the stylized 3D comic look, the label crisp and readable.\nAvoid: identity drift between figures, extra figures, extra bottles, a cork, candles, faces or eyes on the zombies, neon tube glow, bloom halos, lens flares, glowing label text, a bottle that moves or changes, changed choreography, new camera moves, floating feet, added text, captions, logos or watermarks, people in the room.",
+   "est_credits": 23,
+   "notes": "REVISADO. Plantilla MOTION TRANSFER del skill higgsfield-genjutsu (@Video1 + @Image1 LEAD + @Image2 LOCATION + @Image3 STYLE + locks + 'Avoid:'). Longitud real medida: 3.367 caracteres (< 3.900; el borrador decía ≈ 2.950, corregido). Cambio del revisor: la línea LOCATION añade 'with its light direction' (la luz debe venir de @Image2, luna a la izquierda, no del clip guía de proxies grises). Contrato confirmado por models_explore (get, 2026-10-05): hf_mult_motion_control expone SOLO 'resolution' (480p/720p/1080p); medias roles = image_references + video_references (no 'video'/'image', aunque el skill dice que el servidor auto-coerciona); aspect_ratios = [] (sin aspect_ratio: el 9:16 se hereda del clip guía 720×1280). Orden de medias: vídeo primero, imágenes en el orden en que el prompt las numera. prepared_params / preset_id NO aparecen en el contrato: no se inventa ningún preset_id; si el smoke test v1_vid_03 demuestra que prepared_params.preset_id se aplica, añadirlo con el id real del catálogo. Si el preflight get_cost:true rechaza 3 image_references, quitar @Image3 y borrar su línea STYLE del prompt. Coste estimado 9 s 480p ≈ 23-24 cr (18 cr/7 s verificado; blog 40 cr/15 s); confirmar con get_cost:true. La imagen de estilo S comparte id con apartment_hero (30a2a515)."
+  }
+ ],
+ "report": [
+  {
+   "asset_id": "v1_vid_01",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "params_ok": true,
+   "changes": "Longitud: 1.275 → 1.069 palabras (tope Seedance 2.5 ~1.000; recorte de re-descripciones de identidad que ya aportan las referencias, sin perder beats, timecodes ni locks). PRODUCT_LOCK con la descripción verificada de las siluetas (staggering zombie walk + mano saliendo del suelo). GLOW LOCK deja de citar @Image 6 (KF4 = apagón con etiqueta aún apagada; solo @Image 3 muestra glow). Timecodes S1-S6, cortes 5.5/8.5, música 7.5 s, plop 13 s verificados contra la biblia. Params confirmados en models_explore; folder_id no es param del modelo (nota para pasarlo a nivel de tool si se rechaza)."
+  },
+  {
+   "asset_id": "v1_vid_02",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "params_ok": true,
+   "changes": "857 palabras, dentro del tope. PRODUCT_LOCK actualizado a la descripción verificada de las siluetas. Timecodes 0-2/2-5/5-7/7-8, música 1.0 s, plop 6 s, corte duro tras SHOT 1: correctos. Sin otros cambios."
+  },
+  {
+   "asset_id": "v1_vid_04a",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "params_ok": true,
+   "changes": "Longitud: 2.766 → 2.486 caracteres (tope Kling ≤ 2.500; 2.386 tras la reescritura del Element). Shot 1 corregido: KF4 (start_image) ya es el apagón, así que 'the pendant light clicks off' contradecía el frame 0; ahora 'the last warm light fades out'. Element en cabecera y en los 3 shots, 3+3+4 s, una acción y un movimiento de cámara por shot, ~80 % idéntico. sound:'off', mode std, duration 10, aspect_ratio 9:16 confirmados."
+  },
+  {
+   "asset_id": "v1_vid_04b",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "params_ok": true,
+   "changes": "Longitud: ~2.830 → ≈ 2.493 caracteres (≈ 2.393 tras la reescritura del Element). Shot 1 corregido igual que 04a. Variante B (figuras negras con borde lima que saltan) y tercer shot = tilt-up por el tallo + caída al vino. Mismo esqueleto que 04a."
+  },
+  {
+   "asset_id": "v1_vid_05",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "params_ok": true,
+   "changes": "Plantilla MOTION TRANSFER correcta (@Video1, @Image1 LEAD, @Image2 LOCATION, @Image3 STYLE, locks, 'Avoid:'). Longitud real 3.367 caracteres (< 3.900; el borrador afirmaba ≈ 2.950, corregido en notes). Añadido 'with its light direction' en LOCATION. Contrato confirmado: solo 'resolution'; roles video_references + image_references; sin aspect_ratio (hereda del clip guía); prepared_params/preset_id no expuestos, no se inventa preset_id."
+  }
+ ]
+}
