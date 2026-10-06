@@ -1,6 +1,6 @@
 # Ledger de activos — Sharp Zombie · Vídeo 1 "After Dinner, Tokyo" (línea `D_TOKYO_V1`)
 
-Generado: 2026-10-05 · Proyecto Higgsfield folder `af60db5b-3cf0-444c-8218-287a76fde27d` · Clave de estilo S = job `30a2a515-405f-41f1-b785-2456b943d14d`
+Generado: 2026-10-06 · Proyecto Higgsfield folder `af60db5b-3cf0-444c-8218-287a76fde27d` · Clave de estilo S = job `30a2a515-405f-41f1-b785-2456b943d14d`
 
 Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr · **final de sesión 2642.67 cr (gastados 345.33 de un tope de 600)**
 
@@ -122,6 +122,35 @@ Saldo: inicio de sesión 2988 cr · tras ola 1 (A+B) 2936.42 cr · **final de se
 | `v1_board_08` | gpt_image_2_5 | [`c43eeb2c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131432_c43eeb2c-27f2-4a43-b483-31a2c64f3f8f.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
 | `v1_board_09` | gpt_image_2_5 | [`1a668a0b`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131432_1a668a0b-5e29-41f9-9e52-e6060fa19071.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
 | `v1_board_10` | gpt_image_2_5 | [`5b48f3a5`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_131429_5b48f3a5-e938-4ec7-b006-cafab0df1106.png) | 0.6 | completed | PASS — boceto carboncillo, rótulo exacto, flecha de cámara, acento lima donde toca | — |
+
+## Ola v2 (2026-10-06) — keyframes iluminados con la clave de estilo oscura + recortes para Blender
+
+| Activo | Modelo | Job id | Est. cr | Estado | QA director | Reintentos |
+|---|---|---|---|---|---|---|
+| `v2_kf_01` | nano_banana_pro | [`8206f9a3`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_033703_8206f9a3-c82b-4063-98fa-41fcaf19bb95.png) | 2 | completed | visto: 3D neon lit, pareja ríe, gato mira a cámara, etiqueta OK, tapón al lado -> candidato PASS | #1 `a5e05446` PASS — visto: pareja sentada, gato cruza en primer término por el suelo, pendant, luna, Tokyo Tower, etiqueta OK, tapón al lado, look 3D neon -> PASS (preferido: composición de la biblia) |
+| `v2_kf_02` | nano_banana_pro | [`7b0eace1`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_210637_7b0eace1-09f0-4542-ad34-a0a02154f566.png) | 2 | completed | visto: look cómic con líneas de tinta (estilo antiguo) -> FAIL estilo; regenerar con una variable | #1 `31a190a9` PASS — reintento #1 con 2ª ref lit (f2cb5bf7): mesa/botella 3D, etiqueta excelente, pareja de espaldas con platos hacia la puerta -> PASS (menor: personas algo ilustrativas) |
+| `v2_kf_03` | nano_banana_pro | [`f2cb5bf7`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_033702_f2cb5bf7-be8b-46f5-990e-cc3d2089fedf.png) | 2 | completed | visto: mesa sola lit, 3D neon, etiqueta OK, tapón al lado -> PASS | #1 `ed73e51b` PASS — visto: mesa sola lit con estantería/maneki-neko/lámpara a la izquierda, etiqueta OK, tapón al lado -> PASS (alt sin puerta) |
+| `v2_char_03` | nano_banana_pro | [`8e503c46`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_8e503c46-8c3b-4876-bc6e-49c2b01db77d.png) | 2 | completed | visto: pareja DE PIE brindando (brief pedía sentados), caras y vestuario claros, look 3D; etiqueta pálida/tipografía simplificada -> reintento 1 variable (sentados a la mesa, botella en primer término) | #1 `6f2d125e` FAIL — visto: sentados brindando, etiqueta buena, pero estilo cómic con tinta -> FAIL estilo; reintento #2 con 2ª ref lit; #2 `8785ab86` FAIL — reintento #2 (2ª ref lit): sentados, etiqueta buena, pero sigue estilo cómic con tinta -> FAIL estilo. Máx. reintentos alcanzado. |
+| `v2_cut_aya_seated` | gpt_image_2_5 | [`dcef60e7`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_dcef60e7-cb3a-4e1e-8cf4-1683a6e0c29d.png) | 2.75 | completed | visto: perfil derecha, silla incluida, copa, risa, alpha real 71% -> PASS | — |
+| `v2_cut_aya_standing` | gpt_image_2_5 | [`9491f307`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_9491f307-d9f5-44d7-a227-5f3187e53552.png) | 2.75 | completed | visto: perfil derecha caminando con platos y palillos, alpha real 74% -> PASS | — |
+| `v2_cut_ren_seated` | gpt_image_2_5 | [`c2f6fc6c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114308_c2f6fc6c-9cc4-41fe-9b16-c06120ac9224.png) | 2.75 | completed | visto: perfil IZQUIERDA, silla, copa alzada, risa, alpha real 73% -> PASS | — |
+| `v2_cut_ren_standing` | gpt_image_2_5 | [`1aafff08`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_1aafff08-ff3c-48cc-866c-55df2035656e.png) | 2.75 | completed | visto: perfil derecha caminando con bol+plato, alpha real 77% -> PASS | — |
+| `v2_cut_cat_walking` | gpt_image_2_5 | [`4d6da41c`](https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_4d6da41c-544d-4515-99c9-a3dd0fb59d04.png) | 2.75 | completed | visto: gata calicó caminando a la derecha, cabeza girada, cola corta, alpha real 66% -> PASS | — |
+
+### Elegidos v2
+
+- `v2_kf_01` → `a5e05446-cd09-4f30-ac7f-b26779cd2b07`
+- `v2_kf_03` → `f2cb5bf7-be8b-46f5-990e-cc3d2089fedf`
+- `v2_kf_02` → `31a190a9-8d48-45e5-9d5e-cd678a19c18e`
+- `v2_char_03` → `8e503c46-8c3b-4876-bc6e-49c2b01db77d`
+
+> Decisión (two_shot): se usa el two-shot DE PIE (8e503c46): único con render 3D correcto; sirve como referencia de personajes (caras/vestuario) para Seedance; los sentados salen cómic porque los Elements SZ-aya/SZ-ren llevan el estilo S (lección: recrear Elements de personajes desde renders 3D, p.ej. los recortes)
+
+### Lecciones v2
+
+- Los Elements SZ-aya/SZ-ren arrastran el estilo cómic de la clave S: con la pareja como sujeto nano_banana_pro cae a cómic/tinta; añadir una 2ª referencia iluminada 3D ayuda (kf_02) pero no siempre (two-shot). Para la siguiente iteración: recrear los Elements de personajes desde renders 3D (p.ej. los recortes).
+- La salida de texto de sandbox_exec se trunca (~20k chars): los puentes base64 no sirven; las imágenes devueltas por image_paths sí se guardan en local (PNG con alpha), es el puente válido para texturas.
+- Bucle de recomendación de presets en Seedance (3D RENDER <-> IN THE DARK): evitar "3D render"/"rendering style" en el prompt y declinar IN THE DARK.
 
 ## Drafts de vídeo (480p; `draft:true` caduca a los 7 días)
 

@@ -1,0 +1,54 @@
+{
+ "asset_id": "v1_vid_01_30s_v2",
+ "model": "seedance_2_5",
+ "params": {
+  "mode": "omni_reference",
+  "duration": 30,
+  "resolution": "480p",
+  "aspect_ratio": "9:16",
+  "draft": true,
+  "generate_audio": true,
+  "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+  "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612"
+ },
+ "medias": [
+  {
+   "role": "start_image",
+   "value": "a5e05446-cd09-4f30-ac7f-b26779cd2b07",
+   "label": "start image = v2_kf_01 (sobremesa, luces encendidas, look oscuro)"
+  },
+  {
+   "role": "image_references",
+   "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+   "label": "@Image 1 packshot"
+  },
+  {
+   "role": "image_references",
+   "value": "8e503c46-8c3b-4876-bc6e-49c2b01db77d",
+   "label": "@Image 2 two-shot v2"
+  },
+  {
+   "role": "image_references",
+   "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+   "label": "@Image 3 troupe sheet"
+  },
+  {
+   "role": "image_references",
+   "value": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+   "label": "@Image 4 cat sheet"
+  },
+  {
+   "role": "image_references",
+   "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+   "label": "@Image 5 KF6 = clave de estilo única + mesa apagada"
+  },
+  {
+   "role": "image_references",
+   "value": "f2cb5bf7-be8b-46f5-990e-cc3d2089fedf",
+   "label": "@Image 6 mesa/apartamento encendido v2"
+  }
+ ],
+ "prompt": "GLOBAL STYLE: one single look for the whole film, lit and dark phases alike, exactly the look of @Image 5: a stylized computer-animated feature-film look with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, cinematic shallow depth of field and a subtle filmic grain. Not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes, and the look never changes mid-film. Silent physical comedy, playful, never scary, unhurried pacing with room to breathe. One story with two hard cuts. The bottle label stays accurate and readable. No subtitles, no on-screen text, no logos other than the bottle label.\n\nACTIVE REFERENCES:\n@Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus the small hand rising from the ground, the dark red blackletter name and the RIOJA line exactly as shown. Ignore @Image 1's white background. Do not redraw, restyle or re-letter the label.\n@Image 2 defines Aya and Ren and the lights-on rendering of the couple: fully preserve their faces, hair, skin and outfits and this exact visual finish. Do not use its camera position.\n@Image 3 defines the zombie troupe off the label: flat black cut-outs about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths, no clothes. Do not use its layout.\n@Image 4 defines the cat: a short-tailed calico with green eyes. Do not use its background.\n@Image 5 defines the visual style of the WHOLE film and the lights-off table: pendant off, cold blue moonlight, magenta and cyan rims, clean blacks; use it for look, light, colour and mood from SHOT 3 onward, and for the visual finish from the very first frame.\n@Image 6 defines the apartment with the lights on and the table set: window with the Tokyo skyline and a full moon camera-left, kitchen door camera-right, warm washi pendant; same visual finish as @Image 5. Do not use its camera position.\n\nSCENE: night, a Tokyo apartment after dinner. On the table: two plates with fish remains, chopsticks on a chopstick rest, the open bottle from @Image 1 with its black screw cap lying beside it, two glasses of red wine. No candles. 0 to 11 s: warm washi pendant, a floor lamp, cold kitchen light through the door, full moon in the window. 11 to 30 s: only blue moonlight and the self-lit lime outlines.\n\nFIRST FRAME AND BLOCKING: the first frame is the start image: 35 mm view from the entrance toward the table; Aya and Ren seated with their last glass, laughing; the bottle and glasses in the foreground. The bottle keeps this exact spot on the table for the whole film.\n\nSHOT 1 | 0.0s to 8.0s | slow dolly in from the entrance toward the table, gimbal-smooth, 35 mm. Aya and Ren laugh over the last sip and clink their glasses once at 1 s. At 5.0 s the calico cat crosses the foreground right to left, stops for a beat, looks straight into the lens and exits frame. End state: camera 1.5 m from the table, the couple beginning to stand.\nSHOT 2 | 8.0s to 11.0s | the dolly settles 1 m from the table, 50 mm, then holds static. Aya and Ren stand up with the plates and exit through the kitchen door camera-right. End state: empty chairs, the bottle centred with the cap, the glasses and the chopsticks. Hard cut.\nSHOT 3 | 11.0s to 13.0s | a light switch clicks off-screen, the pendant goes dark and the room falls into cold blue moonlight as in @Image 5; slow push in from 50 mm toward 85 mm on the bottle. End state: the bottle in moonlight, the label still dark.\nSHOT 4 | 13.0s to 17.0s | locked-off 100 mm macro on the front label. The thin outlines of the four zombie silhouettes and the small hand light up one after another from left to right in soft phosphorescent lime green and pulse twice; the first walker turns its head; the crouched zombie stays asleep until the small hand nudges it at 16 s. End state: all outlines lit, the label otherwise unchanged. Hard cut.\nSHOT 5 | 17.0s to 24.0s | table-level 85 mm, slow lateral tracking shot left to right with a gentle arc. The three walkers peel off the label as flat glowing cut-outs, drop onto the table and dance in a conga line toward the glasses; the small hand walks on its fingers behind them; the crouched zombie comes out last, pushed by the hand. They limbo under the chopsticks on their rest; one spins the black screw cap like a DJ turntable; at 22 s Ren's shadow crosses the kitchen door and they freeze in their label poses for one second, then resume as it passes; the maneki-neko waves its paw in time with the music. End state: the troupe at the foot of the two glasses.\nSHOT 6 | 24.0s to 30.0s | 85 mm, slow tilt up along the glass stems, then a slow pull back. The zombies climb the stems and tumble into the red wine; the small hand stays hooked on the rim of one glass. They float and sway tipsily, one floats face up playing dead. The cat peeks in from the bottom of frame and leaves unimpressed. Final two seconds: hold still on the bottle with its glowing label and the two glasses with glowing tipsy zombies inside, the full moon behind.\n\nPHYSICS: the zombies are about 5 cm tall, flat paper-thin cut-outs; their feet stay in contact with the tabletop; the chopsticks stay on their rest; the cap spins in place; the wine ripples and settles; the glasses never tip.\n\nSTILLNESS LOCK: the bottle never moves, tilts, rotates or changes shape, size or colour; the label stays identical in layout, lettering and colours; no text is added anywhere; the two glasses stay in place. Screen direction never flips: kitchen door always camera-right, window and moon always camera-left.\n\nGLOW LOCK: in the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare, as in @Image 3. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark.\n\nAUDIO: no dialogue. <room tone, distant city hum, soft dishes and laughter> from 0 to 15 s; <glasses clink> at 1 s; <light switch click> at 11 s; (upbeat party funk, 122 BPM) from 15 s to the end; <tiny footsteps on wood>; <a soft plop> at 26 s; the music ducks on the final hold.\n\nExclusions: no extra bottles, no cork, no candles, no watermark, no neon signs, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares, no people in the room after 11 s except Ren's passing shadow.",
+ "notes": "v2 del draft 30 s 52247062: mismo guion y mismos SHOTs; cambia GLOBAL STYLE (look oscuro KF6 para todo el film, sin halftone/tinta), @Image 2 = two-shot v2, @Image 5 = KF6 (estilo + mesa apagada), @Image 6 = v2_kf_03; start_image = v2_kf_01. Placeholders <<id>> se rellenan con los jobs v2 aprobados. | Reword v2b: sin \"3D render\"/\"rendering style\" para evitar el bucle de presets (3D RENDER <-> IN THE DARK); declined_preset_id = IN THE DARK.",
+ "est_credits": 90
+}

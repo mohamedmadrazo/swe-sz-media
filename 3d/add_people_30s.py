@@ -25,7 +25,7 @@ for i, a in enumerate(args):
         for kv in args[i+1].split(","):
             k, v = kv.split("="); FACING[k.strip()] = -1 if v.strip().lower() in ("left", "l", "-x") else 1
 # nombre -> (altura m, direccion deseada: +1 = mira a +X / derecha de camara, -1 = mira a -X)
-FIGS = {"aya_seated": (1.25, 1), "aya_standing": (1.62, 1), "ren_seated": (1.32, -1), "ren_standing": (1.76, 1), "cat_walking": (0.30, 1)}
+FIGS = {"aya_seated": (1.25, 1), "aya_standing": (1.62, 1), "ren_seated": (1.32, -1), "ren_standing": (1.76, 1), "cat_walking": (0.30, 1), "cat_peek": (0.16, 1)}
 FPS = 24
 
 # ---------- placeholders ----------
@@ -143,7 +143,7 @@ for name, (h, want) in FIGS.items():
     path, is_ph = figure_png(name); native = FACING.get(name, 1)
     made[name] = billboard("People_" + name, path, h, mirror=(native != want))
     if is_ph: ph_used.append(name)
-A_S, A_T, R_S, R_T, CAT = (made[k] for k in ("aya_seated", "aya_standing", "ren_seated", "ren_standing", "cat_walking"))
+A_S, A_T, R_S, R_T, CAT, PEEK = (made[k] for k in ("aya_seated", "aya_standing", "ren_seated", "ren_standing", "cat_walking", "cat_peek"))
 # Aya: sentada silla izquierda 0-200 (risa 0-192), de pie 200-270 saliendo por detras de la mesa hacia la puerta (x=2.0, y=0.6)
 laugh(A_S, -0.98, 0.4, 0, 192); key(A_S, 200, loc=(-0.98, 0.4, 0), rot=(0, 0, 0)); visible(A_S, [(0, 199)])
 key(A_T, 200, loc=(-0.98, 0.4, 0)); walk(A_T, [(204, -0.98, 0.4), (216, -0.9, 1.0), (248, 1.5, 1.0), (258, 2.0, 0.6), (270, 2.7, 0.6)]); visible(A_T, [(200, 270)])
@@ -152,8 +152,10 @@ laugh(R_S, 0.98, 0.4, 0, 186); key(R_S, 192, loc=(0.98, 0.4, 0), rot=(0, 0, 0));
 key(R_T, 192, loc=(0.98, 0.4, 0)); walk(R_T, [(196, 0.98, 0.4), (218, 1.6, 0.7), (240, 2.0, 0.6), (258, 2.7, 0.6)]); visible(R_T, [(192, 258)])
 # Gato: cruce en primer termino y=-0.9 (120-192, pausa 150-162) + asoma por el borde cercano de la mesa (648-708)
 walk(CAT, [(120, -1.6, -0.9), (150, -0.35, -0.9), (162, -0.35, -0.9), (192, 1.6, -0.9)], step=4, bob=0.015, lean=3.0)
-for f, z in ((648, 0.30), (664, 0.60), (690, 0.60), (708, 0.30)): key(CAT, f, loc=(-0.55, -0.08, z), rot=(0, 0, 0))  # asomo: cabeza y hombros sobre el borde (top gato 0.90 m vs mesa 0.72)
-visible(CAT, [(120, 192), (648, 708)])
+visible(CAT, [(120, 192)])
+# asomo final (648-708): solo la cabeza (cat_peek.png, 0.16 m) sube por el borde cercano de la mesa (tablero z=0.72), lejos de la camara del pull-back
+for f, z in ((676, 0.52), (692, 0.70), (706, 0.70), (716, 0.52)): key(PEEK, f, loc=(-0.08, -0.12, z), rot=(0, 0, 0))  # entra cuando la camara ya esta en su posicion final (684)
+visible(PEEK, [(676, 716)])
 # ---------- hueco de la puerta de la cocina (x=2.0, y=0.6, ancho 0.9, alto 2.1) + cocina iluminada detras ----------
 M_wall = bpy.data.materials["Wall_Plaster"]; M_floor = bpy.data.materials["Oak_Floor"]
 wr = bpy.data.objects["Wall_Right"]; wr.location = (2.0, -1.125, 1.35); wr.scale = (0.05, 1.275, 1.35)          # y -2.4..0.15

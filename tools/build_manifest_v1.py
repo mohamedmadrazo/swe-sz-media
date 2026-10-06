@@ -8,12 +8,14 @@ MAN = os.path.join(ROOT, 'manifest.js')
 def load(p):
     p = os.path.join(ROOT, 'prompts', p)
     return json.load(open(p)) if os.path.exists(p) else None
-w1, w2, vj = load('wave1_jobs.json'), load('wave2_jobs.json'), load('video_jobs.json')
+w1, w2, vj, w3 = load('wave1_jobs.json'), load('wave2_jobs.json'), load('video_jobs.json'), load('wave3_jobs.json')
 specs1 = load('wave1_specs_linted.json'); specs1 = specs1.get('specs', specs1) if isinstance(specs1, dict) else (specs1 or [])
 purpose = {s['id']: s.get('purpose', '') for s in specs1}
 if w2:
     for k, e in w2['jobs'].items(): purpose.setdefault(k, e.get('purpose', ''))
-ESC = [(r'^v1_prod_', 'PROD'), (r'^v1_env_', 'ENV'), (r'^v1_char_0[12]', 'SHEET'), (r'^v1_char_04|^v1_char_05|^v1_char_07', 'ZSHEET'), (r'^v1_char_06', 'CAT'), (r'^v1_char_', 'SHEET'), (r'^v1_board_(\d+)', 'B{n}'), (r'^v1_kf_(\d+)', 'KF{n}'), (r'^v1_endcard', 'END')]
+if w3:
+    for k, e in w3['jobs'].items(): purpose.setdefault(k, e.get('purpose', ''))
+ESC = [(r'^v1_prod_', 'PROD'), (r'^v1_env_', 'ENV'), (r'^v1_char_0[12]', 'SHEET'), (r'^v1_char_04|^v1_char_05|^v1_char_07', 'ZSHEET'), (r'^v1_char_06', 'CAT'), (r'^v1_char_', 'SHEET'), (r'^v1_board_(\d+)', 'B{n}'), (r'^v1_kf_(\d+)', 'KF{n}'), (r'^v1_endcard', 'END'), (r'^v2_kf_(\d+)', 'KF{n}'), (r'^v2_char_', 'SHEET'), (r'^v2_cut_', 'CUT')]
 def escena(k):
     for pat, e in ESC:
         m = re.match(pat, k)
@@ -41,6 +43,15 @@ if w2:
     for k, e in w2['jobs'].items():
         if e.get('status') != 'completed': continue
         img_entry(k, e, primaria=(k == 'v1_kf_01'))
+if w3:
+    ch = w3.get('chosen', {})
+    for k, e in w3['jobs'].items():
+        if e.get('status') != 'completed': continue
+        # elegido explícito: si chosen apunta a un reintento, publicar ese
+        if ch.get(k) and ch[k] != e.get('job_id'):
+            r = next((r for r in e.get('refine', []) if r.get('job_id') == ch[k]), None)
+            if r and r.get('url'): e = {**e, 'url': r['url'], 'job_id': r['job_id'], 'refine': []}
+        img_entry(k, e, primaria=False)
 if vj:
     for k, e in vj['jobs'].items():
         if e.get('status') != 'completed' or not e.get('url'): continue

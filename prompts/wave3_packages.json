@@ -1,0 +1,426 @@
+{
+ "v2_kf_03": {
+  "asset_id": "v2_kf_03",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "style key KF6 (look only)"
+   }
+  ],
+  "prompt": "Keyframe 3 of a 30-second wine commercial, vertical 9:16: the dinner table just after everyone has left. The first reference image defines the look only, the definitive Sharp Zombie look: a stylized 3D animation render with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, glossy reflections on dark wood, cinematic shallow depth of field and a subtle filmic grain; not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes. In this frame the lights are ON (warm washi pendant key over the table, cool kitchen spill through the doorway, blue moonlight through the window) but the rendering style stays identical to the reference. Never copy the reference's layout, content or characters. The bottle label stays accurate and readable. SCENE: the dining table of <<<0199fa74-cff0-459d-801c-fae3153bf8bd>>> at night: a white washi pendant pours warm amber light on the wood, the open kitchen doorway on the right spills cold blue-white light, and the tall window behind shows the Tokyo skyline and a full moon. Chairs pushed back, nobody at the table. SUBJECT: centred, the bottle stands with its label squarely facing the camera. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The bottle is open: its black screw cap lies on the table a few centimetres from the base; two wine glasses, one a third and one half full of red wine, catch faint magenta and cyan rim light from the skyline; chopsticks on a ceramic rest, a bowl of edamame, a small soy dish and two plates with leftovers. Under the lamp the label is flat matte print; none of the silhouettes or outlines glow. CAMERA: 50 mm, a little above table level looking slightly down, shallow depth of field keeps the label sharp and softens the window. No people in the frame, no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "cost_credits": 2,
+   "notes": [
+    "Params verificados con models_explore get nano_banana_pro: aspect_ratio 9:16 esta en la lista; resolution 2k en options [1k,2k,4k]; count 1 dentro de 1-4 (parametro de generate_image); folder_id uuid valido. El contrato NO expone quality, variant ni background (son de gpt_image_2_5): correctamente ausentes. Medias: unico rol image_references; coste preflight real con get_cost:true = 2 creditos exactos.",
+    "Gramatica nano_banana_pro: frases completas descriptivas, proposito declarado (Keyframe 3 de un spot 30 s), camara en terminos reales (50 mm, un poco por encima de la mesa), composicion centrada; una sola frase de exclusiones al final.",
+    "PRODUCT_LOCK_NB presente literal (verificado por comparacion de cadena exacta) con el Element como <<<de0c221b-...>>> en lugar de @SZ-bottle-master. EXCLUSIONS_COMMON presente literal y cierra el prompt, precedida solo de 'No people in the frame'.",
+    "Elements solo en el prompt: apartment 0199fa74 y bottle de0c221b como <<<uuid>>>; ninguno en medias. KF6 (job 94052ac7) es la PRIMERA y unica media, declarada como 'defines the look only'. Aya/Ren/gato ausentes: el brief dice sin personas.",
+    "Prohibicion de halftone/tinta/comic plano literal: 'not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes'. Luces encendidas explicitas (pendant washi calido, spill frio de cocina a la derecha, luna por el ventanal detras) con 'the rendering style stays identical to the reference'.",
+    "Texto: no se pide ningun texto legible nuevo; 'RIOJA' y el nombre solo aparecen dentro del lock del producto; exclusion 'no readable captions or added text' intacta.",
+    "Beat/pose correctos segun el brief: mesa vacia de gente con luces aun encendidas, botella con etiqueta a camara, tapon de rosca negro al lado, dos copas (1/3 y 1/2), palillos en reposapalillos, bol de edamame, platito de soja, dos platos con restos, puerta de cocina con luz fria a la derecha, ventanal y luna detras, 50 mm un poco por encima del nivel de la mesa, sin personas.",
+    "CORRECCION 1 (ambiguedad tapon): el lock describe la botella con 'black screw cap' y la frase siguiente decia 'Its black cap lies on the table beside it', lo que invitaba a renderizar botella tapada + tapon suelto. Ahora: 'The bottle is open: its black screw cap lies on the table a few centimetres from the base' (misma solucion anotada en wave2_packages como siguiente iteracion si se pierde el tapon).",
+    "CORRECCION 2 (anti-glow demasiado amplio): 'nothing glows' podia apagar el pendant, el spill de cocina y los rims magenta/cian del propio look. Ahora: 'Under the lamp the label is flat matte print; none of the silhouettes or outlines glow', que es exactamente lo que se quiere evitar heredar de KF6 (fase oscura).",
+    "CORRECCION 3 (motivacion fisica de los rims con luces encendidas): 'catch magenta and cyan rim light' -> 'catch faint magenta and cyan rim light from the skyline', igual que el recurso usado en los prompts v1 linted (city glow en los bordes del vidrio).",
+    "Longitud: 2.646 caracteres (+95 por las correcciones), ~10% sobre el objetivo blando de 2.400; nano_banana_pro no tiene tope duro y los bloques literales obligatorios suman ~1.650. Recorte opcional sin perder sentido: 'glossy reflections on dark wood,' y 'Chairs pushed back,' (-55).",
+    "Prompt corregido guardado en /tmp/claude-0/-home-user/f40e9f4a-55e3-50fe-8835-c3e0b6fcbc09/scratchpad/v2_kf_03_prompt_lint.txt (el original sigue en v2_kf_03_prompt.txt)."
+   ]
+  },
+  "notes": "Lint adversarial completado sin gastar creditos (solo get_cost:true, gratuito: 2 creditos exactos para nano_banana_pro 2k 9:16 con KF6 como image_references). Contrato nano_banana_pro confirmado via models_explore: parametros = resolution [1k,2k,4k]; medias = image_references; 9:16 soportado; no existen quality/variant/background en este modelo. Tres correcciones minimas sin cambiar el sentido: (1) 'The bottle is open: its black screw cap lies on the table a few centimetres from the base' elimina la ambiguedad botella tapada + tapon suelto; (2) 'none of the silhouettes or outlines glow' en vez de 'nothing glows' para no apagar lamparas ni rims; (3) rims magenta/cian motivados 'from the skyline'. Lock, exclusiones, Elements en prompt, KF6 primera media, prohibicion halftone, luces encendidas y beat 3 verificados. Siguiente iteracion si falla: siluetas brillando en la mesa -> mover la frase matte/no-glow al bloque de estilo; etiqueta con tinte verde de KF6 -> anadir 'the label paper reads bright yellow under the warm pendant'; si aparece gente -> anteponer 'empty chairs' al SUBJECT. Nota al orquestador: la peticion verbatim del usuario (archivo .md del pipeline + system prompt para GPT 6 Astra antes de regenerar el video) sigue fuera de este subpaso; ya existen borradores en el scratchpad (astra_system_prompt_v2.md, system_prompt_v3.md) y en docs/astra/ del repo."
+ },
+ "v2_kf_01": {
+  "asset_id": "v2_kf_01",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "style key KF6 (look only)"
+   }
+  ],
+  "prompt": "Keyframe 1 of a 30-second wine commercial, vertical 9:16, beats 1 and 2, lights on. The first reference image defines the look only: a stylized 3D animation render with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, cinematic shallow depth of field and a subtle filmic grain; not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes. In this frame the lights are ON (warm washi pendant key over the table, cool kitchen spill through the doorway, blue moonlight through the window) but the rendering style stays identical to the reference. Never copy the reference's layout, composition or its free-standing zombie figures. The bottle label stays accurate and readable. SCENE: the Tokyo apartment <<<0199fa74-cff0-459d-801c-fae3153bf8bd>>> at night, walnut table for two, window at camera-left with the skyline and a full moon, kitchen door at camera-right. SUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> (Japanese woman in her thirties, oversized cream knit cardigan over a black slip dress, low loose bun) and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> (Japanese man in his thirties, charcoal linen shirt with rolled sleeves, black trousers, short textured hair) sit facing each other, laughing over the last glass. The calico cat <<<2ab36fde-48a2-4f46-ba0c-0e3c66e86f84>>> crosses the foreground and looks into the lens. In the sharp foreground, label to camera, the open bottle with its black screw cap beside it and two glasses of red wine, one a third full, one half full; the zombies exist only as print on the label. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 35 mm, f/2.8, eye level, from the entrance toward the table and window. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "medias_ok": true,
+   "beat_ok": true,
+   "changes": [
+    "Added 'beats 1 and 2,' to the opening line so the frame is pinned to beats 1-2 (0-8 s) of the 30 s version, as v1_kf_01 did and the brief requires.",
+    "Removed 'the definitive Sharp Zombie look,' from the style sentence: a brand name in prose is a text-render trigger (neon sign / caption) in nano_banana_pro and it carried no instruction; -34 chars.",
+    "'Never copy the reference's layout, content or characters' -> 'Never copy the reference's layout, composition or its free-standing zombie figures': follows the wave-1 lint ruling (forbidding 'content' contradicts set continuity, since KF6 IS the same apartment with the skyline and tower) while naming the only real carry-over risk, the glowing zombies standing on KF6's table."
+   ],
+   "notes": [
+    "models_explore get nano_banana_pro: aspect_ratios include 9:16 (ok); resolution options 1k/2k/4k, 2k ok; medias role image_references only (ok). quality, variant and background are NOT parameters of this model and are correctly absent from params; count and folder_id are generate_image-level fields, not model params (count 1 ok).",
+    "Grammar: full sentences, SCENE / SUBJECT / CAMERA labels, purpose stated in the first line, camera terms (35 mm, f/2.8, eye level); exclusions inline in the form Higgsfield's Nano Banana guide accepts. Prose is positive except the mandated prohibitions.",
+    "PRODUCT_LOCK_NB verified by exact string match with @SZ-bottle-master substituted by <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>; EXCLUSIONS_COMMON verified with endswith as the final sentence.",
+    "Elements: exactly 5 distinct <<<uuid>>> tokens in the prompt (apartment, Aya, Ren, cat, bottle), none in medias. Medias: single entry = KF6 job id as image_references, so the style key is the FIRST media. 6 references total, under the Pro cap of 8. No URLs or job ids in prose.",
+    "Mandated phrases present: 'defines the look only', literal 'In this frame the lights are ON' with pendant/kitchen/moon sources, halftone / ink outlines / colour-fringe / flat comic-book prohibition, 'The bottle label stays accurate and readable', 'the zombies exist only as print on the label'.",
+    "No legible text requested beyond what the Element label carries (name in blackletter, RIOJA) inside the mandated lock; 'no readable captions or added text' closes it.",
+    "Beat check vs docs/video1_bible.md (30 s table, beats 1-2) and the brief: Aya and Ren facing each other laughing over the last glass; calico cat crossing the foreground looking into the lens; bottle label to camera, black screw cap beside it, two glasses 1/3 and 1/2 sharp in the foreground; walnut table; window camera-left with skyline and full moon; kitchen door camera-right; 35 mm from the entrance at eye level. All present. Wardrobe matches the bible (cream knit cardigan / black slip dress / low bun; charcoal linen shirt / black trousers / short textured hair).",
+    "Length 2586 chars (was 2579): about 8% over the ~2400 soft target but nano_banana_pro has no hard limit in the skill; the mandated literal blocks (1630) + 5 tokens (210) + wardrobe (~200) leave no further cut that does not drop required content. If the parent needs <=2400, drop the two wardrobe parentheticals (-190) since the Elements carry identity.",
+    "KF6 inspected in the Higgsfield sandbox (1536x2752): dark-phase apartment, washi pendant, walnut table with glossy reflections, magenta/cyan rims on the bottle, Tokyo skyline with the orange tower, glowing zombies on the table, screw cap on the table, chopsticks. The style sentence matches what the image actually shows; the free-standing zombies are the one element explicitly excluded.",
+    "Scratch copy of the corrected prompt: /tmp/claude-0/-home-user/f40e9f4a-55e3-50fe-8835-c3e0b6fcbc09/scratchpad/v2_kf_01_prompt.txt. No credits spent; estimated cost 2 credits at 2k (one image). No Elements created, no git changes."
+   ]
+  },
+  "notes": "Lint adversarial completado para v2_kf_01 (nano_banana_pro). Contrato del modelo comprobado con models_explore get: 9:16 y 2k válidos; quality/variant/background no existen en este modelo y no están en params (correcto). Tres correcciones sin cambiar el sentido: (1) 'beats 1 and 2,' en la primera línea; (2) eliminado 'the definitive Sharp Zombie look,' (nombre de marca en prosa = riesgo de texto/neón renderizado); (3) 'never copy ... content or characters' sustituido por 'layout, composition or its free-standing zombie figures' siguiendo el fallo del lint de wave 1 (KF6 es el mismo apartamento; prohibir 'content' rompe la continuidad del set) y apuntando al riesgo real (zombies brillantes sobre la mesa de KF6). PRODUCT_LOCK_NB y EXCLUSIONS_COMMON verificados por coincidencia exacta; 5 Elements como <<<uuid>>> solo en el prompt; KF6 única media y primera; luces encendidas literal; prohibición halftone/tinta/cómic plano; beats 1-2 y blocking contrastados con docs/video1_bible.md. Longitud 2586 chars (sin límite duro en NB Pro; recorte opcional de los paréntesis de vestuario, -190, si se exige <=2400). Coste estimado 2 créditos; sin créditos gastados. Siguiente iteración si falla: si el estilo deriva a cómic plano, mover la prohibición antes de la lista positiva; si la etiqueta brilla verde o el tapón sale corcho, quitar el Element del apartamento para dar peso al de la botella; si falta el gato, añadir 'exactly one cat'. La petición del usuario (archivo .md + system prompt para GPT-6 Astra y regenerar el vídeo) queda fuera de esta etapa; este paquete es la entrada KF1 de esa regeneración."
+ },
+ "v2_cut_aya_standing": {
+  "asset_id": "v2_cut_aya_standing",
+  "model": "gpt_image_2_5",
+  "params": {
+   "aspect_ratio": "9:16",
+   "quality": "high",
+   "resolution": "2k",
+   "variant": "flare",
+   "background": "transparent",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "2e7a638a-4c3f-4d02-b394-9a9a11d42dde",
+    "label": "Image 1 Aya character sheet"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "Image 2 look reference (KF6)"
+   }
+  ],
+  "prompt": "USE: single isolated character cut-out for a Blender billboard, PNG with a fully transparent background.\n\nSTYLE: clean stylized 3D animated-film render, soft matte skin and knit shading, finished in the dark neon-night look of Image 2 (deep night blues, restrained magenta and cyan accents) applied only to the shading and rims: local colours stay true, the cardigan stays cream and the dress stays black, no overall blue tint. Cut-out lighting: soft, even key from the camera side with gentle fill, modest contrast, only a faint cool rim on the back edge; clean crisp edges for alpha compositing. No halftone dots, no ink outlines, no comic shading, no colour fringing, no film grain.\n\nSUBJECT: Aya, the adult Japanese woman from Image 1: dark hair in a low loose bun, oversized cream knit cardigan with patch pockets worn open over a black slip dress to mid-calf, bare feet. Caught mid-step walking in STRICT SIDE PROFILE facing screen RIGHT: nose, chest, knees and toes all point right; near leg forward, far leg trailing with its heel lifted. With both hands she carries two stacked ceramic plates with a pair of chopsticks resting on top, held level at waist height in front of her, forearms horizontal, fingers under the lower plate. Gaze straight ahead to the right.\n\nREFERENCES: Image 1 is the Aya character sheet: use it only for identity, face, proportions, hairstyle and wardrobe; do not copy its frontal pose, charcoal backdrop, cast shadow, halftone shading or ink lines. Image 2 is the look reference: use it only for render finish, palette and material feel; do not copy any of its content (apartment, bottle, zombies, chopsticks on the table, skyline).\n\nCAMERA: camera at hip height, true 90-degree side view, minimal perspective; whole body from the crown of the head to the lowest foot inside the frame with about 8 percent clear margin above and below, plates fully in frame.\n\nCONSTRAINTS: exactly one figure, strict side profile facing right, whole body inside the frame with margin, isolated subject on a fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no extra limbs, no extra figures, five fingers per hand, no three-quarter turn, no face toward camera.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_verified": {
+    "aspect_ratio": "9:16 en la lista del contrato",
+    "variant": "flare (opciones flare/sunburst)",
+    "quality": "high (low/medium/high/xhigh/max)",
+    "resolution": "2k (1k/2k/4k)",
+    "background": "transparent (auto/opaque/transparent)",
+    "count": "1 (generate_image admite 1-4)",
+    "folder_id": "UUID v4 válido, carpeta del proyecto",
+    "medias": "rol image_references es el único rol del modelo; job_ids válidos como value"
+   },
+   "notes": [
+    "Contrato comprobado con models_explore get gpt_image_2_5: todos los valores de params existen en el modelo; background transparent va en params y se refuerza en el prompt con 'isolated subject on a fully transparent background' (grammar GPT Image).",
+    "Gramática GPT Image: bloques USE / STYLE / SUBJECT / REFERENCES / CAMERA / CONSTRAINTS en inglés, referencias como 'Image 1' / 'Image 2' en el mismo orden que medias (medias[0] = sheet Aya = Image 1, medias[1] = KF6 = Image 2); sin <<<uuid>>> ni URLs en el prompt; negativos inline, que GPT Image acepta.",
+    "Verificado visualmente en sandbox: la sheet de Aya (nano_banana_2, 16:9) muestra cardigan crema con bolsillos de parche abierto, slip dress negro a media pantorrilla, pies descalzos, moño bajo, fondo carbón, sombra proyectada, tramado halftone y líneas de tinta, por eso el prompt excluye explícitamente pose frontal, backdrop, sombra, halftone y tinta de Image 1.",
+    "Verificado visualmente KF6: render 3D nocturno con azules profundos, rims magenta/cian, contornos verde lima en zombis y palillos sobre la mesa; aviso: KF6 sí tiene algo de tramado halftone en sombras (botella, pared). Se mantiene la prohibición de halftone/tinta en el recorte porque los bordes limpios son necesarios para el alpha y el acabado final se aplica luego en Blender/Restyle; se añade 'chopsticks on the table' a los contenidos de Image 2 que no se deben copiar.",
+    "Correcciones aplicadas sin cambiar el sentido: (1) eliminado 'in her thirties' (la identidad la fija Image 1; sustituido por 'adult'); (2) 'uniform frontal key' -> 'even key from the camera side' porque en perfil estricto 'frontal' era ambiguo; (3) añadida protección de colores locales (cardigan crema, vestido negro, sin tinte azul global) para que la paleta nocturna de Image 2 no tiña el recorte y el billboard se integre bajo cualquier luz; (4) 'sole of the trailing foot' -> 'lowest foot' (el pie trasero lleva el talón levantado, el punto más bajo es el pie adelantado); (5) 'Gaze ahead' -> 'Gaze straight ahead to the right' para reforzar la dirección.",
+    "Beat/pose según brief: de pie, cuerpo entero, PERFIL ESTRICTO mirando a la DERECHA, a medio paso, dos platos apilados con palillos encima sujetos con ambas manos a la altura de la cintura, cabeza-pies dentro del cuadro con margen, fondo transparente, sin suelo ni sombra: todo presente.",
+    "Exclusiones obligatorias literales: exactly one figure, strict side profile facing right, whole body inside the frame with margin, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no extra limbs, no extra figures; extra: five fingers per hand, no three-quarter turn, no face toward camera.",
+    "Product lock no aplica (recorte de personaje sin botella); se prohíbe copiar botella/zombis/apartamento/palillos de Image 2, sin riesgo de botella inventada.",
+    "Longitud 2.270 caracteres aprox. (objetivo ~2.000; muy por debajo del límite real de gpt_image_2_5)."
+   ]
+  },
+  "notes": "Lint adversarial completado sin gastar créditos (solo models_explore, show_generation_by_ids y sandbox_exec para ver las dos referencias; no se ha tocado git ni creado Elements). Paquete corregido: mismos params (todos validados contra el contrato de gpt_image_2_5), mismas medias en el mismo orden, prompt con cinco retoques de precisión (sin edad, key desde el lado de cámara, colores locales protegidos frente al tinte azul de KF6, punto más bajo del cuerpo = pie adelantado, mirada hacia la derecha) y palillos de KF6 añadidos a la lista de contenido que no se copia. Coste estimado flare high 2k ≈ 2,75 créditos; hacer preflight con get_cost:true antes de lanzar. Si falla: primero la dirección (si sale en 3/4, añadir 'profile like a side-scrolling walk cycle' en SUBJECT); si aparece suelo/sombra, repetir con variant sunburst y el mismo prompt; si el recorte sale azulado, subir la frase de colores locales al principio de STYLE."
+ },
+ "v2_char_03": {
+  "asset_id": "v2_char_03",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "style key KF6 (look only)"
+   }
+  ],
+  "prompt": "Keyframe v2_char_03 of a 30-second wine commercial, vertical 9:16: lock two-shot of the couple toasting after dinner. The first reference image defines the look only, the definitive Sharp Zombie look: a stylized 3D animation render with soft volumetric shading, deep night blues, neon magenta and cyan rim lights with a gentle bloom, clean deep blacks, cinematic shallow depth of field and a subtle filmic grain; not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes. In this frame the lights are ON (warm washi pendant key over the table, cool kitchen spill through the doorway, blue moonlight through the window) but the rendering style stays identical to the reference. Never copy the reference's layout, composition or characters. The bottle label stays accurate and readable.\nSCENE: the Tokyo apartment <<<0199fa74-cff0-459d-801c-fae3153bf8bd>>> at night, walnut table under the washi pendant, neon skyline soft in the window behind them, two small plates and chopsticks left from dinner.\nSUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> left and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> right sit across the table, turned three-quarters to camera, mid-laugh, each raising a glass of red wine. Aya: Japanese woman in her thirties, oversized cream knit cardigan over a black slip dress, low loose bun. Ren: Japanese man in his thirties, charcoal linen shirt with rolled sleeves, black trousers, short textured hair. Faces sharp and evenly lit, outfits visible to the waist, natural hands. The bottle stands between them in the foreground, label to camera, its black screw cap beside the base; the zombie silhouettes are flat print on the label and nothing on the table glows. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork.\nCAMERA: medium shot, 50 mm at eye level, f/2.8: faces and label sharp, skyline soft, bottle base in the lower third.\nExclusions: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "medias_ok": true,
+   "elements_ok": true,
+   "style_key_first": true,
+   "lights_on_ok": true,
+   "no_readable_text_requested": true,
+   "beat_ok": true,
+   "notes": [
+    "Contrato vivo (models_explore get nano_banana_pro, 2026-10-05): parámetros expuestos = solo resolution {1k,2k,4k} (default 2k); aspect_ratios incluye 9:16; medias = image role image_references. El paquete usa aspect_ratio 9:16 y resolution 2k, ambos válidos. quality/variant/background NO existen en este modelo (son de gpt_image_2_5) y el paquete correctamente no los incluye; count=1 es argumento genérico de generate_image, no del contrato del modelo. supports_unlim true pero unlim.available=false: la generación gasta créditos (~2 cr a 2k).",
+    "Gramática nano_banana_pro: frases completas y marco positivo; apertura 'Keyframe … of a 30-second wine commercial, vertical 9:16'; bloque de estilo 'defines the look only' con prohibición literal de halftone / ink outlines / misregistered colour fringes / flat comic-book shading; secciones SCENE / SUBJECT / CAMERA; exclusiones al final.",
+    "PRODUCT_LOCK_NB literal e íntegro (docs/video1_prompt_brief_for_astra.md §2, con @SZ-bottle-master escrito como <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>): verificado por substring = True.",
+    "EXCLUSIONS_COMMON literal cerrando el prompt: verificado con endswith = True.",
+    "Elements solo en el prompt, exactamente una vez cada uno: apt 0199fa74…, aya 65a0c653…, ren c800522c…, bottle de0c221b… (4 Elements + 1 media = 5 refs <= 8). Ninguno en medias. El job id de KF6 (94052ac7…) NO aparece en el prompt; sin URLs ni ids dentro del texto.",
+    "Medias: una sola entrada, la clave de estilo KF6 (fase oscura, look definitivo) como PRIMERA media con rol image_references, válido según el contrato.",
+    "Luces encendidas explícitas ('the lights are ON': pendant washi cálido, derrame frío de cocina, luz de luna azul) manteniendo el render idéntico a KF6.",
+    "Texto legible: no se pide ningún rótulo; 'label stays accurate and readable' pertenece al STYLE_LOCK (preservación de etiqueta), no a un texto nuevo. Exclusión 'no readable captions or added text' presente.",
+    "Beat/pose según el brief: Aya y Ren frente a frente en la mesa (across the table), a media risa (mid-laugh), cada uno levantando su copa de tinto, botella entre ambos en primer término con etiqueta a cámara, plano medio 50 mm a altura de ojos, caras nítidas y evenly lit, vestuario descrito y visible hasta la cintura (lo que admite un plano medio) como referencia de personajes para vídeo. Correcto.",
+    "CORRECCIÓN 1 (sin cambiar el sentido): 'Never copy the reference's layout, content or characters' -> 'layout, composition or characters'. Fallo de la wave 1 ya documentado en prompts/wave2_packages.json: la escena ES el apartamento de la clave de estilo (Element SZ-apartment embebido), así que prohibir el 'content' contradecía la continuidad.",
+    "CORRECCIÓN 2 (guard positivo, sin cambiar el sentido): añadido 'the zombie silhouettes are flat print on the label and nothing on the table glows' antes del lock. KF6 muestra siluetas zombi con contorno lima sobre la mesa; en este beat con luces encendidas copiarlas sería un error y la exclusión 'no faces or eyes on the zombie silhouettes' no lo cubre.",
+    "Longitud: 2.745 caracteres en bruto, ≈2.613 efectivos tras la reescritura de los 4 tags a @SZ-nombre (+87 por la corrección 2). nano_banana_pro no tiene límite duro documentado a esta escala (skill prompt-director §4.3) y docs/pipeline_comercial.md no fija tope para NB; el texto libre sigue siendo ≈650 caracteres, el resto son bloques literales obligatorios.",
+    "Sin cambios en params ni medias. No se ha generado nada, no se han creado Elements ni tocado git; 0 créditos gastados en el lint."
+   ]
+  },
+  "notes": "Lint adversarial completado contra el contrato vivo de nano_banana_pro (models_explore get) y los bloques literales de docs/video1_prompt_brief_for_astra.md §2. Resultado: paquete válido; dos retoques de redacción sin cambiar el sentido: (1) 'layout, content or characters' -> 'layout, composition or characters' (ruling de la wave 1: el apartamento de la clave de estilo es la misma escena, 'content' rompía la continuidad); (2) guard positivo 'the zombie silhouettes are flat print on the label and nothing on the table glows' porque KF6 muestra zombis luminosos sobre la mesa y este keyframe es de luces encendidas. Params confirmados: resolution 2k en {1k,2k,4k}, 9:16 en aspect_ratios, rol image_references; quality/variant/background no existen en este modelo (son de gpt_image_2_5), por eso no van. Unlim no disponible: coste estimado ~2 créditos a 2k (confirmar con get_cost:true antes de generar). KF6 no se ha re-inspeccionado en sandbox (ya consta en las notas del borrador; no era necesario para el lint y evita gasto). Siguiente variable si falla: si las caras salen poco legibles, 'turned three-quarters to camera' -> 'both facing the camera at a slight angle'; si la etiqueta se degrada, 'bottle base in the lower third' -> 'bottle base on the lower-third line, label fully inside the frame'; si aparecen figuras luminosas en la mesa pese al guard, mover la frase del guard al bloque de estilo justo después de 'lights are ON'. Contexto para el orquestador: la parte de la petición del usuario sobre el .md para GPT-6 Astra y su system prompt está cubierta por la tarea #9 (docs/astra/pipeline_comercial_para_astra.md); este sub-paso es solo el keyframe v2_char_03 de la regeneración con el nuevo pipeline (tarea #10)."
+ },
+ "v2_cut_aya_seated": {
+  "asset_id": "v2_cut_aya_seated",
+  "model": "gpt_image_2_5",
+  "params": {
+   "aspect_ratio": "1:1",
+   "quality": "high",
+   "resolution": "2k",
+   "variant": "flare",
+   "background": "transparent",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "2e7a638a-4c3f-4d02-b394-9a9a11d42dde",
+    "label": "Image 1 Aya character sheet"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "Image 2 look reference (KF6)"
+   }
+  ],
+  "prompt": "USE: single isolated character cut-out for a Blender billboard, PNG with alpha: isolated subject on a fully transparent background, nothing behind the figure.\nSTYLE: clean stylized 3D animation render in the look of Image 2: smooth shaded surfaces, matte materials, deep night palette, warm paper-lantern key light from above-front with cool night-blue fill, soft even low-contrast lighting suitable for a cut-out, at most a faint magenta and cyan edge accent. No halftone dots, no ink outlines, no comic shading, no chromatic fringing, no strong neon rim lights.\nSUBJECT: Aya from Image 1, a Japanese woman in her thirties, dark hair in a low loose bun, oversized cream knit cardigan with buttons and patch pockets over a black slip dress, bare feet, seated on a simple plain wooden dining chair, shown in STRICT SIDE PROFILE facing the RIGHT edge of the image: nose, chin, both knees and both feet point to the right edge, only one ear visible, no part of the far side of her face shows. She is laughing mid-toast: head tilted slightly back, eyes crinkled, mouth open in a genuine laugh. Her right hand (the near hand, closest to the camera) raises a stemmed glass of red wine to head height, holding it by the stem; her left hand rests on her lap. Hips on the seat, knees bent at 90 degrees, feet level as if resting on an unseen floor, but no floor is drawn. The chair is fully included under her, in side view with every leg visible down to the foot of each leg. Figure and chair are entirely inside the frame with clear margin on all sides.\nREFERENCES: Image 1 is the Aya character sheet: preserve her face, proportions, hairstyle and wardrobe exactly; ignore its charcoal background, its shadow and its halftone comic shading. Image 2 is a look reference only: take palette, lighting mood and 3D finish; do not copy its content, bottle, figures or layout.\nCAMERA: eye level, 85 mm, exact side view, subject centered, figure plus chair filling about 80 percent of the frame height, sharp focus head to toe.\nCONSTRAINTS: exactly one figure, strict side profile facing right, whole body and whole chair inside the frame with margin, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no checkerboard pattern, no vignette, no text, no watermark, no extra limbs, no extra figures, five fingers per hand.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "ref_order_ok": true,
+   "notes": [
+    "Contrato verificado con models_explore get gpt_image_2_5 (2026-10-05): variant flare|sunburst, quality low|medium|high|xhigh|max, resolution 1k|2k|4k, background auto|opaque|transparent (nullable), aspect_ratios incluye 1:1, medias solo rol image_references. Todos los valores del paquete son válidos. 'count' y 'folder_id' no forman parte del contrato del modelo: son parámetros de la llamada generate_image (lote y carpeta); count=1 y la carpeta fija del proyecto se mantienen.",
+    "Gramática gpt_image_2_5 correcta: brief etiquetado en inglés (USE/STYLE/SUBJECT/REFERENCES/CAMERA/CONSTRAINTS), 'Image 1'/'Image 2' numeradas en el orden de medias (Image 1 = sheet Aya 2e7a638a, Image 2 = KF6 94052ac7), cada referencia con un trabajo y una exclusión, negativos inline (aceptados por GPT Image).",
+    "background transparent en params y reforzado en prosa con la frase canónica 'isolated subject on a fully transparent background'. CORRECCIÓN: se eliminó la frase duplicada del bloque USE y se añadió 'nothing behind the figure'; en CONSTRAINTS se añadieron 'no checkerboard pattern' y 'no vignette' (fallo conocido de GPT Image al pedir alfa: pinta el damero o un halo).",
+    "CORRECCIÓN perfil estricto: se anticipa la iteración (b) del paquete original sin cambiar el sentido: 'nose, chin, both knees and both feet point to the right edge, only one ear visible, no part of the far side of her face shows'. Dirección coherente: mirando a la derecha el lado derecho es el cercano a cámara, así la mano derecha con la copa queda visible ('the near hand, closest to the camera', 'holding it by the stem').",
+    "CORRECCIÓN sin suelo: 'feet flat' implicaba un suelo; ahora 'feet level as if resting on an unseen floor, but no floor is drawn'. Silla: 'every leg visible down to the foot of each leg' y 'whole chair inside the frame'.",
+    "Una sola figura, sin texto, sin sombra/fondo/suelo: 'exactly one figure', 'no extra figures', 'no text', 'no watermark', 'no ground plane', 'no floor', 'no cast shadow', 'no contact shadow', 'no backdrop' presentes.",
+    "Beat/pose según brief: Aya sentada en silla de comedor de madera sencilla, perfil estricto hacia la derecha, riendo, mano derecha levantando copa de tinto, silla incluida bajo ella, figura y silla enteras con margen, fondo transparente. Todo cubierto.",
+    "Product lock: el asset no contiene la botella (solo copa con pie); a Image 2 (KF6, con botella y siluetas) se le prohíbe copiar contenido, botella, figuras y layout. Sin texto en imagen, así que no aplica etiqueta/blackletter.",
+    "Longitud: 2.330 caracteres (≈370 palabras), dentro de lo razonable para GPT Image 2.5 (brief largo etiquetado; el modelo no impone límite corto y la skill no fija tope para este modelo)."
+   ]
+  },
+  "notes": "Lint adversarial completado sin gastar créditos ni tocar git. Cambios respecto al paquete original (sentido intacto): (1) USE sin frase duplicada y con 'nothing behind the figure'; (2) anclas de perfil estricto (nariz, barbilla, rodillas y pies hacia la derecha; una sola oreja; nada del lado lejano de la cara); (3) 'feet flat' sustituido por 'feet level as if resting on an unseen floor, but no floor is drawn' para no contradecir 'no floor'; (4) copa sujeta por el pie y mano derecha explicitada como la cercana a cámara; (5) silla completa hasta el pie de cada pata y 'whole chair inside the frame'; (6) nuevos negativos 'no checkerboard pattern' y 'no vignette'. Params validados contra el contrato real del modelo; count/folder_id son parámetros de generate_image, no del modelo. Coste estimado (tabla de la skill): gpt_image_2_5 flare high 2k ≈ 2,75 créditos; confirmar con get_cost:true antes de generar. QA tras generar: alfa real (sin damero, sin suelo ni sombra de contacto), perfil sin ojo lejano, 5 dedos en la mano de la copa, silla con 4 patas completas, una sola figura, nada de halftone/tinta. Siguiente iteración si falla: (a) si persiste halftone/tinta o el damero, pasar a variant 'sunburst' con el mismo prompt; (b) si rompe el perfil, mover la frase de anclas (nose/chin/knees/feet) al inicio de SUBJECT; (c) si recorta la silla, bajar a 'about 70 percent of the frame height'. Prompt guardado en /tmp/claude-0/-home-user/f40e9f4a-55e3-50fe-8835-c3e0b6fcbc09/scratchpad/aya_prompt.txt."
+ },
+ "v2_cut_ren_seated": {
+  "asset_id": "v2_cut_ren_seated",
+  "model": "gpt_image_2_5",
+  "params": {
+   "aspect_ratio": "1:1",
+   "quality": "high",
+   "resolution": "2k",
+   "variant": "flare",
+   "background": "transparent",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "dc8913ab-a76c-4779-a838-e353879496a2",
+    "label": "Image 1 Ren character sheet"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "Image 2 look reference (KF6)"
+   }
+  ],
+  "prompt": "USE: isolated subject on a fully transparent background, a single character cut-out PNG for a Blender billboard. Figure and chair fill about 80% of the height, centered, with margin on every side.\nSTYLE: clean stylized 3D animated-film render in the finish of Image 2: smooth matte skin and fabric shading, cool night-blue ambient tint, muted palette, soft even key light wrapping the figure, no hard shadows. No halftone dots, no ink outlines, no colour fringing, no neon rim lights.\nSUBJECT: Ren, the man from Image 1 (Japanese man in his thirties, short textured black hair, light stubble, charcoal linen shirt with chest pocket and rolled sleeves, black trousers, bare feet), sitting upright on a simple wooden dining chair: light natural wood, four straight legs, plain slatted back, no cushion. He laughs openly, head tilted slightly back, eyes crinkled, mouth open mid-laugh. His left arm (the side nearest the camera) is raised, elbow bent, hand holding a stemmed glass of dark red wine at eye level as if toasting. His right forearm rests on his right thigh. Soles level as if resting on an invisible floor. Whole figure and whole chair inside the frame.\nREFERENCES: Image 1 defines Ren's identity, proportions, hairstyle and wardrobe; fully preserve them. Do not use Image 1's split-screen layout, comic shading, halftone, ink lines, magenta and cyan rims, standing pose or charcoal backdrop. Image 2 defines only the render finish and colour mood. Do not copy Image 2's bottle, zombies, apartment, skyline, props or neon rim lighting.\nCAMERA: strict side profile, Ren faces the LEFT edge of the image; nose, chest, knees and glass all point left. Eye level, 85 mm, camera perpendicular to the chair, all in sharp focus.\nCONSTRAINTS: exactly one figure, strict side profile facing left, whole body and chair inside the frame with margin, fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no table, no text, no watermark, no extra limbs, no extra figures, no three-quarter turn.",
+  "lint": {
+   "grammar_ok": true,
+   "params_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "references_order_ok": true,
+   "profile_ok": true,
+   "single_figure_ok": true,
+   "no_ground_ok": true,
+   "no_text_ok": true,
+   "beat_ok": true,
+   "notes": [
+    "Contrato vivo gpt_image_2_5 (models_explore get, 2026-10-05): variant flare|sunburst, quality low|medium|high|xhigh|max, resolution 1k|2k|4k, background auto|opaque|transparent (nullable), aspect_ratios incluye 1:1, medias solo rol image_references. Todos los params del paquete son válidos. `count` no figura en el contrato del modelo: es el campo genérico de generate_image (lote), se mantiene en 1.",
+    "Gramática: bloques etiquetados en inglés (USE/STYLE/SUBJECT/REFERENCES/CAMERA/CONSTRAINTS), referencias como 'Image 1'/'Image 2' con un trabajo y una exclusión cada una, negativos inline 'no X' (aceptados por GPT Image). Se añade la frase canónica de la skill para fondo transparente: 'isolated subject on a fully transparent background'.",
+    "Orden de medias: medias[0] = sheet de Ren dc8913ab (Image 1), medias[1] = KF6 94052ac7 (Image 2); el prompt referencia Image 1 como identidad e Image 2 como acabado, en ese orden. Correcto.",
+    "Sheet de Ren verificada visualmente (sandbox_exec): split-screen 16:9 (cuerpo entero izquierda, retrato derecha), camisa charcoal con bolsillo de pecho y mangas remangadas, pantalón negro, descalzo, pelo negro corto texturizado, barba incipiente, sombreado cómic con halftone, tinta y rims magenta/cian sobre fondo charcoal. La descripción del prompt coincide; se añade 'chest pocket' y la exclusión 'split-screen layout' para que el modelo no reproduzca los dos paneles.",
+    "Perfil: 'strict side profile, Ren faces the LEFT edge' repetido en CAMERA y CONSTRAINTS; nariz, pecho, rodillas y copa apuntan a la izquierda; 'no three-quarter turn'. Mirando a la izquierda la cámara ve el lado izquierdo de Ren, por lo que la mano IZQUIERDA con la copa es la visible: coherente con el brief.",
+    "Una sola figura: 'exactly one figure', 'no extra figures', 'no extra limbs'. Silla incluida y entera con margen: 'Whole figure and whole chair inside the frame' + 'whole body and chair inside the frame with margin'.",
+    "Sin suelo/sombra/fondo: 'no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no table'. Se corrige la contradicción original 'Feet flat as if on a floor' (podía inducir a dibujar suelo) por 'Soles level as if resting on an invisible floor'.",
+    "Nada de texto: 'no text, no watermark'; no se pide ningún rótulo.",
+    "Beat/pose según brief: Ren sentado en silla de comedor de madera sencilla, perfil estricto hacia la izquierda, riendo (head tilted back, eyes crinkled, mouth open mid-laugh), mano izquierda levantando copa de tinto. Correcto.",
+    "Producto: no aparece botella ni etiqueta (solo copa de tinto oscuro); el lock de producto no se ve afectado. Look: solo acabado y tinte de KF6; se excluyen botella, zombis, apartamento, skyline, props y rims neón.",
+    "Longitud: 2.042 caracteres / 337 palabras tras recorte (el contrato de gpt_image_2_5 no fija límite duro; la guía interna es ~2.000, se queda en el margen).",
+    "Lint ejecutado sin gastar créditos: solo models_explore, show_generation_by_ids y una descarga en sandbox para ver la sheet."
+   ]
+  },
+  "notes": "Cambios respecto al paquete de entrada (sin cambiar el sentido): (1) USE empieza con la frase canónica de fondo transparente de la skill; (2) 'chest pocket' añadido al vestuario tras ver la sheet; (3) exclusión 'split-screen layout' de Image 1; (4) 'Feet flat as if on a floor' sustituido por 'Soles level as if resting on an invisible floor' para no contradecir 'no floor'; (5) recortes menores ('lamp', 'no perspective tilt', 'empty margin') para bajar de 2.078 a 2.042 caracteres. Params validados contra el contrato vivo; `count` es un campo genérico de generate_image, no del modelo. Coste estimado gpt_image_2_5 flare high 2k ≈ 2,75 créditos (confirmar con get_cost:true en la etapa Generar). Si falla: primera variable, el perfil (si gira a 3/4, pasar a variant sunburst y repetir 'strict side profile facing left'); segunda, la silla/suelo (si aparece suelo o sombra de contacto, reforzar 'floating cut-out, chair legs end in transparency'). Ver imagen generada con sandbox_exec (curl -L + image_paths), nunca con Bash local."
+ },
+ "v2_cut_ren_standing": {
+  "asset_id": "v2_cut_ren_standing",
+  "model": "gpt_image_2_5",
+  "params": {
+   "aspect_ratio": "9:16",
+   "quality": "high",
+   "resolution": "2k",
+   "variant": "flare",
+   "background": "transparent",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "dc8913ab-a76c-4779-a838-e353879496a2",
+    "label": "Image 1 Ren character sheet"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "Image 2 look reference (KF6)"
+   }
+  ],
+  "prompt": "USE: single isolated character cut-out for a Blender billboard, PNG with a fully transparent background; only the character and the two dishes he carries.\n\nSTYLE: clean stylized 3D animation render in the look of Image 2 (night-blue palette, smooth modelled surfaces), lit flat and evenly for a cut-out: soft uniform neutral key, gentle cool fill, mid contrast, no strong rim lights, no neon glow on the figure, no halftone dots, no ink outlines, no colour fringing, no film grain. Crisp clean edges, sharp focus.\n\nSUBJECT: Ren from Image 1: Japanese man in his thirties, short textured black hair, light stubble, charcoal linen shirt with sleeves rolled to the forearms, black trousers, bare feet. He walks, caught mid-step: front leg forward carrying the weight, back leg trailing with the heel lifted, torso upright, head looking straight ahead, calm after-dinner expression. With both hands at waist height just in front of his body he carries a stack of two empty dishes: a plain flat ceramic dinner plate underneath and a small ceramic rice bowl on top, both hands supporting the plate from below, five fingers per hand.\n\nREFERENCES: Image 1 is the Ren character sheet: preserve face, proportions, hairstyle and wardrobe exactly; ignore its studio background, halftone shading and magenta/cyan rims. Image 2 is a look reference only (palette and render style); do not copy its room, bottle, silhouettes, props or composition.\n\nCAMERA: full-body shot, eye level at chest height, STRICT SIDE PROFILE: he faces screen RIGHT, nose pointing to the right edge, the camera sees only his left side, left shoulder and arm nearest the lens, no three-quarter turn. Figure centered, whole body from the top of the head to the sole of the trailing foot inside the frame with clear empty margin on all sides.\n\nCONSTRAINTS: exactly one figure, strict side profile facing right, whole body inside the frame with margin, fully transparent background (true alpha: no checkerboard pattern, no solid background colour, no gradient), no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no extra limbs, no extra figures, no food in the dishes, no other props.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "references_ok": true,
+   "profile_direction_ok": true,
+   "beat_ok": true,
+   "notes": [
+    "Contrato models_explore(get, gpt_image_2_5) verificado 2026-10-05: variant flare ∈ {flare,sunburst}; quality high ∈ {low,medium,high,xhigh,max}; resolution 2k ∈ {1k,2k,4k}; background transparent ∈ {auto,opaque,transparent}; aspect_ratio 9:16 en la lista; medias solo rol image_references. count y folder_id son parámetros del tool generate_image, no del modelo (count 1 = una tirada).",
+    "Gramática gpt_image_2_5: brief en prosa etiquetada USE/STYLE/SUBJECT/REFERENCES/CAMERA/CONSTRAINTS, referencias como Image 1 / Image 2, sin <<<uuid>>> ni URLs en el prompt. Orden de medias coherente: medias[0]=sheet Ren=Image 1, medias[1]=KF6=Image 2.",
+    "Beat/pose según brief: Ren de pie, cuerpo entero, perfil estricto mirando a la DERECHA (cámara ve su lado izquierdo, redacción no ambigua), a medio paso, bol y plato apilados sujetos con ambas manos, cabeza-pies dentro del cuadro con margen, fondo transparente, sin suelo ni sombra. Una sola figura.",
+    "Producto: el recorte no contiene la botella; a Image 2 (KF6, clave única) se le prohíbe copiar habitación, botella, siluetas y props, así que el lock de producto no se toca.",
+    "Exclusiones presentes literalmente: exactly one figure, strict side profile facing right, whole body inside the frame with margin, fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no extra limbs, no extra figures, no food in the dishes, no other props.",
+    "Corrección aplicada (única): en CONSTRAINTS se añade 'true alpha: no checkerboard pattern, no solid background colour, no gradient' para cubrir el fallo típico de background=transparent (el modelo pinta damero o color plano). Sentido del prompt intacto.",
+    "Longitud 2.188 caracteres; dentro del margen de gpt_image_2_5 (límite práctico muy por encima; el tope orientativo ~2.000 es solo de legibilidad).",
+    "Pies descalzos conservados porque vienen de la sheet; si la biblia exige calcetines/zapatillas cambiar solo esa frase."
+   ]
+  },
+  "notes": "Lint adversarial completado sin gastar créditos ni tocar git. Comprobado el contrato vivo del modelo: todos los valores de params son válidos (9:16, high, 2k, flare, transparent). Revisión de gramática, orden de referencias, perfil estricto y dirección (derecha ⇒ lado izquierdo visible), una sola figura, sin suelo/sombra/fondo/texto, beat correcto (de pie, cuerpo entero, medio paso, bol+plato apilados con ambas manos, margen). Solo se ha añadido una exclusión en CONSTRAINTS contra damero/color plano en lugar de alfa real. Coste estimado 2,75 créditos (flare, high, 2k). QA tras generar: perfil sin giro 3/4, manos con cinco dedos, bordes sin halo, alfa real. Si falla el perfil, siguiente variable única: añadir en CAMERA 'orthographic side view like a 2D sprite side view, both shoulders overlapping'. Nota para el orquestador: la petición del usuario (pasar el .md a GPT con un system prompt y regenerar el vídeo con el pipeline nuevo) excede esta etapa de lint; este paquete queda listo para la etapa Generar."
+ },
+ "v2_cut_cat_walking": {
+  "asset_id": "v2_cut_cat_walking",
+  "model": "gpt_image_2_5",
+  "params": {
+   "aspect_ratio": "1:1",
+   "quality": "high",
+   "resolution": "2k",
+   "variant": "flare",
+   "background": "transparent",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+    "label": "Image 1 cat sheet"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "Image 2 look reference"
+   }
+  ],
+  "prompt": "USE: single isolated character cut-out for a Blender billboard, PNG with fully transparent background. Isolated subject on a fully transparent background.\nSTYLE: clean stylized 3D animation render that takes only the colour palette and material finish of Image 2 (Sharp Zombie, dark phase): smooth sculpted CG fur, saturated clean colours, matte finish with a soft sheen. Render it WITHOUT the comic-book overlays seen in Image 1 and Image 2 (they are added later in post): no halftone dots, no ink outlines, no colour fringing, no film grain, no neon rim lights, no glow edges. Lighting made for a cut-out: soft, even, wrap-around key with a gentle cool ambient fill, no hard shadows on the body.\nSUBJECT: the calico Japanese bobtail cat (mike-neko) from Image 1, exactly one cat, whole body visible including the short black-and-orange pom tail. Walking at a relaxed mid-stride in strict side profile, body and nose pointing to the RIGHT edge of the frame, so the camera sees the cat's right side: near foreleg reaching forward, far hind leg pushing back, the other two legs under the body, back level, tail up. Only the head turns slightly toward the viewer (about 20 degrees) so both green eyes read; calm unimpressed expression, ears up, whiskers visible.\nREFERENCES: Image 1 defines the cat's identity only: body proportions, white base coat with orange and black patches in the same placement, short pom tail, green eyes, pink nose, white chest and paws. Use its walking view (facing right) as the pose guide; ignore the views that face left or away, the sitting view, the face close-up, the walnut floor, shadows, sheet layout, halftone shading, ink edges and the maneki-neko figurines. Image 2 defines only palette and material finish; do not copy its scene, bottle, silhouettes, glow outlines, night-blue background or lighting.\nCAMERA: side view at the cat's eye level, 85 mm equivalent, no perspective distortion, cat centered with about 10% margin on every side, every part in sharp focus.\nCONSTRAINTS: exactly one figure, strict side profile facing right, whole body inside the frame with margin, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no dark or blue background, no halo around the fur edges, no text, no watermark, no extra limbs, no extra figures, no collar, no props.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "notes": [
+    "Contrato vivo gpt_image_2_5 (models_explore get): variant flare, quality high, resolution 2k, background transparent y aspect_ratio 1:1 son valores listados; count (1-4) y folder_id son parámetros top-level de generate_image, no del modelo, y están dentro de rango. El único rol de media aceptado es image_references: correcto.",
+    "Gramática GPT Image 2.5: bloques etiquetados USE/STYLE/SUBJECT/REFERENCES/CAMERA/CONSTRAINTS en inglés, referencias como 'Image 1' / 'Image 2' en el orden de medias (sheet gato = Image 1, KF6 = Image 2), frase canónica 'Isolated subject on a fully transparent background' con background:transparent en params, negativos inline (aceptados por el modelo). No hay Elements <<<uuid>>> ni URLs en el prompt.",
+    "CORRECCIÓN 1 (contradicción de estilo): el prompt pedía 'the look of Image 2' y a la vez negaba halftone/tinta/fringing, que son justamente los rasgos del look S/KF6 (verificado en la imagen KF6 y en el prompt nano_banana_2 que la generó). Según docs/pipeline_comercial.md y el ledger v1_vid_05b, los recortes van a Blender y el look neón lo aplica Genjutsu Restyle después, así que el recorte debe ir limpio. Ahora el STYLE dice explícitamente que de Image 2 solo se toma paleta y acabado de material y que las capas de cómic 'se añaden en post'. Mismo sentido, sin ambigüedad.",
+    "CORRECCIÓN 2 (dirección y referencia): verificado visualmente el sheet dd14a937: la vista 'walking' mira a la DERECHA, pero la vista 'mirando atrás' (abajo-izquierda) mira a la izquierda/alejándose. Se añade 'Use its walking view (facing right) as the pose guide; ignore the views that face left or away' para que el modelo no herede la dirección equivocada; se refuerza 'nose pointing to the RIGHT edge of the frame' (la iteración que el propio paquete tenía prevista como siguiente paso, aplicada ya sin coste).",
+    "CORRECCIÓN 3 (patas): 'front right leg / rear left leg' era ambiguo respecto a cámara; con el cuerpo mirando a la derecha la cámara ve el lado derecho, así que ahora se dice 'near foreleg reaching forward, far hind leg pushing back', misma pose a media zancada, sin ambigüedad lateral.",
+    "CORRECCIÓN 4 (alfa): se añaden 'no dark or blue background' y 'no halo around the fur edges' porque ambas referencias tienen fondo azul noche y KF6 lleva contornos glow; evita que el PNG transparente salga con halo o fondo sangrado desde las refs. 'no neon rim lights, no glow edges' pasa al STYLE.",
+    "Identidad verificada en el sheet: calicó blanco con manchas naranja/negro, cola pom corta negra/naranja, ojos verdes, nariz rosa, pecho y patas blancas, expresión indiferente: el prompt coincide y no re-describe nada que contradiga Image 1.",
+    "Beat/pose del brief: perfil ESTRICTO hacia la DERECHA, cuerpo entero con cola corta, media zancada, cabeza ligeramente girada al espectador, sin suelo/sombra, fondo transparente, una sola figura, sin texto: todo cubierto en SUBJECT + CONSTRAINTS.",
+    "product_lock_ok: el asset no contiene la botella; el prompt prohíbe copiar botella, siluetas y contornos glow de KF6, así que no roza el lock de producto.",
+    "Longitud: 2.321 caracteres / 382 palabras. GPT Image 2.5 no tiene límite publicado en la skill (es el modelo de briefs largos); el '~2.000' del paquete anterior era autoimpuesto. Sigue siendo razonable para flare; si se quisiera recortar, el bloque REFERENCES es el único prescindible en parte."
+   ]
+  },
+  "notes": "Lint adversarial completado sin gastar créditos (solo models_explore, show_generation_by_ids y sandbox_exec para ver el sheet del gato y KF6). Paquete listo para la etapa Generar: gpt_image_2_5 flare, high, 2k, 1:1, background transparent, count 1, carpeta af60db5b-3cf0-444c-8218-287a76fde27d; medias en el orden fijado (sheet gato dd14a937 = Image 1, KF6 94052ac7 = Image 2), nunca en el prompt. Coste estimado ~2,75 créditos (tabla de la skill: flare high 2k); confirmar con get_cost:true antes de lanzar. Cuatro correcciones sin cambiar el sentido: (1) se resuelve la contradicción 'look de Image 2' vs 'sin halftone/tinta' dejando claro que el recorte va limpio y el look neón lo pone Restyle en post; (2) se indica usar la vista walking del sheet (mira a la derecha) e ignorar las que miran a la izquierda/atrás, y se refuerza 'nose to the RIGHT edge'; (3) patas descritas como near/far en vez de right/left; (4) exclusiones de fondo azul y halo en los bordes para proteger el alfa. QA tras generar: alfa real sin halo ni sombra de contacto, cola corta y cuatro patas completas dentro del margen, sin halftone ni contornos de tinta, manchas calicó como en el sheet, perfil hacia la derecha. Siguiente iteración si falla: si aparece suelo o sombra, mismo prompt con variant sunburst; si la cabeza gira demasiado, bajar a 'about 10 degrees' sin tocar nada más. No se han creado Elements ni tocado git."
+ },
+ "v2_kf_02": {
+  "asset_id": "v2_kf_02",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "9:16",
+   "resolution": "2k",
+   "count": 1,
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "style key KF6 (look only)"
+   }
+  ],
+  "prompt": "Keyframe 2 of a 30-second wine commercial, vertical 9:16. The first reference image defines the look only, the definitive Sharp Zombie look: a stylized 3D animation render with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, cinematic shallow depth of field and a subtle filmic grain; not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes. In this frame the lights are ON (warm washi pendant key over the table, cool kitchen spill through the doorway, blue moonlight through the window) but the rendering style stays identical to the reference. Never copy the reference's layout or composition. The bottle label stays accurate and readable. SCENE: the Tokyo apartment <<<0199fa74-cff0-459d-801c-fae3153bf8bd>>> at night, the lit pendant over a walnut table in the foreground, the kitchen doorway on the right spilling cool light, the moonlit window on the left. SUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> stand in the mid-ground, each carrying a stack of plates, walking away toward the kitchen doorway on the right, seen from behind in three-quarter profile. Aya: oversized cream knit cardigan over a black slip dress, low loose bun. Ren: charcoal linen shirt with rolled sleeves, black trousers, short textured hair. On the table, sharp: the bottle upright with its label to camera, the black screw cap lying beside it, two glasses of red wine (one a third full, one half full), chopsticks on a chopstick rest and a bowl of edamame. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 50 mm lens, 1 m from the table; tableware sharp, the couple softly out of focus. Exclusions: no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+  "lint": {
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "params_ok": true,
+   "medias_ok": true,
+   "elements_ok": true,
+   "style_key_first": true,
+   "halftone_ban_ok": true,
+   "lights_on_ok": true,
+   "no_text_requested_ok": true,
+   "beat_pose_ok": true,
+   "notes": [
+    "Contrato live nano_banana_pro (models_explore get): parameters = solo resolution [1k,2k,4k] (default 2k); aspect_ratios incluye 9:16; medias = image_references. El modelo NO expone quality, variant ni background, y el paquete no los incluye: correcto. count=1 y folder_id son params de generate_image, no del modelo; validos.",
+    "Gramatica Nano Banana Pro OK: frases completas que describen la escena, orden Subject/Action/Context/Composition/Style con proposito declarado ('Keyframe 2 of a 30-second wine commercial, vertical 9:16') y terminos de camara (50 mm, 1 m). Exclusiones usadas con moderacion y al final.",
+    "PRODUCT_LOCK_NB verificado literal contra docs/video1_prompt_brief_for_astra.md (627 caracteres), con @SZ-bottle-master sustituido por <<<de0c221b-...>>> como exige la API (el backend lo reescribe a @SZ-bottle-master). EXCLUSIONS_COMMON literal y cierra el prompt.",
+    "Elements en el prompt como <<<uuid>>>: apartment, aya, ren, bottle (4); ninguno en medias. Medias = solo KF6 (94052ac7-...) como image_references y PRIMERA media. Total refs = 5 <= 8.",
+    "Prohibicion halftone/tinta/comic plano presente ('not flat comic-book shading: no halftone dots, no ink outlines, no misregistered colour fringes'); luces encendidas presentes (pendant washi calido, spill frio de cocina, luna); no se pide texto legible anadido (solo 'label accurate and readable', que es el lock del producto).",
+    "CORRECCION 1 (sentido del beat): 'two empty wine glasses' contradecia la biblia (docs/video1_bible.md: 'dos copas de tinto (1/3 y 1/2)', la pareja deja la mesa y las copas quedan para el beat 8 de la escalada y caida al vino). Ahora: 'two glasses of red wine (one a third full, one half full)'.",
+    "CORRECCION 2 (continuidad): 'Never copy the reference's layout, content or characters' -> 'Never copy the reference's layout or composition', siguiendo el fallo del lint de la ola 1 (prompts/wave2_packages.json): la escena ES el apartamento y la botella de KF6, prohibir 'content' contradice la continuidad del look definitivo.",
+    "CORRECCION 3 (pose): 'in the mid-ground ... walk away' -> 'stand in the mid-ground ... walking away', para que 'de pie' del brief quede explicito; 'the black screw cap lying beside it' anade el verbo que el plan B de la ola 2 recomendaba por si el tapon se omite.",
+    "CORRECCION 4 (poda): eliminadas las edades ('in her/his thirties') y 'Japanese woman/man' redundantes con los Elements que ya portan la identidad; quedan solo los anclajes de vestuario. Longitud: 2.571 caracteres (antes 2.591). Los bloques literales obligatorios de este encargo (apertura, bloque de estilo largo, lock 627, exclusiones, vestuario, 4 uuids) impiden bajar del tope orientativo de 2.300 de la ola 2 sin eliminar un elemento exigido; Nano Banana Pro no tiene limite duro cerca de esta cifra, asi que length_ok=true."
+   ]
+  },
+  "notes": "Lint completado sin gastar creditos ni tocar git. Modelo confirmado con models_explore (get nano_banana_pro): resolution 1k/2k/4k, ratio 9:16 valido, medias image_references, Elements soportados; sin quality/variant/background en el contrato. Beat 3 'Retirada' (8-11 s en la version de 30 s, docs/video1_bible.md l.76) verificado: Aya y Ren de pie con platos hacia la puerta de la cocina a la derecha, de espaldas/medio perfil, mesa en primer termino con botella (etiqueta a camara), tapon de rosca al lado, dos copas de tinto (1/3 y 1/2 segun biblia; corregido desde 'empty'), palillos en reposapalillos, bol de edamame, pendant encendido, 50 mm a 1 m. Cambios: copas con vino, 'content' -> 'composition' en la clausula de no copiar la clave, 'stand ... walking away', tapon 'lying beside it', sin edades. Coste estimado ~2 creditos a 2k (preflight con get_cost:true en la etapa Generar). Plan B si falla: primero la escala personajes/mesa ('the couple is small in frame, two steps beyond the table'); si la etiqueta se degrada por el DoF, subir resolution a 4k. Prompt corregido guardado en /tmp/claude-0/-home-user/f40e9f4a-55e3-50fe-8835-c3e0b6fcbc09/scratchpad/v2_kf_02_prompt_lint.txt. Nota para el orquestador: la peticion verbatim del usuario (archivo .md para GPT-6 Astra + system prompt + regenerar el video) no se cubre en esta etapa de lint; ya existe docs/video1_prompt_brief_for_astra.md y docs/astra/pipeline_comercial_para_astra.md como base para ese paso."
+ }
+}

@@ -1,0 +1,230 @@
+{
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "style_key": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+ "note": "Ola v2 (2026-10-06): keyframes iluminados regenerados con KF6 como clave de estilo única y recortes transparentes de personas/gato para el rodaje Blender. Generación directa desde la sesión principal (los workflows de agentes murieron por reinicios del worker y por el límite de uso de la organización); QA visual por el director en el sandbox.",
+ "jobs": {
+  "v2_kf_01": {
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "8206f9a3-c82b-4063-98fa-41fcaf19bb95",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_033703_8206f9a3-c82b-4063-98fa-41fcaf19bb95.png",
+   "status": "completed",
+   "est_credits": 2,
+   "purpose": "KF1 v2 (sobremesa + gato) con la clave de estilo oscura KF6",
+   "size": "1536x2752",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "a5e05446-cd09-4f30-ac7f-b26779cd2b07",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233820_a5e05446-cd09-4f30-ac7f-b26779cd2b07.png",
+     "verdict": "PASS — visto: pareja sentada, gato cruza en primer término por el suelo, pendant, luna, Tokyo Tower, etiqueta OK, tapón al lado, look 3D neon -> PASS (preferido: composición de la biblia)"
+    }
+   ]
+  },
+  "v2_kf_02": {
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "7b0eace1-09f0-4542-ad34-a0a02154f566",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_210637_7b0eace1-09f0-4542-ad34-a0a02154f566.png",
+   "status": "completed",
+   "est_credits": 2,
+   "purpose": "KF2 v2 (salida con platos) con la clave de estilo oscura",
+   "size": "1536x2752",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "31a190a9-8d48-45e5-9d5e-cd678a19c18e",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_175808_31a190a9-8d48-45e5-9d5e-cd678a19c18e.png",
+     "verdict": "PASS — reintento #1 con 2ª ref lit (f2cb5bf7): mesa/botella 3D, etiqueta excelente, pareja de espaldas con platos hacia la puerta -> PASS (menor: personas algo ilustrativas)"
+    }
+   ]
+  },
+  "v2_kf_03": {
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "f2cb5bf7-be8b-46f5-990e-cc3d2089fedf",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_033702_f2cb5bf7-be8b-46f5-990e-cc3d2089fedf.png",
+   "status": "completed",
+   "est_credits": 2,
+   "purpose": "KF3 v2 (mesa sola encendida) con la clave de estilo oscura",
+   "size": "1536x2752",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "ed73e51b-9897-4d28-81f8-a8aeb9630e0f",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233821_ed73e51b-9897-4d28-81f8-a8aeb9630e0f.png",
+     "verdict": "PASS — visto: mesa sola lit con estantería/maneki-neko/lámpara a la izquierda, etiqueta OK, tapón al lado -> PASS (alt sin puerta)"
+    }
+   ]
+  },
+  "v2_char_03": {
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "8e503c46-8c3b-4876-bc6e-49c2b01db77d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_8e503c46-8c3b-4876-bc6e-49c2b01db77d.png",
+   "status": "completed",
+   "est_credits": 2,
+   "purpose": "Two-shot v2 de la pareja (referencia de personajes para vídeo)",
+   "size": "1536x2752",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "6f2d125e-cfee-40bb-b956-fc09e6dce9a4",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_175320_6f2d125e-cfee-40bb-b956-fc09e6dce9a4.png",
+     "verdict": "FAIL — visto: sentados brindando, etiqueta buena, pero estilo cómic con tinta -> FAIL estilo; reintento #2 con 2ª ref lit"
+    },
+    {
+     "attempt": 2,
+     "job_id": "8785ab86-4297-440c-a6d5-80038aa742d4",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_180747_8785ab86-4297-440c-a6d5-80038aa742d4.png",
+     "verdict": "FAIL — reintento #2 (2ª ref lit): sentados, etiqueta buena, pero sigue estilo cómic con tinta -> FAIL estilo. Máx. reintentos alcanzado."
+    }
+   ]
+  },
+  "v2_cut_aya_seated": {
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "dcef60e7-cb3a-4e1e-8cf4-1683a6e0c29d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_dcef60e7-cb3a-4e1e-8cf4-1683a6e0c29d.png",
+   "status": "completed",
+   "est_credits": 2.75,
+   "purpose": "Recorte Aya sentada (billboard Blender)",
+   "size": "2048x2048",
+   "refine": []
+  },
+  "v2_cut_aya_standing": {
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "9491f307-d9f5-44d7-a227-5f3187e53552",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_9491f307-d9f5-44d7-a227-5f3187e53552.png",
+   "status": "completed",
+   "est_credits": 2.75,
+   "purpose": "Recorte Aya de pie con platos (billboard Blender)",
+   "size": "1520x2688",
+   "refine": []
+  },
+  "v2_cut_ren_seated": {
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "c2f6fc6c-9cc4-41fe-9b16-c06120ac9224",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114308_c2f6fc6c-9cc4-41fe-9b16-c06120ac9224.png",
+   "status": "completed",
+   "est_credits": 2.75,
+   "purpose": "Recorte Ren sentado (billboard Blender)",
+   "size": "2048x2048",
+   "refine": []
+  },
+  "v2_cut_ren_standing": {
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "1aafff08-ff3c-48cc-866c-55df2035656e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_1aafff08-ff3c-48cc-866c-55df2035656e.png",
+   "status": "completed",
+   "est_credits": 2.75,
+   "purpose": "Recorte Ren de pie con bol y plato (billboard Blender)",
+   "size": "1520x2688",
+   "refine": []
+  },
+  "v2_cut_cat_walking": {
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "job_id": "4d6da41c-544d-4515-99c9-a3dd0fb59d04",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_114307_4d6da41c-544d-4515-99c9-a3dd0fb59d04.png",
+   "status": "completed",
+   "est_credits": 2.75,
+   "purpose": "Recorte gata caminando (billboard Blender)",
+   "size": "2048x2048",
+   "refine": []
+  }
+ },
+ "director_qa": {
+  "v2_kf_01": "visto: 3D neon lit, pareja ríe, gato mira a cámara, etiqueta OK, tapón al lado -> candidato PASS",
+  "v2_kf_02": "visto: look cómic con líneas de tinta (estilo antiguo) -> FAIL estilo; regenerar con una variable",
+  "v2_kf_03": "visto: mesa sola lit, 3D neon, etiqueta OK, tapón al lado -> PASS",
+  "v2_char_03": "visto: pareja DE PIE brindando (brief pedía sentados), caras y vestuario claros, look 3D; etiqueta pálida/tipografía simplificada -> reintento 1 variable (sentados a la mesa, botella en primer término)",
+  "v2_cut_aya_seated": "visto: perfil derecha, silla incluida, copa, risa, alpha real 71% -> PASS",
+  "v2_cut_aya_standing": "visto: perfil derecha caminando con platos y palillos, alpha real 74% -> PASS",
+  "v2_cut_ren_seated": "visto: perfil IZQUIERDA, silla, copa alzada, risa, alpha real 73% -> PASS",
+  "v2_cut_ren_standing": "visto: perfil derecha caminando con bol+plato, alpha real 77% -> PASS",
+  "v2_cut_cat_walking": "visto: gata calicó caminando a la derecha, cabeza girada, cola corta, alpha real 66% -> PASS"
+ },
+ "chosen": {
+  "v2_kf_01": "a5e05446-cd09-4f30-ac7f-b26779cd2b07",
+  "v2_kf_03": "f2cb5bf7-be8b-46f5-990e-cc3d2089fedf",
+  "v2_kf_02": "31a190a9-8d48-45e5-9d5e-cd678a19c18e",
+  "v2_char_03": "8e503c46-8c3b-4876-bc6e-49c2b01db77d"
+ },
+ "decisions": {
+  "two_shot": "se usa el two-shot DE PIE (8e503c46): único con render 3D correcto; sirve como referencia de personajes (caras/vestuario) para Seedance; los sentados salen cómic porque los Elements SZ-aya/SZ-ren llevan el estilo S (lección: recrear Elements de personajes desde renders 3D, p.ej. los recortes)"
+ },
+ "people_png": "3d/textures/people/{aya_seated,aya_standing,ren_seated,ren_standing,cat_walking}.png (puente image_paths, PNG8 alpha 1024 px)",
+ "lessons": [
+  "Los Elements SZ-aya/SZ-ren arrastran el estilo cómic de la clave S: con la pareja como sujeto nano_banana_pro cae a cómic/tinta; añadir una 2ª referencia iluminada 3D ayuda (kf_02) pero no siempre (two-shot). Para la siguiente iteración: recrear los Elements de personajes desde renders 3D (p.ej. los recortes).",
+  "La salida de texto de sandbox_exec se trunca (~20k chars): los puentes base64 no sirven; las imágenes devueltas por image_paths sí se guardan en local (PNG con alpha), es el puente válido para texturas.",
+  "Bucle de recomendación de presets en Seedance (3D RENDER <-> IN THE DARK): evitar \"3D render\"/\"rendering style\" en el prompt y declinar IN THE DARK."
+ ],
+ "balance": {
+  "spent_wave3_images": 33.75,
+  "spent_user_astra_not_pipeline": 28.71
+ }
+}
