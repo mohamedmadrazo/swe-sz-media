@@ -89,8 +89,8 @@
   "v1_vid_06_dark": {
    "model": "hf_mult_motion_control",
    "job_id": "c5a8113a-d865-4b64-bfeb-2300bd6e4dd3",
-   "status": "pending",
-   "url": null,
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_214130_c5a8113a-d865-4b64-bfeb-2300bd6e4dd3.mp4",
    "credits": 57,
    "w": 480,
    "h": 854,
@@ -101,13 +101,13 @@
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_134144_94052ac7-c2c1-41c9-a7ff-1340c8b5e82d.png",
    "note": "paquete prompts/video_packages_v2_genjutsu.json",
    "expires": "",
-   "verdict": ""
+   "verdict": "PASS — motion transfer fiel al rodaje Blender (push-in, macro con contornos lima encendiéndose, salida de la etiqueta, baile en fila, limbo bajo los palillos, conga a las copas, zombies en la copa, pull-back final); etiqueta gris-verde a oscuras con contornos lima (GLOW LOCK respetado), botella fiel, look 3D neon continuo con rims magenta/cian. Menores: zombies algo mayores de 5 cm en algún plano; comprobar el asomo del gato en los últimos 2 s."
   },
   "v1_vid_06_lit": {
    "model": "hf_mult_motion_control",
    "job_id": "78fd3fd4-c61c-41ee-aa8a-cee930a0366c",
-   "status": "pending",
-   "url": null,
+   "status": "completed",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261006_214132_78fd3fd4-c61c-41ee-aa8a-cee930a0366c.mp4",
    "credits": 33,
    "w": 480,
    "h": 854,
@@ -118,13 +118,13 @@
    "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_233820_a5e05446-cd09-4f30-ac7f-b26779cd2b07.png",
    "note": "paquete prompts/video_packages_v2_genjutsu.json",
    "expires": "",
-   "verdict": ""
+   "verdict": "PASS — los billboards planos se convierten en Aya y Ren en 3D (caras, vestuario), brindis, gata real cruzando en primer término, retirada con platos hacia la cocina; mismo acabado CG que el segmento oscuro (continuidad de look garantizada); etiqueta amarilla correcta con tapón al lado. Menor: texto pequeño de la etiqueta poco legible a 480p."
   }
  },
  "balance": {
   "start": 2988,
-  "end": 2488.92,
-  "spent": 469.08,
-  "note": "v2 (6 oct): 33.75 cr imágenes + 90 cr Seedance 30 s v2; aparte, 28.71 cr gastados por el usuario en GPT 6 Astra (fuera del pipeline). Pendiente: Genjutsu lit+dark (~80 cr)."
+  "end": 2400.21,
+  "spent": 559.0799999999999,
+  "note": "v2 (6 oct): 33.75 cr imágenes + 90 cr Seedance 30 s v2 + 57 cr Genjutsu oscuro + 33 cr Genjutsu iluminado = 213.75; total pipeline 559.08 de un tope de 600. Aparte, 28.71 cr gastados por el usuario en GPT 6 Astra (fuera del pipeline)."
  }
 }
