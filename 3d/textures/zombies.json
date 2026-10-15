@@ -1,0 +1,182 @@
+{
+  "source": "label_silhouettes_fill.png",
+  "source_size": [
+    1536,
+    2048
+  ],
+  "label_zone_height_m": 0.11,
+  "canvas": 1024,
+  "outline_frac": 0.035,
+  "fit_frac": 0.76,
+  "feet_v": 0.12,
+  "lime": "#39FF14",
+  "order": "left→right on the label",
+  "figures": [
+    {
+      "index": 1,
+      "file": "zombie_01.png",
+      "outline_file": "zombie_01_outline.png",
+      "name": "walker_a",
+      "kind": "walker",
+      "label_bbox_px": [
+        27,
+        1238,
+        98,
+        1748
+      ],
+      "label_size_px": [
+        72,
+        511
+      ],
+      "label_height_m": 0.02745,
+      "label_width_m": 0.00387,
+      "label_center_u": 0.0407,
+      "label_center_v": 0.271,
+      "canvas_bbox_px": [
+        457,
+        123,
+        566,
+        900
+      ],
+      "figure_height_frac": 0.7598,
+      "figure_width_frac": 0.1074,
+      "feet_v": 0.12,
+      "height_rel_to_tallest": 0.9569,
+      "area_px": 15251,
+      "clipped_left_edge": true,
+      "scene_stand_in": "zombie_03 (walker_c) mirrored in UV — walker_a is a foreshortened sliver at the label edge"
+    },
+    {
+      "index": 2,
+      "file": "zombie_02.png",
+      "outline_file": "zombie_02_outline.png",
+      "name": "walker_b",
+      "kind": "walker",
+      "label_bbox_px": [
+        117,
+        1279,
+        333,
+        1812
+      ],
+      "label_size_px": [
+        217,
+        534
+      ],
+      "label_height_m": 0.02868,
+      "label_width_m": 0.01166,
+      "label_center_u": 0.1465,
+      "label_center_v": 0.2454,
+      "canvas_bbox_px": [
+        354,
+        123,
+        669,
+        900
+      ],
+      "figure_height_frac": 0.7598,
+      "figure_width_frac": 0.3086,
+      "feet_v": 0.12,
+      "height_rel_to_tallest": 1.0,
+      "area_px": 46868,
+      "clipped_left_edge": false
+    },
+    {
+      "index": 3,
+      "file": "zombie_03.png",
+      "outline_file": "zombie_03_outline.png",
+      "name": "walker_c",
+      "kind": "walker",
+      "label_bbox_px": [
+        349,
+        1304,
+        698,
+        1812
+      ],
+      "label_size_px": [
+        350,
+        509
+      ],
+      "label_height_m": 0.02734,
+      "label_width_m": 0.0188,
+      "label_center_u": 0.3408,
+      "label_center_v": 0.2393,
+      "canvas_bbox_px": [
+        244,
+        123,
+        778,
+        900
+      ],
+      "figure_height_frac": 0.7598,
+      "figure_width_frac": 0.5225,
+      "feet_v": 0.12,
+      "height_rel_to_tallest": 0.9532,
+      "area_px": 73382,
+      "clipped_left_edge": false
+    },
+    {
+      "index": 4,
+      "file": "zombie_04.png",
+      "outline_file": "zombie_04_outline.png",
+      "name": "crouch",
+      "kind": "crouch",
+      "label_bbox_px": [
+        766,
+        1521,
+        1107,
+        1812
+      ],
+      "label_size_px": [
+        342,
+        292
+      ],
+      "label_height_m": 0.01568,
+      "label_width_m": 0.01837,
+      "label_center_u": 0.6097,
+      "label_center_v": 0.1863,
+      "canvas_bbox_px": [
+        123,
+        237,
+        900,
+        900
+      ],
+      "figure_height_frac": 0.6484,
+      "figure_width_frac": 0.7598,
+      "feet_v": 0.12,
+      "height_rel_to_tallest": 0.5468,
+      "area_px": 68820,
+      "clipped_left_edge": false
+    },
+    {
+      "index": 5,
+      "file": "zombie_05.png",
+      "outline_file": "zombie_05_outline.png",
+      "name": "hand",
+      "kind": "hand",
+      "label_bbox_px": [
+        1220,
+        1724,
+        1326,
+        1812
+      ],
+      "label_size_px": [
+        107,
+        89
+      ],
+      "label_height_m": 0.00478,
+      "label_width_m": 0.00575,
+      "label_center_u": 0.8288,
+      "label_center_v": 0.1367,
+      "canvas_bbox_px": [
+        123,
+        254,
+        900,
+        900
+      ],
+      "figure_height_frac": 0.6318,
+      "figure_width_frac": 0.7598,
+      "feet_v": 0.12,
+      "height_rel_to_tallest": 0.1667,
+      "area_px": 5530,
+      "clipped_left_edge": false
+    }
+  ]
+}

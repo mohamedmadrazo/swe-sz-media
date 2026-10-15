@@ -1,0 +1,64 @@
+{
+ "v1_vid_06_dark": {
+  "model": "hf_mult_motion_control",
+  "params": {
+   "resolution": "480p",
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "video_references",
+    "value": "<<media_dark>>",
+    "label": "@Video1 rodaje Blender 30 s, segmento oscuro (frames 264-720, 19.0 s)"
+   },
+   {
+    "role": "image_references",
+    "value": "94052ac7-c2c1-41c9-a7ff-1340c8b5e82d",
+    "label": "@Image1 LEAD troupe en la mesa (KF6)"
+   },
+   {
+    "role": "image_references",
+    "value": "67661b9c-9a27-4ab1-9b6d-d6a20d36520e",
+    "label": "@Image2 LOCATION mesa a oscuras (KF4)"
+   },
+   {
+    "role": "image_references",
+    "value": "fdead37f-5f7c-4afe-88d8-3ce13f5aa905",
+    "label": "@Image3 STYLE KF7 (fase oscura)"
+   }
+  ],
+  "prompt": "MOTION TRANSFER from @Video1.\nKeep the original motion, timing, cuts, camera angle, camera movement, framing and performance of @Video1 exactly, beat for beat: the push-in on the bottle as the light goes out, the macro on the label while the outlines light up, the table-level tracking of the figures dancing in a line, the limbo under the chopsticks, the spin of the cap, the freeze when a shadow crosses the lit doorway, the climb up the glass stem, the fall into the wine, the slow pull back and the cat's head peeking over the near table edge at the very end.\n@Image1 — LEAD: the flat cut-out figures of @Video1 are the zombie troupe of @Image1: flat black cut-out silhouettes about 5 cm tall with a thin phosphorescent lime-green outline, no eyes, no mouths, no clothes; three lurching zombies with bent, raised arms in a staggering zombie walk, one crouched, and one small black hand that walks on its fingers. Keep exactly this look on every figure, one zombie per figure, the smallest being the hand; retain the choreography, blocking and timing of @Video1. Their feet stay in contact with the tabletop.\n@Image2 — LOCATION: rebuild the whole environment as in @Image2 with its light direction: a Tokyo apartment dining table after dinner at night, lit only by cold blue moonlight from the window on the left and a sliver of cool kitchen light from the doorway on the right, with two glasses of red wine, chopsticks on a chopstick rest, a black screw cap lying on the table and the bottle. The bottle is exactly the bottle in @Image2: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as @Image2; the cap is a screw cap, never a cork; the bottle never moves, tilts or changes shape, size or colour; no text is added. The bottle, the glasses and the chopsticks take the places of the matching objects of @Video1 at the same scale, the figures about 5 cm tall against the bottle. The dark figure passing inside the lit doorway is a man's shadow; the head rising over the near table edge at the end is a short-tailed calico cat with green eyes.\nGLOW LOCK: in the dark only the thin outlines of the zombie silhouettes and the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink: a thin luminous edge with gentle falloff, no neon tube look, no bloom halo, no lens flare. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark.\n@Image3 — STYLE: @Image3 defines the visual finish only: a stylized computer-animated feature-film look with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, cinematic depth of field and a subtle filmic grain; no halftone dots, no ink outlines, no colour fringing; do not copy its content or layout.\nCamera and framing: @Video1 alone defines angle, height, trajectory and lens perspective. Screen direction never flips; each figure keeps the source's screen position and apparent scale; the window and moon stay on the left, the doorway on the right.\nMatch the video's sharpness and motion timing; render everything in this computer-animated look, the label crisp and readable.\nAvoid: identity drift between figures, extra figures, extra bottles, a cork, candles, faces or eyes on the zombies, neon tube glow, bloom halos, lens flares, glowing label text, a bottle that moves or changes, changed choreography, new camera moves, floating feet, halftone, ink outlines, added text, captions, logos or watermarks, people in the room.",
+  "est_credits": "~50 (2.6 cr/s x 19 s)"
+ },
+ "v1_vid_06_lit": {
+  "model": "hf_mult_motion_control",
+  "params": {
+   "resolution": "480p",
+   "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+  },
+  "medias": [
+   {
+    "role": "video_references",
+    "value": "<<media_lit>>",
+    "label": "@Video1 rodaje Blender 30 s, segmento iluminado (frames 0-263, 11.0 s)"
+   },
+   {
+    "role": "image_references",
+    "value": "8e503c46-8c3b-4876-bc6e-49c2b01db77d",
+    "label": "@Image1 LEAD two-shot v2 (Aya y Ren)"
+   },
+   {
+    "role": "image_references",
+    "value": "f2cb5bf7-be8b-46f5-990e-cc3d2089fedf",
+    "label": "@Image2 LOCATION mesa/apartamento encendido (v2_kf_03)"
+   },
+   {
+    "role": "image_references",
+    "value": "a5e05446-cd09-4f30-ac7f-b26779cd2b07",
+    "label": "@Image3 STYLE + gato (v2_kf_01)"
+   }
+  ],
+  "prompt": "MOTION TRANSFER from @Video1.\nKeep the original motion, timing, camera angle, camera movement, framing and performance of @Video1 exactly, beat for beat: the slow dolly from the entrance toward the table, the couple laughing and raising their glasses, the cat crossing the foreground and pausing, the couple standing up with the plates and walking out through the kitchen doorway on the right, the camera panning and settling on the table.\n@Image1 — LEAD: the two flat cut-out figures seated at the table in @Video1 are Aya (left: cream oversized knit cardigan over a black slip dress, low loose bun) and Ren (right: charcoal linen shirt with rolled sleeves, black trousers, short textured hair) exactly as in @Image1: fully three-dimensional people with natural faces, hair, skin and clothing, laughing and toasting; when they stand and walk out they keep these identities and carry the plates. The cat cut-out crossing the foreground is the short-tailed calico cat with green eyes of @Image3, walking naturally.\n@Image2 — LOCATION: rebuild the whole environment as in @Image2 with its light direction: a Tokyo apartment at night with the lights on: a warm washi pendant over the walnut table, cool kitchen light through the doorway on the right, a floor-to-ceiling window with the skyline and the full moon on the left; on the table two plates with leftovers, chopsticks on a rest, a bowl of edamame, two glasses of red wine and the bottle with its black screw cap lying beside it. The bottle is exactly the bottle in @Image2: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as @Image2; the cap is a screw cap, never a cork; the bottle never moves, tilts or changes shape, size or colour; no text is added. The table, chairs, bottle and glasses take the places of the matching objects of @Video1 at the same scale; the people sit on the chairs at the table at the scale of @Video1.\n@Image3 — STYLE: @Image3 defines the visual finish only: a stylized computer-animated feature-film look with soft volumetric shading, deep night blues, neon magenta and cyan rim lights, clean deep blacks, cinematic depth of field and a subtle filmic grain; no halftone dots, no ink outlines, no colour fringing; do not copy its layout.\nCamera and framing: @Video1 alone defines angle, height, trajectory and lens perspective. Screen direction never flips: the window and moon stay on the left, the kitchen doorway on the right.\nMatch the video's sharpness and motion timing; render everything in this computer-animated look, the label crisp and readable.\nAvoid: identity drift, extra people, extra bottles, a cork, candles, flat paper-thin people, halftone, ink outlines, lens flares, a glowing label, a bottle that moves or changes, changed choreography, new camera moves, floating feet, added text, captions, logos or watermarks.",
+  "est_credits": "~29 (2.6 cr/s x 11 s)"
+ }
+}

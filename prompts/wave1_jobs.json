@@ -1,0 +1,1119 @@
+{
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "style_key_S": "30a2a515-405f-41f1-b785-2456b943d14d",
+ "jobs": {
+  "v1_prod_01": {
+   "index": 0,
+   "id": "v1_prod_01",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "e10a0128-a904-4c55-85ec-da82d405f1e4",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_e10a0128-a904-4c55-85ec-da82d405f1e4.png",
+   "size": "1856x2304"
+  },
+  "v1_prod_02": {
+   "index": 1,
+   "id": "v1_prod_02",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "da7ab59c-250d-49c7-a638-44f0d8a22531",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_da7ab59c-250d-49c7-a638-44f0d8a22531.png",
+   "size": "1856x2304",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "8cb396b0-23d4-4699-bbd6-11d2bd331108",
+     "index": 26,
+     "reason": "texto rojo de la etiqueta brillaba en verde (GLOW_LOCK)",
+     "change": "GLOW RULE explícita: solo contornos de siluetas luminosos",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_8cb396b0-23d4-4699-bbd6-11d2bd331108.png",
+     "verdict": "PASS — texto oscuro, solo contornos brillan"
+    }
+   ]
+  },
+  "v1_prod_03": {
+   "index": 2,
+   "id": "v1_prod_03",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "07959c2e-c463-4548-972a-55dfb610adb1",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_07959c2e-c463-4548-972a-55dfb610adb1.png",
+   "size": "1520x2688",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "ea445def-13c9-4e96-b66c-7a3e98fef059",
+     "index": 27,
+     "reason": "siluetas en pose de baile en vez de brazos al frente (PRODUCT_LOCK)",
+     "change": "POSE LOCK + quitar Image 3 (macro previo con poses de baile)",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_ea445def-13c9-4e96-b66c-7a3e98fef059.png",
+     "verdict": "PASS (corregido tras ver la etiqueta real: las siluetas SÍ van con brazos doblados/levantados en marcha zombi; el lock antiguo \"arms stretched forward\" era incorrecto)"
+    },
+    {
+     "attempt": 2,
+     "job_id": "f4c8aa8f-d70e-45c5-8ebb-d04291380bd9",
+     "index": 29,
+     "model": "nano_banana_pro",
+     "reason": "GPT reposa las siluetas; cambio de modelo a NB con Element (una variable)",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_124007_f4c8aa8f-d70e-45c5-8ebb-d04291380bd9.png",
+     "verdict": "PASS — alternativa NB, texto oscuro, solo contornos; mismas poses fieles"
+    }
+   ]
+  },
+  "v1_prod_04": {
+   "index": 3,
+   "id": "v1_prod_04",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e10b70f4-f1f2-4831-a175-b87f9ad647fd",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_e10b70f4-f1f2-4831-a175-b87f9ad647fd.png",
+   "size": "1792x2240"
+  },
+  "v1_prod_05": {
+   "index": 4,
+   "id": "v1_prod_05",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "aff1181c-2e27-4be3-93bf-bf1cff1f4c2a",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_aff1181c-2e27-4be3-93bf-bf1cff1f4c2a.png",
+   "size": "1536x2752"
+  },
+  "v1_prod_06": {
+   "index": 5,
+   "id": "v1_prod_06",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "f40a6e91-a4d0-4384-8903-39ca3fa95fdb",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_f40a6e91-a4d0-4384-8903-39ca3fa95fdb.png",
+   "size": "1536x2752"
+  },
+  "v1_prod_07a": {
+   "index": 6,
+   "id": "v1_prod_07a",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_07b": {
+   "index": 7,
+   "id": "v1_prod_07b",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "1d5c1d96-7b6f-423f-a3e2-0e51933b311a",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_1d5c1d96-7b6f-423f-a3e2-0e51933b311a.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_07c": {
+   "index": 8,
+   "id": "v1_prod_07c",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "f5e12f22-0ff1-4542-96da-e6b6cd1fdb24",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104231_f5e12f22-0ff1-4542-96da-e6b6cd1fdb24.png",
+   "size": "1792x2400"
+  },
+  "v1_prod_09": {
+   "index": 9,
+   "id": "v1_prod_09",
+   "model": "seedream_v5_pro",
+   "est_credits": 2.5,
+   "status": "completed",
+   "job_id": "f86cf943-076d-4563-a077-4af976776ef0",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104233_f86cf943-076d-4563-a077-4af976776ef0.png",
+   "size": "1760x2352"
+  },
+  "v1_env_00a": {
+   "index": 10,
+   "id": "v1_env_00a",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "77485461-fba6-4eb6-afdb-9b5c51fb86c0",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104229_77485461-fba6-4eb6-afdb-9b5c51fb86c0.png",
+   "size": "1152x2048"
+  },
+  "v1_env_00b": {
+   "index": 11,
+   "id": "v1_env_00b",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "81d5f12e-d983-44aa-9c62-ff9a01e268d2",
+   "batch": "A",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104230_81d5f12e-d983-44aa-9c62-ff9a01e268d2.png",
+   "size": "1152x2048"
+  },
+  "v1_env_00c": {
+   "index": 12,
+   "id": "v1_env_00c",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "7c49014d-653c-42cf-b586-c87325d8ad6b",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104724_7c49014d-653c-42cf-b586-c87325d8ad6b.png"
+  },
+  "v1_env_00d": {
+   "index": 13,
+   "id": "v1_env_00d",
+   "model": "soul_location",
+   "est_credits": 0.5,
+   "status": "completed",
+   "job_id": "f9e90b9d-5b3a-4628-a30b-bd772413710f",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_f9e90b9d-5b3a-4628-a30b-bd772413710f.png"
+  },
+  "v1_env_02": {
+   "index": 14,
+   "id": "v1_env_02",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "5705e758-27c2-41d8-bf61-375a2720fd39",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_5705e758-27c2-41d8-bf61-375a2720fd39.png",
+   "refine": [
+    {
+     "attempt": 1,
+     "job_id": "4cd1483a-ce45-4e44-9e52-b7982a98c490",
+     "index": 28,
+     "reason": "pendant washi seguía encendido",
+     "change": "pendant OFF explícito, sin luz cálida",
+     "status": "completed",
+     "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123154_4cd1483a-ce45-4e44-9e52-b7982a98c490.png",
+     "verdict": "PASS — pendant apagado, luna + ciudad"
+    }
+   ]
+  },
+  "v1_env_03": {
+   "index": 15,
+   "id": "v1_env_03",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e593e9da-886e-44e2-a0f2-6e9cea9324f4",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_e593e9da-886e-44e2-a0f2-6e9cea9324f4.png"
+  },
+  "v1_env_04": {
+   "index": 16,
+   "id": "v1_env_04",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b",
+   "batch": "C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123153_bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b.png"
+  },
+  "v1_env_05a": {
+   "index": 17,
+   "id": "v1_env_05a",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "a378a291-860f-43da-92af-46aa7d274378",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_a378a291-860f-43da-92af-46aa7d274378.png"
+  },
+  "v1_env_05b": {
+   "index": 18,
+   "id": "v1_env_05b",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "e5419007-7ee5-49cb-a432-8a5e10f36583",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_e5419007-7ee5-49cb-a432-8a5e10f36583.png"
+  },
+  "v1_env_07": {
+   "index": 19,
+   "id": "v1_env_07",
+   "model": "gpt_image_2_5",
+   "est_credits": 2.75,
+   "status": "completed",
+   "job_id": "7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f.png"
+  },
+  "v1_char_01": {
+   "index": 20,
+   "id": "v1_char_01",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "2e7a638a-4c3f-4d02-b394-9a9a11d42dde",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_2e7a638a-4c3f-4d02-b394-9a9a11d42dde.png"
+  },
+  "v1_char_01n": {
+   "index": 21,
+   "id": "v1_char_01n",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "d3ceab27-6b2b-4668-995b-9db3f7c142c9",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104725_d3ceab27-6b2b-4668-995b-9db3f7c142c9.png"
+  },
+  "v1_char_02": {
+   "index": 22,
+   "id": "v1_char_02",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "dc8913ab-a76c-4779-a838-e353879496a2",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_dc8913ab-a76c-4779-a838-e353879496a2.png"
+  },
+  "v1_char_02n": {
+   "index": 23,
+   "id": "v1_char_02n",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "fe50d6a4-1c42-440b-82af-504dd5b3be13",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104726_fe50d6a4-1c42-440b-82af-504dd5b3be13.png"
+  },
+  "v1_char_04": {
+   "index": 24,
+   "id": "v1_char_04",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "4d33a580-e717-4d89-a77f-be863d6c96de",
+   "batch": "B",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_104727_4d33a580-e717-4d89-a77f-be863d6c96de.png"
+  },
+  "v1_char_06": {
+   "index": 25,
+   "id": "v1_char_06",
+   "model": "nano_banana_pro",
+   "est_credits": 2,
+   "status": "completed",
+   "job_id": "dd14a937-b3b6-4eba-89da-0c0212b5640b",
+   "batch": "C",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261005_123155_dd14a937-b3b6-4eba-89da-0c0212b5640b.png"
+  }
+ },
+ "director_qa": {
+  "v1_prod_01": "PASS — etiqueta fiel, tapón negro, look neon ok",
+  "v1_prod_02": "FIX#1 — texto rojo brillaba verde; reintento 8cb396b0",
+  "v1_prod_03": "FIX#1 — siluetas bailando; reintento ea445def con POSE LOCK",
+  "v1_prod_04": "PASS — dos copas, look ok",
+  "v1_prod_05": "PASS — mesa post-cena encendida, etiqueta fiel",
+  "v1_prod_06": "PASS (nota: glow tenue, válido como 'antes del despertar')",
+  "v1_prod_07a": "PASS — frontal neutro",
+  "v1_prod_07b": "PASS — 3/4 (giro leve)",
+  "v1_prod_07c": "PASS con nota — no es perfil 90°, ~45°",
+  "v1_prod_09": "PASS como PROVISIONAL — marcado; '14% vol.' es placeholder, sustituir por dato real",
+  "v1_env_00a": "FAIL exploración — aparece una persona; no usar",
+  "v1_env_00b": "PASS exploración — referencia realista útil (maneki-neko, pendant)",
+  "v1_env_00c": "PASS exploración — oscuro, sin gente",
+  "v1_env_00d": "FAIL exploración — persona de espaldas; no usar",
+  "v1_env_02": "FIX#1 — pendant encendido; reintento 4cd1483a",
+  "v1_env_03": "PASS — placa nivel mesa encendida",
+  "v1_env_05a": "PASS — placa ventana 9:16",
+  "v1_env_05b": "PASS — placa ventana 16:9",
+  "v1_env_07": "PASS — puerta office + estantería con maneki-neko",
+  "v1_char_01": "PASS — sheet Aya look (Element SZ-aya)",
+  "v1_char_01n": "PASS — sheet Aya neutra (ref Restyle)",
+  "v1_char_02": "PASS — sheet Ren look (Element SZ-ren)",
+  "v1_char_02n": "PASS — sheet Ren neutra (ref Restyle)",
+  "v1_char_04": "PASS — troupe zombie (no es turnaround estricto, válido como Element SZ-zombies-glow)",
+  "v1_env_04": "PASS — placa nivel mesa apagada (luna)",
+  "v1_char_06": "PASS — sheet gato calicó + maneki-neko (Element SZ-cat)",
+  "v1_prod_02#1": "PASS",
+  "v1_env_02#1": "PASS",
+  "v1_prod_03#1": "PASS (veredicto anterior erróneo: la etiqueta real lleva brazos doblados/levantados)",
+  "v1_prod_03#2": "PASS — alternativa NB"
+ },
+ "elements": {
+  "SZ-bottle-master": "de0c221b-6bd9-4ab5-912b-c6840b2423cc",
+  "SZ-aya": "65a0c653-c433-4c10-a435-a4ce5504f0a2",
+  "SZ-ren": "c800522c-a722-4f47-bb45-2f32899d7e45",
+  "SZ-zombies-glow": "5915e7ac-09c7-4efc-bf78-a1904ace295b",
+  "SZ-apartment": "0199fa74-cff0-459d-801c-fae3153bf8bd",
+  "SZ-bottle-back-PROV": "6ea674e7-12b6-442a-98e0-b6ae20dd9a9e",
+  "SZ-bottle-back": "29cbd6df-d8cd-405f-aa0a-3974b6cfb28c",
+  "SZ-cat": "2ab36fde-48a2-4f46-ba0c-0e3c66e86f84"
+ },
+ "balance": {
+  "start_session": 2988,
+  "after_wave1_AB": 2936.42,
+  "after_wave2_and_drafts": 2753.67,
+  "spent_session_estimate": 234.33,
+  "end_session": 2642.67,
+  "spent_session": 345.33
+ },
+ "chosen": {
+  "env_02": "4cd1483a-ce45-4e44-9e52-b7982a98c490",
+  "prod_02": "8cb396b0-23d4-4699-bbd6-11d2bd331108",
+  "prod_03": "ea445def-13c9-4e96-b66c-7a3e98fef059",
+  "prod_03_alt_nb": "f4c8aa8f-d70e-45c5-8ebb-d04291380bd9"
+ },
+ "lock_fix": {
+  "date": "2026-10-05",
+  "old": "three walking with arms stretched forward and one crouched",
+  "new": "three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched",
+  "source": "3d/textures/label_front.png (recorte del packshot real)"
+ },
+ "3d": {
+  "jutsu_project": "0d680169-83bc-4288-b579-1101122d639e",
+  "jutsu_revision": 2,
+  "jutsu_previz_mp4": "video/v1_previz_3djutsu.mp4 (Workbench 450x800, 361 fr)",
+  "jutsu_guide_clip": "video/v1_genjutsu_guide_3djutsu.mp4 (720x1280, f144-360, 9 s)",
+  "jutsu_guide_media_id": "5c697f15-f4a7-4c98-846e-a7406650e8c0",
+  "jutsu_glb": "3d/v1_tokyo_previz_3djutsu.glb",
+  "jutsu_blend": "3d/v1_tokyo_previz_3djutsu.blend",
+  "local_blend": "3d/v1_bottle_table.blend",
+  "local_glb": "3d/v1_bottle_table.glb",
+  "local_previz": "video/v1_previz_bpy.mp4 (Cycles 360x640, 12 fps)",
+  "local_turntable": "video/v1_turntable_3d.mp4",
+  "ops": [
+   "sz-v1-op2-blockout-anim-2",
+   "sz-v1-op3-fix-seating-glow-1",
+   "sz-v1-op4-stills-a-1",
+   "sz-v1-op4-stills-b-1",
+   "sz-v1-op5-stills-rev2-a-1",
+   "sz-v1-op5-stills-rev2-b-1",
+   "sz-v1-op6-previz-wb-full-1",
+   "sz-v1-op7-genjutsu-guide-wb-1"
+  ],
+  "notes": "Eevee en el worker ~20 s/frame (timeouts de 300 s con 361 y 91 frames); Workbench 0.2-0.5 s/frame."
+ },
+ "back_label": {
+  "source": "referencia del cliente (foto de las dos botellas, contraetiquetas Viura y Tempranillo) recibida el 2026-10-05 en el chat; el archivo no llegó al disco, así que se reconstruyó 1:1 con PIL (3d/build_back_label.py) a partir de los textos legibles",
+  "texture": "3d/textures/label_back.png (+ label_back_viura.png)",
+  "media_id": "9d3e80d0-3b86-4008-9d52-c461fffa8ad1",
+  "element": "29cbd6df-d8cd-405f-aa0a-3974b6cfb28c",
+  "pending": "sustituir por el escaneo real cuando llegue como archivo (img/ref_contraetiqueta_real.png)"
+ },
+ "agent_qa": [
+  {
+   "asset_id": "v1_prod_01",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "La primera silueta de zombi (la de más a la izquierda, andando con brazos al frente) está en rojo oscuro/granate en vez de negro sólido; las otras tres sí son negras. En la etiqueta real las cuatro son negras y a escala hero 2K se nota claramente.",
+     "Texto pequeño de la etiqueta corrupto y legible como tal: 'Deensminación de Origen Calitizada' en lugar de 'Denominación de Origen Calificada'; la banda de precaución bajo las franjas superiores aparece duplicada en dos cintas superpuestas con texto inventado ('CAUTION / DEAELY GOOD WINE', 'ERGALDLY GOGS NOIBES', 'BEGNO ODNE').",
+     "Correcto: etiqueta amarilla, franjas negro/amarillo arriba y abajo, 'Sharp Zombie' en blackletter rojo oscuro a dos líneas, RIOJA, 4 siluetas (3 andando + 1 agachada) + manita, sin ojos, botella Bordeaux de vidrio oscuro, cuello con rosca y tapón de rosca negro sobre la mesa, sin corcho, sin botellas extra, sin marca de agua ni texto añadido fuera de la etiqueta."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas: no hay manos, dedos ni caras que revisar; siluetas con recuento y poses correctos y sin ojos.",
+     "El borde del tapón suelto sobre la mesa es ligeramente irregular (abertura no del todo circular); detalle menor.",
+     "Los palillos descansan cruzados sobre el plato sucio y el reposapalillos queda sin usar; el bol de edamame sale enfocado y no fuera de foco como pedía el prompt. Composición menor, no error físico.",
+     "Copas, sillas, reflejo de la botella en la mesa, luna y skyline son plausibles; sin duplicados ni objetos imposibles."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con la clave S: tramas halftone en sombras y en el vidrio, líneas de tinta en bordes, luces de borde magenta/cian sobre azul noche, grano suave, pendant washi cálido.",
+     "La composición es casi un calco del layout de la clave S (misma mesa, copas, plato, posición del tapón, lámpara, ventana con Tokyo Tower y luna) pese a la instrucción de no copiar layout; no rompe el look pero aporta poca variación respecto a la referencia."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Activo original (sin refine previo). Variable única: prompt — en SUBJECT añadir \"las cuatro siluetas de zombi son negro puro sólido, ninguna roja ni marrón, y el texto pequeño dice exactamente «CAUTION · DEADLY GOOD WINE · CAUTION» en una sola línea bajo las franjas y «Denominación de Origen Calificada» bajo RIOJA, sin letras inventadas ni cintas duplicadas\"."
+  },
+  {
+   "asset_id": "v1_prod_05",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Texto de la cinta de precaución del label con repeticiones ilegibles/mal escritas ('BEABLY GOGO DIRE', 'BBRBLY GGOD VAAR', 'CAUTEE', 'BUOS GITNE') junto al 'CAUTION : DEADLY GOOD WINE' correcto; en el packshot real la cinta repite siempre el mismo texto bien escrito",
+     "La primera silueta zombi (izquierda) sale teñida de rojo oscuro en vez de negro sólido como las otras tres",
+     "La botella sigue tapada (tapón de rosca negro puesto en el cuello) aunque el prompt la pide ABIERTA con el tapón al lado; las copas ya están servidas",
+     "OK verificado: etiqueta amarilla, franjas negro/amarillo arriba y abajo, 'Sharp Zombie' blackletter rojo oscuro, RIOJA + Denominación de Origen Calificada, 4 siluetas (3 andando brazos al frente + 1 agachada) + manita, sin ojos, botella Bordeaux de vidrio oscuro, tapón de rosca (no corcho), sin botellas extra, sin marca de agua, sin velas"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Tapón duplicado: un tapón de rosca negro en el cuello de la botella Y otro idéntico (estriado, hueco hacia arriba) sobre la mesa a la derecha de la botella; una botella no tiene dos tapones y la cerrada contradice el vino servido",
+     "Las dos copas están aproximadamente a la mitad; el spec pedía una a un tercio y otra a la mitad (bajo)",
+     "No aparece la puerta a la cocina a la derecha pedida en el set dressing (bajo)",
+     "OK verificado: sin manos/dedos ni caras en escena, espinas de pescado, palillos sobre apoyos, copas, cuencos y sillas físicamente coherentes; sin zombis en escena"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coincide con la clave S: 3D estilizado con sombreado de cómic, tramas halftone en sombras, líneas de tinta, fringing cromático en bordes, luces de borde magenta/cian sobre azul noche, grano suave, pendant washi cálido y luna llena",
+     "Nota: la composición copia casi 1:1 el layout de la referencia S (misma lámpara, ventana, botella y platos) pese a que el prompt pedía usarla solo para el look; aceptable como set dressing pero resta variedad de plano"
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "No es reintento (sin entrada refine). Cambiar SOLO el prompt: sustituir la frase del tapón por \"the bottle is OPEN: bare dark-glass threaded neck with NO cap on it, exactly ONE black screw cap lying on the table beside the bottle; the small caution-tape text on the label reads only 'CAUTION · DEADLY GOOD WINE' spelled correctly, all four zombie silhouettes solid black\"."
+  },
+  {
+   "asset_id": "v1_prod_06",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Etiqueta sin nombre: los 2/3 superiores de la etiqueta están completamente en blanco; no existe el 'Sharp Zombie' en blackletter rojo oscuro ni la palabra RIOJA, ni siquiera como marcas oscuras apagadas. Las franjas sí aparecen apagadas pero presentes (RGB etiqueta ~(53,68,63)-(63,79,94), bastante visible), así que el texto debería verse como marcas oscuras; su ausencia rompe el criterio 'label stays accurate' y el qa_criteria de blackletter + RIOJA.",
+     "Siluetas huecas: las 4 figuras y la manita se dibujan solo como contorno verde lima; el interior tiene el mismo tono gris-verde del fondo de etiqueta (muestras interior (58,78,87)/(57,74,84) vs fondo (53,68,63)), es decir, han perdido el relleno negro sólido del producto real. Deberían ser siluetas NEGRAS con solo el borde brillando.",
+     "Contorno fosforescente más grueso y más difuso que en la foto real (producto_real.webp): hay un ligero halo/haze verde alrededor de la línea y un leve efecto 'tubo de neón' (centro más claro). Falta leve/media respecto a 'thin edge, no bloom halo'.",
+     "Correcto: recuento 3 andando con brazos al frente + 1 agachada + manita; franjas negro/amarillo (apagadas) arriba y abajo; tapón de rosca negro moleteado sin corcho; botella Bordeaux de vidrio oscuro; etiqueta amarilla leída como gris-verde apagado; texto y franjas no brillan; sin ojos ni caras en las siluetas; sin botellas extra, velas, texto añadido, marca de agua ni logos ajenos."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas en plano; no aplica manos/caras. Siluetas solo en etiqueta (no zombies 3D), escala n/a.",
+     "Objeto negro cilíndrico abajo a la derecha (copa tipo ochoko) con la misma textura moleteada que el tapón de rosca; puede leerse como un segundo tapón suelto mientras la botella ya lleva el suyo. Es más ancho que el cuello, así que lee como taza/copita; ambiguo, severidad baja.",
+     "Haz de luz diagonal sobre la pared izquierda (junto a la ventana) con dirección poco consistente con la luna centrada en la ventana; aceptable como licencia estilística.",
+     "Copas, platos, palillos con reposapalillos, bol de edamame, silla y reflejos en la mesa: geometría coherente, sin duplicados ni objetos imposibles. Copa izquierda cortada por el borde del encuadre (composición, no error)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coincide con la clave S (Neon Graphic Cinematic 3D): 3D estilizado con sombreado de cómic, tramas halftone en sombras (etiqueta, bol, cojines, mesa), líneas de tinta, luces de borde magenta/cian sobre azul noche, luz lunar fría desde arriba, skyline Tokyo con Torre y luna llena, DOF corto, grano suave.",
+     "La composición replica casi 1:1 el layout de la referencia S (misma mesa, copas, platos, bol, lámpara, estantería con ikebana y maneki-neko). El prompt pedía 'never copy its layout', pero el purpose exige 'same dinner table, lights off', así que la coincidencia favorece la continuidad con el plano con luces; se anota sin penalizar.",
+     "La lámpara de pie aparece apagada (coherente con luces off); el pendant de papel washi apenas se intuye en el borde superior."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Reintento (primer refine, no hay entradas previas de refine) cambiando SOLO el prompt: sustituir \"The bottle label stays accurate; in the dark it is unlit and not readable, only the outlines glow\" por \"In the dark the label stays intact but unlit: the dark-red blackletter 'Sharp Zombie', the word RIOJA, the caution stripes and the four SOLID BLACK silhouettes plus the small black hand remain visible as dark matte marks on the dim grey-green label, exactly as on the lit label; only the thin outer edge of each black silhouette and of the hand glows a faint lime-green, crisp and thin like the real photo, no haze\" y añadir a CONSTRAINTS \"no blank label, no hollow outline-only figures\". Mantener referencias, Element, seed/params iguales."
+  },
+  {
+   "asset_id": "v1_prod_07a",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Amarillo de la etiqueta algo más oscuro/mostaza que el packshot de referencia (media RGB 148,112,21 vs ~171,134,43), sigue leyéndose como amarillo bajo luz de estudio neutra",
+     "Seis pequeños puntos de molde embosados cerca de la base del vidrio (4+2) que no aparecen en la referencia; apenas visibles, no afectan a la etiqueta ni al tapón",
+     "Todo lo crítico correcto: franjas negro/amarillo arriba y abajo, 'Sharp Zombie' blackletter rojo oscuro, RIOJA + DO Calificada, cintas 'CAUTION / DEADLY GOOD WINE' (presentes también en la referencia), 4 siluetas negras (3 andando brazos al frente + 1 agachada) + manita, tapón de rosca negro moleteado sin corcho, sin texto añadido ni marca de agua, sin reflejo de suelo (solo sombra de contacto)"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin fallos: botella simétrica y de pie, única, etiqueta centrada y adherida sin distorsión, siluetas sin ojos ni caras, manos de las siluetas y manita coherentes, sin objetos imposibles ni duplicados"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a por spec: packshot fotorreal neutro para referencia 3D (purpose 'neutral, for 3D'), no debe seguir el look S neón; es coherente con el packshot restaurado poster/gen_0e5ffd25.webp en geometría, colores y disposición de la etiqueta"
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_prod_07b",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "VIEW ANGLE WRONG: the bottle is rendered frontal with the label centred and fully readable (measured on the 1792x2400 PNG: bottle centre x~899, label centre x~908, label spans 703-1114 px of the 670-1128 px bottle, symmetric wrap on both edges). Spec purpose/prompt require 'three-quarter view from the left, label partly visible'. As delivered it duplicates slot v1_prod_07a (front view) and does not serve the turnaround set for 3D.",
+     "Everything else matches the reference packshot gen_0e5ffd25: black/yellow diagonal caution stripes top and bottom, 'Sharp Zombie' in dark-red blackletter (spelling correct), RIOJA + 'Denominacion de Origen Calificada', four solid-black silhouettes (3 walking with arms stretched forward + 1 crouched on all fours) plus small hand rising from the ground, black ridged screw cap (no cork), dark Bordeaux glass, seamless mid-grey background, no floor reflection, no watermark (corner std <= 5), no added text.",
+     "Minor (low): the 'CAUTION / DEADLY GOOD WINE' band is drawn as two crossed overlapping tape strips instead of the single straight band of the reference label; acceptable for a 3D reference but note for label consistency."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Silhouettes are clean solid black with no faces or eyes; small hand has five distinct fingers; no duplicated figures.",
+     "Bottle geometry is symmetric and plausible (Bordeaux shoulders, coherent cap threads/ridges, no deformation); six tiny mould dots on the glass near the base are realistic bottle detail, harmless.",
+     "No zombies or hands appear outside the label, so scale checks do not apply."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: spec is a neutral photoreal studio packshot 'for 3D' (product turnaround), so the Neon Graphic Cinematic 3D look S is intentionally not applied; treated like the neutral sheets.",
+     "Product look is consistent with the restored packshot gen_0e5ffd25 (label layout, colours, cap, glass)."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Not a retry (no refine entries; evaluated the original url). Change ONE variable, the prompt's View clause: replace 'View: three-quarter view from the left, label partly visible' with an explicit rotation instruction such as 'View: camera at front-left, bottle turned about 45 degrees clockwise on its axis so the LEFT edge of the label faces the camera and the right half of the label wraps around the far side out of view; the cap and neck are seen from the front-left; NOT a frontal view, label must NOT be centred or fully readable'. Keep the same Element reference, model, 3:4 and 2k."
+  },
+  {
+   "asset_id": "v1_prod_07c",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "high",
+    "issues": [
+     "VISTA INCORRECTA: el spec pide 'exact side profile, label edge visible' (turnaround lateral para 3D) y la imagen es una vista frontal pura con la etiqueta de cara a cámara; duplica el packshot frontal y no sirve como referencia de perfil.",
+     "La etiqueta en sí es fiel: franjas negro/amarillo arriba y abajo, dos cintas 'CAUTION / DEADLY GOOD WINE', 'Sharp Zombie' en blackletter rojo oscuro, RIOJA + Denominación de Origen Calificada, 4 siluetas negras (3 andando brazos al frente + 1 agachada) y manita; tapón de rosca negro moleteado, sin corcho; fondo gris neutro, sin texto añadido ni marca de agua."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin fallos: siluetas sin ojos ni caras, cuatro figuras + mano correctas, botella única con proporciones Bordeaux creíbles, tapón con anillo de garantía coherente.",
+     "Cosmético: pequeños puntos de molde en relieve y un leve roce en la base del vidrio (no bloqueante)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Lente efectivamente n/a: el spec define el activo como packshot fotorreal NEUTRO para 3D, no en look S. Coherente con el packshot restaurado gen_0e5ffd25 (misma disposición de etiqueta y cintas caution)."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Prompt: sustituir la frase 'View: exact side profile, label edge visible' por una instrucción geométrica inequívoca al inicio del prompt: 'Camera at exactly 90 degrees to the label axis, true side profile: the label FACE is NOT visible to camera, only its thin yellow edge shows as a narrow sliver along the left contour of the bottle; cap and base seen in profile' (el resto del prompt y la referencia sin cambios; primer intento, no es reintento)."
+  },
+  {
+   "asset_id": "v1_prod_04",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Exactly two stemmed red-wine glasses, no bottle/hands/candles/text/watermark/purple flares: all constraints met; fill levels read as ~1/3 (left) and ~1/2 (right) with visible meniscus and deep ruby wine.",
+     "Glasses are near-identical but not strictly: right glass is ~7% taller with the same rim width (slightly taller tulip bowl) - low severity for a prop reference.",
+     "Full moon is fairly sharp rather than clearly out of focus (minor; skyline bokeh is correct).",
+     "Label checklist n/a: the bottle does not appear (by spec). Not a refine retry (ledger has no refine entries)."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No hands, faces or zombie silhouettes in this asset. Stems straight, feet elliptical with coherent table reflections, wine surfaces level, bowl/stem junctions plausible, no duplicated or impossible objects; chair/glass/table scale plausible (~21 cm glass on a 75 cm table)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Matches key S (Neon Graphic Cinematic 3D): halftone in wine and shadows, bold ink edge lines, magenta/cyan misregistered fringes on glass edges, neon rim lights over deep night blues, same Tokyo apartment props (washi pendant, bookshelf with ikebana + maneki-neko, floor lamp, sofa, kitchen doorway, skyline with moon) and shallow DoF. Composition differs from the key (table-height, glasses foreground) as required."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_prod_09",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Pictograma central no es el aviso de embarazo estándar (silueta embarazada en círculo tachado): es una figura femenina genérica con símbolo de Venus; aceptable como placeholder PROVISIONAL pero no es el icono legal real",
+     "Amarillo algo más saturado/dorado que el amarillo mostaza del packshot (gen_0e5ffd25), diferencia leve",
+     "Todo lo demás correcto: franjas negro/amarillo arriba y abajo limpias, 'Sharp Zombie' en blackletter rojo oscuro bien escrito, RIOJA + 'Denominación de Origen Calificada' con acento correcto, 3 barras grises sin letras, 75 cl, 14% vol., código de barras sin dígitos, PROVISIONAL en gris pequeño, sin botella ni fondo, sin texto extra ni claims inventados, formato 3:4 (1760x2352)"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No hay personas, manos ni siluetas zombie en este activo (contraetiqueta plana); pictogramas limpios sin duplicados ni formas imposibles; ligera suavidad de raster en los bordes de las barras del código de barras, irrelevante a escala de vídeo"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "El look S (Neon Graphic Cinematic 3D) no aplica a un diseño plano de impresión; evaluado como continuidad de marca con la etiqueta frontal del packshot: mismas franjas de precaución, mismo blackletter rojo oscuro, misma familia de amarillo y misma jerarquía RIOJA/DOCa — coherente. Tono de amarillo ligeramente más vivo que el frontal (leve)"
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_char_04",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "high",
+    "issues": [
+     "Contorno NO es fino: borde verde lima grueso (~15-20 px a 2752 px, tipo pegatina troquelada/tubo de neón) con halo de bloom alrededor y reflejo verde en la mesa; el producto real muestra una línea fosforescente hairline sin halo (incumple 'thin outline, no neon tube look, no bloom halo').",
+     "Las figuras no son negro mate: cuerpos cubiertos de rim-light magenta/cian y tramas halftone en gran parte de la superficie; leen como vinilos iluminados, no como siluetas negras de la etiqueta.",
+     "Fila superior NO es el turnaround frente/lado/espalda de cada personaje (criterio QA 'front/side/back row'): son 6 figuras sueltas en una sola vista (3 andantes, agachado, mano y un 4º andante extra).",
+     "Fila de acción parcial: faltan 'flotando de espaldas borracho' y 'mid-spin'; el agachado y la mano están separados (no hay empujón); el trepador se agarra a la copa (bowl), no al tallo.",
+     "Cumple: 5 tipos presentes (3 andantes brazos al frente, 1 agachado, mano de 5 dedos), sin ojos/bocas, sin texto, sin botella ni corcho, copa de vino permitida por el prompt."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Escala rota: el zombi que trepa la copa mide ~65% de la altura de la copa (equivale a ~12-14 cm, no ~5 cm); el resto de figuras tampoco tiene referencia de escala en la mesa.",
+     "Duplicado: la fila superior tiene 4 andantes en vez de 3 (figura extra a la derecha).",
+     "Manos: ambas manitas con 5 dedos correctos; cabezas sin rasgos; sin dedos extra ni objetos imposibles. Figuras tipo standee con base ligeramente flotante sobre la mesa (menor)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con look S: tramas halftone en sombras, rim-lights magenta/cian sobre azul noche, mesa de nogal, grano suave; el único desvío es que el borde lima grueso empuja hacia estética neon-sticker más que 3D cinemático."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Primer reintento (no hay refine previo): cambiar SOLO la cláusula del contorno/cuerpo en el prompt por \"each figure is a flat matte-black silhouette with a single hairline lime-green glow-paint edge (about 1 px at 5 cm scale) hugging the outline exactly as in the second reference, no thick sticker border, no outer glow halo, no magenta/cyan light on the figures (rims only on the table edge)\"; el turnaround frente/lado/espalda sigue sin cumplirse y necesitaría el segundo reintento."
+  },
+  {
+   "asset_id": "v1_char_01",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No aparece la botella ni la etiqueta (esperado en un character sheet): comprobación de etiqueta/tapón no aplicable. Ninguna exclusión de producto violada: sin botellas extra, sin corcho, sin logos, sin texto, sin marca de agua."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": false,
+    "severity": "low",
+    "issues": [
+     "Manos (zoom 3x): dedos fusionados/indistintos en ambas manos; en la mano derecha del personaje (izquierda del espectador) los dedos forman una masa con solo dos puntas separadas, no se pueden confirmar cinco dedos claros.",
+     "Pies: correctos, cinco dedos en cada uno, apoyo plano coherente con la sombra proyectada.",
+     "Caras: misma identidad en ambos paneles, rasgos adultos maduros (mandíbula definida, líneas nasolabiales), sin duplicados ni rasgos extra.",
+     "Un solo sujeto, sin props, sin reflejos; proporciones corporales plausibles."
+    ]
+   },
+   "style_continuity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Lee como ilustración vectorial 2D plana (cel-shading con tramas duras) en vez del 3D estilizado volumétrico de la clave S: faltan degradados suaves, brillos especulares, profundidad y grano de película que sí tiene la referencia.",
+     "Elementos presentes y correctos: tramas halftone en sombras, líneas de tinta gruesas, luces de borde cian (izq.) y magenta (der.), fondo carbón neutro.",
+     "Franjas cromáticas desregistradas más saturadas y gruesas que en S (allí son sutiles).",
+     "Borde fino alrededor de cada panel y barra divisoria, contradice 'no frame borders' (menor)."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Prompt (una sola variable): sustituir en la cláusula STYLE \"stylized 3D animation with graphic comic-book shading\" por \"volumetric stylized 3D render with soft gradient shading and glossy specular skin highlights, comic halftone only inside the shadows, NOT flat 2D vector cel-shading\" y añadir a los negativos \"no flat 2D vector illustration, fingers clearly separated\"; mantener misma referencia de estilo, modelo, 16:9 y resolución."
+  },
+  {
+   "asset_id": "v1_char_02",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Lente N/A: es un character sheet sin botella en plano. Comprobadas exclusiones: sin botellas extra, sin corcho, sin texto/captions, sin logos, sin watermark, sin neones con marca."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Manos: vista dorsal con indice al frente y 3 dedos curvados; el pulgar queda oculto hacia el muslo (correcto con palma hacia dentro). Sin dedos extra ni fusionados.",
+     "Pies: descalzos, planos, dedo gordo en el lado interno en ambos; contorno de dedos ligeramente blando al 2x pero sin deformidad.",
+     "Una sola persona; misma identidad en ambos paneles (pelo, barba incipiente, cejas, mandibula). Adulto de ~35, sin babyface.",
+     "Nota menor: hombros algo anchos respecto a la cabeza (~8 cabezas), dentro del estilo heroico."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con clave S: tramas halftone en sombras, lineas de tinta gruesas, franjas de color desregistradas, rim magenta izquierda / cian derecha identico en ambos paneles.",
+     "Fondo charcoal plano (segun spec) en lugar del azul noche de S; aceptable para sheet de personaje.",
+     "Separador entre paneles practicamente invisible (muestra 14,15,26 vs fondo 9,17,28): no cuenta como frame border."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_char_06",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Third view is a rear view with the head turned away (far cheek and whiskers visible, no eye) rather than 'looking back over the shoulder' at the camera; the face angle is still covered by the front view and the close-up.",
+     "Both maneki-neko figurines wear a red collar with a gold bell (traditional iconography); the prompt's 'no collar' is respected on the cat itself.",
+     "Verified: calico bobtail with pom tail and green eyes, four views, two maneki-neko views (front + three-quarter, raised paw), dark walnut floor, no text, no watermark, no logos, no bottle present so label check is n/a."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Rear view head: muzzle profile and whiskers are visible but no eye is drawn; plausible as a head turned ~120 degrees away, but it reads slightly odd at full size.",
+     "Walking profile shows only one ear (the far ear should peek behind); stylization-level.",
+     "Verified: four legs and four paws in walking, rear and sitting views, no merged or extra limbs, toe lines consistent, two ears per figure, symmetrical eyes, calico patches broadly consistent across views (black crown, orange over the right eye, orange rump)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": []
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_03",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Cámara NO a nivel de mesa: la lente está a ~20-30 cm por encima del tablero mirando ligeramente hacia abajo (se ve el interior del bol de edamame y la superficie interior del plato); el spec pide 8 cm sobre la madera y el criterio QA 'camera at table level' solo se cumple a medias. Zombies de 5 cm compuestos aquí se verían desde arriba, no a su altura de ojos.",
+     "Prop no pedido: un plato usado con restos/salsa ocupa ~30% del primer plano, justo la zona de mesa vacía donde deben componerse los personajes; el spec solo pide posa-palillos con palillos, base de copa y bol al fondo.",
+     "El bol de edamame está nítido en vez de 'soft in the background'; el foco cae en el plato y palillos, no en la superficie de la mesa.",
+     "La composición reproduce casi 1:1 el layout de Image 1 (farolillo, lámpara, bol, plato, palillos, sillas en las mismas posiciones) pese a 'never copy its layout'; aceptable porque se pide el mismo apartamento, pero es un calco con cámara algo más baja.",
+     "Cumple: sin botella, sin personas, sin texto legible (estantería, ciudad y borde inferior limpios), sin marca de agua, sin flares púrpura, 9:16 (1520x2688), veta de madera, posa-palillos, base de copa en el borde, luna llena, farolillo cálido, rims magenta/cian. Figurita maneki-neko desenfocada en la estantería (también presente en Image 1): prop decorativo, no personaje; anotado solo por la cláusula 'no figures of any size'."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas ni manos. Copa, plato, palillos (puente plausible del borde del plato al posa-palillos), bol, sillas, farolillo y lámpara son coherentes; la base de la copa apoya en la mesa sin intersecar el plato; reflejos del farolillo y rims en la madera consistentes. Sin duplicados ni objetos imposibles."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coincide con la clave S / Image 1: mismo apartamento y render, rims magenta/cian sobre azules nocturnos, trama halftone visible en la copa y en el esmalte del plato/bol, bokeh de ciudad, grano suave. Las líneas de tinta son sutiles (no 'bold'), igual que en la propia referencia, así que no rompe continuidad."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Reintento cambiando solo el prompt (misma referencia y parámetros): sustituir la frase de cámara/escena por \"lens resting 3 cm above the walnut wood, looking straight across the table so the surface is a thin foreshortened plane at mid-frame and the inside of the bowl and plate cannot be seen; foreground empty except the chopstick rest with chopsticks and the base of the wine glass at the frame edge, no used plate\"."
+  },
+  {
+   "asset_id": "v1_env_04",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "note: bottle absent by design (relight of v1_env_03 which is a no-bottle plate), so label checks (stripes, blackletter, RIOJA, silhouettes, screw cap, glow) are n/a",
+     "note: no cork, candles, extra bottles, readable text, logos, brand signage or watermark anywhere; book spines and city skyline unreadable"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "note: no people or figures; chopsticks lie across the plate with tips resting on the rest, wine glass stem/base at left edge is plausible, single moon, no duplicated objects",
+     "note: pendant lamp region mean luminance 32/255 and floor lamp shade dim blue-grey, so both lamps read as off with no warm emission; highlights on plate rim, chopsticks and rest are consistent with window backlight reflecting on a glossy table"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "note: framing matches v1_env_03 object-for-object; edge-map NCC vs parent 0.79 with best alignment at zero shift",
+     "note: cold blue night with faint magenta rim on far table edge and cyan rim on window mullion matches look S; halftone dots and ink lines are only faint, but they were equally faint in the parent plate and the prompt asked to preserve what was there",
+     "note: table surface carries a broad mid-blue window reflection (median luminance 28, 36% of pixels under 20) rather than near-black, acceptable for the spec's 'cold blue light, deep clean blacks' but compositors should expect slightly less contrast under the lime-green glow than on a pure black table"
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_05a",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No aparece la botella ni la etiqueta: es un plate de fondo (ventana/luna/skyline) y el spec no la pide, así que la lente no aplica al producto; se verificó que no hay botellas, corchos, velas ni logos añadidos.",
+     "Criterios qa_criteria cumplidos: ventana (montante izquierdo con franja cian/magenta y riel inferior), luna llena arriba-centro (~57% x), skyline de Tokio con Tokyo Tower a la derecha (~77% x; tamaño medio, no 'pequeña' como pedía el prompt, aceptable).",
+     "Letreros: ampliados a 2x los bloques de neón de los edificios; son glifos pseudo-kanji ilegibles y un símbolo genérico en forma de X cian dentro de un cuadro; no hay texto legible, marcas ni watermark en esquinas."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas, manos ni siluetas; una sola luna, sin flare morado (halo suave y cráteres correctos).",
+     "Reflejo del interior en el cristal (estantería, lámpara y vigas del techo) es claramente visible en el tercio izquierdo, más fuerte que el 'faint' pedido; físicamente coherente (continúa a ambos lados del montante y desaparece sobre el marco opaco).",
+     "Elemento no pedido: un sofá desenfocado en primer plano abajo-izquierda (~15% ancho, ~25% alto) y suelo brillante con reflejos verticales del skyline; correcto físicamente pero resta limpieza al plate si se compone un producto delante."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Comparado con la clave S (descargada en sandbox): mismo look 3D estilizado con sombreado gráfico, trama halftone fina visible en el cielo a 2x, líneas de tinta en ventanas/edificios, desregistro cian/magenta en el montante, luces de borde magenta/cian sobre azul noche, grano fino y DOF.",
+     "Coincide con el apartamento de Image 1 (luna, Tokyo Tower a la derecha, pared magenta derecha, estantería y lámpara a la izquierda); la similitud de layout viene impuesta por el propio prompt de escena, no es copia de composición de la mesa/botella."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_05b",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Plate de entorno sin botella (como especifica el spec: 'Window / moon / skyline plate'); no hay producto que juzgar, el veto no aplica.",
+     "Cumple prompt: ventana suelo-techo con marcos visibles (parteluz izquierdo y marco derecho), luna llena arriba-centro, Tokyo Tower a la derecha, reflejo del interior (lámpara/planta) en el cristal, luces magenta/cian, sin personas, sin texto, sin marca de agua, sin flares púrpura.",
+     "Los rótulos de los edificios son glifos abstractos (motivo 'X' cian repetido 3 veces, chevrones magenta, cuadrícula naranja): ninguno legible; la repetición del mismo motivo es un detalle menor.",
+     "Tokyo Tower ocupa ~35% de la altura: más 'media' que 'small', aceptable.",
+     "El tercio izquierdo lo ocupan sofá y lámpara de interior (no pedidos en SCENE, aunque coherentes con el apartamento de Image 1): reduce el área limpia del plate a ~70% del encuadre."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas ni manos. Geometría de ventana, suelo con reflejo de la ciudad y perspectiva del skyline coherentes; luna sin artefactos; sin objetos imposibles ni duplicados anómalos.",
+     "El panel izquierdo muestra el skyline con tinte más violeta y reflejo de la pantalla de la lámpara algo más fuerte que 'faint', pero físicamente plausible."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con la clave S: tramas halftone en nubes y pared, líneas de tinta en aristas de edificios, luces de borde magenta/cian sobre azul noche, grano suave, misma lámpara y mobiliario del apartamento de referencia sin copiar su composición (no hay mesa ni botella)."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_07",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Exclusión 'no extra bottles' incumplida: en la encimera de la cocina (fondo del vano, desenfocado) hay dos botellas con silueta de botella de vino (una oscura con hombro similar al producto y otra más alta translúcida con etiqueta y tapón) más un bote/jarra; en una plancha de continuidad pueden leerse como botellas de vino ajenas al producto.",
+     "La botella Sharp Zombie no aparece (correcto para plancha de entorno); no hay texto legible, logos ni marcas de agua; ninguna otra desviación respecto a la etiqueta real."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas ni zombies; maneki-neko con cara, orejas, pata levantada, collar y koban coherentes; ikebana (cerezo + ave del paraíso) en jarrón azul plausible; dos palillos sobre el plato; copa de vino de un solo tallo y pie; silla, interruptor, marco de puerta, armarios y encimera coherentes. Nota compositiva menor: la copa queda cortada por el borde izquierdo del encuadre (no es defecto)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con la clave S: tramas halftone en sombras de paredes/encimera, líneas de tinta en estantería y libros, luz de borde magenta en el marco de la puerta, cian frío en la cocina sobre azules de noche, PDC corta, grano suave; estantería de nogal, ikebana, maneki-neko, lámpara de pie y sofá coinciden con el mobiliario de Image 1 sin copiar su encuadre. Sin flares morados, sin texto legible (lomos con pseudo-glifos ilegibles)."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Cambiar solo el prompt (misma referencia Image 1 y mismos parámetros): añadir en CONSTRAINTS \"the kitchen counter holds only a fruit bowl and a small potted herb; no bottles, jars, cans or glassware anywhere in the kitchen\". (Evaluación de la generación original: la entrada no tiene refine, no es reintento.)"
+  },
+  {
+   "asset_id": "v1_char_01n",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin botella en este activo (sheet neutro): comprobaciones de etiqueta/tapón no aplican.",
+     "Cumple los 3 qa_criteria: una sola persona en split-screen (cuerpo entero izquierda, primer plano pecho-arriba derecha), fotorreal sin retoque (poros, pecas, líneas finas, asimetrías naturales, sin plastic skin), vestuario exacto (cárdigan crema oversize sobre slip dress negro, pies descalzos, moño bajo suelto, maquillaje mínimo). Fondo blanco limpio, sin texto/marca de agua/logos en esquinas, misma identidad en ambos paneles, estructura facial adulta mid-30s."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Manos casi ocultas por las mangas largas del cárdigan: solo se ven las puntas de 3-4 dedos por mano (sin dedos extra ni deformidad visible), lo que reduce ligeramente su utilidad como referencia de Restyle pero no incumple el prompt.",
+     "Pies: 5 dedos por pie, correctos; cara simétrica con catchlights naturales; sin duplicados, sin objetos imposibles, proporciones adultas normales."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: v1_char_01n es un sheet neutro fotorreal (referencia para Restyle), la coherencia con el look S Neon Graphic Cinematic 3D no se evalúa en este activo."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_char_02n",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No aplica como lente de etiqueta: sheet neutro de personaje sin botella (el prompt exige 'no props'). Verificado que no aparece ninguna botella, corcho, texto, logo, marca de agua ni borde de panel, conforme a exclusions."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Manos a 2x: cada mano muestra 4 dedos + pulgar hacia el muslo, sin dedos extra ni fusionados; ligera blandura de detalle por tamaño del sujeto en el panel izquierdo, no es defecto.",
+     "Pies descalzos a 2x: 5 dedos por pie, ambos planos en el suelo, sin deformaciones.",
+     "Rostro consistente entre ambos paneles (mismo pelo negro texturizado, barba incipiente, mandíbula); retrato con poros, pecas, líneas finas y asimetrías naturales, sin look aerografiado; brillo frontal leve dentro de 'slight natural sheen'.",
+     "Exactamente una persona, sin duplicados, reflejos, maniquí ni objetos. Vestuario conforme: camisa de lino carbón con mangas remangadas, pantalón negro, pies descalzos; panel izquierdo cuerpo entero de cabeza a pies sin recorte, panel derecho close-up pecho-arriba."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: sheet neutro v1_char_02n (referencia photoreal para Restyle), la lente de look S no aplica según las instrucciones."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_00b",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "No hay botella en este activo (exploración de localización soul_location); fidelidad evaluada contra el spec. qa_criteria cumplidos: habitación vacía, mesa de nogal con sillas, ventanal suelo-techo con skyline y luna llena, lámpara colgante de papel washi, sofá pequeño, estantería, cortinas de lino medio abiertas, puerta a cocina a la derecha, luz práctica cálida, sin personas.",
+     "Mesa puesta para 4 (4 sillas, 4 servicios con platos y cubiertos) en vez de 'mesa para dos' pedida.",
+     "Chimenea con repisa en la pared izquierda no solicitada y poco plausible en un piso 12 de Tokio.",
+     "Ikebana colocado sobre la mesa y maneki-neko en el suelo junto a la estantería, no sobre la estantería como pide el prompt.",
+     "Dos de los cinco cuadros enmarcados de la pared izquierda muestran figuras humanas (fotos); no hay personas en la habitación, pero conviene saberlo para la exclusión 'no people'.",
+     "Lomos de libros y revistas sobre la mesa con marcas tipo texto ilegibles a resolución nativa (1152x2048); sin texto legible."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Segunda esfera blanca dentro del ventanal: es el reflejo de la lámpara en el cristal (más pequeña y más cerca del centro del encuadre que la lámpara, geométricamente coherente), pero junto con la luna llena suma tres orbes blancos en el tercio superior y puede leerse como lámpara duplicada; el reflejo no muestra el cable.",
+     "Dibujo a línea 'fantasma' en la pared de la cocina vista a través de la puerta corredera (lectura ambigua entre póster y artefacto de reflejo).",
+     "Hueco de la chimenea es un vacío negro con un objeto pequeño indefinido en la base.",
+     "Sin errores de manos, caras, duplicados de muebles ni geometría imposible: sillas con 4 patas, mesa estable, parteluces del ventanal rectos, cable de la lámpara anclado al techo."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: activo de exploración soul_location (v1_env_00a-d), fotorrealista por diseño; no se evalúa contra el look S 'Neon Graphic Cinematic 3D'."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": ""
+  },
+  {
+   "asset_id": "v1_env_00c",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a: exploracion de localizacion (soul_location) sin botella ni etiqueta en el encuadre; no hay producto que evaluar"
+    ]
+   },
+   "anatomy_physics": {
+    "pass": false,
+    "severity": "med",
+    "issues": [
+     "Artefacto en el elemento heroe: una mancha/trazo oscuro horizontal atraviesa el cuarto inferior-izquierdo de la luna (visible a tamano completo y nitido en el crop 3x; esta en el origen, no es compresion)",
+     "La mitad inferior de la ventana la ocupa una balaustrada de balcon con panel azul liso; el skyline queda reducido a una franja estrecha, asi que 'denser skyline' solo se cumple a medias y resta sensacion de planta 30",
+     "Mesa con 4 sillas (spec: mesa para dos); tiene 2 servicios puestos, pero sobran dos sillas",
+     "No hay puerta a cocina a la derecha: el tercio derecho es un tabique liso con interruptor y un felpudo",
+     "Exposicion muy baja (luminancia media 28/255, 81% de pixeles por debajo de 40); el tercio derecho es casi negro, aunque al aclarar la escena esta limpia y es recuperable en etalonaje",
+     "Sin personas, sin texto, sin duplicados; sillas, mesa, lampara, jarron, maneki-neko y lampara de mesa con geometria correcta"
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "n/a por regla del encargo: exploracion soul_location v1_env_00a-d, la coherencia con el look S no se evalua (es una referencia fotorrealista de layout, no del estilo final)"
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Cambiar solo el prompt: sustituir \"floor-to-ceiling window with the city skyline and a full moon\" por \"floor-to-ceiling window with no balcony railing, looking down over a dense Tokyo skyline, large clean unobstructed full moon\" (elimina la balaustrada que tapa la mitad de la ventana y el trazo oscuro sobre la luna; mantener el resto del prompt y los parametros)."
+  },
+  {
+   "asset_id": "v1_prod_02",
+   "product_fidelity": {
+    "pass": false,
+    "severity": "high",
+    "issues": [
+     "La escena NO está a oscuras: aunque las lámparas no emiten, la etiqueta se ve amarillo brillante y totalmente legible (Sharp Zombie, RIOJA, franjas) cuando el prompt exige 'label unlit and not readable, yellow reads as dark grey-green' y 'deep clean blacks'; el propósito 'Product in the dark, glow on' no se cumple frente a la foto real (fondo negro, solo contornos).",
+     "El brillo de las siluetas es un trazo grueso y saturado con halo/bloom alrededor (look tubo de neón), no la línea fina fosforescente de la foto real; incumple el criterio 'thin phosphorescent outline, no neon tube, no bloom halo'.",
+     "Texto de etiqueta corrupto: la franja superior lleva un galimatías ('PREFTIOGS CBAEKNEK TBSBRUS / PGN16Q BOGEL') en vez de CAUTION/DEADLY GOOD WINE, y la línea bajo RIOJA dice 'Bcommirasitle de Cinpza Culilàzula' en lugar de 'Denominación de Origen Calificada'.",
+     "Correcto: franjas negro/amarillo arriba y abajo, nombre blackletter rojo oscuro, RIOJA, 4 siluetas (3 andando brazos al frente + 1 agachada) + manita, tapón de rosca negro sin corcho; el texto y las franjas NO brillan (el fallo GLOW_LOCK del original sí quedó corregido)."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Sin personas ni manos en escena; las siluetas no tienen ojos ni caras; una sola botella y dos copas como pide el prompt.",
+     "Objetos coherentes: copas apoyadas, palillos en soporte, reflejo de la botella en la mesa plausible; el pequeño cilindro negro junto a la botella se lee como un vasito de sake (no como segundo tapón), tolerable.",
+     "Las cabezas de las 3 siluetas andantes llevan un mechón/visera que no está igual en la etiqueta real; desviación menor."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Look S respetado: sombreado cómic, tramas halftone en botella y lámpara, líneas de tinta, luces de borde magenta/cian sobre azul noche, skyline de Tokio con Torre y luna.",
+     "La composición es casi calco de la referencia S (misma botella, copas, platos con restos, cuenco de edamame, vasito), pese a 'never copy its layout or composition'; para la continuidad del vídeo es aceptable como variante 'luces apagadas', pero no es una composición propia."
+    ]
+   },
+   "overall": "fix",
+   "fix_hint": "Evaluado el REINTENTO (refine attempt 1, url ..._123154_8cb396b0...), no el original; queda 1 refinamiento. Cambiar UNA variable, el bloque de oscuridad del prompt: sustituirlo por 'PITCH-BLACK room exposed for darkness: the whole label is a nearly invisible dark olive, no readable yellow, stripes and text unreadable; the ONLY light on the label is a hairline 1-px lime-green outline around the four silhouettes and the hand, exactly as thin and faint as the second reference photo, no thick stroke, no glow haze; only a faint moonlight rim on the bottle shoulder and glass rims', manteniendo el resto del prompt y las referencias iguales."
+  },
+  {
+   "asset_id": "v1_env_02",
+   "product_fidelity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Silueta zombie izquierda en rojo oscuro/granate en vez de negro; heredada tal cual del hero Image 1 (el packshot real gen_0e5ffd25 tiene las 4 negras). No corregir solo aquí: rompería 'misma composición que el hero'; si se corrige, hacerlo en el hero y regenerar derivados.",
+     "Micro-texto de las franjas degradado a galimatías ('CRIANGY / DEADLY OOOID NWNE', 'COOCN MBY') frente al hero donde se leía 'CAUTION / DEADLY GOOD WINE'; regresión del relight, pero ilegible a escala de fotograma (~8 px en 1080p), no cuenta como texto añadido legible.",
+     "Verificado OK: franjas negro/amarillo arriba y abajo, nombre en blackletter rojo oscuro, RIOJA + Denominación de Origen Calificada, 3 siluetas andando con brazos al frente + 1 agachada + manita, sin ojos; tapón de rosca negro (quitado, sobre la mesa; cuello con rosca y faldón retenido, idéntico al hero), sin corcho; etiqueta sin glow verde; una sola botella, sin velas, sin watermark, sin flares morados."
+    ]
+   },
+   "anatomy_physics": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Etiqueta sigue iluminada frontalmente (L medio ~100 vs ~142 en el hero, mientras la habitación cae a L 14-48) sin fuente frontal visible con todas las lámparas apagadas; es estilizado y no brilla, pero reduce el contraste oscuro->glow para el beat siguiente.",
+     "Resplandor magenta en borde izquierdo de mesa/silla y en la pared derecha algo más que 'tenue', aunque coherente con los rim lights del look S y presente también en el hero.",
+     "Sin personas, manos ni caras; sin zombies 3D en plano; sin duplicados (tapón suelto + botella abierta coherentes con las copas servidas; dos servicios: 2 platos, 2 copas, 2 pares de palillos con reposapalillos)."
+    ]
+   },
+   "style_continuity": {
+    "pass": true,
+    "severity": "low",
+    "issues": [
+     "Coherente con el look S: 3D estilizado con sombreado de cómic, tramas halftone visibles en botella, bol y platos, líneas de tinta en bordes, rim lights magenta/cian sobre azul noche; misma paleta y misma ciudad que el hero, solo cambia la iluminación como pedía el prompt."
+    ]
+   },
+   "overall": "approved",
+   "fix_hint": "Evaluado el reintento (refine attempt 1, job 4cd1483a; pendant apagado confirmado). Sin cambio necesario para este activo; la silueta roja y el micro-texto son herencia/ruido del hero y solo se corregirían a nivel de hero."
+  }
+ ],
+ "agent_qa_note": "QA adversarial por agentes (wf_76ecdfca, 23 activos, 3 lentes con veto de producto) ejecutada con el lock antiguo de las siluetas ('brazos al frente'): los fallos SOLO por la pose de los brazos no valen (la etiqueta real lleva brazos doblados y levantados). Sí valen y quedan como lista de mejora para la siguiente pasada de finales: silueta izquierda teñida de rojo en vez de negro (prod_01, prod_05), texto de la cinta CAUTION corrupto/duplicado (prod_01, prod_05), tapón duplicado (prod_05), nombre/RIOJA ausentes y siluetas huecas en la etiqueta apagada (prod_06), composición que calca el layout de la clave S (varios). Para los drafts 480p y la previz estos detalles no bloquean; para keyframes finales 1080p: reintentar con las correcciones de prompt sugeridas (fix_hint)."
+}

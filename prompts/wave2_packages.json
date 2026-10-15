@@ -1,0 +1,1104 @@
+{
+ "packages": [
+  {
+   "asset_id": "v1_char_03",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference (look only)"
+    }
+   ],
+   "prompt": "Stylized 3D wine-ad still, 9:16, beat 1: two-shot of the couple at the table. STYLE: the first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; do not copy its content, characters or layout. The bottle label stays accurate and readable. SCENE: the modern Tokyo apartment at night: pale oak floor, walnut table for two with wooden chairs, floor-to-ceiling window at camera-left with the skyline and a full moon, warm washi pendant over the table, a bookshelf with an ikebana and a maneki-neko, a doorway to the kitchen at camera-right. Lights on: warm pendant light on the couple and the table, cold kitchen light through the doorway, blue moonlight from the window. SUBJECT: Aya is exactly <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren is exactly <<<c800522c-a722-4f47-bb45-2f32899d7e45>>>, exactly two people, seated facing each other across the table, laughing with the last glass of red wine raised. On the table: two plates with fish remains, chopsticks on rests, edamame. Foreground, sharp, label to lens: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The bottle stands open, its black screw cap beside it, two glasses of red wine next to it. CAMERA: 35 mm, f/2.8, eye level from the entrance, bottle and couple in focus, skyline soft. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Elements in prompt: SZ-aya, SZ-ren, SZ-bottle-master (4 refs total, first media = style key S). Lights-on beat 1 (35 mm from the entrance): STYLE_LOCK adapted + PRODUCT_LOCK_NB literal (corrected lock: bent, raised arms), no GLOW_LOCK; Phase A practicals per the bible (pendant + kitchen spill + moon). 2296 chars. QA: Aya/Ren match their sheets, label faithful, screw cap beside the bottle, no text. Next iteration if identity drifts: add one wardrobe anchor per character (cream cardigan / charcoal linen shirt) right after each Element token."
+  },
+  {
+   "asset_id": "v1_char_08",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f",
+     "label": "doorway and shelf geometry"
+    }
+   ],
+   "prompt": "Stylized 3D wine-ad still, 9:16, beat 3: the couple gets up with the plates. STYLE: the first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; do not copy its content, characters or layout. The bottle label stays accurate and readable. The second reference image gives the kitchen doorway and shelf at camera-right: keep their geometry only. SCENE: the modern Tokyo apartment at night: walnut table for two, floor-to-ceiling window at camera-left with the skyline and a full moon, warm washi pendant over the table, a bookshelf with an ikebana and a maneki-neko, a doorway to the kitchen at camera-right. Lights on: warm pendant over the table, cold kitchen light through the doorway. SUBJECT: Aya is exactly <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren is exactly <<<c800522c-a722-4f47-bb45-2f32899d7e45>>>, exactly two people, standing by the table, each holding a stack of plates, stepping toward the doorway at the right. Left on the table, foreground, sharp: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The bottle stands open, its black screw cap lying on the wood beside its base, two glasses of red wine one third and half full, chopsticks on rests. CAMERA: 50 mm, f/2.8, eye level one metre from the table, bottle and cap in focus. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Elements: SZ-aya, SZ-ren, SZ-bottle-master (5 refs total; media 1 = S, media 2 = env_07 door/shelf). Beat 3, camera stopped at 1 m, 50 mm. PRODUCT_LOCK_NB literal (corrected lock). 2298 chars. QA: screw cap visible beside the bottle, bottle stays on the table, couple walking right toward the door. Next iteration: if the cap is missed, say 'the black screw cap lies on the table a few centimetres from the bottle' before the product lock."
+  },
+  {
+   "asset_id": "v1_char_05a",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 1 troupe model sheet"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 2 packshot (silhouette source only)"
+    }
+   ],
+   "prompt": "USE: single isolated character asset for image-to-3D conversion (generate_3d), square 1:1, PNG with a fully transparent background; the faithful lurching zombie from the Sharp Zombie label.\nSTYLE: a stylized 3D render of a miniature figure: solid matte black body with soft volumetric shading so the form reads as a 3D object, and a thin, crisp phosphorescent lime-green (#39FF14) outline hugging the silhouette edge; no bloom, no halo, no neon tube, no grain, no halftone, no colour fringing, clean anti-aliased edges.\nSUBJECT: one walking zombie figure, the first of the three lurching walkers printed on the label, in its staggering zombie walk: stiff-legged mid-stride with one foot ahead of the other, both elbows bent and the forearms raised in front of the chest so each arm forms an upward zigzag, hands hanging limp from the wrists with the fingers slightly open, head tilted a little forward, shoulders hunched, both feet flat on an invisible ground plane. The arm pose matches the label silhouette in Image 2 exactly: bent, raised arms, never straight arms stretched out forward. Smooth featureless head with no eyes, no mouth and no face; no clothing, no hair; stocky proportions with a short neck as in Image 1. Three-quarter front view, standing, the whole figure from head to feet inside the frame.\nREFERENCES: Image 1 is the zombie troupe model sheet: fully preserve its body proportions, matte-black material and thin lime outline. Image 2 is the product packshot: use it only as the source of the exact silhouette shapes printed on its yellow label (three lurching zombies in profile with bent, raised arms in a staggering walk, one crouched, one small hand rising from the ground); where a pose in Image 1 differs from the label, the label in Image 2 wins; do not show the bottle, the label, any text or any other figure from it. Ignore both images' backgrounds, lighting and layout.\nCAMERA: 50 mm at the figure's eye level, orthographic-looking with minimal perspective, the figure centred and filling about 80% of the frame height, nothing cropped, even soft studio lighting with no visible light source.\nCONSTRAINTS: exactly one figure, isolated subject on a fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no eyes, no mouth, no face, no clothing, no extra limbs, no extra figures, no bottle, no label.",
+   "est_credits": 2.75,
+   "notes": "No bottle appears, so PRODUCT_LOCK_GPT (which binds a visible bottle) is replaced by a REFERENCES binding that uses the packshot only as silhouette source, with the corrected silhouette description (bent, raised arms). Pose fixed to the brief and the real label: the previous 'arms stretched straight forward' contradicted the brief and the retired lock. The troupe sheet (Image 1) was generated with the old arms-forward wording, so the prompt states that the label in Image 2 wins on pose. Image numbering follows the brief's media order. 2404 chars. QA: one figure, transparent background, bent raised arms, no eyes, no shadow. Next iteration: if the background is not transparent, switch variant to sunburst and repeat 'isolated subject on a fully transparent background'."
+  },
+  {
+   "asset_id": "v1_char_05b",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 1 troupe model sheet"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 2 packshot (silhouette source only)"
+    }
+   ],
+   "prompt": "USE: single isolated character asset for auto-rigging and animation (Meshy rig-friendly), square 1:1, PNG with a fully transparent background; the same lurching zombie as the faithful asset but in a neutral rig pose.\nSTYLE: a stylized 3D render of a miniature figure: solid matte black body with soft volumetric shading so the form reads as a 3D object, and a thin, crisp phosphorescent lime-green (#39FF14) outline hugging the silhouette edge; no bloom, no halo, no neon tube, no grain, no halftone, no colour fringing, clean anti-aliased edges.\nSUBJECT: one zombie figure, the same character as the first walker printed on the label, now in a clean A-pose for rigging: standing straight and symmetrical, both arms held away from the body at about 45 degrees like the letter A and brought slightly forward, elbows almost straight, hands open with the fingers slightly spread, legs apart at shoulder width, both feet flat and pointing forward, head facing straight ahead, no part of the body overlapping another. Smooth featureless head with no eyes, no mouth and no face; no clothing, no hair; stocky proportions with a short neck as in Image 1. Pure front view, the whole figure from head to feet inside the frame.\nREFERENCES: Image 1 is the zombie troupe model sheet: fully preserve its body proportions, matte-black material and thin lime outline. Image 2 is the product packshot: use it only as the source of the exact silhouette shapes printed on its yellow label (three lurching zombies in profile with bent, raised arms in a staggering walk, one crouched, one small hand rising from the ground); where a pose in Image 1 differs from the label, the label in Image 2 wins; do not show the bottle, the label, any text or any other figure from it. Ignore both images' backgrounds, lighting and layout.\nCAMERA: 50 mm at the figure's chest height, orthographic-looking with minimal perspective, the figure centred and filling about 80% of the frame height, nothing cropped, even soft studio lighting with no visible light source.\nCONSTRAINTS: exactly one figure, isolated subject on a fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no eyes, no mouth, no face, no clothing, no extra limbs, no extra figures, no bottle, no label.",
+   "est_credits": 2.75,
+   "notes": "Rig-friendly variant of 05a: A-pose, legs apart, strict front view, no overlapping limbs; REFERENCES block updated to the corrected silhouette description. 2310 chars. QA: clear A-pose, one figure, transparent. Next iteration: if the arms come up bent like the label pose, say 'arms straight and away from the body like the letter A, not bent, not raised'."
+  },
+  {
+   "asset_id": "v1_char_05c",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 1 troupe model sheet"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 2 packshot (silhouette source only)"
+    }
+   ],
+   "prompt": "USE: single isolated character asset for image-to-3D conversion (generate_3d), square 1:1, PNG with a fully transparent background; the crouched zombie, the fourth silhouette on the Sharp Zombie label.\nSTYLE: a stylized 3D render of a miniature figure: solid matte black body with soft volumetric shading so the form reads as a 3D object, and a thin, crisp phosphorescent lime-green (#39FF14) outline hugging the silhouette edge; no bloom, no halo, no neon tube, no grain, no halftone, no colour fringing, clean anti-aliased edges.\nSUBJECT: one crouched zombie figure exactly as the fourth silhouette printed on the label: low to the ground on all fours, hunched and curled into itself, knees bent under the body, both hands flat on the invisible ground in front of it, back rounded, head dropped low and pointing forward, as if asleep or about to crawl. Smooth featureless head with no eyes, no mouth and no face; no clothing, no hair; stocky proportions with a short neck as in Image 1. Three-quarter front view, the whole figure inside the frame.\nREFERENCES: Image 1 is the zombie troupe model sheet: fully preserve its body proportions, matte-black material and thin lime outline. Image 2 is the product packshot: use it only as the source of the exact silhouette shapes printed on its yellow label (three lurching zombies in profile with bent, raised arms in a staggering walk, one crouched, one small hand rising from the ground); where a pose in Image 1 differs from the label, the label in Image 2 wins; do not show the bottle, the label, any text or any other figure from it. Ignore both images' backgrounds, lighting and layout.\nCAMERA: 50 mm slightly above the figure looking gently down, the figure centred and filling about 70% of the frame width, nothing cropped, even soft studio lighting with no visible light source.\nCONSTRAINTS: exactly one figure, isolated subject on a fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no eyes, no mouth, no face, no clothing, no extra limbs, no extra figures, no bottle, no label.",
+   "est_credits": 2.75,
+   "notes": "REFERENCES block updated to the corrected silhouette description; crouched pose unchanged (matches brief and bible: the sleeping one, EE2). 2112 chars. QA: crouched pose faithful to the label, one figure, transparent. Next iteration: if it stands up, say 'the figure is never upright; its head stays below knee height of a standing figure'."
+  },
+  {
+   "asset_id": "v1_char_05d",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "1:1",
+    "quality": "high",
+    "resolution": "2k",
+    "variant": "flare",
+    "background": "transparent",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 1 troupe model sheet"
+    },
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 2 packshot (silhouette source only)"
+    }
+   ],
+   "prompt": "USE: single isolated prop-character asset for image-to-3D conversion (generate_3d), square 1:1, PNG with a fully transparent background; the small hand that rises from the ground on the Sharp Zombie label, the troupe's fifth character.\nSTYLE: a stylized 3D render of a miniature figure: solid matte black body with soft volumetric shading so the form reads as a 3D object, and a thin, crisp phosphorescent lime-green (#39FF14) outline hugging the silhouette edge; no bloom, no halo, no neon tube, no grain, no halftone, no colour fringing, clean anti-aliased edges.\nSUBJECT: one small black hand with a short forearm, exactly the hand silhouette printed on the label: rising straight up from an invisible ground line, the forearm cut cleanly at the bottom of the figure, palm facing the camera and slightly tilted, all five fingers open and spread, thumb clearly separate, fingers slightly curled at the tips as if reaching. Matte black with the thin lime-green outline on every finger. Exactly five fingers, one thumb and four fingers, no sixth finger. Three-quarter view, the whole hand and forearm inside the frame, nothing else.\nREFERENCES: Image 1 is the zombie troupe model sheet: fully preserve its body proportions, matte-black material and thin lime outline. Image 2 is the product packshot: use it only as the source of the exact silhouette shapes printed on its yellow label (three lurching zombies in profile with bent, raised arms in a staggering walk, one crouched, one small hand rising from the ground); where a pose in Image 1 differs from the label, the label in Image 2 wins; do not show the bottle, the label, any text or any other figure from it. Ignore both images' backgrounds, lighting and layout.\nCAMERA: 50 mm at the hand's height, orthographic-looking with minimal perspective, the hand centred and filling about 75% of the frame height, nothing cropped, even soft studio lighting with no visible light source.\nCONSTRAINTS: exactly one figure, isolated subject on a fully transparent background, no ground plane, no floor, no cast shadow, no contact shadow, no backdrop, no text, no watermark, no eyes, no mouth, no face, no clothing, no extra limbs, no extra figures, no bottle, no label.",
+   "est_credits": 2.75,
+   "notes": "REFERENCES block updated to the corrected silhouette description; hand unchanged. 2216 chars. QA: five fingers, a single hand, transparent. Next iteration: if finger count fails, raise quality to xhigh and add 'count the fingers: thumb, index, middle, ring, little'."
+  },
+  {
+   "asset_id": "v1_char_07",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style reference (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo"
+    }
+   ],
+   "prompt": "Stylized 3D still, 9:16, scale test. STYLE: the first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; do not copy its content, characters or layout. The second reference image is Image 2, the real glow photo: glow colour and outline intensity only. SCENE: the walnut table at night, lamps off, only blue moonlight from camera-left on the bottle and one wine glass. SUBJECT: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. A 75 cl bottle about 30 cm tall, label to lens. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. At the bottle's base stand in a row five characters exactly <<<5915e7ac-09c7-4efc-bf78-a1904ace295b>>>: three lurching walkers with bent, raised arms, one crouched, the small hand; each about 5 cm tall, one sixth of the bottle, the tallest head just below the bottom edge of the label; matte black with the same thin lime outline, no eyes, no mouths. CAMERA: 50 mm, f/4, table height, all in focus. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Elements: SZ-bottle-master, SZ-zombies-glow (4 refs total; media 1 = S, media 2 = real glow photo, bound up front as 'Image 2' so GLOW_LOCK stays literal). Dark phase: STYLE_LOCK adapted + PRODUCT_LOCK_NB literal (corrected lock) + GLOW_LOCK literal; 'about 5 cm tall' and 'no eyes, no mouths' included; walkers described with bent, raised arms. 2295 chars. QA: zombies about 1/6 of the bottle height, label dark with glowing outlines only, no eyes. Next iteration: if the figures come out too big, replace the ratio sentence with 'five figures side by side are as wide as the label'."
+  },
+  {
+   "asset_id": "v1_prod_10a",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3",
+     "label": "first reference: neutral studio front packshot (setting and lighting)"
+    }
+   ],
+   "prompt": "Clean 3D product render of a wine bottle for continuity and 3D reference, vertical 3:4, three-quarter rear view. STYLE: the first reference image is the front packshot of this bottle in the neutral studio: match its clean 3D product render look, seamless mid-grey backdrop, soft diffused lighting and exposure; take only setting and lighting, not the angle. SUBJECT: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The back label is exactly <<<6ea674e7-12b6-442a-98e0-b6ae20dd9a9e>>>: a provisional back label applied flat and centred on the rear of the bottle at the same height and width as the front label; reproduce its layout and text block exactly, invent no text; ignore its background. The bottle stands upright on the seamless grey surface, turned so the camera sees its back from about 45 degrees: the back label faces the camera on the left half of the bottle and on the right edge only a narrow sliver of the yellow front label with its caution stripes wraps into view; the silhouettes and the name stay hidden. The black screw cap sits on the bottle. Soft key light from the upper left, a gentle reflection down the dark glass, a soft contact shadow. CAMERA: 85 mm, f/8, lens at label height, the whole bottle from cap to base in frame, all in sharp focus. Exactly one bottle. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Elements: SZ-bottle-master, SZ-bottle-back-PROV (3 refs total). The brief lists no style key S for this asset (neutral grey studio like v1_prod_07a), so STYLE_LOCK is adapted to neutral-studio continuity instead of the neon look. PRODUCT_LOCK_NB literal (corrected lock). 2123 chars. QA: back label on the rear, not on the front; screw cap; neutral background. Next iteration: if the back label lands on the front, say 'the front label and the back label are on opposite sides of the bottle, 180 degrees apart'."
+  },
+  {
+   "asset_id": "v1_prod_10b",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "46311ffb-1e8b-40e9-b51b-b5f8ffd18ef3",
+     "label": "first reference: neutral studio front packshot (setting and lighting)"
+    }
+   ],
+   "prompt": "Clean 3D product render of a wine bottle for continuity and 3D reference, vertical 3:4, pure rear view. STYLE: the first reference image is the front packshot of this bottle in the neutral studio: match its clean 3D product render look, seamless mid-grey backdrop, soft diffused lighting and exposure; take only setting and lighting, not the angle. SUBJECT: The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. The back label is exactly <<<6ea674e7-12b6-442a-98e0-b6ae20dd9a9e>>>: a provisional back label applied flat and centred on the rear of the bottle at the same height and width as the front label; reproduce its layout and text block exactly, invent no text; ignore its background. The bottle stands upright on the seamless grey surface, turned a full 180 degrees from the camera: only the back label is visible, centred and square to the lens, sharp so its text block reads as a block; the yellow front label is completely hidden on the far side, no stripe or silhouette of it visible at either edge. The black screw cap sits on the bottle. Soft key light from the upper left, gentle reflections on both shoulders, a soft contact shadow. CAMERA: 85 mm, f/8, lens at label height, the whole bottle from cap to base in frame, all in sharp focus. Exactly one bottle. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Elements: SZ-bottle-master, SZ-bottle-back-PROV (3 refs total). Same neutral-studio STYLE adaptation as 10a; PRODUCT_LOCK_NB literal (corrected lock). 2101 chars. QA: only the back label visible, screw cap. Next iteration: if any front-label stripe leaks in, add 'the back label fills the centre and the glass on both sides is plain dark'."
+  },
+  {
+   "asset_id": "v1_endcard",
+   "model": "seedream_v5_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style reference (look only)"
+    }
+   ],
+   "prompt": "Vertical 9:16 end card for a Japanese wine commercial, used in post-production. Use Image 1 for the product, Image 2 for the glow colour only and Image 3 for the visual style only. Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Image 3 defines the visual style only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; do not copy its content, characters or layout. Scene: the bottle from Image 1 stands upright and centred on a walnut dining table in a dark Tokyo apartment at night, every lamp off, the full moon large and soft in the floor-to-ceiling window directly behind the bottle, cold blue moonlight on the bottle's shoulder and the rims of two stemmed glasses of red wine beside it, a faint magenta and cyan city glow on the glass edges, deep clean blacks. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Camera 85 mm, f/2.8, at table height, label to the lens, the bottle occupying the middle third of the frame with clear space above and below for the text. TEXT (EXACT, verbatim, no extra characters), each line appearing exactly once, composed with generous margins: at the top centre, large, a clean bold Japanese gothic sans-serif in white: \"ゾンビ級に、うまい。\"; below the bottle, centred, smaller, an elegant letter-spaced serif in small capitals in warm off-white: \"SHARP ZOMBIE · RIOJA\"; at the very bottom, small and discreet, a thin Japanese gothic sans-serif in light grey: \"お酒は20歳になってから。\". The quotation marks are not rendered. Only these three lines of text exist in the image; no other words, no logo other than the bottle label, no watermark, no cork, no candles, no extra bottles, no eyes or faces on the zombie silhouettes.",
+   "est_credits": 2.5,
+   "notes": "No Elements (Seedream). Medias reordered (packshot, glow photo, style key) so PRODUCT_LOCK_GPT (Image 1) and GLOW_LOCK (Image 2) are both literal with the corrected silhouette wording; STYLE_LOCK adapted to Image 3. Text block uses the GPT/Seedream text grammar (EXACT, verbatim, font, colour, placement, once each); the corner brackets 「」 in the brief are quotation marks, not part of the headline, so they are not rendered. The legal line is a client placeholder to validate. 2500 chars (~420 words). QA: exact Japanese text, label faithful, no extra text. Next iteration: if a character is garbled, spell the headline kana one by one in the prompt; if it still fails, generate the card without text and add the typography in post."
+  },
+  {
+   "asset_id": "v1_board_01",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 2 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 3 zombie troupe sheet (silhouette shapes only)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B1] 0.0–2.5 s · DOLLY IN\". Camera move: one long straight black-marker arrow on the floor from the bottom edge (the entrance) pointing at the table: dolly in.\nUSE: storyboard panel B1 of 10 of a 15 s Sharp Zombie wine spot, 9:16. Beat 1, after dinner, lights on.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey with no colour: nothing glows in this beat, so no lime. People, cat and bottle are pencil sketches, not photoreal; darks are dense charcoal, light is untouched paper.\nSCENE: wide view from the entrance into the Tokyo apartment of Image 2: oak floor, walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, washi pendant, bookshelf with a maneki-neko, kitchen doorway at camera-right. Lights on: warm pendant over the table, cool kitchen light through the right doorway, moon in the window. On the table: two plates with leftovers, chopsticks on a rest, edamame, the open Sharp Zombie bottle with its black screw cap lying beside it, two stemmed glasses of red wine (one a third full, one half full); no candles.\nSUBJECT: Aya (Japanese woman in her thirties, oversized cream cardigan over a black slip dress, low bun) and Ren (Japanese man in his thirties, charcoal linen shirt with rolled sleeves, black trousers, short hair) sit across from each other, mid-laugh, each raising the last glass; the bottle and the two glasses are in the near foreground, label toward the lens.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 2: room layout, furniture, window and moon placement only; ignore its rendering and lighting. Image 3: shapes of the label silhouettes only; no miniatures outside the label.\nCAMERA: 35 mm, eye level, from the entrance, start frame of the dolly in.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no cat, no miniatures; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 01 · label \"[B1] 0.0–2.5 s · DOLLY IN\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal from plan 5), Image 2 style key S (room layout only), Image 3 troupe sheet. Lime OFF (lit beat). QA: label verbatim top-left, dolly arrow, couple mid-laugh, bottle sketch with screw cap, no cat. 2822 chars."
+  },
+  {
+   "asset_id": "v1_board_02",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 2 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 3 zombie troupe sheet (silhouette shapes only)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B2] 2.5–4.0 s · DOLLY IN (cont.)\". Camera move: a straight black-marker arrow continuing along the floor toward the table, shorter than in B1: the dolly in continues.\nUSE: storyboard panel B2 of 10 of a 15 s Sharp Zombie wine spot, 9:16. Beat 2, the cat, lights on.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey with no colour: nothing glows in this beat, so no lime. People, cat and bottle are pencil sketches, not photoreal; darks are dense charcoal, light is untouched paper.\nSCENE: the same view, a little closer, into the Tokyo apartment of Image 2: oak floor, walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, washi pendant, bookshelf with a maneki-neko, kitchen doorway at camera-right. Lights on: warm pendant, cool kitchen spill at the right, moon in the window. On the table: two plates with leftovers, chopsticks on a rest, edamame, the open Sharp Zombie bottle with its black screw cap lying beside it, two stemmed glasses of red wine (one a third full, one half full); no candles.\nSUBJECT: a calico bobtail cat crosses the foreground right to left, close to camera, head turned to look straight into the lens; Aya (Japanese woman in her thirties, oversized cream cardigan over a black slip dress, low bun) and Ren (Japanese man in his thirties, charcoal linen shirt with rolled sleeves, black trousers, short hair) stay at the table behind, laughing with their glasses, drawn lighter.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 2: room layout, furniture, window and moon placement only; ignore its rendering and lighting. Image 3: shapes of the label silhouettes only; no miniatures outside the label.\nCAMERA: 35 mm, eye level, dolly in continuing; the cat passes between camera and table.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; one cat only, no miniatures; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 02 · label \"[B2] 2.5–4.0 s · DOLLY IN (cont.)\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal from plan 5), Image 2 style key S (room layout only), Image 3 troupe sheet. Lime OFF (lit beat). QA: label verbatim, continuing arrow, one cat looking at lens (EE1), couple lighter behind, screw cap. 2861 chars."
+  },
+  {
+   "asset_id": "v1_board_03",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 2 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 3 zombie troupe sheet (silhouette shapes only)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B3] 4.0–5.5 s · HOLD 50 mm\". Camera mark: a small black-marker camera icon with a short arrow ending in a bar: the move stops and holds.\nUSE: storyboard panel B3 of 10 of a 15 s Sharp Zombie wine spot, 9:16. Beat 3, clearing the table, lights on.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey with no colour: nothing glows in this beat, so no lime. People, cat and bottle are pencil sketches, not photoreal; darks are dense charcoal, light is untouched paper.\nSCENE: one metre in front of the table in the Tokyo apartment of Image 2: oak floor, walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, washi pendant, bookshelf with a maneki-neko, kitchen doorway at camera-right. Lights on: warm pendant, cool kitchen light through the open right doorway, moon in the window. Left on the table: the open Sharp Zombie bottle with its black screw cap lying beside it, two glasses (a third and half full), chopsticks on their rest, edamame; no candles.\nSUBJECT: Aya (Japanese woman in her thirties, oversized cream cardigan over a black slip dress, low bun) and Ren (Japanese man in his thirties, charcoal linen shirt with rolled sleeves, black trousers, short hair) have stood up holding stacks of plates and turn toward the right doorway, mid-step away; the bottle stays in the foreground with the screw cap clearly drawn beside it.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 2: room layout, furniture, window and moon placement only; ignore its rendering and lighting. Image 3: shapes of the label silhouettes only; no miniatures outside the label.\nCAMERA: 50 mm, eye level, static hold one metre from the table.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no cat, no miniatures; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 03 · label \"[B3] 4.0–5.5 s · HOLD 50 mm\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal from plan 5), Image 2 style key S (room layout only), Image 3 troupe sheet. Lime OFF (lit beat). QA: label verbatim, hold mark, couple standing with plates toward right door, screw cap drawn beside bottle. 2758 chars."
+  },
+  {
+   "asset_id": "v1_board_04",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 2 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 3 zombie troupe sheet (silhouette shapes only)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B4] 5.5 s · CORTE · MESA SOLA\". Camera mark: a small locked black-marker camera icon with a short bar instead of an arrow: hard cut to a static frame, no movement.\nUSE: storyboard panel B4 of 10 of a 15 s Sharp Zombie wine spot, 9:16. First frame after the hard cut at 5.5 s: the table alone, lights still on.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey with no colour: nothing glows in this beat, so no lime. People, cat and bottle are pencil sketches, not photoreal; darks are dense charcoal, light is untouched paper.\nSCENE: framed on the empty table from one metre in the Tokyo apartment of Image 2: oak floor, walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, washi pendant, bookshelf with a maneki-neko, kitchen doorway at camera-right. Lights on: pendant directly above, moon in the window, the right doorway empty. On the table: the open Sharp Zombie bottle upright with its black screw cap lying beside it, two glasses of red wine (a third and half full), chopsticks on their rest, edamame; both chairs pushed back and empty; no candles.\nSUBJECT: nobody in frame, only the dressed table; the bottle is the centre, label toward the lens.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 2: room layout, furniture, window and moon placement only; ignore its rendering and lighting. Image 3: shapes of the label silhouettes only; no miniatures outside the label.\nCAMERA: 50 mm, eye level, static.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no people, no cat, no miniatures; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 04 · label \"[B4] 5.5 s · CORTE · MESA SOLA\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal from plan 5), Image 2 style key S (room layout only), Image 3 troupe sheet. Lime OFF (lit beat). QA: label verbatim, static/cut mark, nobody in frame, chairs pushed back, bottle + cap + two glasses + chopsticks. 2562 chars."
+  },
+  {
+   "asset_id": "v1_board_05",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 2 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 3 zombie troupe sheet (silhouette shapes only)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B5] 5.5–6.5 s · PUSH-IN 50→85 mm\". Camera move: two converging black-marker arrows from the frame edges pointing in at the bottle: push-in.\nUSE: storyboard panel B5 of 10 of a 15 s Sharp Zombie wine spot, 9:16. Beat 4, the blackout: an off-screen click, the lights have just gone off.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey with no colour: nothing glows in this beat, so no lime. People, cat and bottle are pencil sketches, not photoreal; darks are dense charcoal, light is untouched paper.\nSCENE: the same table in the Tokyo apartment of Image 2: oak floor, walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, washi pendant, bookshelf with a maneki-neko, kitchen doorway at camera-right. Every lamp off: the pendant dark with a small switched-off wobble line beside it, the doorway black, only cold moonlight from the window at the left as untouched paper on the bottle shoulder, glass rims and table edge; all else heavy charcoal. On the table: the open bottle with its screw cap beside it, two glasses, chopsticks on their rest.\nSUBJECT: the Sharp Zombie bottle at the centre, its label dark and unlit, the silhouettes only faintly visible as darker shapes. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark; the silhouette outlines have not lit up yet, so no glow of any kind in this frame.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 2: room layout, furniture, window and moon placement only; ignore its rendering and lighting. Image 3: shapes of the label silhouettes only; no miniatures outside the label.\nCAMERA: push-in from 50 mm to 85 mm on the bottle, eye level; the frame tightens on the bottle.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no people, no cat, no miniatures, no glow; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 05 · label \"[B5] 5.5–6.5 s · PUSH-IN 50→85 mm\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal from plan 5), Image 2 style key S (room layout only), Image 3 troupe sheet. Lime OFF (lit beat). GLOW_LOCK deliberately NOT applied: beat 4 is pre-glow (label still dark, as in brief v1_kf_04); its no-glow sentence is kept literally plus an explicit 'no glow yet'. QA: push-in arrows, lamps off, moonlight only. 2829 chars."
+  },
+  {
+   "asset_id": "v1_board_06",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo (GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 4 zombie troupe sheet (miniature shapes and poses)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B6] 6.5–8.5 s · MACRO 100 mm\". Camera mark: a small locked camera icon with a short bar: fixed macro, no movement.\nUSE: storyboard panel B6 of 10, 15 s Sharp Zombie wine spot, 9:16. Beat 5, the awakening: macro on the label in the dark.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey except one accent, phosphorescent lime green (#39FF14), only on the glowing zombie outlines and the hand; all pencil sketch, darks dense charcoal, light untouched paper.\nSCENE: extreme close-up in the dark: the Sharp Zombie label fills the frame in dark charcoal greys, stripes and name block faintly suggested; black screw cap cropped at the top; a faint moonlight edge on the glass.\nSUBJECT: the four black zombie silhouettes and the small hand printed on the label, laid out exactly as on Image 1 (three lurching in profile with bent raised arms, one crouched, the hand rising), no eyes, no mouths, come alive: only their thin outlines glow lime. The first walker glows brightest, head turned slightly; the second and third less; the crouched one faintest, still asleep; the hand glows and lifts one finger. Two small lime pulse arcs beside the brightest outline mark the two heartbeats.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 3: room layout only, ignore its rendering. Image 4: miniature shapes and poses only; do not copy its layout.\nCAMERA: 100 mm macro, fixed, label parallel to the lens, very shallow focus.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no miniatures outside the label, no readable label lettering; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 06 · label \"[B6] 6.5–8.5 s · MACRO 100 mm\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal), Image 2 real glow photo (GLOW_LOCK literal, added from brief.refs), Image 3 style key S (layout only), Image 4 troupe sheet. Lime ON (outlines + hand only, label text dark). QA: fixed-camera mark, pose lock as on label (bent raised arms in profile), first walker brightest + head turn, crouched faintest (EE2), two pulse arcs, no eyes. 2932 chars."
+  },
+  {
+   "asset_id": "v1_board_07",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo (GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 4 zombie troupe sheet (miniature shapes and poses)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B7] 8.5–10.5 s · TRACKING LATERAL\". Camera move: a long horizontal marker arrow along the bottom edge, left to right: lateral tracking.\nUSE: storyboard panel B7 of 10, 15 s Sharp Zombie wine spot, 9:16. Beat 6, leaving the label.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey except one accent, phosphorescent lime green (#39FF14), only on the glowing zombie outlines and the hand; all pencil sketch, darks dense charcoal, light untouched paper.\nSCENE: table level in the dark, camera 8 cm above the walnut surface; the bottle large at the left, dark label toward the lens, a glass base and the chopstick rest further right; moonlight from behind as untouched paper, rest charcoal.\nSUBJECT: The five miniatures of Image 4 (three lurching walkers in profile with bent raised arms, one crouched, one small hand), about 5 cm tall, solid black figures with a thin glowing lime outline, no eyes, no mouths. The three walkers have peeled off the label and step down onto the table in a line, dancing (one mid-step, one arms up, one bending); at the label's edge the hand, walking on its fingertips, shoves the crouched one, last to leave, off the label, half-asleep and dimmer; faint ghost outlines stay where the walkers were.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 3: room layout only, ignore its rendering. Image 4: miniature shapes and poses only; do not copy its layout.\nCAMERA: 85 mm at table level, lateral tracking left to right with the dancers.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no people, no cat, exactly three walkers, one crouched, one hand; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 07 · label \"[B7] 8.5–10.5 s · TRACKING LATERAL\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal), Image 2 real glow photo (GLOW_LOCK literal, added from brief.refs), Image 3 style key S (layout only), Image 4 troupe sheet. Lime ON (outlines + hand only, label text dark). QA: lateral arrow, three dancers in line ~5 cm, hand walking on fingers (EE3) shoving the crouched one off the label last (EE2), no eyes. 2986 chars."
+  },
+  {
+   "asset_id": "v1_board_08",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo (GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 4 zombie troupe sheet (miniature shapes and poses)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B8] 10.5–12.0 s · TRACKING + ARC\". Camera move: a curved marker arrow along the bottom edge: tracking arc.\nUSE: storyboard panel B8 of 10, 15 s Sharp Zombie wine spot, 9:16. Beat 7, party, the freeze.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey except one accent, phosphorescent lime green (#39FF14), only on the glowing zombie outlines and the hand; all pencil sketch, darks dense charcoal, light untouched paper.\nSCENE: table level in the dark; bottle at the left, label outlines glowing lime; chopsticks lean on their rest as a limbo bar; the screw cap lies flat as a tiny ridged turntable; behind, the doorway at camera-right and the shelf maneki-neko, paw mid-swing with two motion arcs; moonlight as untouched paper, rest charcoal.\nSUBJECT: The five miniatures of Image 4 (three lurching walkers in profile with bent raised arms, one crouched, one small hand), about 5 cm tall, solid black figures with a thin glowing lime outline, no eyes, no mouths. All snap stiff into the label pose as Ren's tall shadow (shadow only, man out of frame) falls across the doorway: one walker frozen mid-limbo under the chopstick bar, another at the cap turntable, one arm on it like a DJ scratching, the third in the open; the hand rigid on its fingertips, the crouched one curled near.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 3: room layout only, ignore its rendering. Image 4: miniature shapes and poses only; do not copy its layout.\nCAMERA: 85 mm, table level, tracking into an arc.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no human figure, only Ren's shadow, no cat; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 08 · label \"[B8] 10.5–12.0 s · TRACKING + ARC\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal), Image 2 real glow photo (GLOW_LOCK literal, added from brief.refs), Image 3 style key S (layout only), Image 4 troupe sheet. Lime ON (outlines + hand only, label text dark). Single consistent instant: the freeze (EE6) with limbo under chopsticks (EE4), DJ at the screw-cap turntable (EE5), maneki-neko paw (EE7); cap drawn as a disc, never a cork. QA: no eyes, shadow only. 2993 chars."
+  },
+  {
+   "asset_id": "v1_board_09",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo (GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 4 zombie troupe sheet (miniature shapes and poses)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B9] 12.0–13.5 s · TILT-UP 85 mm\". Camera move: a curved marker arrow at the side of the frame pointing up: tilt up.\nUSE: storyboard panel B9 of 10, 15 s Sharp Zombie wine spot, 9:16. Beat 8, the climb into the glasses.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey except one accent, phosphorescent lime green (#39FF14), only on the glowing zombie outlines and the hand; all pencil sketch, darks dense charcoal, light untouched paper.\nSCENE: close on the two stemmed glasses of red wine on the walnut table in the dark, the Sharp Zombie bottle behind them, label outlines glowing lime; moonlight as untouched paper on rims and wine, the moon a pale disc high in frame, charcoal darkness around.\nSUBJECT: The five miniatures of Image 4 (three lurching walkers in profile with bent raised arms, one crouched, one small hand), about 5 cm tall, solid black figures with a thin glowing lime outline, no eyes, no mouths. Two walkers climb the stem of the nearer glass one above the other, gripping it; the third has dropped into the other glass, mid-splash with a small crown of droplets; the hand hangs from the nearer rim by its fingers; the crouched one waits at the stem's foot.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 3: room layout only, ignore its rendering. Image 4: miniature shapes and poses only; do not copy its layout.\nCAMERA: 85 mm, tilting up from the table surface to the glass rims and the moon.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no people, no cat, stemmed red-wine glasses only; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 09 · label \"[B9] 12.0–13.5 s · TILT-UP 85 mm\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal), Image 2 real glow photo (GLOW_LOCK literal, added from brief.refs), Image 3 style key S (layout only), Image 4 troupe sheet. Lime ON (outlines + hand only, label text dark). QA: tilt-up arrow, two climbing the stem, one splashing into wine, hand hanging from rim (EE3), crouched at stem foot, no eyes. 2927 chars."
+  },
+  {
+   "asset_id": "v1_board_10",
+   "model": "gpt_image_2_5",
+   "params": {
+    "aspect_ratio": "9:16",
+    "quality": "medium",
+    "resolution": "1k",
+    "variant": "flare",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "aade31ed-0151-469c-bc50-513aff07bb68",
+     "label": "Image 1 product packshot"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "Image 2 real glow photo (GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "Image 3 style key S hero still (room layout only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4d33a580-e717-4d89-a77f-be863d6c96de",
+     "label": "Image 4 zombie troupe sheet (miniature shapes and poses)"
+    }
+   ],
+   "prompt": "LABEL: top-left corner, handwritten in black fine marker, small neat legible capitals, one line, once (EXACT, verbatim, no extra characters): \"[B10] 13.5–15.0 s · PULL-BACK\". Camera move: two diverging marker arrows from centre to frame edges: slow pull-back.\nUSE: storyboard panel B10 of 10, 15 s Sharp Zombie wine spot, 9:16. Beat 9, drunk finale, last frame.\nSTYLE: storyboard sketch in charcoal and grey graphite on light cream paper, loose hatching, smudged shading, paper grain; monochrome grey except one accent, phosphorescent lime green (#39FF14), only on the glowing zombie outlines and the hand; all pencil sketch, darks dense charcoal, light untouched paper.\nSCENE: final frame in the dark: the bottle centred on the table, label outlines glowing lime, the two stemmed glasses beside it, the full moon large behind in the window with the skyline, the room dense charcoal, moonlight as untouched paper on bottle, rims and wine.\nSUBJECT: The five miniatures of Image 4 (three lurching walkers in profile with bent raised arms, one crouched, one small hand), about 5 cm tall, solid black figures with a thin glowing lime outline, no eyes, no mouths. Drunk in the glasses: one floats on its back playing dead, arms stiff; another staggers along the rim of the other glass; the third bobs half-sunk in the wine; the hand hangs from a rim; the crouched one dozes at a glass base. The calico cat peeks in at the bottom edge, head only, turning to leave.\nREFERENCES: Image 1 is the product: preserve the bottle shape, the black screw cap, the yellow label, the black-and-yellow caution stripes, the four black zombie silhouettes (three lurching in profile with bent raised arms, one crouched) and the small rising hand, the dark red blackletter name and the RIOJA line exactly as shown. Ignore Image 1's white background. Do not redraw, restyle or re-letter the label. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. Here the bottle is a graphite sketch of that silhouette, screw cap and label layout, lettering unreadable marks. Image 3: room layout only, ignore its rendering. Image 4: miniature shapes and poses only; do not copy its layout.\nCAMERA: 85 mm slow pull-back, eye level, ending on a 1 s hold of bottle, glasses and moon.\nCONSTRAINTS: one full-frame panel, no borders, no grid, no speech bubbles, the corner label is the only text; no people, only the cat's head at the frame edge; no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 0.6,
+   "notes": "Board 10 · label \"[B10] 13.5–15.0 s · PULL-BACK\" · GPT medium 1k 9:16 flare · Medias: Image 1 packshot (PRODUCT_LOCK_GPT literal), Image 2 real glow photo (GLOW_LOCK literal, added from brief.refs), Image 3 style key S (layout only), Image 4 troupe sheet. Lime ON (outlines + hand only, label text dark). QA: pull-back arrows, drunk zombies in the glasses (one playing dead), cat head at the edge (EE1), bottle + glasses + moon final frame, no eyes. 2982 chars."
+  },
+  {
+   "asset_id": "v1_kf_01",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    }
+   ],
+   "prompt": "Keyframe 1 of a 15-second wine commercial, vertical 9:16, beats 1 and 2, lights on. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate and readable. SCENE: late evening in a modern Tokyo apartment: walnut dining table for two, floor-to-ceiling window at camera-left with the skyline and a full moon, warm washi pendant lit over the table, kitchen doorway at camera-right. On the table: two plates with fish leftovers, chopsticks on rests, a bowl of edamame. SUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> sit facing each other, laughing over the last glass of red wine. In the near foreground the short-tailed calico cat <<<2ab36fde-48a2-4f46-ba0c-0e3c66e86f84>>> crosses the frame and looks straight into the lens. In front of the couple, sharp and label to camera, the open bottle with its black screw cap beside it and two stemmed glasses of red wine, one a third full, one half full. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 35 mm, f/2.8, eye level, from the entrance toward the table and window, warm pendant key, blue moonlight fill, magenta and cyan rims. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2
+  },
+  {
+   "asset_id": "v1_kf_02",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "7c078c7b-8b45-4ac5-86f8-721ffb2b0a7f",
+     "label": "kitchen door + shelf"
+    }
+   ],
+   "prompt": "Keyframe 2 of a 15-second wine commercial, vertical 9:16, beat 3, lights on. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate and readable. SCENE: the same modern Tokyo apartment at night: walnut dining table for two, warm washi pendant lit above it, full moon in the window at camera-left; at camera-right the open doorway to the kitchen with cool light spilling out and the bookshelf with an ikebana and a maneki-neko, exactly as in the second reference image. SUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> have stood up and are carrying the dinner plates, turning away from the table toward the kitchen door on the right, mid-step, smiling. Left behind on the table, in sharp focus: the open bottle with its black screw cap resting beside it, two stemmed glasses of red wine (one a third full, one half full), chopsticks on their rests and the edamame bowl. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 50 mm, f/2.8, eye level, about one metre from the table, the bottle and glasses in the lower half of the frame, the couple walking out of focus toward the right. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2
+  },
+  {
+   "asset_id": "v1_kf_03",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "aff1181c-2e27-4be3-93bf-bf1cff1f4c2a",
+     "label": "lit table layout"
+    }
+   ],
+   "prompt": "Keyframe 3 of a 15-second wine commercial, vertical 9:16, the table alone just before the lights go out. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate and readable. SCENE: the walnut dining table of the modern Tokyo apartment with both chairs empty and pushed back, the warm washi pendant still lit above, the full moon in the window behind at camera-left, nobody in the room. On the table: the open bottle with its black screw cap resting beside it, two stemmed glasses of red wine (one a third full, one half full), chopsticks on a ceramic rest, a bowl of edamame and two cleared spots where the plates were; use the second reference image as the layout guide for the lit table set. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 50 mm, f/2.8, eye level, bottle centred with the label fully readable, warm amber pendant key light, blue moon fill, magenta and cyan rims on the glass. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2
+  },
+  {
+   "asset_id": "v1_kf_04",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "4cd1483a-ce45-4e44-9e52-b7982a98c490",
+     "label": "dark apartment wide"
+    },
+    {
+     "role": "image_references",
+     "value": "f40a6e91-a4d0-4384-8903-39ca3fa95fdb",
+     "label": "dark table"
+    }
+   ],
+   "prompt": "Keyframe 4 of a 15-second wine commercial, vertical 9:16, the blackout. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: the identical table set of the previous keyframe one second after every lamp has been switched off: the washi pendant is dark, the only light is cold blue moonlight from the full moon in the window at camera-left plus a faint magenta and cyan city glow on the edges of the glass; deep clean blacks like the second and third reference images (the dark apartment and the dark table). On the table: the open bottle with its black screw cap resting beside it, two stemmed glasses of red wine (one a third full, one half full), chopsticks on a rest, the edamame bowl. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In this frame the label is simply unlit: the yellow reads as dark grey-green, the silhouettes are black and nothing on the label glows yet. CAMERA: 85 mm, f/2.8, eye level, pushed in so the bottle fills the centre of the frame, moonlight catching the shoulder of the bottle and the rims of the glasses. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "env_02_dark_wide is still an unresolved token <<<REF_ENV02_DARK>>> in the brief; kept literal for the backend to resolve. No GLOW_LOCK here on purpose: beat 4 (5.5-6.5 s) is the blackout with the label still dark, the glow starts in beat 5; the literal GLOW_LOCK would also point at a real-glow 'Image 2' that is not among this asset's medias. The non-glow clause (label unlit, yellow reads dark grey-green, nothing glows yet) is kept."
+  },
+  {
+   "asset_id": "v1_kf_05",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo (Image 2 in GLOW_LOCK)"
+    }
+   ],
+   "prompt": "Keyframe 5, vertical 9:16: the label wakes up in the dark. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: extreme macro of the front label of the bottle on the walnut table in the dark apartment, only cold blue moonlight grazing the glass from the left, deep blacks around it. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. (Image 2 is the second reference image.) POSE LOCK: the silhouettes keep exactly their printed poses: three lurching in profile with bent, raised arms, one crouched, the hand rising from the ground; no eyes, no mouths. The first zombie on the left glows brightest, the crouched one faintest, as if still asleep. CAMERA: 100 mm macro, f/4, straight on, the row of silhouettes filling the middle of the frame, name and stripes dark above and below. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Model override (gpt_image_2_5 -> nano_banana_pro with the SZ-bottle-master Element) kept as delivered by the generator; no args.overrides record was available to the reviewer (none in the task, none in the repo), so if the override is not genuine the brief version (gpt_image_2_5, quality high, 2k, flare, medias packshot/glow/style as Image 1/2/3, PRODUCT_LOCK_GPT, 2.75 credits) must be regenerated. Macro 100 mm of the label in the dark, GLOW_LOCK literal (Image 2 = second media), pose lock from the label (first brightest, crouched faintest)."
+  },
+  {
+   "asset_id": "v1_kf_06",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo (Image 2 in GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "bb6ca883-651a-4a9d-a6c0-93e7c8df1a6b",
+     "label": "dark table-level plate"
+    }
+   ],
+   "prompt": "Keyframe 6, vertical 9:16: table party, lights off. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: table level in the dark apartment as in the third reference image, cold blue moonlight, magenta and cyan rims. The zombies are exactly <<<5915e7ac-09c7-4efc-bf78-a1904ace295b>>>: matte-black, about 5 cm tall, thin lime outline, no eyes, no mouths. Exactly three zombies dance in a row on the table: one limbos under a chopstick on its rest, one spins the black screw cap like a DJ record, one dances arms up; the small hand walks on its fingers beside them. The crouched fourth one still sleeps on the label of the bottle behind. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. (Image 2 is the second reference image.) CAMERA: 50 mm, f/2.8, just above the table surface, lateral view. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Medias reordered vs brief so the real glow photo is the second reference (Image 2 in GLOW_LOCK literal); env_04 plate third. Exact count (three dancers + hand) and EE2 (crouched one still asleep on the label) added; 'lens 5 cm above the table' removed because it collided with the 5 cm zombie scale."
+  },
+  {
+   "asset_id": "v1_kf_07",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo (Image 2 in GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "e10b70f4-f1f2-4831-a175-b87f9ad647fd",
+     "label": "two wine glasses"
+    }
+   ],
+   "prompt": "Keyframe 7, vertical 9:16: the climb up the glass. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: the dark apartment, cold blue moonlight, magenta and cyan rims; two stemmed glasses of red wine as in the third reference image on the walnut table. The zombies are exactly <<<5915e7ac-09c7-4efc-bf78-a1904ace295b>>>: matte-black, about 5 cm tall, thin lime outline, no eyes, no mouths. Exactly three zombies: two climb the stem of one glass, the third drops into the wine with a small ruby splash; the small hand hangs from the rim by its fingers. The open bottle stands behind with its black screw cap beside it. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. (Image 2 is the second reference image.) CAMERA: 85 mm, f/2.8, low angle tilting up the glass, climbers sharp, bottle soft. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Medias reordered vs brief so the real glow photo is the second reference (Image 2 in GLOW_LOCK literal); prod_04 glasses third. Exact zombie count added."
+  },
+  {
+   "asset_id": "v1_kf_08",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "9:16",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo (Image 2 in GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "a378a291-860f-43da-92af-46aa7d274378",
+     "label": "window + moon 9:16"
+    }
+   ],
+   "prompt": "Keyframe 8, vertical 9:16, final shot. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: the dark apartment, full moon large in the window as in the third reference image, cold blue moonlight, magenta and cyan rims. The zombies are exactly <<<5915e7ac-09c7-4efc-bf78-a1904ace295b>>>: matte-black, about 5 cm tall, thin lime outline, no eyes, no mouths. The open bottle centred, black screw cap beside it, two wine glasses with exactly three drunk zombies: one floats on its back playing dead, one sways on the rim, one bobs chin-deep; the hand hangs from the rim. The calico cat <<<2ab36fde-48a2-4f46-ba0c-0e3c66e86f84>>> peeks in at the frame edge. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. (Image 2 is the second reference image.) CAMERA: 50 mm, f/2.8, just above table level, centred on the moon. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Medias reordered vs brief so the real glow photo is the second reference (Image 2 in GLOW_LOCK literal); env_05a window third. All three drunk zombies now accounted for with an exact count."
+  },
+  {
+   "asset_id": "v1_kf_01w",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    }
+   ],
+   "prompt": "Keyframe 1 of a 15-second wine commercial, horizontal 16:9 wide variant, beats 1 and 2, lights on. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate and readable. SCENE: late evening in a modern Tokyo apartment, wide from the entrance: walnut table for two, floor-to-ceiling window at camera-left with skyline and full moon, warm washi pendant lit, a small sofa and a bookshelf with an ikebana and a maneki-neko at right, kitchen doorway at far right. On the table: plates with leftovers, chopsticks on rests, edamame. SUBJECT: Aya <<<65a0c653-c433-4c10-a435-a4ce5504f0a2>>> and Ren <<<c800522c-a722-4f47-bb45-2f32899d7e45>>> sit facing each other, laughing over the last glass of red wine. In the foreground the short-tailed calico cat <<<2ab36fde-48a2-4f46-ba0c-0e3c66e86f84>>> crosses and looks into the lens. In front of the couple, sharp, label to camera, the open bottle with its black screw cap beside it and two glasses of red wine. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. CAMERA: 35 mm, f/2.8, eye level, warm pendant key, blue moonlight fill, magenta and cyan rims. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2
+  },
+  {
+   "asset_id": "v1_kf_08w",
+   "model": "nano_banana_pro",
+   "params": {
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "count": 1,
+    "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d"
+   },
+   "medias": [
+    {
+     "role": "image_references",
+     "value": "30a2a515-405f-41f1-b785-2456b943d14d",
+     "label": "style key (look only)"
+    },
+    {
+     "role": "image_references",
+     "value": "a1c24793-cf2e-4f5b-8b0f-4e69b82bbbfa",
+     "label": "real glow photo (Image 2 in GLOW_LOCK)"
+    },
+    {
+     "role": "image_references",
+     "value": "e5419007-7ee5-49cb-a432-8a5e10f36583",
+     "label": "window + skyline 16:9"
+    }
+   ],
+   "prompt": "Keyframe 8, horizontal 16:9, final shot. The first reference image defines the look only: stylized 3D animation with graphic comic-book shading, halftone dots in the shadows, bold ink edge lines, subtle misregistered colour fringes, neon magenta and cyan rim lights over deep night blues, cinematic depth of field; never copy its layout or composition. The bottle label stays accurate. SCENE: the dark apartment, wide window with full moon and skyline as in the third reference image, blue moonlight, magenta and cyan rims. The zombies are exactly <<<5915e7ac-09c7-4efc-bf78-a1904ace295b>>>: matte-black, about 5 cm tall, thin lime outline, no eyes, no mouths. The open bottle centred, black screw cap beside it, two wine glasses with exactly three drunk zombies: one floats on its back playing dead, one sways on the rim, one bobs chin-deep; the hand hangs from the rim. The calico cat <<<2ab36fde-48a2-4f46-ba0c-0e3c66e86f84>>> peeks in at the frame edge. The bottle is exactly <<<de0c221b-6bd9-4ab5-912b-c6840b2423cc>>>: dark glass Bordeaux bottle, black screw cap, bright yellow front label framed top and bottom by black-and-yellow diagonal caution stripes, four black zombie silhouettes in a row (three lurching zombies in profile with bent, raised arms in a staggering zombie walk and one crouched) plus a small black hand rising from the ground, the name in dark red gothic blackletter and the word RIOJA below it. Keep the label geometry, colours, stripes and silhouettes exactly as the reference; ignore the reference's white background. The cap is a screw cap, never a cork. In the dark only the thin outlines of the four zombie silhouettes and the small hand glow a soft phosphorescent lime-green (like real glow-in-the-dark ink: thin luminous edge, gentle falloff, no neon tube look, no bloom halo, no lens flare), exactly like the real photo in Image 2. The label text and stripes do not glow; the yellow label reads as dark grey-green in the dark. (Image 2 is the second reference image.) CAMERA: 50 mm, f/2.8, just above table level, centred on the moon. no extra bottles, no cork, no candles, no readable captions or added text, no logos other than the label, no watermark, no neon signs with brand names, no extra fingers, no plastic skin, no faces or eyes on the zombie silhouettes, no purple lens flares.",
+   "est_credits": 2,
+   "notes": "Medias reordered vs brief so the real glow photo is the second reference (Image 2 in GLOW_LOCK literal); env_05b window third. All three drunk zombies now accounted for with an exact count."
+  }
+ ],
+ "lint_report": [
+  {
+   "asset_id": "v1_char_03",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_NB was the retired wording ('three walking with arms stretched forward') that docs/video1_assets_ledger.md corrected on 2026-10-05; replaced with the plan's literal lock (bent, raised arms). Added the bible's Phase A kitchen spill light. Trimmed filler ('Five fingers per hand' already covered by EXCLUSIONS, duplicated rim-light mention, '(beat 1)' moved into the opener) to stay under 2300 chars after the lock swap: 2296 chars. Grammar, medias (S first, Elements in prompt), est_credits and params were already correct."
+  },
+  {
+   "asset_id": "v1_char_08",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": false,
+   "changes": "Same retired PRODUCT_LOCK_NB wording replaced with the literal lock. The swap pushed the prompt to 2342 chars (over the 2300 NB limit), so the apartment description was shortened (removed 'pale oak floor' and 'with wooden chairs', both carried by the style key and irrelevant to the beat-3 framing): now 2298 chars. Beat 3 action, 50 mm at 1 m, cap beside the bottle and 1/3 + 1/2 glasses verified against the bible."
+  },
+  {
+   "asset_id": "v1_char_05a",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Pose was wrong: SUBJECT asked for 'both arms stretched straight forward and parallel at shoulder height exactly as on the label', which contradicts the brief ('brazos doblados y levantados en marcha zombi'), the bible and the corrected lock. Rewritten as bent elbows, forearms raised, staggering walk, with an explicit 'never straight arms stretched out forward'. REFERENCES now carries the corrected silhouette description and says the label (Image 2) wins over the troupe sheet (Image 1), because the sheet 4d33a580 was generated with the old arms-forward wording. Removed the invented 'large hands' claim. PRODUCT_LOCK_GPT remains intentionally absent (no bottle in frame; the packshot is bound as silhouette source only). Image order matches medias; background transparent only here (05a-d). 2404 chars."
+  },
+  {
+   "asset_id": "v1_char_05b",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "A-pose prompt was sound. REFERENCES block replaced with the corrected silhouette description (bent, raised arms) and the 'label wins over the sheet' rule; 'like the letter A' anchor added; invented 'large hands' removed; next-iteration note fixed (the failure mode is arms going bent/raised, not forward). 2310 chars."
+  },
+  {
+   "asset_id": "v1_char_05c",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Crouched pose matches brief/bible (EE2 sleeper). Only the shared REFERENCES block was updated to the corrected silhouette description and 'large hands' removed. 2112 chars."
+  },
+  {
+   "asset_id": "v1_char_05d",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Hand asset unchanged in substance (five fingers, single hand, transparent). Shared REFERENCES block updated to the corrected silhouette description. 2216 chars."
+  },
+  {
+   "asset_id": "v1_char_07",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": false,
+   "changes": "Retired PRODUCT_LOCK_NB wording replaced with the literal lock; the zombies line 'three walkers with arms forward' corrected to 'three lurching walkers with bent, raised arms'. GLOW_LOCK was already literal; the 'Image 2' binding is now stated up front with the style binding instead of as a dangling sentence inside the subject. After the swaps the prompt was 2452 chars, so redundant sentences were cut (the 'In the dark the label is unlit' pre-echo of GLOW_LOCK, the long opener): 2295 chars. '5 cm', 'one sixth of the bottle', 'no eyes, no mouths', 50 mm table level all kept."
+  },
+  {
+   "asset_id": "v1_prod_10a",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Retired PRODUCT_LOCK_NB wording replaced with the literal lock. Neutral-studio STYLE adaptation (no S key in the brief), back-label Element binding, 3/4 rear geometry, screw cap and EXCLUSIONS verified; no other change. 2123 chars."
+  },
+  {
+   "asset_id": "v1_prod_10b",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Retired PRODUCT_LOCK_NB wording replaced with the literal lock; otherwise unchanged (pure 180-degree rear view, back label only, screw cap). 2101 chars."
+  },
+  {
+   "asset_id": "v1_endcard",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT carried the retired '(three walking with arms forward, one crouched)'; replaced with the literal lock. GLOW_LOCK was not literal (pointed at Image 3): medias reordered to packshot / glow photo / style key so Image 1 = product and Image 2 = glow photo, making both locks literal; STYLE_LOCK adapted to Image 3 and the per-image job sentence updated to the new order. Text block rewritten in the GPT/Seedream text grammar: 'TEXT (EXACT, verbatim, no extra characters)', each line once, font/colour/placement per line, quotation marks not rendered; the three strings are unchanged and exact (ゾンビ級に、うまい。 / SHARP ZOMBIE · RIOJA / お酒は20歳になってから。). 2500 chars (~420 words, within Seedream's ~600-word guide)."
+  },
+  {
+   "asset_id": "v1_board_01",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT was not literal (said 'three walking with arms forward'; plan 5 says 'three lurching in profile with bent raised arms') -> replaced with the literal block. Label line and shared blocks tightened to stay under 3,000 (2822 chars). Medias order unchanged (packshot = Image 1 so the lock stays literal; style key S = Image 2 layout only; troupe = Image 3). Beat 1, 35 mm dolly from the entrance, lime OFF: correct."
+  },
+  {
+   "asset_id": "v1_board_02",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT made literal (lurching in profile, bent raised arms). Shared blocks tightened (2861 chars). Beat 2 (cat crossing foreground looking at lens, couple behind, dolly continuing) and lime OFF: correct."
+  },
+  {
+   "asset_id": "v1_board_03",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT made literal. Shared blocks tightened (2758 chars). Beat 3 (standing with plates toward right door, camera stopped at 1 m, 50 mm, screw cap beside bottle): correct."
+  },
+  {
+   "asset_id": "v1_board_04",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT made literal. USE line now states 'first frame after the hard cut at 5.5 s' to match the bible's corte duro. 2562 chars. Table-alone contents (bottle, cap beside, two glasses 1/3 and 1/2, chopsticks, edamame, empty chairs) match the bible."
+  },
+  {
+   "asset_id": "v1_board_05",
+   "grammar_ok": true,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "PRODUCT_LOCK_GPT made literal. Added the off-screen click to the beat description. GLOW_LOCK intentionally not applied in full because beat 4 is pre-glow (label still dark, same as brief v1_kf_04 which also omits the glow photo); its 'label text and stripes do not glow; yellow reads dark grey-green' sentence is kept literally plus an explicit 'outlines have not lit up yet, no glow'. 2829 chars."
+  },
+  {
+   "asset_id": "v1_board_06",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Dark glow scene had NO GLOW_LOCK -> added real_glow_photo (a1c24793, from brief.refs) as Image 2 so GLOW_LOCK can be literal ('exactly like the real photo in Image 2'); medias now packshot / glow photo / style key S / troupe = Image 1-4, prompt references renumbered to match. PRODUCT_LOCK_GPT made literal and pose lock corrected from 'arms stretched forward' to the bible's 'lurching in profile with bent raised arms'. 'no eyes, no mouths' added in SUBJECT. 'pulse ticks' renamed 'pulse arcs' so they are not read as text marks. Trimmed to 2932 chars (was over limit once GLOW_LOCK was added)."
+  },
+  {
+   "asset_id": "v1_board_07",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": false,
+   "changes": "GLOW_LOCK added literally with real_glow_photo as Image 2 (medias reordered to 4 refs, Image N renumbered). PRODUCT_LOCK_GPT made literal; miniatures described as 'lurching walkers in profile with bent raised arms' instead of 'arms stretched straight forward'. Fixed a beat contradiction: the hand was both walking behind the dancers AND pushing the crouched one; now the hand at the label edge shoves the crouched one off the label last (EE2 + EE3 in one frame, as the bible describes beat 6). Camera set to 85 mm at table level per the bible's optics line. Original draft would have exceeded 3,000 once the glow lock was added; final 2986 chars."
+  },
+  {
+   "asset_id": "v1_board_08",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": false,
+   "changes": "GLOW_LOCK added literally (real_glow_photo = Image 2, 4 medias, references renumbered). PRODUCT_LOCK_GPT made literal; miniature pose corrected to bent raised arms in profile. Fixed a beat contradiction: the draft had one zombie mid-limbo, one DJ-ing AND 'all freeze in label poses' simultaneously; rewritten as the single freeze instant (EE6) in which the limbo one is caught under the chopstick bar (EE4), the DJ one beside the screw-cap turntable (EE5), maneki-neko paw mid-swing (EE7), Ren's shadow only. Removed 'lit doorway' (phase B is moon-only). Camera 85 mm at table level. Trimmed to 2993 chars."
+  },
+  {
+   "asset_id": "v1_board_09",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "GLOW_LOCK added literally (real_glow_photo = Image 2, 4 medias, references renumbered). PRODUCT_LOCK_GPT made literal; miniature pose corrected to bent raised arms in profile ('arms forward gripping' removed). Beat 8 action (climb stems, one falls into wine, hand hangs from rim, tilt-up 85 mm) was correct. 2927 chars."
+  },
+  {
+   "asset_id": "v1_board_10",
+   "grammar_ok": false,
+   "product_lock_ok": false,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "GLOW_LOCK added literally (real_glow_photo = Image 2, 4 medias, references renumbered). PRODUCT_LOCK_GPT made literal; miniature pose corrected to bent raised arms in profile. Camera line now includes the bible's 1 s final hold. Beat 9 action (floating, staggering, one playing dead, cat head peeking and leaving, bottle + glasses + moon final frame) was correct. 2982 chars."
+  },
+  {
+   "asset_id": "v1_kf_01",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK adaptation 'do not copy its content, characters or layout' -> 'never copy its layout or composition' (wave-1 lint ruling: the scene IS the apartment of the style key, 'content' contradicted continuity). Cat token kept literal, described as short-tailed calico per bible. Beats 1-2, 35 mm from the entrance, cat looking into the lens, bottle + two glasses (1/3, 1/2) foreground: verified against the bible. Lint: PRODUCT_LOCK_NB literal, EXCLUSIONS_COMMON last, 4 Elements + 1 media = 5 refs <= 8, first media = style key S, 2234 chars."
+  },
+  {
+   "asset_id": "v1_kf_02",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix only ('never copy its layout or composition'). Beat 3 verified: couple standing with plates toward the camera-right kitchen door, 50 mm stopped at ~1 m, screw cap beside the bottle, glasses 1/3 and 1/2, chopsticks on rests; env_07 door+shelf bound as the second reference. 2268 chars."
+  },
+  {
+   "asset_id": "v1_kf_03",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix only. Table alone, lit, chairs empty, screw cap beside the bottle, 50 mm eye level, prod_05 lit table bound as layout guide (second reference): verified. 2025 chars."
+  },
+  {
+   "asset_id": "v1_kf_04",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix only. GLOW_LOCK intentionally absent and documented in notes: beat 4 (5.5-6.5 s) is the blackout with the label still dark (bible: 'la etiqueta queda oscura'); the glow starts in beat 5, and the literal lock would reference an 'Image 2' real-glow photo that is not in this asset's medias. The no-glow clause (unlit label, yellow reads dark grey-green, nothing glows yet) is present. 85 mm push-in, moon at camera-left, magenta/cyan city glow on glass edges: verified. Token <<<REF_ENV02_DARK>>> kept literal in medias. 2171 chars."
+  },
+  {
+   "asset_id": "v1_kf_05",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix. The generator's model override (brief: gpt_image_2_5 -> delivered: nano_banana_pro + SZ-bottle-master Element) could not be verified: no args.overrides was passed to the reviewer and no override file exists in the repo. Kept as delivered (NB with the Element gives stronger label fidelity and is internally consistent: medias S first, real glow photo second = 'Image 2' of the literal GLOW_LOCK, est_credits 2 for NB 2k) and flagged in notes with the exact brief fallback to regenerate if the override is not genuine. Beat 5 verified: macro 100 mm, outlines + hand glowing, first brightest, crouched faintest (EE2), POSE LOCK with bent raised arms, no eyes/no mouths, text and stripes do not glow. 2287 chars."
+  },
+  {
+   "asset_id": "v1_kf_06",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix. Added exact count ('Exactly three zombies') because NB needs explicit counts and the troupe Element contains five figures. Added EE2 continuity (the crouched fourth one still sleeps on the label). Removed 'lens 5 cm above the table' (collided with the 5 cm zombie scale) -> 'just above the table surface, lateral view'. Trimmed non-lock wording to fit: 2299 chars (was 2276 before the additions, 2387 after, now within limit). EE3 (hand walks on fingers), EE4 (limbo under chopstick), EE5 (DJ with the screw cap) verified; GLOW_LOCK literal with Image 2 = second media; env_04 dark table-level plate third."
+  },
+  {
+   "asset_id": "v1_kf_07",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix. Added exact count ('Exactly three zombies: two climb the stem of one glass, the third drops into the wine'). Beat 8 verified: tilt-up 85 mm, hand hanging from the rim (EE3 payoff), bottle behind with screw cap beside it, prod_04 glasses bound as third reference, GLOW_LOCK literal with Image 2 = second media. 2299 chars."
+  },
+  {
+   "asset_id": "v1_kf_08",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix. The original only placed two of the three drunk zombies; now 'exactly three drunk zombies: one floats on its back playing dead, one sways on the rim, one bobs chin-deep', hand on the rim, cat peeking at the frame edge (EE1 return). Wording trimmed to fit (2288 chars). 50 mm just above table level, moon behind (env_05a third reference), GLOW_LOCK literal with Image 2 = second media. 3 Elements + 3 medias = 6 refs <= 8."
+  },
+  {
+   "asset_id": "v1_kf_01w",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "STYLE_LOCK wording fix; cat described as short-tailed calico, token literal. 16:9 wide variant with sofa, bookshelf (ikebana + maneki-neko) and far-right kitchen door verified against the bible set description. 2181 chars."
+  },
+  {
+   "asset_id": "v1_kf_08w",
+   "grammar_ok": true,
+   "product_lock_ok": true,
+   "exclusions_ok": true,
+   "length_ok": true,
+   "changes": "Same fixes as v1_kf_08 (STYLE_LOCK wording, exact count of three drunk zombies, trims). 16:9 with wide window + skyline (env_05b) as third reference, GLOW_LOCK literal with Image 2 = second media. 2294 chars."
+  }
+ ]
+}
