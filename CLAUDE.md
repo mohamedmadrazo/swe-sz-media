@@ -3,6 +3,7 @@
 Repositorio de assets servido en GitHub Pages (`manifest.js` alimenta el dashboard `sharp-zombie-review`). Trabaja en español; commits en español.
 
 ## Procedimiento
+- Si existe `HANDOFF.md` en la raíz, léelo antes de nada: es el traspaso de la sesión anterior (qué está hecho y qué falta, en orden).
 - Para cualquier comercial/spot: invoca la skill `comercial-pipeline` y sigue `docs/pipeline_comercial.md` (fases, puertas G1–G4, costes, lecciones aprendidas).
 - Vídeo 1 "After Dinner, Tokyo": biblia `docs/video1_bible.md`, storyboard `docs/video1_storyboard.md`, ledger `docs/video1_assets_ledger.md`, preset Restyle `docs/video1_restyle_howto.md`.
 
