@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Añade/actualiza las entradas de la línea D_TOKYO_V1 en manifest.js a partir de prompts/*_jobs.json y archivos locales.
+"""Añade/actualiza las entradas de las líneas D_TOKYO_V1 y E_REV_SATOSHI (revisión de Satoshi) en manifest.js a partir de prompts/*_jobs.json y archivos locales.
 Valida el JSON resultante, respeta la indentación de 1 espacio del archivo y no toca las otras líneas."""
 import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -73,12 +73,19 @@ if os.path.exists(os.path.join(ROOT, 'video', 'v1_previz_bpy.mp4')):
 for g in ('v1_bottle_table.glb', 'v1_tokyo_previz_3djutsu.glb'):
     if os.path.exists(os.path.join(ROOT, '3d', g)):
         entries.append({"id": g[:-4], "tipo": "3d", "linea": "D_TOKYO_V1", "escena": "GLB", "desc": "Escena 3D descargable (GLB) · " + ("Blender local" if 'bottle' in g else "3D Jutsu"), "status": "COMPLETED", "primaria": False, "w": 0, "h": 0, "dur": 0, "src": f"{PAGES}/3d/{g}", "poster": None, "origen": "blender" if 'bottle' in g else "3djutsu"})
+# revisión de Satoshi (15-oct-2026): finales alojados en Higgsfield, línea E_REV_SATOSHI
+rs = load('revision_satoshi_jobs.json')
+if rs:
+    for k, e in (rs.get('finales') or {}).items():
+        if not e.get('url'): continue
+        poster = f"{PAGES}/poster/{k}.webp" if os.path.exists(os.path.join(ROOT, 'poster', k + '.webp')) else e.get('poster')
+        entries.append({"id": k, "tipo": "video", "linea": "E_REV_SATOSHI", "escena": e.get('escena', 'REV'), "desc": short(e.get('desc', k)), "status": "COMPLETED", "primaria": e.get('primaria', True), "w": e.get('w', 0), "h": e.get('h', 0), "dur": e.get('dur', 0), "src": e['url'], "poster": poster, "origen": "higgsfield", "job_id": e.get('job_id'), "model": e.get('model')})
 # merge en manifest.js
 src = open(MAN, encoding='utf-8').read()
 m = re.match(r'^(window\.__SWE_MANIFEST__=)(\[.*\])(;\s*)$', src, re.S)
 assert m, 'formato manifest.js inesperado'
 data = json.loads(m.group(2))
-data = [d for d in data if d.get('linea') != 'D_TOKYO_V1']
+data = [d for d in data if d.get('linea') not in ('D_TOKYO_V1', 'E_REV_SATOSHI')]
 ids = set(d['id'] for d in data)
 for e in entries:
     assert e['id'] not in ids, f"id duplicado {e['id']}"; ids.add(e['id'])
@@ -86,5 +93,5 @@ data.extend(entries)
 out = m.group(1) + json.dumps(data, indent=1, ensure_ascii=False) + ';\n'
 json.loads(out[len(m.group(1)):-2])  # valida
 open(MAN, 'w', encoding='utf-8').write(out)
-print(f'manifest.js: {len(entries)} entradas D_TOKYO_V1 · total {len(data)}')
+print(f'manifest.js: {len(entries)} entradas D_TOKYO_V1 + E_REV_SATOSHI · total {len(data)}')
 for e in entries: print(' ', e['id'], e['tipo'], e['escena'], e['origen'])
