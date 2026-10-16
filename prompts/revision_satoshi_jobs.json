@@ -1,0 +1,224 @@
+{
+ "_doc": "Ledger de la revisión de Satoshi (15-oct-2026). Jobs Seedance 2.5 video_edit sobre los vídeos que vio el cliente; créditos = coste real devuelto por get_cost. QA se rellena al ver los resultados.",
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "tope_cr": 300,
+ "balance": {
+  "start": 1578.04,
+  "end": 1375.04,
+  "spent_pipeline": 164,
+  "spent_total": 203.0,
+  "note": "Pipeline 164 cr = Seedance 14+14+61 (ronda 1, 12:58–12:59 UTC) + 14+61 (ronda 2, 14:13 UTC), verificado en transactions. Los otros 39 cr son generaciones de imagen desde la cuenta a las 12:54–12:57 UTC (GPT Image 2.5 Flare, Nano Banana Pro, Seedream 5.0 Pro, Recraft V4.1, GPT Image 1.5), fuera de esta revisión. 1578,04 − 203 = 1375,04, cuadra."
+ },
+ "fuentes": {
+  "tokyo_30s": {
+   "job_id": "d45bbfb0-b6b7-4bce-b33a-6981a516b7f4",
+   "w": 480,
+   "h": 854,
+   "fps": 24,
+   "frames": 721,
+   "dur": 30.05,
+   "cortes_s": [
+    7.875,
+    11.0,
+    13.083,
+    17.0,
+    23.958
+   ]
+  },
+  "tokyo_tramo_edit": {
+   "media_id": "1c3adc05-1a05-407c-a6a1-687be9259126",
+   "desc": "vídeo 1 de 7,875 a 11,875 s (4,0 s); solo se usan los 75 primeros frames (0–3,125 s)"
+  },
+  "izakaya_mano": {
+   "job_id": "66468164-b46b-41ab-a8c7-62554cc779ae",
+   "w": 720,
+   "h": 1280,
+   "fps": 24,
+   "frames": 193,
+   "dur": 8.06,
+   "clic_s": 3.6,
+   "apagon_s": 5.4,
+   "risa_s": [
+    7.2,
+    8.0
+   ]
+  },
+  "izakaya_copas_ref_brillo": {
+   "job_id": "192387a8-fe20-48f5-b195-63c1977b72f1",
+   "end_frame_image": "f1763dde-ff78-4fcb-8280-6ebf07b51d23"
+  }
+ },
+ "jobs": {
+  "rev_tokyo_glance_A": {
+   "model": "seedance_2_5",
+   "mode": "video_edit",
+   "resolution": "480p",
+   "job_id": "8a6fb102-5ec3-4dbd-90c4-c14f3ceacb26",
+   "status": "completed",
+   "credits": 14,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261015_125853_8a6fb102-5ec3-4dbd-90c4-c14f3ceacb26.mp4",
+   "prompt_ref": "prompts/revision_satoshi_prompts.json#tokyo_glance/A_glance_back_over_shoulder",
+   "medias": [
+    "1c3adc05-1a05-407c-a6a1-687be9259126"
+   ],
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "verdict": "FAIL — salida ≈ fuente retimada (diff media 3–5 niveles/frame contra el original; 89 frames en vez de 96, corte en f70 = 2,917 s); en los recortes a resolución completa la mujer sigue de espaldas, sin giro de cabeza. Seedance conservó en vez de editar.",
+   "w": 480,
+   "h": 854,
+   "frames": 89,
+   "dur": 3.709
+  },
+  "rev_tokyo_glance_B": {
+   "model": "seedance_2_5",
+   "mode": "video_edit",
+   "resolution": "480p",
+   "job_id": "72c94663-398e-4194-b281-841fde8b1090",
+   "status": "completed",
+   "credits": 14,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261015_125858_72c94663-398e-4194-b281-841fde8b1090.mp4",
+   "prompt_ref": "prompts/revision_satoshi_prompts.json#tokyo_glance/B_whisper_eyes_to_bottle",
+   "medias": [
+    "1c3adc05-1a05-407c-a6a1-687be9259126"
+   ],
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "verdict": "FAIL — idéntico caso que A: fuente retimada, sin susurro ni mirada a la botella en 0–1,0 s.",
+   "w": 480,
+   "h": 854,
+   "frames": 89,
+   "dur": 3.709
+  },
+  "rev_izakaya_hand_main": {
+   "model": "seedance_2_5",
+   "mode": "video_edit",
+   "resolution": "720p",
+   "job_id": "72ad97b2-5ee0-47e4-9b7b-8e8f4eeded26",
+   "status": "completed",
+   "credits": 61,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261015_125902_72ad97b2-5ee0-47e4-9b7b-8e8f4eeded26.mp4",
+   "prompt_ref": "prompts/revision_satoshi_prompts.json#izakaya_hand/main_video_edit_glow_ref",
+   "medias": [
+    "66468164-b46b-41ab-a8c7-62554cc779ae",
+    "f1763dde-ff78-4fcb-8280-6ebf07b51d23"
+   ],
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "verdict": "PARCIAL — mano femenina OK (dedos finos, uñas rosa nude, pulsera fina) en 2,5–5,0 s con el mismo tirón de cordón; brillo SIN cambio: etiqueta entera verde con rayos como la fuente (referencia vídeo 4 = solo contornos lima). 193 frames; apagón f131→132 (5,50 s, +1 frame respecto a la fuente). Botella y tapón de rosca intactos. Texto pequeño de la etiqueta ya venía garbled en la fuente.",
+   "w": 720,
+   "h": 1280,
+   "frames": 193,
+   "dur": 8.042
+  },
+  "rev_tokyo_glance_A2": {
+   "model": "seedance_2_5",
+   "mode": "video_edit",
+   "resolution": "480p",
+   "job_id": "7d494edf-3490-4b29-958f-8f0096ac64a4",
+   "status": "completed",
+   "credits": 14,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261015_141329_7d494edf-3490-4b29-958f-8f0096ac64a4.mp4",
+   "retry_of": "rev_tokyo_glance_A",
+   "variable": "prompt (corto, acción primero, parada + giro de cabeza y hombros hacia cámara entre 1,4 y 2,6 s)",
+   "prompt": "VIDEO EDIT of @Video1. Make one clearly visible change to the woman in the cream cardigan: as she walks away from the table toward the lit doorway, she STOPS for a moment, turns her head and shoulders back over her shoulder and looks straight at the wine bottle on the table with a curious, puzzled expression, as if she had just noticed something, then turns forward again and walks out through the doorway as before. The look-back must be easy to see: between 1.4s and 2.6s her face turns toward the camera in three-quarter view, eyes on the bottle in the foreground; she holds the look for about one second. Everything else stays as in @Video1: the man and his exit, the static camera and framing, the table, the plate, the two wine glasses, the lighting, colours and 3D animation look, the exact duration and the cut to the empty table at the end. The Sharp Zombie bottle with its yellow label and four black silhouettes stays exactly as it is; do not redraw or relight the label. No audio, no on-screen text, no camera movement.",
+   "medias": [
+    "1c3adc05-1a05-407c-a6a1-687be9259126"
+   ],
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "verdict": "PASS — la mujer se detiene en la puerta, gira cabeza y hombros hacia cámara (tres cuartos) y mira hacia la mesa y la botella entre 1,25 y 2,0 s del tramo (frames 30–48), luego sale; el hombre, la cámara, la mesa y la etiqueta (recortes en frames 0/36/69 idénticos a la fuente) sin cambios. Vuelve retimado a 89 frames con el corte en f70 (2,917 s): se resuelve en el montaje.",
+   "w": 480,
+   "h": 854,
+   "frames": 89,
+   "dur": 3.709
+  },
+  "rev_izakaya_glow": {
+   "model": "seedance_2_5",
+   "mode": "video_edit",
+   "resolution": "720p",
+   "job_id": "3ef4e359-924e-40f1-b189-583a78246c67",
+   "status": "completed",
+   "credits": 61,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261015_141333_3ef4e359-924e-40f1-b189-583a78246c67.mp4",
+   "retry_of": "rev_izakaya_hand_main",
+   "variable": "alcance: solo brillo, @Video1 = job de la mano (72ad97b2) + @Image1 = f1763dde",
+   "prompt": "VIDEO EDIT of @Video1. One change only, from 5.4s (the moment the bar lights go out) to the end: TURN DOWN the glow of the wine label so that it matches @Image1. In @Video1 the whole yellow label face, the lettering, the stripes and green lightning streaks glow bright green and green light spills onto the bottle and the counter: remove all of that. Result, as in @Image1: the label face, the \"Sharp Zombie\" lettering, RIOJA, the small text and the caution stripes are DARK (dark grey-green, not glowing, no lightning streaks); ONLY the thin outlines of the four black zombie silhouettes and of the small hand glow a soft phosphorescent lime green, like real glow-in-the-dark ink, thin luminous edge, gentle falloff, no bloom, no flare. No green light on the glass, the cap or the counter; a faint cool ambient keeps the bottle shape and the black screw cap just readable. The label artwork, lettering, silhouettes, size and position stay exactly where they are in @Video1. Nothing else changes: same camera push-in, same frames and timing, same blackout moment, and everything before 5.4s identical to @Video1, including the woman's hand pulling the lantern cord. No audio, no added text.",
+   "medias": [
+    "72ad97b2-5ee0-47e4-9b7b-8e8f4eeded26",
+    "f1763dde-ff78-4fcb-8280-6ebf07b51d23"
+   ],
+   "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+   "verdict": "PASS — tras el apagón la etiqueta queda oscura (texto rojo oscuro, franjas y cara sin brillo, sin rayos ni derrame verde) y solo los contornos de las 4 siluetas y la manita lucen en lima, como el vídeo 4; la mano de mujer de la toma anterior se conserva (diff 3–5 niveles antes de 5,4 s). Apagado de farolillos en f91→92 como la fuente; el apagón total cae en f132→133 (+2 frames respecto a la fuente, f130→131): corregido en el montaje.",
+   "w": 720,
+   "h": 1280,
+   "frames": 193,
+   "dur": 8.042
+  }
+ },
+ "audio_tokyo": {
+  "sorbo_medido_s": [
+   1.85,
+   2.45
+  ],
+  "clink_s": [
+   2.58,
+   2.8
+  ],
+  "filtro": "volume='1-0.72*clip((t-1.72)/0.10,0,1)*clip((2.50-t)/0.06,0,1)':eval=frame (−11 dB con rampas 0,10 s / 0,06 s)",
+  "medidas_db": {
+   "sorbo_orig": -26.3,
+   "sorbo_fix": -37.4,
+   "clink_orig": -24.2,
+   "clink_fix": -24.3,
+   "risas_0_1_6": -34.1,
+   "risas_3_3_4_3": -26.8
+  },
+  "otros_sorbos_6_30s": "ninguno identificado: los picos graves de 11,0–12,0 (apagón), 13,3–14,5 (macro, golpes de música), 24,8–25,1 / 27,3–27,7 (golpes de la música) y 28,5–29,9 (risa, Whisper «Hahaha») no son sorbos",
+  "whisper": "modelo small, int8: solo transcribe «Hahaha» 28,46–29,86 s",
+  "fichero_sandbox": "rev/out/audio_fix.m4a (AAC 192k, 30,08 s)"
+ },
+ "notas": [
+  "Los dos preflights get_cost devolvieron la recomendación del preset IN THE DARK; se reenviaron con declined_preset_id.",
+  "Coste real preflight: Tokio 14 cr por toma (480p, 4 s), izakaya 61 cr (720p, 8 s).",
+  "Ronda 1 (89 cr): Seedance video_edit a 480p devolvió la fuente sin editar en Tokio (A y B); a 720p editó la mano del izakaya pero no el brillo. Ronda 2 = una variable por reintento: Tokio A con prompt corto y gesto mayor; izakaya solo brillo con el job de la mano como @Video1.",
+  "Ronda 2 (75 cr): acumulado 164 cr = 55 % del tope de 300 (aviso del 50 % superado).",
+  "Entrega a 480p: upscale_video no admite get_cost y quedan 136 cr del tope; se entrega como lo vio el cliente y se propone el upscale a 1080p aparte.",
+  "Los mp4 finales no pueden traerse al repo desde la sesión cloud (el proxy solo deja pasar github.com y raw.githubusercontent.com): se publican alojados en Higgsfield (media_upload) y el manifest apunta a esas URL, como el resto de assets de Higgsfield. Pósteres webp vía el puente image_paths."
+ ],
+ "preflights_alternativas": {
+  "kling_video_edit pro, 4 s (Tokio)": 8,
+  "gemini_omni_flash_1_1 edit 720p 9:16, 8 s (izakaya)": 27
+ },
+ "finales": {
+  "v1_tokyo_30s_rev_satoshi": {
+   "escena": "TOKIO",
+   "primaria": true,
+   "w": 480,
+   "h": 854,
+   "dur": 30.05,
+   "fps": 24,
+   "frames": 721,
+   "model": "seedance_2_5",
+   "job_id": "7d494edf-3490-4b29-958f-8f0096ac64a4",
+   "media_id": "22829713-139e-4109-b5cf-5fec64c1a5e4",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/22829713-139e-4109-b5cf-5fec64c1a5e4.mp4",
+   "desc": "Tokio «After Dinner» 30 s · revisión de Satoshi: la mujer se detiene y mira atrás hacia la botella al retirar los platos (7,9–10,8 s) y el sorbo del brindis suena −11 dB (1,7–2,5 s). 480×854, como el draft que vio el cliente; audio original con la corrección.",
+   "montaje": "original[0–188] + edit 7d494edf[0–69] + original[259–263] (cola estática, cuadra los 75 frames del plano) + original[264–720]; audio = audio_fix.m4a; H.264 CRF 16, AAC 192k",
+   "qa": "721 frames / 30,048 s; out189≈edit0 (0,5), unión 258→259 diff 3,1 (invisible), corte 263→264 conservado (45,6), out264≈src264 (0,6); etiqueta idéntica a la fuente; sorbo −26,3 → −37,4 dB, clink y risas intactos",
+   "upload": "confirmado (media_confirm, 2026-10-15)"
+  },
+  "izakaya_mano_rev_satoshi": {
+   "escena": "IZAKAYA",
+   "primaria": true,
+   "w": 720,
+   "h": 1280,
+   "dur": 8.06,
+   "fps": 24,
+   "frames": 193,
+   "model": "seedance_2_5",
+   "job_id": "3ef4e359-924e-40f1-b189-583a78246c67",
+   "media_id": "cbf030e8-098c-47bc-9873-ca6ac7657757",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/cbf030e8-098c-47bc-9873-ca6ac7657757.mp4",
+   "desc": "Izakaya «la mano apaga la luz» 8 s · revisión de Satoshi: la mano es de mujer (uñas rosa nude, pulsera fina) y la etiqueta brilla de forma natural (solo contornos lima, texto oscuro, como en el vídeo de las copas); ambiente y risa originales. 720×1280.",
+   "montaje": "vídeo 3ef4e359 sin los frames 129–130 y con 2 frames clonados al final (devuelve el apagón al f130→131 = 5,46 s, como la fuente); audio original 66468164 copiado sin recodificar; H.264 CRF 16",
+   "qa": "193 frames / 8,064 s; farolillos f91→92 y apagón f130→131 como la fuente; clic 3,6 s y risa 7,2–8,0 s en su sitio; mano y brillo verificados en recortes a resolución completa",
+   "upload": "confirmado (media_confirm, 2026-10-15)"
+  }
+ }
+}

@@ -2313,5 +2313,39 @@ window.__SWE_MANIFEST__=[
   "src": "https://mohamedmadrazo.github.io/swe-sz-media/3d/v1_tokyo_previz_3djutsu.glb",
   "poster": null,
   "origen": "3djutsu"
+ },
+ {
+  "id": "v1_tokyo_30s_rev_satoshi",
+  "tipo": "video",
+  "linea": "E_REV_SATOSHI",
+  "escena": "TOKIO",
+  "desc": "Tokio «After Dinner» 30 s · revisión de Satoshi: la mujer se detiene y mira atrás hacia la botella al retirar los platos (7,9–10,8 s) y el…",
+  "status": "COMPLETED",
+  "primaria": true,
+  "w": 480,
+  "h": 854,
+  "dur": 30.05,
+  "src": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/22829713-139e-4109-b5cf-5fec64c1a5e4.mp4",
+  "poster": "https://mohamedmadrazo.github.io/swe-sz-media/poster/v1_tokyo_30s_rev_satoshi.webp",
+  "origen": "higgsfield",
+  "job_id": "7d494edf-3490-4b29-958f-8f0096ac64a4",
+  "model": "seedance_2_5"
+ },
+ {
+  "id": "izakaya_mano_rev_satoshi",
+  "tipo": "video",
+  "linea": "E_REV_SATOSHI",
+  "escena": "IZAKAYA",
+  "desc": "Izakaya «la mano apaga la luz» 8 s · revisión de Satoshi: la mano es de mujer (uñas rosa nude, pulsera fina) y la etiqueta brilla de forma…",
+  "status": "COMPLETED",
+  "primaria": true,
+  "w": 720,
+  "h": 1280,
+  "dur": 8.06,
+  "src": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/cbf030e8-098c-47bc-9873-ca6ac7657757.mp4",
+  "poster": "https://mohamedmadrazo.github.io/swe-sz-media/poster/izakaya_mano_rev_satoshi.webp",
+  "origen": "higgsfield",
+  "job_id": "3ef4e359-924e-40f1-b189-583a78246c67",
+  "model": "seedance_2_5"
  }
 ];
