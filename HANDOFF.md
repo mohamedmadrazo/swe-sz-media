@@ -18,6 +18,7 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 
 ## 2. Lo que falta, en orden
 
+0. **Entregables (19-oct)**: paquete listo en `entregables/2026-10-19_revision_satoshi/` (2 packshots de noche + `ENTREGA.md` con los enlaces de los 2 vídeos y el mensaje para María). Falta copiarlo a Drive `Mama-SWE-Wines/01_HALLOWEEN_2026/05_entregables`: el conector de Drive de la sesión no tiene permiso de escritura en esa carpeta (es de Demadrazobruno@streamline3x.com) y el proxy bloquea la CDN de Higgsfield, así que los mp4 se descargan a mano desde los enlaces.
 1. Bruno reenvía a María el borrador de mensaje de `docs/revision_satoshi.md` (con los dos enlaces) y le pide el final del comentario cortado de Satoshi.
 2. Dashboard `sharp-zombie-review` (otro repo, sesión aparte con solo ese repo): comprobar que la línea `E_REV_SATOSHI` con escenas `TOKIO` / `IZAKAYA` se muestra; si el dashboard filtra por líneas conocidas, añadirla.
 3. Si el cliente aprueba: upscale de Tokio a 1080×1920 (`upscale_video` bytedance, preset `aigc`, fuente media `22829713-…`, 480×854, 24 fps). Sin preflight de coste: mirar `balance` antes y después.
