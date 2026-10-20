@@ -188,7 +188,7 @@
  "finales": {
   "v1_tokyo_30s_rev_satoshi": {
    "escena": "TOKIO",
-   "primaria": true,
+   "primaria": false,
    "w": 480,
    "h": 854,
    "dur": 30.05,
@@ -205,7 +205,7 @@
   },
   "izakaya_mano_rev_satoshi": {
    "escena": "IZAKAYA",
-   "primaria": true,
+   "primaria": false,
    "w": 720,
    "h": 1280,
    "dur": 8.06,
@@ -219,6 +219,107 @@
    "montaje": "vídeo 3ef4e359 sin los frames 129–130 y con 2 frames clonados al final (devuelve el apagón al f130→131 = 5,46 s, como la fuente); audio original 66468164 copiado sin recodificar; H.264 CRF 16",
    "qa": "193 frames / 8,064 s; farolillos f91→92 y apagón f130→131 como la fuente; clic 3,6 s y risa 7,2–8,0 s en su sitio; mano y brillo verificados en recortes a resolución completa",
    "upload": "confirmado (media_confirm, 2026-10-15)"
+  },
+  "v1_tokyo_30s_1080_final": {
+   "escena": "TOKIO",
+   "primaria": true,
+   "w": 1080,
+   "h": 1920,
+   "dur": 30.04,
+   "fps": 24,
+   "frames": 721,
+   "model": "bytedance_video_upscale",
+   "job_id": "ce87df69-e084-42e0-bf2d-dcf3f33dc675",
+   "media_id": "783c83bf-554b-4763-a80b-3e21871471f7",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/783c83bf-554b-4763-a80b-3e21871471f7.mp4",
+   "desc": "Tokio «After Dinner» 30 s · entrega final 1080×1920: revisión de Satoshi (mirada a la botella), sin el sonido de los sorbos del principio y con «Denominación de Origen Calificada» bien escrito en el plano del glow.",
+   "montaje": "upscale ce87df69 (1080×1918) con frames 314–407 corregidos (texto de la etiqueta) → scale lanczos 1080×1920; audio = audio_tokyo_v2; H.264 High CRF 15 preset slow, AAC 256k 48 kHz copiado, +faststart",
+   "qa": "721 fr / 30,04 s; audio idéntico (cmp) al de la versión sin sorbos; fuera del plano 314–407 idéntico al upscale; md5 local = alojado (2cc3775f112d)",
+   "upload": "confirmado (media_confirm, 2026-10-20)"
+  },
+  "izakaya_mano_1080_final": {
+   "escena": "IZAKAYA",
+   "primaria": true,
+   "w": 1080,
+   "h": 1920,
+   "dur": 8.06,
+   "fps": 24,
+   "frames": 193,
+   "model": "bytedance_video_upscale",
+   "job_id": "b0aa8fe5-403d-4125-88dc-d00e0a9c7557",
+   "media_id": "ad8869de-7af6-49e3-ae77-d4f68922e1d8",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/ad8869de-7af6-49e3-ae77-d4f68922e1d8.mp4",
+   "desc": "Izakaya «la mano apaga la luz» 8 s · entrega final 1080×1920: mano de mujer y brillo natural de la etiqueta (revisión de Satoshi); ambiente y risa originales.",
+   "montaje": "vídeo del upscale b0aa8fe5 sin recodificar + audio de cbf030e8 copiado (32 kHz, AAC) con -c copy, +faststart",
+   "qa": "193 fr / 8,06 s; farolillos f91→92 y apagón f130→131 como la versión aprobada (correlación de luma 1,0); md5 local = alojado (b52ec1b47ccc)",
+   "upload": "confirmado (media_confirm, 2026-10-20)"
   }
+ },
+ "upscale_1080": {
+  "fecha": "2026-10-20",
+  "modelo": "bytedance_video_upscale (upscale_video, preset aigc, 1080p, 24 fps)",
+  "jobs": {
+   "tokyo": {
+    "job_id": "ce87df69-e084-42e0-bf2d-dcf3f33dc675",
+    "fuente_media": "22829713-139e-4109-b5cf-5fec64c1a5e4",
+    "salida": "1080×1918, 721 fr",
+    "credits": 6.01
+   },
+   "izakaya": {
+    "job_id": "b0aa8fe5-403d-4125-88dc-d00e0a9c7557",
+    "fuente_media": "cbf030e8-098c-47bc-9873-ca6ac7657757",
+    "salida": "1080×1920, 193 fr",
+    "credits": 1.61
+   }
+  },
+  "balance": {
+   "antes": 826.17,
+   "despues": 818.55,
+   "spent": 7.62,
+   "note": "verificado en transactions (Bytedance Video Upscale −6,01 y −1,61, 2026-10-20 09:22 UTC)"
+  }
+ },
+ "audio_tokyo_v2": {
+  "fecha": "2026-10-20",
+  "peticion": "Satoshi: quitar el sonido de los sorbos del principio (queda vulgar)",
+  "tramo_sustituido_s": [
+   0.0,
+   2.5
+  ],
+  "metodo": "sorbos (0–1,6 s) y tragos (1,85–2,45 s) sustituidos por tono de sala sintetizado (magnitud STFT media de 4,60–5,25 y 5,95–6,35 s, fase aleatoria, RMS igualado) con fundido de igual potencia de 80 ms hasta 2,58 s; fade-in de 15 ms; a partir de 2,58 s el audio es bit a bit el original (fuente: audio de 7d494edf / d45)",
+  "medidas_db": {
+   "sorbos_0_1_6": [
+    -37.1,
+    -43.9
+   ],
+   "tragos_1_85_2_45": [
+    -29.3,
+    -44.0
+   ],
+   "clink_2_58_2_8": [
+    -26.3,
+    -26.4
+   ],
+   "risas_3_2_4_4": [
+    -30.4,
+    -30.4
+   ],
+   "resto_4_4_30": [
+    -25.9,
+    -25.9
+   ]
+  },
+  "sustituye_a": "audio_tokyo (−11 dB en 1,72–2,50 s)",
+  "fichero_sandbox": "sorbos/tokyo_audio_sin_sorbos.m4a (AAC 256k, 48 kHz)",
+  "premiere": "no conectado (get_host_status ppro:false); hecho con numpy + ffmpeg en el sandbox"
+ },
+ "texto_etiqueta_tokyo": {
+  "fecha": "2026-10-20",
+  "peticion": "Bruno: en el plano del glow (los zombis cobran vida) la línea bajo RIOJA debe decir «Denominación de Origen Calificada»",
+  "plano": "frames 314–407 (13,08–16,96 s), push-in lento (escala 1,000→1,048)",
+  "metodo": "composición en post, 0 cr: tracking afín ECC sobre la zona impresa estática (cc ≥ 0,994, ajuste cuadrático, residuo medio 0,07 px); borrado de la línea ilegible por convolución normalizada + grano medido; texto Liberation Serif Bold 48 px (como la etiqueta real) mapeado al cilindro de la botella (eje x=531, R=444 px, medido en las rayas inferiores) y a la curva de la línea base; tinta multiplicativa con la relación tinta/fondo de RIOJA",
+  "qa": "deriva línea vs RIOJA ≤ 0,17 px; sin restos del texto viejo; fuera del plano el vídeo es idéntico al render sin corrección (dif. media 0,09 niveles); dentro, −1 nivel de luma por la ida y vuelta RGB (imperceptible, el plano está entre cortes)",
+  "scripts_sandbox": "sorbos/dog/{track.py,geom.py,fix.py}",
+  "pendiente_opcional": "la cinta superior de la etiqueta en ese plano dice «DEATBON / DEHDLY / DEALY GOOB» en vez de «CAUTION · DEADLY GOOD WINE»; no se ha tocado"
  }
 }

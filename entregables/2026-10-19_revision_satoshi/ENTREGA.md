@@ -2,6 +2,8 @@
 
 Revisión de Satoshi (vídeos) y packshot blanco + tinto de noche (imágenes). Cada enlace descarga el archivo final.
 
+> **20-oct:** los vídeos finales a 1080p (Tokio sin los sorbos del principio y con «Denominación de Origen Calificada» corregido) están en `../2026-10-20_final_1080/ENTREGA.md`. Los enlaces de abajo son las versiones de revisión (480p / 720p).
+
 ## Vídeos con las correcciones
 
 | Vídeo | Formato | Qué cambia | Descarga |

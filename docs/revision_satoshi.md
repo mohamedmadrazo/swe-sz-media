@@ -13,6 +13,20 @@ Cambios pedidos por Satoshi (socio de María, SWE) sobre los cuatro vídeos que 
 
 Créditos: 164 cr de un tope de 300 (ronda 1: 89 = 14 + 14 + 61; ronda 2: 75 = 14 + 61). Saldo Higgsfield: 1578,04 al inicio → **1375,04** al cierre (203 cr: 164 del pipeline, verificados en `transactions`, + 39 de generaciones de imagen hechas desde la cuenta a las 12:54–12:57 UTC, fuera de esta revisión).
 
+## Entrega final 1080p (20-oct)
+
+| Vídeo | Petición | Qué se hizo | Final |
+|---|---|---|---|
+| Tokio 30 s | Upscale; quitar el sonido de los sorbos del principio (Satoshi: «queda vulgar»); bajo RIOJA debe poner «Denominación de Origen Calificada» en el plano del glow | Upscale bytedance (job `ce87df69`, 6,01 cr). Audio: 0–2,50 s sustituido por tono de sala sintetizado del propio clip (sorbos −37,1 → −43,9 dB; tragos −29,3 → −44,0 dB) con fundido de 80 ms hasta el clink (2,58 s); desde ahí, audio original bit a bit. Texto: composición en post sobre los frames 314–407 (tracking afín ECC, borrado por convolución normalizada, Liberation Serif Bold 48 px mapeado al cilindro de la botella) | [`v1_tokyo_30s_1080_final.mp4`](https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/783c83bf-554b-4763-a80b-3e21871471f7.mp4) · 1080×1920, 30,04 s |
+| Izakaya mano 8 s | Upscale | Upscale bytedance (job `b0aa8fe5`, 1,61 cr) + audio aprobado copiado sin recodificar | [`izakaya_mano_1080_final.mp4`](https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/ad8869de-7af6-49e3-ae77-d4f68922e1d8.mp4) · 1080×1920, 8,06 s |
+
+Créditos: 7,62 cr (saldo 826,17 → 818,55, verificado en `transactions`). El texto y el audio no gastan créditos.
+
+- **Premiere no estaba conectado** (`get_host_status` → `ppro: false`), así que los sorbos se quitaron con numpy + ffmpeg en el sandbox; el resultado es el mismo que un pase en Premiere. Para hacerlo en Premiere: abrir el panel de Higgsfield en Premiere y pulsar Connect.
+- La línea ilegible bajo RIOJA solo es legible en el plano macro; en el packshot final (25–30 s) esa línea mide ~10 px y se lee como letra pequeña, no se ha tocado.
+- En el mismo plano macro, la cinta superior dice «DEATBON / DEHDLY / DEALY GOOB» en lugar de «CAUTION · DEADLY GOOD WINE»; no se ha pedido y no se ha tocado (se puede corregir con la misma técnica).
+- Técnica del texto, reutilizable: medir la curvatura del cilindro con el periodo de las rayas de la etiqueta (`x = c + R·sin(u/R)`) y la línea base con un ajuste cuadrático de la línea vieja; tracking ECC afín sobre la zona impresa estática (no sobre las siluetas, que se animan); tinta multiplicativa con la relación tinta/fondo de RIOJA para que siga la luz del glow. Scripts en el sandbox `sorbos/dog/` (`track.py`, `geom.py`, `fix.py`).
+
 ## Qué falló y qué funcionó (lecciones)
 
 - Seedance 2.5 `video_edit` a 480p devolvió la fuente **sin editar** (diff 3–5 niveles por fotograma) con los dos prompts largos de la ronda 1, dominados por frases de «conservar». Funcionó un prompt corto, con la acción primero y un gesto mayor (parada + giro de cabeza y hombros hacia cámara).
@@ -39,5 +53,6 @@ Créditos: 164 cr de un tope de 300 (ronda 1: 89 = 14 + 14 + 61; ronda 2: 75 = 1
 ## Pendiente
 
 - Dashboard `sharp-zombie-review`: comprobar que muestra la línea nueva `E_REV_SATOSHI` (escenas TOKIO e IZAKAYA) de `manifest.js`; se toca en una sesión aparte con solo ese repo.
-- Opcional: upscale de Tokio a 1080×1920 (`upscale_video`, proveedor bytedance, preset `aigc`, fuente = media `22829713-139e-4109-b5cf-5fec64c1a5e4`, 480×854); no admite preflight de coste.
+- ~~Upscale de Tokio a 1080×1920~~ hecho el 20-oct (Tokio e izakaya), ver arriba.
+- Opcional: corregir la cinta superior de la etiqueta en el plano macro de Tokio (13,08–16,96 s).
 - Si se quieren los mp4 en `video/`: descargarlos en local desde las dos URL y hacer commit (`video/v1_tokyo_30s_rev_satoshi.mp4`, `video/izakaya_mano_rev_satoshi.mp4`); el manifest puede seguir apuntando a Higgsfield.
