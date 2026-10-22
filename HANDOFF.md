@@ -36,7 +36,7 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 4. Opcional: traer los mp4 al repo desde un equipo local (descarga de las URL + commit en `video/`).
 5. Vídeos 2 (fiesta) y 4 (copas): sin cambios, no tocar.
 
-6. **Vídeo a recuperar en Premiere (pedido el 22-oct)**: 4 clips de una generación antigua ya montados por Bruno en Premiere con su duración. Falta: suavizar las transiciones entre clips, producto idéntico al original, añadir un clip final de ~4 s (se apagan las luces y aparece el glow) y masterizar. Bloqueado porque Premiere estaba desconectado (`get_host_status` → `ppro: false`); hay que abrir el panel de Higgsfield en Premiere y pulsar Connect. Skills `premiere-api-realities` y `house-style` ya leídos.
+6. **SHARPCOMIC (spot cómic, 22-oct)**: montado en Premiere en la secuencia nueva `SHARPCOMIC_MASTER_1080` del proyecto `SHARPCOMIC.prproj` (la original de Bruno intacta): upscale 1080p de los 3 clips, uniones suavizadas (fundido de 12 fr y destello blanco con punch-zoom), fuera el giro con la etiqueta en espejo, clip final de 4 s con apagón y glow (Kling 4.0 inicio+fin), audio master −14 LUFS / −1,6 dBTP en A3. Falta: que Media Encoder renderice `SHARPCOMIC_MASTER_1080p.mp4` (cola encolada por API; si está parada, «Iniciar cola») y la QC del MP4 final con `pr_upload_media` + `pr_probe_media(loudness)` + `pr_extract_frames`. Detalle y lecciones del conector en `docs/sharpcomic_postpro.md`; ledger `prompts/sharpcomic_jobs.json`.
 
 ## 3. Trampas conocidas
 
