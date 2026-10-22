@@ -2381,5 +2381,22 @@ window.__SWE_MANIFEST__=[
   "origen": "higgsfield",
   "job_id": "b0aa8fe5-403d-4125-88dc-d00e0a9c7557",
   "model": "bytedance_video_upscale"
+ },
+ {
+  "id": "fiesta_8s_1080_final",
+  "tipo": "video",
+  "linea": "E_REV_SATOSHI",
+  "escena": "FIESTA",
+  "desc": "Fiesta en casa 8 s · entrega final 1080×1920: el vídeo aprobado (sin cambios de Satoshi) a alta resolución; apaga la luz y brillan las silu…",
+  "status": "COMPLETED",
+  "primaria": true,
+  "w": 1080,
+  "h": 1920,
+  "dur": 8.05,
+  "src": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/5b27af6c-b97e-48cf-9822-0c9b879f54eb.mp4",
+  "poster": "https://mohamedmadrazo.github.io/swe-sz-media/poster/fiesta_8s_1080_final.webp",
+  "origen": "higgsfield",
+  "job_id": "2b4fbc0f-8e9c-4260-a3c6-398740a603f5",
+  "model": "bytedance_video_upscale"
  }
 ];

@@ -253,6 +253,23 @@
    "montaje": "vídeo del upscale b0aa8fe5 sin recodificar + audio de cbf030e8 copiado (32 kHz, AAC) con -c copy, +faststart",
    "qa": "193 fr / 8,06 s; farolillos f91→92 y apagón f130→131 como la versión aprobada (correlación de luma 1,0); md5 local = alojado (b52ec1b47ccc)",
    "upload": "confirmado (media_confirm, 2026-10-20)"
+  },
+  "fiesta_8s_1080_final": {
+   "escena": "FIESTA",
+   "primaria": true,
+   "w": 1080,
+   "h": 1920,
+   "dur": 8.05,
+   "fps": 24,
+   "frames": 193,
+   "model": "bytedance_video_upscale",
+   "job_id": "2b4fbc0f-8e9c-4260-a3c6-398740a603f5",
+   "media_id": "5b27af6c-b97e-48cf-9822-0c9b879f54eb",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/5b27af6c-b97e-48cf-9822-0c9b879f54eb.mp4",
+   "desc": "Fiesta en casa 8 s · entrega final 1080×1920: el vídeo aprobado (sin cambios de Satoshi) a alta resolución; apaga la luz y brillan las siluetas de la etiqueta.",
+   "montaje": "upscale 2b4fbc0f (preset aigc) → scale lanczos 1080×1920; audio de la generación 49f55905 copiado sin recodificar (32 kHz AAC); H.264 High CRF 15 preset slow, +faststart",
+   "qa": "193 fr / 8,05 s; apagón f66→67 como la fuente (correlación de luma 1,0); audio idéntico (cmp); md5 local = alojado (16542cdab8a3)",
+   "upload": "confirmado (media_confirm, 2026-10-22)"
   }
  },
  "upscale_1080": {
@@ -270,6 +287,13 @@
     "fuente_media": "cbf030e8-098c-47bc-9873-ca6ac7657757",
     "salida": "1080×1920, 193 fr",
     "credits": 1.61
+   },
+   "fiesta": {
+    "fecha": "2026-10-22",
+    "job_id": "2b4fbc0f-8e9c-4260-a3c6-398740a603f5",
+    "fuente_job": "49f55905-afe1-4350-b9da-a394856345ab",
+    "salida": "1080×1918, 193 fr",
+    "credits": 1.61
    }
   },
   "balance": {
@@ -277,6 +301,11 @@
    "despues": 818.55,
    "spent": 7.62,
    "note": "verificado en transactions (Bytedance Video Upscale −6,01 y −1,61, 2026-10-20 09:22 UTC)"
+  },
+  "balance_fiesta": {
+   "antes": 818.55,
+   "despues": 816.94,
+   "spent": 1.61
   }
  },
  "audio_tokyo_v2": {

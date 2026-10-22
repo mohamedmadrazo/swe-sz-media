@@ -25,6 +25,7 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
   - 7,62 cr; saldo 818,55. Detalle en `docs/revision_satoshi.md` (sección «Entrega final 1080p») y en el ledger (`upscale_1080`, `audio_tokyo_v2`, `texto_etiqueta_tokyo`).
 - `manifest.js` regenerado: las dos entradas 1080 son las primarias de `E_REV_SATOSHI`; las de revisión quedan como no primarias.
 - Premiere no estaba conectado: el audio se hizo fuera de Premiere.
+- 22-oct: **fiesta en casa** a 1080×1920 (upscale `2b4fbc0f` de la generación `49f55905`, audio original) → media `5b27af6c-b97e-48cf-9822-0c9b879f54eb`; añadida a `entregables/2026-10-20_final_1080/` y al manifest. 1,61 cr; saldo 816,94.
 
 ## 2. Lo que falta, en orden
 
@@ -34,6 +35,8 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 3. ~~Upscale a 1080×1920~~ hecho el 20-oct. Opcional: corregir la cinta superior («DEATBON / DEHDLY…») del plano macro de Tokio con la técnica de `texto_etiqueta_tokyo` (scripts en el sandbox `sorbos/dog/`, que puede caducar: rehacer desde el upscale `ce87df69`).
 4. Opcional: traer los mp4 al repo desde un equipo local (descarga de las URL + commit en `video/`).
 5. Vídeos 2 (fiesta) y 4 (copas): sin cambios, no tocar.
+
+6. **Vídeo a recuperar en Premiere (pedido el 22-oct)**: 4 clips de una generación antigua ya montados por Bruno en Premiere con su duración. Falta: suavizar las transiciones entre clips, producto idéntico al original, añadir un clip final de ~4 s (se apagan las luces y aparece el glow) y masterizar. Bloqueado porque Premiere estaba desconectado (`get_host_status` → `ppro: false`); hay que abrir el panel de Higgsfield en Premiere y pulsar Connect. Skills `premiere-api-realities` y `house-style` ya leídos.
 
 ## 3. Trampas conocidas
 
