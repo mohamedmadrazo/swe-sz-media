@@ -24,6 +24,7 @@ Duración final: 41,71 s (1001 frames, 24 fps). Créditos: 19,81 (saldo 816,94 �
 - `Posición` y `Punto de anclaje` son 2D: `pr_add_keyframe` solo admite números, así que no se puede animar un zoom dirigido a un punto; solo escala desde el centro.
 - Transiciones nativas por QE: fallan («every addTransition form threw»); construirlas con keyframes de opacidad (receta I del skill).
 - `pr_apply_effect('Hard Limiter')` responde `applied:true` pero no aplica nada en audio.
+- La cola de Media Encoder conserva trabajos de otros proyectos: al pulsar «Iniciar cola» el 22-oct se renderizó primero un trabajo antiguo de Bakari. Antes de encolar, revisar la cola o exportar desde Premiere.
 - Exportar: `pr_export_sequence`, `pr_extract_audio` y `pr_export_sequence_frame` no producen archivo en esta instalación; `pr_add_to_render_queue` con un `.epr` explícito sí encola en AME. `pr_export_frame` funciona solo hacia una carpeta existente (y añade `.png` si la ruta ya lo lleva).
 - `pr_upload_media` rechaza PNG (400): la QC visual se hace sobre vídeo exportado o en el sandbox.
 - `pr_import_media` con tres URLs de ~20 MB agota el puente: importar de una en una. Los ficheros quedan en `AppData\Local\Temp\higgsfield-ae-bridge`: recopilar con el Gestor de proyectos antes de limpiar Temp.
@@ -33,6 +34,6 @@ Duración final: 41,71 s (1001 frames, 24 fps). Créditos: 19,81 (saldo 816,94 �
 
 ## Pendiente
 
-- Comprobar que Media Encoder ha renderizado el máster (si la cola está parada, pulsar «Iniciar cola») y hacer la QC del MP4 final (frames en las uniones y sonoridad).
+- Exportar el máster cuando Bruno lo pida, desde Premiere (Archivo → Exportar → Medios, H.264 «Coincidir con origen – Velocidad de bits alta») y no por la cola de AME, y hacer la QC del MP4 final (frames en las uniones y sonoridad). El trabajo encolado por API el 22-oct no llegó a generar archivo.
 - Recopilar medios del proyecto (Archivo → Gestor de proyectos) para sacar los clips 1080p de la carpeta temporal.
 - Opcional: variante 9:16 para Reels (reencuadre por plano).
