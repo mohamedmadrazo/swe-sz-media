@@ -17,6 +17,12 @@ Spot de cómic pop-art de Sharp Zombie (16:9) a partir de tres generaciones de H
 
 Duración final: 41,71 s (1001 frames, 24 fps). Créditos: 19,81 (saldo 816,94 → 797,13).
 
+## Audio v2 y máster MP4 (22-oct, petición de Bruno: «bajar y arreglar el audio»)
+
+- Problemas medidos: 0,65 s de silencio digital tras el «SPLAT» con entrada de golpe de la banda grave en la zambullida; «SPLAT» muy agudo; rescate y final casi solo subgrave; máster a −14 LUFS apretado.
+- Arreglos: ambiente muy bajo en el hueco, «splat» invertido como subida hasta el corte de la zambullida, campana −3,5 dB a 3,5 kHz en el «SPLAT», low-shelf −4 dB a 75 Hz desde la zambullida, paso alto 30 Hz, máster a **−16,0 LUFS / −1,9 dBTP / LRA 9,0**. Sustituido en A3 de Premiere.
+- El MP4 no sale por la API de Premiere ni por la cola de AME en esta instalación: el máster se renderiza en el sandbox replicando la secuencia fotograma a fotograma (`render_master.py`) y se entrega por enlace en `entregables/2026-10-22_sharpcomic/`.
+
 ## Lecciones (conector Premiere en el equipo de Bruno, Premiere en español)
 
 - Los nombres de efectos y propiedades van **localizados**: `Movimiento` (`Posición`, `Escala`, `Punto de anclaje`), `Opacidad`, `Volumen` → `Nivel`. `pr_add_audio_fade` y `pr_set_audio_level` fallan porque buscan «Level»; usar `pr_add_keyframe`/`pr_set_effect_property` sobre `Volumen`/`Nivel`.
@@ -34,6 +40,6 @@ Duración final: 41,71 s (1001 frames, 24 fps). Créditos: 19,81 (saldo 816,94 �
 
 ## Pendiente
 
-- Exportar el máster cuando Bruno lo pida, desde Premiere (Archivo → Exportar → Medios, H.264 «Coincidir con origen – Velocidad de bits alta») y no por la cola de AME, y hacer la QC del MP4 final (frames en las uniones y sonoridad). El trabajo encolado por API el 22-oct no llegó a generar archivo.
+- Máster entregado el 22-oct (render en el sandbox). Si se quiere una copia exportada por el propio Premiere en `05_entregables`: Archivo → Exportar → Medios con la secuencia activa.
 - Recopilar medios del proyecto (Archivo → Gestor de proyectos) para sacar los clips 1080p de la carpeta temporal.
 - Opcional: variante 9:16 para Reels (reencuadre por plano).

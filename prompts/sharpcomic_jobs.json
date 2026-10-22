@@ -128,14 +128,48 @@
   "formato": "MP3 320k 48 kHz (Higgsfield solo acepta mp3 para audio); desfase 0 muestras frente al WAV 24-bit"
  },
  "export": {
-  "ruta": "C:\\Users\\demad\\Documents\\1-Clientes\\Mama-SWE-Wines\\01_HALLOWEEN_2026\\SHARPCOMIC_MASTER_1080p.mp4",
-  "via": "pr_add_to_render_queue (AME 2026) con systempresets\\4E49434B_48323634\\Match Source - High bitrate.epr",
-  "estado": "en cola"
+  "premiere_api": "pr_export_sequence y la cola de AME no generan archivo en esta instalación (probado al proyecto y a 05_entregables)",
+  "master_mp4": {
+   "render": "sandbox (comic/render_master.py), réplica fotograma a fotograma de la secuencia: mismos clips, in/out, keyframes de escala y opacidad, placa blanca y fundido final; audio master v2",
+   "formato": "1920×1080, 24 fps, 1001 fr, 41,708 s, H.264 High CRF 16 BT.709 (16,6 Mb/s), AAC 320k 48 kHz, +faststart",
+   "qa": "−16,1 LUFS / −1,9 dBTP / LRA 9,0; sin frames negros (luma mínima 20,3); uniones, destello, SPLAT, zambullida, encadenado y glow revisados en hoja de contactos; md5 local = alojado (f27cb2d4ff0d)",
+   "media_id": "97a6104d-423b-4394-808d-99779f6fe84e",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/97a6104d-423b-4394-808d-99779f6fe84e.mp4"
+  },
+  "entrega": "entregables/2026-10-22_sharpcomic/ENTREGA.md"
  },
  "balance": {
   "antes": 816.94,
   "despues": 797.13,
   "spent": 19.81,
   "desglose": "upscales 3×3,02 + Kling A 4 + GPT 2,75 + Kling B 4; Seedance 12 reembolsado"
+ },
+ "master_audio_v2": {
+  "fecha": "2026-10-22",
+  "peticion": "Bruno: bajar y arreglar el audio",
+  "problemas": [
+   "0,65 s de silencio digital (−92 dBFS) tras el SPLAT (26,8–27,45 s) y entrada de golpe de la banda grave en la zambullida (+67 dB)",
+   "SPLAT muy agudo (casi toda la energía en 2–6 kHz)",
+   "banda grave del rescate y zumbido final casi solo subgrave (el limitador trabajaba por ellos)",
+   "máster a −14 LUFS demasiado apretado"
+  ],
+  "arreglos": [
+   "ambiente muy bajo (−52 dBFS) en 26,55–27,6 s para que nunca haya silencio digital",
+   "SPLAT invertido como subida (−9 dB bajo el original) que termina en el corte de la zambullida (27,4167 s)",
+   "EQ por tramos con máscaras suaves: campana −3,5 dB a 3,5 kHz en el SPLAT; low-shelf −4 dB a 75 Hz desde la zambullida hasta el final",
+   "paso alto 30 Hz en toda la mezcla (fase cero)",
+   "+5,8 dB y alimiter 4× (techo 0,80), latencia compensada"
+  ],
+  "medidas": {
+   "I": -16.0,
+   "TP": -1.9,
+   "LRA": 9.0,
+   "minimo_26_28s_dBFS": -56.5,
+   "desfase_muestras": 0
+  },
+  "media_id": "1657d3d7-7d4f-4a29-87be-c98720be2834",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/1657d3d7-7d4f-4a29-87be-c98720be2834.mp3",
+  "premiere": "sustituye al master v1 en A3 de SHARPCOMIC_MASTER_1080; proyecto guardado",
+  "script_sandbox": "comic/fix_audio.py"
  }
 }

@@ -36,7 +36,7 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 4. Opcional: traer los mp4 al repo desde un equipo local (descarga de las URL + commit en `video/`).
 5. Vídeos 2 (fiesta) y 4 (copas): sin cambios, no tocar.
 
-6. **SHARPCOMIC (spot cómic, 22-oct)**: montado en Premiere en la secuencia nueva `SHARPCOMIC_MASTER_1080` del proyecto `SHARPCOMIC.prproj` (la original de Bruno intacta): upscale 1080p de los 3 clips, uniones suavizadas (fundido de 12 fr y destello blanco con punch-zoom), fuera el giro con la etiqueta en espejo, clip final de 4 s con apagón y glow (Kling 4.0 inicio+fin), audio master −14 LUFS / −1,6 dBTP en A3. Falta: que Media Encoder renderice `SHARPCOMIC_MASTER_1080p.mp4` (cola encolada por API; si está parada, «Iniciar cola») y la QC del MP4 final con `pr_upload_media` + `pr_probe_media(loudness)` + `pr_extract_frames`. Detalle y lecciones del conector en `docs/sharpcomic_postpro.md`; ledger `prompts/sharpcomic_jobs.json`.
+6. **SHARPCOMIC (spot cómic, 22-oct)**: terminado y aprobado por Bruno. Máster 1920×1080 con el audio arreglado (−16 LUFS, sin el hueco tras el SPLAT) en `entregables/2026-10-22_sharpcomic/ENTREGA.md` (media `97a6104d-423b-4394-808d-99779f6fe84e`). Proyecto `SHARPCOMIC.prproj`, secuencia `SHARPCOMIC_MASTER_1080`. Pendiente solo: recopilar los medios del proyecto (están en `AppData\Local\Temp\higgsfield-ae-bridge`) y, si se quiere, una copia exportada por Premiere en `05_entregables`. Detalle en `docs/sharpcomic_postpro.md`.
 
 ## 3. Trampas conocidas
 
