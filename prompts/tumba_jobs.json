@@ -86,7 +86,11 @@
     }
   },
   "balance": {
-    "inicio": 239.57
+    "inicio_27oct": 239.57,
+    "gasto_retoque": 12,
+    "detalle": "4 × Kling 4.0 a 3 cr (2 variantes humo-mano 27-oct 17:29 UTC, 2 variantes pop 27-oct 19:45 UTC)",
+    "saldo_28oct": 113.42,
+    "nota": "la diferencia restante son gastos de la cuenta ajenos a este retoque (Genjutsu, Text to 3D, Kling v3.0, GPT Image 2.0)"
   },
   "sandbox_trabajo": {
     "fuente_frames": "/home/user/tumba/fr/%03d.png (1-indexado)",

@@ -171,5 +171,40 @@
   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/1657d3d7-7d4f-4a29-87be-c98720be2834.mp3",
   "premiere": "sustituye al master v1 en A3 de SHARPCOMIC_MASTER_1080; proyecto guardado",
   "script_sandbox": "comic/fix_audio.py"
+ },
+ "retoque_2026_10_27": {
+  "peticion": [
+   "cartel derecho «ZOMB!» → «Sharp» (≈2–4 s)",
+   "siluetas de la etiqueta (chica) → las reales: tres zombis andando de perfil, uno agachado y la manita"
+  ],
+  "criterio": "Bruno: si gasta muchos créditos, dejarlo; se hace con composición gratuita (0 créditos).",
+  "fuente": "máster 97a6104d (1920x1080, 1001 fr)",
+  "cartel": "panel derecho seguido por homografía SIFT fr 20–93; texto «SHARP» del panel izquierdo rectificado y recoloreado al magenta del panel derecho; la farola delante se respeta con máscara",
+  "siluetas": "por plano: segmentación de la etiqueta amarilla con texto rojo, rectificación por rectángulo mínimo, borrado de la banda de figuras con el amarillo vecino y siluetas reales (label_silhouettes_fill.png) en negro; en el final a oscuras, contorno lima con glow",
+  "scripts_sandbox": "/home/user/lab3/{signpatch.py,sign_apply.py,sil2.py,sil3.py}",
+  "master_v3": {
+   "archivo": "SharpZombie_SHARPCOMIC_master_1080p_v3.mp4",
+   "media_id": "31960372-a04b-4591-96d1-f24fc55b8a20",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/31960372-a04b-4591-96d1-f24fc55b8a20.mp4",
+   "formato": "1920x1080, 24 fps, 1001 fr, H.264 CRF 16, audio del máster v2 copiado sin recodificar (−16 LUFS)"
+  },
+  "cobertura": {
+   "cartel": "fr 20–92 (todo el acercamiento a la tienda)",
+   "etiqueta_seguimiento_homografia": {
+    "A tienda con zombis": "93–149",
+    "B primer plano": "236–347",
+    "C POW": "348–430",
+    "D ciudad": "504–626",
+    "S SPLAT": "630–652",
+    "H chica tumbada": "829–929",
+    "K apagón y glow": "930–1000"
+   },
+   "etiqueta_por_fotograma": {
+    "E caída": "658–732",
+    "G giro": "785–828 (796–797 sin tocar)"
+   },
+   "sin_tocar": "150–235 (pelea, botella pequeña y en movimiento), 431–503 (salto, botella diminuta o de espaldas), 627–629 y 653–657 (destello del SPLAT)"
+  },
+  "creditos": 0
  }
 }

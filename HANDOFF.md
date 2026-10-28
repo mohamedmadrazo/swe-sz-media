@@ -27,6 +27,12 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 - Premiere no estaba conectado: el audio se hizo fuera de Premiere.
 - 22-oct: **fiesta en casa** a 1080×1920 (upscale `2b4fbc0f` de la generación `49f55905`, audio original) → media `5b27af6c-b97e-48cf-9822-0c9b879f54eb`; añadida a `entregables/2026-10-20_final_1080/` y al manifest. 1,61 cr; saldo 816,94.
 
+## 1c. Hecho el 27/28-oct (retoques del cliente)
+
+- **Cementerio · Halloween** (Marketing Studio `fc489abb`, el favorito del cliente para publicar el 30/31-oct): etiqueta real compuesta en todos los planos con botella, uvas de la copa → humo verde con forma de mano zombi (Kling 4.0 video-edit), tapón de rosca negro que gira y salta con «¡pop!» y humo verde (Kling 4.0 desde un fotograma con la etiqueta real; Bruno eligió rosca, no corcho, por el lock de producto) y end card con el logotipo «Sharp Zombie» de la etiqueta real. Máster 1080×1920, 9,9 s, −15,4 LUFS → media `badfed5a-5176-4c6b-be09-ffb2a7e59148`. 12 cr (4 generaciones Kling 4.0). Entrega en `entregables/2026-10-28_cementerio_halloween/ENTREGA.md`; ledger `prompts/tumba_jobs.json`.
+- **SHARPCOMIC v3** (vídeo de la chica): cartel derecho «ZONBR!» → «SHARP» y siluetas reales en la etiqueta en casi todos los planos, por composición (0 cr). Máster → media `31960372-a04b-4591-96d1-f24fc55b8a20`, añadido a `entregables/2026-10-22_sharpcomic/ENTREGA.md`. Detalle en `docs/sharpcomic_postpro.md` (sección «Retoque del cliente»).
+- La secuencia de Premiere `SHARPCOMIC_MASTER_1080` no se ha tocado: el v3 se renderizó en el sandbox sobre el máster v2. Si se quiere el v3 en Premiere, importar el mp4 del enlace.
+
 ## 2. Lo que falta, en orden
 
 0. **Entregables (19 y 20-oct)**: paquetes listos en `entregables/2026-10-19_revision_satoshi/` (packshots de noche) y `entregables/2026-10-20_final_1080/` (vídeos finales 1080p + mensaje para María). Falta copiarlos a Drive `Mama-SWE-Wines/01_HALLOWEEN_2026/05_entregables`: el conector de Drive de la sesión no tiene permiso de escritura en esa carpeta (es de Demadrazobruno@streamline3x.com) y el proxy bloquea la CDN de Higgsfield, así que los mp4 se descargan a mano desde los enlaces.
@@ -36,7 +42,7 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 4. Opcional: traer los mp4 al repo desde un equipo local (descarga de las URL + commit en `video/`).
 5. Vídeos 2 (fiesta) y 4 (copas): sin cambios, no tocar.
 
-6. **SHARPCOMIC (spot cómic, 22-oct)**: terminado y aprobado por Bruno. Máster 1920×1080 con el audio arreglado (−16 LUFS, sin el hueco tras el SPLAT) en `entregables/2026-10-22_sharpcomic/ENTREGA.md` (media `97a6104d-423b-4394-808d-99779f6fe84e`). Proyecto `SHARPCOMIC.prproj`, secuencia `SHARPCOMIC_MASTER_1080`. Pendiente solo: recopilar los medios del proyecto (están en `AppData\Local\Temp\higgsfield-ae-bridge`) y, si se quiere, una copia exportada por Premiere en `05_entregables`. Detalle en `docs/sharpcomic_postpro.md`.
+6. **SHARPCOMIC (spot cómic, 22-oct)**: terminado y aprobado por Bruno; v3 del 28-oct con el cartel y la etiqueta corregidos (ver 1c). Máster 1920×1080 con el audio arreglado (−16 LUFS, sin el hueco tras el SPLAT) en `entregables/2026-10-22_sharpcomic/ENTREGA.md` (media `97a6104d-423b-4394-808d-99779f6fe84e`). Proyecto `SHARPCOMIC.prproj`, secuencia `SHARPCOMIC_MASTER_1080`. Pendiente solo: recopilar los medios del proyecto (están en `AppData\Local\Temp\higgsfield-ae-bridge`) y, si se quiere, una copia exportada por Premiere en `05_entregables`. Detalle en `docs/sharpcomic_postpro.md`.
 
 ## 3. Trampas conocidas
 
@@ -48,3 +54,5 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 - No usar `pkill -f` con patrones que aparezcan en el propio comando.
 - Los ficheros del sandbox (`rev/…`) pueden desaparecer; las fuentes se re-descargan de las URL del ledger.
 - Commits terminan con las líneas de atribución que indique la sesión; nunca poner identificadores de modelo en commits ni PR.
+
+7. **Cementerio Halloween**: enviar el enlace al cliente antes del 30-oct. Si piden más, los fotogramas, scripts y quads de seguimiento están en el sandbox (`/home/user/tumba`, `/home/user/lab2`), que puede caducar: el ledger `prompts/tumba_jobs.json` tiene las fuentes para rehacerlo.

@@ -43,3 +43,19 @@ Duración final: 41,71 s (1001 frames, 24 fps). Créditos: 19,81 (saldo 816,94 �
 - Máster entregado el 22-oct (render en el sandbox). Si se quiere una copia exportada por el propio Premiere en `05_entregables`: Archivo → Exportar → Medios con la secuencia activa.
 - Recopilar medios del proyecto (Archivo → Gestor de proyectos) para sacar los clips 1080p de la carpeta temporal.
 - Opcional: variante 9:16 para Reels (reencuadre por plano).
+
+## Retoque del cliente (27/28-oct): cartel «Sharp» y etiqueta real
+
+Petición: el panel derecho del cartel de la tienda decía «ZONBR!» y debía decir «Sharp»; las siluetas de la etiqueta incluían una chica y debían ser las reales (tres zombis andando de perfil, uno agachado y la manita). Bruno pidió no gastar créditos si salía caro: se ha hecho todo por composición, **0 créditos**.
+
+- **Cartel** (fr 20–92): el panel derecho se sigue con homografías SIFT encadenadas desde el fotograma 88 y suavizadas; dentro se pega el «SHARP» del panel izquierdo rectificado y recoloreado al magenta del panel derecho, con fondo blanco del propio panel. La farola que pasa por delante se respeta con una máscara.
+- **Etiqueta**: por plano, se elige un fotograma de referencia, se rectifica la etiqueta (rectángulo mínimo de la zona amarilla con texto rojo), se borra la banda de figuras desde justo debajo de «Zombie» hasta el suelo con el amarillo vecino y se pegan las siluetas reales (`3d/textures/label_silhouettes_fill.png`, sin los restos de borde). Ese parche se lleva a cada fotograma con homografías SIFT encadenadas, con corrección de ganancia de color y respetando los dedos (máscara de piel por blobs grandes). En el apagón final las siluetas nuevas llevan contorno lima con glow, como el resto del cierre.
+- En la caída y el giro de la botella (26–34 s), demasiado rápidos para seguir con homografía, la etiqueta se detecta y rectifica fotograma a fotograma.
+- Sin tocar: la pelea (6,4–9,8 s) y el salto (18–21 s), donde la botella es diminuta o va de espaldas, y los fotogramas del destello del SPLAT.
+- Audio: el del máster v2, sin cambios.
+- Máster v3: `entregables/2026-10-22_sharpcomic/ENTREGA.md`.
+
+Lecciones:
+- El pelo amarillo de la chica se funde con la etiqueta en la segmentación por color: elegir la componente con texto rojo (fracción roja 4–40 %), no la mayor.
+- La máscara de piel coge los bordes antialiasados de las figuras negras sobre amarillo (tono ≈18): quedarse solo con blobs grandes (>600 px) o salen motas de las figuras viejas.
+- La banda de figuras sobresale por debajo del rectángulo amarillo (piernas sobre el suelo negro): ampliar el lienzo rectificado por abajo (`pb`) y, en etiquetas al revés, no ampliarlo (el volteo desplaza la banda sobre el texto).

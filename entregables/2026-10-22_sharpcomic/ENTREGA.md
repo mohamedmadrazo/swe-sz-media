@@ -14,3 +14,13 @@ Qué lleva:
 - Sonido bajado y arreglado: sin el hueco de silencio tras el «SPLAT», agudos del «splat» suavizados, subgraves del final controlados y máster a −16 LUFS.
 
 Proyecto editable: `SHARPCOMIC.prproj`, secuencia `SHARPCOMIC_MASTER_1080` (el audio master está en A3; A1 y A2 son la mezcla editable, silenciada). Detalle técnico: `docs/sharpcomic_postpro.md` y `prompts/sharpcomic_jobs.json`.
+
+## Versión 3 · 28-oct-2026 (retoque del cliente)
+
+| Vídeo | Formato | Descarga |
+|---|---|---|
+| SHARPCOMIC · máster v3 | 1920×1080 · 24 fps · 41,7 s · mismo sonido (−16 LUFS) | [SharpZombie_SHARPCOMIC_master_1080p_v3.mp4](https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/31960372-a04b-4591-96d1-f24fc55b8a20.mp4) |
+
+- El cartel derecho de la tienda dice «SHARP» durante todo el acercamiento.
+- La etiqueta lleva las siluetas reales (tres zombis andando, uno agachado y la manita) en todos los planos donde se ve: con los zombis en la tienda, primer plano, «POW», ciudad, «SPLAT», caída, giro, la chica tumbada y el apagón final (con las siluetas brillando en lima).
+- Sin coste de créditos: hecho por composición sobre el máster.
