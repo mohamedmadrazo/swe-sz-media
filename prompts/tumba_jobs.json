@@ -1,0 +1,176 @@
+{
+  "_doc": "Retoque del anuncio del cementerio (Halloween) pedido por el cliente el 27-oct-2026. Fuente: Marketing Studio fc489abb (8,06 s, 1080x1920, 24 fps).",
+  "fuente": {
+    "job_id": "fc489abb-da7a-4158-8503-a6f1b64b05ce",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20260514_185824_fc489abb-da7a-4158-8503-a6f1b64b05ce.mp4",
+    "planos": {
+      "S1_pala": [
+        0,
+        21
+      ],
+      "S2_botella_sale": [
+        22,
+        46
+      ],
+      "S3_hombre_esqueleto": [
+        47,
+        88
+      ],
+      "S4_primer_plano_botella": [
+        89,
+        101
+      ],
+      "S5_copa": [
+        102,
+        135
+      ],
+      "S6_brindis": [
+        136,
+        156
+      ],
+      "S7_end_card": [
+        157,
+        192
+      ]
+    }
+  },
+  "peticion_cliente": [
+    "etiqueta original",
+    "uvas de la copa -> humo con forma de mano zombi (no realista)",
+    "corcho -> pop",
+    "tipografía del end card original"
+  ],
+  "decision_bruno_27oct": "Tapón de rosca negro real que gira y salta con «¡pop!» y humo verde (no corcho: lock de producto).",
+  "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+  "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+  "jobs": {
+    "copa_pingpong_input": {
+      "media_id": "faa5143b-3f26-4734-a5f7-c58701248973",
+      "nota": "S5 (34 fr) en ida y vuelta hasta 72 fr = 3 s, para cumplir el mínimo de Kling sin cortes"
+    },
+    "humo_mano": {
+      "model": "kling4_0",
+      "mode": "video-edit",
+      "resolution": "1080p",
+      "duration": 3,
+      "credits_each": 3,
+      "job_ids": [
+        "1697730a-2405-4615-8a30-7c5590ae3660",
+        "27d45c40-4158-42e4-a4cf-262deeb0beab"
+      ],
+      "elegido": {
+        "job_id": "27d45c40-4158-42e4-a4cf-262deeb0beab",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261027_172933_27d45c40-4158-42e4-a4cf-262deeb0beab.mp4",
+        "motivo": "B: copa vacía → se sirve → el humo verde forma la mano; respeta el arranque del plano original. A rellena la copa desde el f0 y la mano parece un holograma sólido."
+      }
+    },
+    "s4_start_rosca": {
+      "media_id": "e9fb4425-3b01-4538-acae-27bcb5751428",
+      "nota": "f101 con etiqueta real compuesta (label_front.png, aspecto real, alineada abajo, banda superior rellena de cristal) y corcho sustituido por tapa plana de rosca negra"
+    },
+    "pop_rosca": {
+      "model": "kling4_0",
+      "mode": "image-to-video",
+      "resolution": "1080p",
+      "duration": 3,
+      "job_ids": [
+        "a26dd7fe-cf89-48a7-9dd8-6b65016113e8",
+        "9d2cf9a6-d8ea-4dd2-a5ef-9ad3843617de"
+      ],
+      "elegido": {
+        "job_id": "9d2cf9a6-d8ea-4dd2-a5ef-9ad3843617de",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261027_194511_9d2cf9a6-d8ea-4dd2-a5ef-9ad3843617de.mp4",
+        "motivo": "B: el tapón de rosca gira (f10-19), salta en f22 y suelta humo verde que se mantiene verde; A sale disparado sin girar y el humo se vuelve blanco",
+        "uso": "fr 4-44 (pop ≈ 0,75 s dentro del plano)"
+      }
+    }
+  },
+  "balance": {
+    "inicio": 239.57
+  },
+  "sandbox_trabajo": {
+    "fuente_frames": "/home/user/tumba/fr/%03d.png (1-indexado)",
+    "scripts": "/home/user/lab2/{comp.py,detect.py,run_s2.py}",
+    "S2_compuesto": "/home/user/tumba/s2c/%03d.png (f22-46)",
+    "quads": "/home/user/lab2/s2_final.json, s2_final2.json (f>=32)",
+    "assets": "/home/user/assets (texturas del repo @838d02a)"
+  },
+  "edl_previsto": [
+    "S1 f0-21 original",
+    "S2 f22-46 etiqueta compuesta",
+    "S3 f47-88 etiqueta compuesta",
+    "S4 pop_rosca B fr4-44 (+SFX pop)",
+    "S5 humo_mano B fr0-44",
+    "S6 f136-156 etiqueta compuesta",
+    "S7 end card nuevo (logotipo real)"
+  ],
+  "master_v2": {
+    "archivo": "SZ_cementerio_halloween_v2_1080x1920.mp4",
+    "media_id": "badfed5a-5176-4c6b-be09-ffb2a7e59148",
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/badfed5a-5176-4c6b-be09-ffb2a7e59148.mp4",
+    "formato": "1080x1920, 24 fps, H.264 CRF 15, AAC 256k",
+    "duracion_s": 9.917,
+    "frames": 238,
+    "edl": [
+      {
+        "plano": "S1 pala",
+        "origen": "fc489abb f0-21",
+        "fr": [
+          0,
+          22
+        ]
+      },
+      {
+        "plano": "S2 botella sale de la tierra",
+        "origen": "fc489abb f22-46 + etiqueta real compuesta",
+        "fr": [
+          22,
+          47
+        ]
+      },
+      {
+        "plano": "S3 hombre y esqueleto",
+        "origen": "fc489abb f47-88 (etiqueta compuesta f54-88)",
+        "fr": [
+          47,
+          89
+        ]
+      },
+      {
+        "plano": "S4 tapón de rosca salta",
+        "origen": "Kling 9d2cf9a6 fr6-44",
+        "fr": [
+          89,
+          128
+        ]
+      },
+      {
+        "plano": "S5 copa con humo-mano",
+        "origen": "Kling 27d45c40 fr0-40",
+        "fr": [
+          128,
+          169
+        ]
+      },
+      {
+        "plano": "S6 brindis",
+        "origen": "fc489abb f136-156 + etiqueta compuesta",
+        "fr": [
+          169,
+          190
+        ]
+      },
+      {
+        "plano": "S7 end card",
+        "origen": "fc489abb f157-192 sin el texto viejo + logotipo real de la etiqueta; 12 fr de cola",
+        "fr": [
+          190,
+          238
+        ]
+      }
+    ],
+    "audio": "S1-S3, S6 y S7 audio original; S4 y S5 ambiente de Kling; «pop» de tapón sintetizado (barrido 930→280 Hz + clic + golpe grave) + siseo del humo en el salto; −15,4 LUFS integrados, −1,6 dBTP",
+    "etiqueta": "label_front.png (foto real) con iluminación transferida del amarillo de la etiqueta falsa, proporción real, banda superior rellena de cristal; seguimiento por segmentación de amarillo + bordes robustos",
+    "end_card": "logotipo «Sharp Zombie» extraído de la tinta roja de label_front.png (umbral sobre G, cierre/apertura, suavizado), en verde pálido con glow como el original; calavera y «Wakes the dead.» originales"
+  }
+}
