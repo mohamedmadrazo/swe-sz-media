@@ -59,3 +59,10 @@ Lecciones:
 - El pelo amarillo de la chica se funde con la etiqueta en la segmentación por color: elegir la componente con texto rojo (fracción roja 4–40 %), no la mayor.
 - La máscara de piel coge los bordes antialiasados de las figuras negras sobre amarillo (tono ≈18): quedarse solo con blobs grandes (>600 px) o salen motas de las figuras viejas.
 - La banda de figuras sobresale por debajo del rectángulo amarillo (piernas sobre el suelo negro): ampliar el lienzo rectificado por abajo (`pb`) y, en etiquetas al revés, no ampliarlo (el volteo desplaza la banda sobre el texto).
+
+## Retoque del cliente (29-oct): vuelta a la etiqueta original, cartel y versión corta
+
+- Bruno descartó la v3 (siluetas de la etiqueta cambiadas): se vuelve al máster v2 con la etiqueta original.
+- Cartel «ZONBR!» → «SHARP» rehecho y llevado a Premiere como clip en V3 de `SHARPCOMIC_MASTER_1080` (0,83–3,88 s). Lecciones: el color de relleno a la derecha del parche no puede salir de una mediana de columnas que toque la «P» (dejaba una marca); el borde derecho se limita por fotograma al marco rosa; la farola que pasa por delante se sigue con su propia trayectoria (detector de franja gris + interpolación), porque la detección por columnas oscuras daba falsos positivos en los fotogramas borrosos.
+- La extensión no exporta fotogramas de la secuencia (`exportFramePNG produced no file`): la comprobación visual se hizo sobre el composite equivalente en el sandbox; el clip en V3 está a escala 100 % y posición 0,5/0,5, igual que u1.
+- Versión corta (pedido de Bruno): fuera 12:20–26:04; el corte une la misma pose de la chica y entra en el destello del «SPLAT». 28,4 s, −16 LUFS. Secuencia `SHARPCOMIC_MASTER_1080_v5_corto`. Enlaces en `entregables/2026-10-22_sharpcomic/ENTREGA.md`.

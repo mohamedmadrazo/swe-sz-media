@@ -205,6 +205,34 @@
    },
    "sin_tocar": "150–235 (pelea, botella pequeña y en movimiento), 431–503 (salto, botella diminuta o de espaldas), 627–629 y 653–657 (destello del SPLAT)"
   },
+  "creditos": 0,
+  "estado": "retirada el 29-oct: Bruno descartó el cambio de siluetas de la etiqueta (se veía peor); no enviar master_v3"
+ },
+ "retoque_2026_10_29": {
+  "pedido": "Volver a la etiqueta original del vídeo; solo cambiar el cartel «ZONBR!» por «SHARP» (en Premiere) y acortar el tramo 12:20–26:04 indicado por Bruno.",
+  "cartel": {
+   "fotogramas": "20–92 (0,83–3,88 s)",
+   "metodo": "parche canónico «SHARP» (del panel izquierdo) + homografías SIFT suavizadas (lab3/rq2.json), borde derecho limitado al marco rosa por fotograma, farola por delante seguida en el plano de la imagen",
+   "premiere": "clip en V3 de SHARPCOMIC_MASTER_1080, bandeja RETOQUE_2026-10-28_cartel",
+   "media_clip": "61a04089-b2bb-42be-b490-d4142fa94bc0"
+  },
+  "master_v4": {
+   "media_id": "5089805c-bcb4-42d5-9221-dfd5f2320f8d",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/5089805c-bcb4-42d5-9221-dfd5f2320f8d.mp4",
+   "duracion_s": 41.708,
+   "frames": 1001,
+   "nota": "v2 + cartel; sin recortar"
+  },
+  "master_v5_corto": {
+   "media_id": "2d4543a4-078c-4606-94f8-c51404437215",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/2d4543a4-078c-4606-94f8-c51404437215.mp4",
+   "duracion_s": 28.375,
+   "frames": 681,
+   "corte": "fuera fotogramas 308–627 (12:20–26:03); se retoma en 26:04 (inicio del destello del SPLAT)",
+   "audio": "fundido cruzado de igual potencia de 60 ms en el corte; −16,0 LUFS, −1,6 dBTP",
+   "premiere": "secuencia SHARPCOMIC_MASTER_1080_v5_corto",
+   "entregar": true
+  },
   "creditos": 0
  }
 }
