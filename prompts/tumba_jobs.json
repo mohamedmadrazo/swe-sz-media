@@ -175,6 +175,28 @@
     ],
     "audio": "S1-S3, S6 y S7 audio original; S4 y S5 ambiente de Kling; «pop» de tapón sintetizado (barrido 930→280 Hz + clic + golpe grave) + siseo del humo en el salto; −15,4 LUFS integrados, −1,6 dBTP",
     "etiqueta": "label_front.png (foto real) con iluminación transferida del amarillo de la etiqueta falsa, proporción real, banda superior rellena de cristal; seguimiento por segmentación de amarillo + bordes robustos",
-    "end_card": "logotipo «Sharp Zombie» extraído de la tinta roja de label_front.png (umbral sobre G, cierre/apertura, suavizado), en verde pálido con glow como el original; calavera y «Wakes the dead.» originales"
+    "end_card": "logotipo «Sharp Zombie» extraído de la tinta roja de label_front.png (umbral sobre G, cierre/apertura, suavizado), en verde pálido con glow como el original; calavera y «Wakes the dead.» originales",
+    "estado": "retirada el 30-oct: la etiqueta compuesta salía de un recorte de póster IA (3d/textures/label_front.png), no de la real"
+  },
+  "master_v3": {
+    "archivo": "SZ_cementerio_halloween_v3_1080x1920.mp4",
+    "media_id": "acbc17c3-660b-4aaf-9894-5dce0889739d",
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/acbc17c3-660b-4aaf-9894-5dce0889739d.mp4",
+    "formato": "1080x1920, 24 fps, H.264 CRF 15 (matriz BT.601 sin etiquetar, como el v2 y la fuente), AAC copiado del v2",
+    "duracion_s": 9.917,
+    "frames": 238,
+    "etiqueta": {
+      "fuente": "packshot maestro SZ-bottle-master (job aade31ed, https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20260928_223902_aade31ed-0151-469c-bc50-513aff07bb68.png): banda de la etiqueta enderezada por columnas (bordes superior/inferior con min/max en ventana del periodo de las franjas + ajuste cuadrático robusto), 547x934, w/h 0,586",
+      "metodo": "sobre los fotogramas del v2: detección del rectángulo amarillo de la etiqueta compuesta vieja (w/h 0,738), base fija y altura real; ganancia de luz del amarillo viejo por convolución normalizada; tierra (S2) y dedos (S4, S6) por delante",
+      "planos": {
+        "S2": "22-46",
+        "S3": "54-88",
+        "S4": "89-127 (plano Kling del tapón)",
+        "S6": "169-189"
+      }
+    },
+    "audio": "idéntico al v2 (−15,4 LUFS, −1,6 dBTP)",
+    "premiere": "CEMENTERIO_HALLOWEEN.prproj, secuencia CEMENTERIO_HALLOWEEN_MASTER_v3",
+    "creditos": 0
   }
 }
