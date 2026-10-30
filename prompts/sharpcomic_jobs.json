@@ -1,0 +1,238 @@
+{
+ "_doc": "Ledger de la postproducción del spot cómic SHARPCOMIC (22-oct-2026). Proyecto Premiere C:\\Users\\demad\\Documents\\1-Clientes\\Mama-SWE-Wines\\01_HALLOWEEN_2026\\SHARPCOMIC.prproj; secuencia nueva SHARPCOMIC_MASTER_1080 (id 56f8785c-2779-4b8b-bab2-1d1038460931), bin SHARPCOMIC_1080_master. La secuencia original de Bruno no se ha tocado.",
+ "folder_id": "af60db5b-3cf0-444c-8218-287a76fde27d",
+ "fuentes": {
+  "c1": {
+   "job_id": "dbe82921-57df-4660-85d1-e5e1dce1b89a",
+   "desc": "ciudad, tienda, la chica golpea zombis (THWACK/BONK), cierra en fondo blanco con ZAP/CRUNCH",
+   "res": "1280×720, 361 fr, 24 fps"
+  },
+  "c2": {
+   "job_id": "c7c9ec9a-edfd-4703-9dc7-bcf05b32f8d7",
+   "desc": "continúa el plano blanco, fondo POW de ciudad, corre, guiño con la botella",
+   "res": "1280×720, 361 fr"
+  },
+  "c3": {
+   "job_id": "33c6c4ca-dbb6-457a-a7e4-6a67b6b4347a",
+   "desc": "lanza la botella, SPLAT, se lanza a por ella y la salva tumbada en el suelo",
+   "res": "1280×720, 361 fr"
+  }
+ },
+ "upscales": {
+  "provider": "bytedance (aigc, 1080p, 24 fps)",
+  "credits_each": 3.02,
+  "u1": {
+   "job_id": "ab5143b5-886c-498d-9c5a-a24e890af244",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261022_191929_ab5143b5-886c-498d-9c5a-a24e890af244.mp4"
+  },
+  "u2": {
+   "job_id": "6160ba5f-8917-40e6-b628-e29da358451d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261022_191932_6160ba5f-8917-40e6-b628-e29da358451d.mp4"
+  },
+  "u3": {
+   "job_id": "65d52b2f-0f56-4342-b132-508a6be53c05",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261022_191935_65d52b2f-0f56-4342-b132-508a6be53c05.mp4"
+  },
+  "qa": "1920×1080, 361 fr cada uno, alineados frame a frame con las fuentes (correlación de luma 1,0)"
+ },
+ "diagnostico": {
+  "union_1_11.17s": "mismo encuadre (ECC cc 0,99, escala ±0,8 %, ≤6 px); salta la expresión y el audio de c2 empieza con 0,25 s de silencio",
+  "union_2_26.21s": "cambio de plano completo (dif. media 99,7/255): guiño en ciudad → mano con botella sobre blanco",
+  "producto": "c3 f68–81 (giro del lanzamiento): etiqueta en espejo; el resto de planos de producto correctos (la caída boca abajo está bien rotada)",
+  "audio": "sin voz; música/SFX por clip a −21,4 / −22,8 / −24,1 LUFS"
+ },
+ "jobs": {
+  "final_seedance_draft": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "resolution": "480p",
+   "job_id": "2de5ed14-143b-4f7c-9c52-9a309feba7e7",
+   "status": "failed",
+   "credits": 0,
+   "nota": "fallo sin motivo; 12 cr reembolsados"
+  },
+  "final_kling_A": {
+   "model": "kling4_0",
+   "mode": "image-to-video",
+   "resolution": "1080p",
+   "duration": 4,
+   "job_id": "3c7e550e-7ac6-4db7-b7ab-de49f738c74f",
+   "status": "descartado",
+   "credits": 4,
+   "nota": "solo start_image: brilla toda la etiqueta y el texto, rompe el lock de producto"
+  },
+  "end_frame_gpt": {
+   "model": "gpt_image_2_5",
+   "variant": "sunburst",
+   "quality": "high",
+   "resolution": "2k",
+   "job_id": "6ac3e61d-7c15-4204-bc4f-ce5cfdd2cae7",
+   "credits": 2.75,
+   "nota": "último frame de u3 con la luz apagada: solo los contornos de las siluetas en lima, fondo oliva oscuro, «Sharp Zombie» rojo oscuro legible"
+  },
+  "final_kling_B": {
+   "model": "kling4_0",
+   "mode": "image-to-video",
+   "resolution": "1080p",
+   "duration": 4,
+   "job_id": "62cda966-4343-44a5-9ff6-f6f59605e218",
+   "status": "aprobado",
+   "credits": 4,
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/hf_20261022_193604_62cda966-4343-44a5-9ff6-f6f59605e218.mp4",
+   "medias": "start_image = último frame de u3 (media 339923c4-9ed9-434c-bcba-2ae48b9dbaec) · end_image = end_frame_gpt",
+   "qa": "1920×1080, 97 fr; f0 ≈ start (5,2/255), último ≈ end frame (2,3/255); apagón f26–30; audio con clic y zumbido (−19,6 LUFS)"
+  }
+ },
+ "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+ "edl_premiere": {
+  "V1": [
+   "u1 [0, 11,1667) @0",
+   "u2 [0, 15,0417) @11,1667 · Escala 100→118 % en 14,79–15,0 s (punch de salida)",
+   "u3 [3,4167, 15,0417) @26,2083 (sin el giro en espejo f68–81) · Escala 112→100 % en 0,25 s (punch de entrada)"
+  ],
+  "V2": [
+   "u1 [11,1667, 11,6667) @11,1667 · Opacidad 100→0 (fundido de 12 fr de la unión 1)",
+   "placa blanca 1920×1080 @26,0833, 5 fr · Opacidad 0→100 (en el corte)→0 (destello de la unión 2)",
+   "kling_B [0, 4,0417) @37,6667 · Opacidad 0→100 en 4 fr (encadenado con el final de c3)"
+  ],
+  "A1": [
+   "u1 0 dB",
+   "u2 +1,4 dB, fundido de salida 14,64–15,03 s",
+   "u3 +2,7 dB"
+  ],
+  "A2": [
+   "cola de u1 0→−40 dB en 0,5 s",
+   "silbido u3 [2,875, 3,4167) @25,6667 +2,7 dB (entra antes del destello)",
+   "kling_B −1,8 dB, fade in 4 fr y fade out 3,5–4,03 s"
+  ],
+  "A3": "SHARPCOMIC_master_audio_-14LUFS.mp3 @0 (A1 y A2 silenciadas, se conservan para editar)",
+  "duracion": "41,708 s (1001 fr) · 1920×1080 · 24 fps"
+ },
+ "master_audio": {
+  "metodo": "mezcla reconstruida al sample desde las fuentes con los mismos puntos, niveles y keyframes que Premiere (Nivel interpolado lineal en amplitud) → +7,6 dB → alimiter 4× sobremuestreado (techo −1,6 dBFS, ataque 1 ms, 48 muestras compensadas)",
+  "medidas": {
+   "antes": {
+    "I": -21.2,
+    "TP": -3.4,
+    "LRA": 8.1
+   },
+   "despues": {
+    "I": -14.0,
+    "TP": -1.6,
+    "LRA": 7.7
+   }
+  },
+  "reduccion_ganancia": ">1 dB en el 8,7 % de bloques de 10 ms, >3 dB en el 0,7 %, máx 6,3 dB",
+  "media_id": "29907568-37cd-426e-9195-b3046db9765d",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/29907568-37cd-426e-9195-b3046db9765d.mp3",
+  "formato": "MP3 320k 48 kHz (Higgsfield solo acepta mp3 para audio); desfase 0 muestras frente al WAV 24-bit"
+ },
+ "export": {
+  "premiere_api": "pr_export_sequence y la cola de AME no generan archivo en esta instalación (probado al proyecto y a 05_entregables)",
+  "master_mp4": {
+   "render": "sandbox (comic/render_master.py), réplica fotograma a fotograma de la secuencia: mismos clips, in/out, keyframes de escala y opacidad, placa blanca y fundido final; audio master v2",
+   "formato": "1920×1080, 24 fps, 1001 fr, 41,708 s, H.264 High CRF 16 BT.709 (16,6 Mb/s), AAC 320k 48 kHz, +faststart",
+   "qa": "−16,1 LUFS / −1,9 dBTP / LRA 9,0; sin frames negros (luma mínima 20,3); uniones, destello, SPLAT, zambullida, encadenado y glow revisados en hoja de contactos; md5 local = alojado (f27cb2d4ff0d)",
+   "media_id": "97a6104d-423b-4394-808d-99779f6fe84e",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/97a6104d-423b-4394-808d-99779f6fe84e.mp4"
+  },
+  "entrega": "entregables/2026-10-22_sharpcomic/ENTREGA.md"
+ },
+ "balance": {
+  "antes": 816.94,
+  "despues": 797.13,
+  "spent": 19.81,
+  "desglose": "upscales 3×3,02 + Kling A 4 + GPT 2,75 + Kling B 4; Seedance 12 reembolsado"
+ },
+ "master_audio_v2": {
+  "fecha": "2026-10-22",
+  "peticion": "Bruno: bajar y arreglar el audio",
+  "problemas": [
+   "0,65 s de silencio digital (−92 dBFS) tras el SPLAT (26,8–27,45 s) y entrada de golpe de la banda grave en la zambullida (+67 dB)",
+   "SPLAT muy agudo (casi toda la energía en 2–6 kHz)",
+   "banda grave del rescate y zumbido final casi solo subgrave (el limitador trabajaba por ellos)",
+   "máster a −14 LUFS demasiado apretado"
+  ],
+  "arreglos": [
+   "ambiente muy bajo (−52 dBFS) en 26,55–27,6 s para que nunca haya silencio digital",
+   "SPLAT invertido como subida (−9 dB bajo el original) que termina en el corte de la zambullida (27,4167 s)",
+   "EQ por tramos con máscaras suaves: campana −3,5 dB a 3,5 kHz en el SPLAT; low-shelf −4 dB a 75 Hz desde la zambullida hasta el final",
+   "paso alto 30 Hz en toda la mezcla (fase cero)",
+   "+5,8 dB y alimiter 4× (techo 0,80), latencia compensada"
+  ],
+  "medidas": {
+   "I": -16.0,
+   "TP": -1.9,
+   "LRA": 9.0,
+   "minimo_26_28s_dBFS": -56.5,
+   "desfase_muestras": 0
+  },
+  "media_id": "1657d3d7-7d4f-4a29-87be-c98720be2834",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/1657d3d7-7d4f-4a29-87be-c98720be2834.mp3",
+  "premiere": "sustituye al master v1 en A3 de SHARPCOMIC_MASTER_1080; proyecto guardado",
+  "script_sandbox": "comic/fix_audio.py"
+ },
+ "retoque_2026_10_27": {
+  "peticion": [
+   "cartel derecho «ZOMB!» → «Sharp» (≈2–4 s)",
+   "siluetas de la etiqueta (chica) → las reales: tres zombis andando de perfil, uno agachado y la manita"
+  ],
+  "criterio": "Bruno: si gasta muchos créditos, dejarlo; se hace con composición gratuita (0 créditos).",
+  "fuente": "máster 97a6104d (1920x1080, 1001 fr)",
+  "cartel": "panel derecho seguido por homografía SIFT fr 20–93; texto «SHARP» del panel izquierdo rectificado y recoloreado al magenta del panel derecho; la farola delante se respeta con máscara",
+  "siluetas": "por plano: segmentación de la etiqueta amarilla con texto rojo, rectificación por rectángulo mínimo, borrado de la banda de figuras con el amarillo vecino y siluetas reales (label_silhouettes_fill.png) en negro; en el final a oscuras, contorno lima con glow",
+  "scripts_sandbox": "/home/user/lab3/{signpatch.py,sign_apply.py,sil2.py,sil3.py}",
+  "master_v3": {
+   "archivo": "SharpZombie_SHARPCOMIC_master_1080p_v3.mp4",
+   "media_id": "31960372-a04b-4591-96d1-f24fc55b8a20",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/31960372-a04b-4591-96d1-f24fc55b8a20.mp4",
+   "formato": "1920x1080, 24 fps, 1001 fr, H.264 CRF 16, audio del máster v2 copiado sin recodificar (−16 LUFS)"
+  },
+  "cobertura": {
+   "cartel": "fr 20–92 (todo el acercamiento a la tienda)",
+   "etiqueta_seguimiento_homografia": {
+    "A tienda con zombis": "93–149",
+    "B primer plano": "236–347",
+    "C POW": "348–430",
+    "D ciudad": "504–626",
+    "S SPLAT": "630–652",
+    "H chica tumbada": "829–929",
+    "K apagón y glow": "930–1000"
+   },
+   "etiqueta_por_fotograma": {
+    "E caída": "658–732",
+    "G giro": "785–828 (796–797 sin tocar)"
+   },
+   "sin_tocar": "150–235 (pelea, botella pequeña y en movimiento), 431–503 (salto, botella diminuta o de espaldas), 627–629 y 653–657 (destello del SPLAT)"
+  },
+  "creditos": 0,
+  "estado": "retirada el 29-oct: Bruno descartó el cambio de siluetas de la etiqueta (se veía peor); no enviar master_v3"
+ },
+ "retoque_2026_10_29": {
+  "pedido": "Volver a la etiqueta original del vídeo; solo cambiar el cartel «ZONBR!» por «SHARP» (en Premiere) y acortar el tramo 12:20–26:04 indicado por Bruno.",
+  "cartel": {
+   "fotogramas": "20–92 (0,83–3,88 s)",
+   "metodo": "parche canónico «SHARP» (del panel izquierdo) + homografías SIFT suavizadas (lab3/rq2.json), borde derecho limitado al marco rosa por fotograma, farola por delante seguida en el plano de la imagen",
+   "premiere": "clip en V3 de SHARPCOMIC_MASTER_1080, bandeja RETOQUE_2026-10-28_cartel",
+   "media_clip": "61a04089-b2bb-42be-b490-d4142fa94bc0"
+  },
+  "master_v4": {
+   "media_id": "5089805c-bcb4-42d5-9221-dfd5f2320f8d",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/5089805c-bcb4-42d5-9221-dfd5f2320f8d.mp4",
+   "duracion_s": 41.708,
+   "frames": 1001,
+   "nota": "v2 + cartel; sin recortar"
+  },
+  "master_v5_corto": {
+   "media_id": "2d4543a4-078c-4606-94f8-c51404437215",
+   "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/2d4543a4-078c-4606-94f8-c51404437215.mp4",
+   "duracion_s": 28.375,
+   "frames": 681,
+   "corte": "fuera fotogramas 308–627 (12:20–26:03); se retoma en 26:04 (inicio del destello del SPLAT)",
+   "audio": "fundido cruzado de igual potencia de 60 ms en el corte; −16,0 LUFS, −1,6 dBTP",
+   "premiere": "secuencia SHARPCOMIC_MASTER_1080_v5_corto",
+   "entregar": true
+  },
+  "creditos": 0
+ }
+}
