@@ -3,6 +3,8 @@
 **Máster v3 (enviar este)**, vertical 1080×1920, 24 fps, 9,9 s, −15,4 LUFS:
 https://d2ol7oe51mr4n9.cloudfront.net/user_3BP9AlN7MxU50eaw9ZlO6ny5hI2/acbc17c3-660b-4aaf-9894-5dce0889739d.mp4
 
+**Enviado** el 30-oct-2026 a las 14:25 UTC por correo desde `demadrazobruno@streamline3x.com` a `maria.alvarez@finewinesconnection.com`, `mdemadrazo@gmail.com` e `info@finewinesconnection.com` (los mismos destinatarios que el WeTransfer de la v5 de SHARPCOMIC, más María). El correo lleva el enlace de descarga y la lista de cambios. No se envió por WeTransfer: desde la sesión, la web pidió un captcha.
+
 | Petición del cliente | Cómo se ha resuelto |
 |---|---|
 | 1. Etiqueta original | Etiqueta real sacada del packshot maestro de la botella (`SZ-bottle-master`) y compuesta en todos los planos con botella: sale de la tierra, plano general, tapón que salta y brindis. Franjas, cinta «CAUTION / DEADLY GOOD WINE», «Sharp Zombie» completo, RIOJA, D.O.Ca. y las siluetas reales. |

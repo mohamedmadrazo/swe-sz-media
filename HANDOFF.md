@@ -56,4 +56,4 @@ Documento de traspaso entre sesiones. Leerlo entero antes de tocar nada. El deta
 - Los ficheros del sandbox (`rev/…`) pueden desaparecer; las fuentes se re-descargan de las URL del ledger.
 - Commits terminan con las líneas de atribución que indique la sesión; nunca poner identificadores de modelo en commits ni PR.
 
-7. **Cementerio Halloween**: enviar el enlace del **v3** al cliente hoy (30-oct; el v2 está retirado). Si piden más, los fotogramas, scripts y quads del v3 están en el sandbox (`/home/user/t3`), que caduca a las 24 h sin uso: el ledger `prompts/tumba_jobs.json` tiene las fuentes para rehacerlo.
+7. **Cementerio Halloween**: el **v3** está **enviado** a María (30-oct, 14:25 UTC, por correo desde streamline3x con el enlace; WeTransfer pidió captcha desde la sesión). El v2 está retirado. Si piden más, los fotogramas, scripts y quads del v3 están en el sandbox (`/home/user/t3`), que caduca a las 24 h sin uso: el ledger `prompts/tumba_jobs.json` tiene las fuentes para rehacerlo.
